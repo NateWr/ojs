@@ -133,6 +133,51 @@ class ArticleHandler extends Handler {
 		uasort($citationPlugins, create_function('$a, $b', 'return strcmp($a->getDisplayName(), $b->getDisplayName());'));
 		$templateMgr->assign('citationPlugins', $citationPlugins);
 
+		// Citation styles
+		$citation = array(
+			'id' => $article->getId(),
+			'abstract' => $article->getLocalizedAbstract(),
+			'author' => array(
+				array(
+					'family' => 'Wright',
+					'given' => 'Nathan T',
+				),
+			),
+			'container-title' => $journal->getLocalizedName(),
+			'issue' => '1',
+			'issued' => array(
+				'raw' => $article->getDatePublished(),
+			),
+			'journalAbbreviation' => $journal->getLocalizedAcronym(),
+			'page' => '1-10',
+			'title' => $article->getLocalizedTitle(),
+			'type' => 'article-journal',
+			'volume' => '23',
+		);
+
+		$cslLocale = str_replace('_', '-', AppLocale::getLocale());
+		import('lib.pkp.classes.file.FileWrapper');
+		$wrapper = FileWrapper::wrapper('lib/pkp/js/lib/csl/locales/locales-' . $cslLocale . '.xml');
+		$cslLocaleXml = $wrapper->contents();
+
+		$cslStyle = 'chicago-fullnote-bibliography'; // @todo get from journal-selected default
+		import('lib.pkp.classes.file.FileWrapper');
+		$wrapper = FileWrapper::wrapper('lib/pkp/js/lib/csl/styles/' . $cslStyle . '.csl');
+		$cslStyleXml = $wrapper->contents();
+
+		$templateMgr->addJavaScript('citeproc', $request->getBaseUrl() . '/lib/pkp/js/lib/csl/citeproc-js/citeproc.js', array('priority' => 0));
+		$templateMgr->addJavaScript('csl', $request->getBaseUrl() . '/lib/pkp/js/functions/csl.js');
+
+		$citation = json_encode($citation);
+		$cslLocale = json_encode($cslLocale);
+		$cslLocaleXml = json_encode($cslLocaleXml);
+		$cslStyle = json_encode($cslStyle);
+		$cslStyleXml = json_encode($cslStyleXml);
+		$cslBaseUrl = json_encode($request->getBaseUrl());
+		$js = "pkpCSL.init($citation, $cslLocale, $cslLocaleXml, $cslStyle, $cslStyleXml, $cslBaseUrl);";
+		$js .= "pkpCSL.generateCitations([" . $article->getId() . "], $cslStyle, pkpCSL.defaultCallback);";
+		$templateMgr->addJavaSCript('csl-article-' . $article->getId(), $js, array('inline' => true));
+
 		if (!$galley) {
 			// No galley: Prepare the article landing page.
 

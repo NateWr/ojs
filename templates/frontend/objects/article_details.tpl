@@ -229,6 +229,25 @@
 				</div>
 			{/if}
 
+			<div class="item citation_styles">
+				<div class="sub_item citation_display">
+					<div class="label">
+						{translate key="submission.howToCite"}
+					</div>
+					<div class="value">
+						<p class="citation_output" data-csl="{$article->getId()}"></p>
+						<ul>
+							<li>
+								<a href="#" data-load-citation="chicago-fullnote-bibliography">Chicago</a>
+							</li>
+							<li>
+								<a href="#" data-load-citation="modern-language-association">MLA</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 			{* Citation formats *}
 			{if $citationPlugins|@count}
 				<div class="item citation_formats">

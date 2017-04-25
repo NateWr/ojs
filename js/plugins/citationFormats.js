@@ -38,24 +38,24 @@
 		return;
 	}
 
-	citationFormatLinks.click(function(e) {
-		e.preventDefault();
-		e.stopPropagation();
-
-		var url = $(this).attr('href') + '/json';
-
-		citationOutput.css('opacity', 0.5);
-
-		$.ajax({url: url, dataType: 'json'})
-			.done(function(r) {
-				citationOutput.html(r.content)
-					.hide()
-					.css('opacity', 1)
-					.fadeIn();
-			})
-			.fail(function(r) {
-				citationOutput.css('opacity', 1);
-			});
-	});
+	// citationFormatLinks.click(function(e) {
+	// 	e.preventDefault();
+	// 	e.stopPropagation();
+	//
+	// 	var url = $(this).attr('href') + '/json';
+	//
+	// 	citationOutput.css('opacity', 0.5);
+	//
+	// 	$.ajax({url: url, dataType: 'json'})
+	// 		.done(function(r) {
+	// 			citationOutput.html(r.content)
+	// 				.hide()
+	// 				.css('opacity', 1)
+	// 				.fadeIn();
+	// 		})
+	// 		.fail(function(r) {
+	// 			citationOutput.css('opacity', 1);
+	// 		});
+	// });
 
 })(jQuery);
