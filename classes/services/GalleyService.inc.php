@@ -37,6 +37,7 @@ class GalleyService extends PKPBaseEntityPropertyService {
 		$isSubmissionGalley = is_a($galley, 'Representation');
 		$isIssueGalley = is_a($galley, 'IssueFile');
 		$dispatcher = $request->getDispatcher();
+		$router = $request->getRouter();
 		$values = array();
 
 		foreach ($props as $prop) {
@@ -58,7 +59,7 @@ class GalleyService extends PKPBaseEntityPropertyService {
 							$parentId = $galley->getIssueId();
 						}
 						if ($parentPath) {
-							$values[$prop] = $this->getAPIHref(
+							$values[$prop] = $router->getApiUrl(
 								$args['request'],
 								$arguments['contextPath'],
 								$arguments['version'],
@@ -191,6 +192,8 @@ class GalleyService extends PKPBaseEntityPropertyService {
 		}
 
 		\HookRegistry::call('Galley::getProperties::values', array(&$values, $galley, $props, $args));
+
+		ksort($values);
 
 		return $values;
 	}

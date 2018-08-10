@@ -111,7 +111,6 @@
 	<message key="manager.setup">Setup</message>
 	<message key="manager.setup.masthead">Impressum</message>
 	<message key="manager.setup.editorialTeam">Redaktion</message>
-	<message key="manager.setup.editorialTeam.description">Nennen Sie Redakteur/innen, Verwalter/innen und andere mit der Zeitschrift verbundene Personen.</message>
 	<message key="manager.setup.homepageContent">Inhalte der Zeitschriften-Homepage</message>
 	<message key="manager.setup.homepageContentDescription">Die Zeitschriften-Homepage besteht standardmäßig aus Navigations-Links. Zusätzliche Inhalte können hinzugefügt werden, indem eine oder alle der folgenden Optionen ausgewählt werden. Sie werden in der angezeigten Reihenfolge auftauchen.</message>
 	<message key="manager.setup.layout">Layout der Zeitschrift</message>
@@ -137,8 +136,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Verlangen Sie von Gutachter/innen zusammen mit jeder Begutachtung eine Erklärung zu möglicherweise bestehenden Interessenkonflikten.</message>
 	<message key="manager.setup.history">Zeitschriften-Geschichte</message>
 	<message key="manager.setup.historyDescription">Dieser Text erscheint auf der "Über uns"-Seite der Zeitschrift und kann genutzt werden, um Änderungen des Titels, in der Besetzung des Beirats und in anderen wesentlichen Belangen der Zeitschriftengeschichte zu beschreiben.</message>
-	<message key="manager.setup.copyeditInstructions">Anweisungen für das Lektorat</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Die Anweisungen werden den Lektor/innen, Autor/innen und Redakteur/innen mit dem zu bearbeitenden Beitrag übermittelt. Nachstehend finden Sie eine Reihe von Standardanweisungen im HTML-Format. Sie können jederzeit von der Zeitschriftenverwaltung ersetzt oder geändert werden (in HTML oder einfachem Text).</message>
 	<message key="manager.setup.copyrightNotice">Copyright-Vermerk</message>
 	<message key="manager.setup.coverage">Themenbereich</message>
 	<message key="manager.setup.coverageDescription">Bezieht sich auf den räumlich-geografischen, auf den zeitlichen Bereich und auf die Eigenschaften des Fachgebiets.</message>
@@ -195,7 +192,6 @@
 	<message key="manager.setup.journalAbbreviation">Abkürzung des Zeitschriftennamens</message>
 	<message key="manager.setup.journalArchiving">Archivierung der Zeitschrift</message>
 	<message key="manager.setup.journalSummary">Zusammenfassung der Zeitschrift</message>
-	<message key="manager.setup.journalSummary.description">Eine kurze Beschreibung Ihrer Zeitschrift, die in der Liste der Zeitschriften angezeigt werden kann.</message>
 	<message key="manager.setup.journalAbout">Über uns</message>
 	<message key="manager.setup.journalAbout.description">Nehmen Sie alle Informationen über Ihre Zeitschrift mit auf, die von Interesse für Leser/innen, Autor/innen oder Gutachter/innen sein könnten. Hierzu könnten Ihre Open-Access-Policy, das Konzept Ihrer Zeitschrift, Copyright-Angaben, Informationen über Sponsoren, die Geschichte der Zeitschrift, Angaben zum Datenschutz und die Beteiligung an LOCKSS- oder CLOCKSS-Archivierungssystemen gehören.</message>
 	<message key="manager.setup.favicon">Favicon der Zeitschrift</message>
@@ -250,7 +246,6 @@
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
 	<message key="manager.setup.porticoEnable"><![CDATA[Portico ermöglichen, Zeitschrifteninhalte zu archivieren und an teilnehmende Bibliotheken auszuliefern.]]></message>
 	<message key="manager.setup.porticoTitle">Portico</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.setup.look">Gestaltung</message>
 	<message key="manager.setup.look.description">Titel der Startseite, Inhalt, Kopfzeile der Zeitschrift, Fußzeile, Navigationsleiste und Style Sheet.</message>
 	<message key="manager.setup.management">Management</message>
@@ -276,15 +271,13 @@
 	<message key="manager.setup.printIssn">ISSN Druck</message>
 	<message key="manager.setup.proofingInstructions">Anweisungen für das Korrekturlektorat</message>
 	<message key="manager.setup.proofingInstructionsDescription">Die Anweisungen für das Korrekturlektorat werden den Korrekturlektor/innen, Autor/innen, Layouter/innen und Rubrikredakteur/innen während der redaktionellen Bearbeitung des Beitrags übermittelt. Nachstehend finden Sie einen Standardsatz von Anweisungen in HTML-Format, die jederzeit von der Zeitschriftenverwaltung geändert werden können (in HTML oder einfachem Text).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Layouter/innen Anweisungen geben</message>
 	<message key="manager.setup.publicationSchedule">Terminkalender der Veröffentlichung</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Die Beiträge der Zeitschrift können zusammen veröffentlicht werden, als Teil einer Ausgabe mit eigenem Inhaltsverzeichnis. Es können auch einzelne fertige Artikel durch Anfügen an das Inhaltsverzeichnis der "aktuellen Ausgabe" veröffentlicht werden. Erläutern Sie den Leser/innen unter "Über uns" das Veröffentlichungssystem und die vorgesehene Erscheinungsfrequenz der Zeitschrift.]]></message>
 	<message key="manager.setup.publicationScheduling">Veröffentlichungstermine festlegen</message>
 	<message key="manager.setup.publicIdentifier">Kennung des Inhalts der Zeitschrift</message>
 	<message key="manager.setup.publisher">Verlag, Organisation</message>
-	<message key="manager.setup.publisherDescription">Der Name der Organisation, die die Zeitschrift herausgibt, erscheint unter "Über uns".</message>
+	<message key="manager.setup.publishingDescription">Der Name der Organisation, die die Zeitschrift herausgibt, erscheint unter "Über uns".</message>
 	<message key="manager.setup.referenceLinking">Verlinkung von Literaturverweisen</message>
-	<message key="manager.setup.refLinkInstructions.description">Layout-Anweisungen für das Verlinken von Literaturverweisen</message>
 	<message key="manager.setup.restrictArticleAccess">Benutzer/innen müssen registriert und angemeldet sein, um Open-Access-Inhalte aufrufen zu können.</message>
 	<message key="manager.setup.restrictSiteAccess">Benutzer/innen müssen registriert und angemeldet sein, um die Zeitschriftenseite aufrufen zu können.</message>
 	<message key="manager.setup.reviewGuidelines">Begutachtungsrichtlinien</message>

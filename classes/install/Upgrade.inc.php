@@ -2042,15 +2042,15 @@ class Upgrade extends Installer {
 		while ($journal = $journals->next()) {
 			$settings = $journalSettingsDao->loadSettings($journal->getId());
 			$supportedFormLocales = $journal->getSupportedFormLocales();
-			$focusAndScope = $journal->getSetting('focusScopeDesc');
+			$focusAndScope = $journalSettingsDao->getSetting('focusScopeDesc');
 			$focusAndScope['localeKey'] = 'about.focusAndScope';
-			$reviewPolicy = $journal->getSetting('reviewPolicy');
+			$reviewPolicy = $journalSettingsDao->getSetting('reviewPolicy');
 			$reviewPolicy['localeKey'] = 'about.peerReviewProcess';
-			$pubFreqPolicy = $journal->getSetting('pubFreqPolicy');
+			$pubFreqPolicy = $journalSettingsDao->getSetting('pubFreqPolicy');
 			$pubFreqPolicy['localeKey'] = 'about.publicationFrequency';
 			$oaPolicy = array();
 			if ($journal->getSetting('publishingMode') == PUBLISHING_MODE_OPEN) {
-				$oaPolicy = $journal->getSetting('openAccessPolicy');
+				$oaPolicy = $journalSettingsDao->getSetting('openAccessPolicy');
 				$oaPolicy['localeKey'] = 'about.openAccessPolicy';
 			}
 			// the elements order accords to how they were displayed on the about page
@@ -2061,14 +2061,14 @@ class Upgrade extends Installer {
 				'openAccessPolicy' => $oaPolicy,
 			);
 
-			$customAboutItems = $journal->getSetting('customAboutItems');
+			$customAboutItems = $journalSettingsDao->getSetting('customAboutItems');
 
-			$sponsorNote = $journal->getSetting('sponsorNote');
-			$sponsors = $journal->getSetting('sponsors');
-			$contributorNote = $journal->getSetting('contributorNote');
+			$sponsorNote = $journalSettingsDao->getSetting('sponsorNote');
+			$sponsors = $journalSettingsDao->getSetting('sponsors');
+			$contributorNote = $journalSettingsDao->getSetting('contributorNote');
 			$contributorNote['localeKey'] = 'grid.contributor.title';
-			$contributors = $journal->getSetting('contributors');
-			$history = $journal->getSetting('history');
+			$contributors = $journalSettingsDao->getSetting('contributors');
+			$history = $journalSettingsDao->getSetting('history');
 			$history['localeKey'] = 'about.history';
 			// the elements order accords to how they were displayed on the about page
 			$otherSettings = array(
@@ -2196,7 +2196,7 @@ class Upgrade extends Installer {
 		$journals = $journalDao->getAll();
 		while ($journal = $journals->next()) {
 			$settings = $journalSettingsDao->loadSettings($journal->getId());
-			if ($journal->getSetting('boardEnabled')) {
+			if ($journalSettingsDao->getSetting('boardEnabled')) {
 				// get all users by group ID
 				$groupUsers = array();
 				$groupPrimaryLocaleTitles = array();
@@ -2240,7 +2240,7 @@ class Upgrade extends Installer {
 			foreach ($supportedFormLocales as $locale) {
 				AppLocale::requireComponents(LOCALE_COMPONENT_APP_COMMON, LOCALE_COMPONENT_PKP_USER, $locale);
 				$masthead[$locale] = '';
-				if ($journal->getSetting('boardEnabled')) {
+				if ($journalSettingsDao->getSetting('boardEnabled')) {
 					// The Editorial Team feature has been enabled.
 					// Generate information using Group data.
 					foreach ($groupUsers as $groupId => $usersArray) {

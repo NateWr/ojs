@@ -117,8 +117,6 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.appearInAboutJournal">(compare nella sezione "Informazioni sulla rivista")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Richiedi agli autori di inviare una dichiarazione di assenza di conflitto di interessi durante l'invio della proposta.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Richiedi ai revisori di allegare una dichiarazione di assenza di conflitto di interessi per ogni revisione che invieranno.</message>
-	<message key="manager.setup.copyeditInstructions">Istruzioni per il copyedit</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Le istruzioni per il copyedit saranno rese disponibili ai copyeditor, agli autori e ai section editor nella fase di Editing delle Submission. Di seguito sono presenti una serie di istruzioni in HTML, che possono essere modificate in qualsiasi momento dall'amministratore (in HTML o in testo semplice).</message>
 	<message key="manager.setup.copyrightNotice">Nota di copyright</message>
 	<message key="manager.setup.copyrightYearBasis">Fissa per default i diritti d'autore dei nuovi articoli su</message>
 	<message key="manager.setup.coverage">Ambito</message>
@@ -226,15 +224,13 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.printIssn">ISSN</message>
 	<message key="manager.setup.proofingInstructions">Istruzioni per la correzione delle bozze.</message>
 	<message key="manager.setup.proofingInstructionsDescription">Le istruzioni per la correzione delle bozze saranno rese disponibili ai correttori di bozze, agli autori, ai layout editor e ai section editor durante la fase di Editing delle Submission. Di seguito sono presenti le istruzioni in HTML, che possono essere modificate in qualsiasi momento dall'amministratore (in HTML o in testo semplice).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Fornisci ai curatori del layout le istruzioni.</message>
 	<message key="manager.setup.publicationSchedule">Programma delle pubblicazioni</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Gli articoli della rivista possono essere pubblicati tutti insieme, come parte di un numero completo, con un sommario definitivo. In alternativa, gli articoli possono essere pubblicati singolarmente, appena pronti, e venendo cos&#x00EC; aggiunti al sommario di volta in volta. Indicate ai lettori, nella pagina delle informazioni sulla rivista, sia il il metodo utilizzato per la pubblicazione, sia la frequenza.]]></message>
 	<message key="manager.setup.publicationScheduling">Pianificazione delle pubblicazioni</message>
 	<message key="manager.setup.publicIdentifier">Identificatori dei contenuti della rivista</message>
 	<message key="manager.setup.publisher">Editore</message>
-	<message key="manager.setup.publisherDescription">Il nome dell'organizzazione responsabile della pubblicazione comparirà tra le informazioni sulla rivista.</message>
+	<message key="manager.setup.publishingDescription">Il nome dell'organizzazione responsabile della pubblicazione comparirà tra le informazioni sulla rivista.</message>
 	<message key="manager.setup.referenceLinking">Gestisci il reference linking</message>
-	<message key="manager.setup.refLinkInstructions.description">Istruzioni di layout per i link di riferimento</message>
 	<message key="manager.setup.restrictArticleAccess">Gli utenti devono essere registrati e aver effettuato il log in per vedere i contenuti open access.</message>
 	<message key="manager.setup.restrictSiteAccess">Gli utenti devono essere registrati e aver effettuato il log in per vedere il sito della rivista.</message>
 	<message key="manager.setup.reviewGuidelines"></message>
@@ -370,7 +366,7 @@ Al momento di concludere una revisione, ai revisori vengono presentate due box, 
 	<message key="manager.subscriptions.form.dateStartRequired">Indicare la data d'inizio dell'abbonamento.</message>
 	<message key="manager.subscriptions.form.dateStartValid">Indicare una data d'inizio abbonamento valida.</message>
 	<message key="manager.subscriptions.form.domain">Dominio</message>
-	<message key="manager.subscriptions.form.domainInstructions">Se avete inserito il dominio, la presenza del range degli indirizzi IP è opzionale. 
+	<message key="manager.subscriptions.form.domainInstructions">Se avete inserito il dominio, la presenza del range degli indirizzi IP è opzionale.
 I valori ammessi sono i nomi di dominio (es. www.cilea.it).</message>
 	<message key="manager.subscriptions.form.domainIPRangeRequired">Il tipo di abbonamento scelto richiede l'autenticazione tramite dominio o range di indirizzi IP.</message>
 	<message key="manager.subscriptions.form.domainValid">Inserisci un dominio valido.</message>
@@ -497,8 +493,8 @@ I valori ammessi sono i nomi di dominio (es. www.cilea.it).</message>
 	<message key="manager.setup.categories.description">Scegli le categorie più appropriate nella lista sottostante. I lettori potranno navigare le riviste ospitate nel sito per categorie.</message>
 	<message key="manager.setup.resetPermissions">Cancella i permessi dell'articolo</message>
 	<message key="manager.setup.resetPermissions.description">La dichiarazione di copyright e le informazioni sulla licenza saranno collegati in modo permanente al contenuto pubblicato, assicurando che questi dati non cambieranno nel caso che la rivista cambi le politiche per le nuove proposte. Per reimpostare le informazioni sulle autorizzazioni memorizzate e già collegate al contenuto pubblicato, utilizzare il pulsante qui sotto.</message>
-	<message key="manager.statistics.defaultMetricDescription">La rivista è configurata per registrare più di una metrica di utilizzo. Le statistiche di utilizzo verranno visualizzate in diversi contesti. 
-Ci sono casi in cui deve essere utilizzato una sola statistica di utilizzo, ad esempio, per visualizzare un elenco ordinato di oggetti più utilizzati o risultati di ricerca. 
+	<message key="manager.statistics.defaultMetricDescription">La rivista è configurata per registrare più di una metrica di utilizzo. Le statistiche di utilizzo verranno visualizzate in diversi contesti.
+Ci sono casi in cui deve essere utilizzato una sola statistica di utilizzo, ad esempio, per visualizzare un elenco ordinato di oggetti più utilizzati o risultati di ricerca.
 Selezionare una delle metriche configurate come predefinita.</message>
 	<!-- Common DOI export plugins (crossref, datacite, medra) keys -->
 	<!-- plugin tabs -->
@@ -516,17 +512,14 @@ Selezionare una delle metriche configurate come predefinita.</message>
 	<message key="manager.website.archiving">Archiviazione</message>
 	<message key="manager.setup.masthead">Testata</message>
 	<message key="manager.setup.editorialTeam">Editorial Team</message>
-	<message key="manager.setup.editorialTeam.description">Informazioni sulla redazione</message>
 	<message key="manager.setup.useStyleSheet">Foglio di stile</message>
 	<message key="manager.setup.contextName">Nome della rivista</message>
 	<message key="manager.setup.journalSummary">Presentazione della rivista</message>
-	<message key="manager.setup.journalSummary.description">Descrizione riassuntiva</message>
 	<message key="manager.setup.journalAbout">Informazioni sulla rivista</message>
 	<message key="manager.setup.journalAbout.description">Scopo e ambito della rivista, politiche, informazioni sulla peer review, copyright, archiviazione, sponsor, ecc.</message>
 	<message key="manager.setup.favicon">Favicon</message>
 	<message key="manager.setup.faviconDescription">Carica un'immagine (max 32x32px) che sarà visualizzata accanto al nome della rivista nella barra di navigazione</message>
 	<message key="manager.setup.journalThumbnail.description">Un piccolo logo da usare negli indici di riviste</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.distribution.access">Accesso</message>
 	<message key="manager.publication.library">Editore</message>
 	<message key="grid.genres.title.short">Componenti</message>

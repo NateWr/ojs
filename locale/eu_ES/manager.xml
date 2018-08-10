@@ -113,8 +113,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Aldizkariari buruz orrian agertzeko)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Eskatu lana bidaltzen duten egileei Interes-gatazkari buruzko deklarazio bat erants dezatela bidalketan.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Eskatu Ebaluatzaileei Interes-gatazkari buruzko deklarazio bat erants dezatela adituen ebaluazio bat bidaltzen duten bakoitzean.</message>
-	<message key="manager.setup.copyeditInstructions">Zuzenketak egiteko instrukzioak</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Zuzenketak egiteko instrukzioak eskuragarri izango dituzte Zuzentzaileek, Egileek, eta Ataleko editoreek Bidalketen edizioaren fasean. Behean ematen da instrukzio multzo lehenetsi bat, HTML formatuan. Edozein unetan aldatu edo ordeztu dezake Aldizkariaren kudeatzaileak (HTML formatuan nahiz testu arruntean).</message>
 	<message key="manager.setup.copyrightNotice">Copyright informazioa</message>
 	<message key="manager.setup.coverage">Estaldura</message>
 	<message key="manager.setup.coverageDescription">Kokapen geo-espaziala, garai kronologikoa edo historikoa, eta/edo ikerketaren ezaugarriak.</message>
@@ -222,15 +220,13 @@
 	<message key="manager.setup.printIssn">Inprimatzeko ISSN</message>
 	<message key="manager.setup.proofingInstructions">Probak zuzentzeko instrukzioak</message>
 	<message key="manager.setup.proofingInstructionsDescription">Probak zuzentzeko instrukzioak eskuragarri izango dituzte Proba-zuzentzaileek, Egileek, Maketatzaileek eta Ataleko editoreek Bidalketen edizioaren fasean. Behean ematen da instrukzio multzo lehenetsi bat, HTML formatuan. Edozein unetan aldatu edo ordeztu dezake Aldizkariaren kudeatzaileak (HTML formatuan nahiz testu arruntean).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Maketatzaileei instrukzioak eman.</message>
 	<message key="manager.setup.publicationSchedule">Argitalpen-programa</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Aldizkariko artikuluak eta lanak multzoan argitara daitezke, zenbaki bat osatuz, dagokion Aurkibidearekin. Baina artikuluak banaka ere argitara daitezke, prest egon ahala, eta "uneko" bolumenaren Aurkibidean gehitu. Azaldu irakurleei, Aldizkariari buruz orrian, zein izango den aldizkari honek erabiliko duen sistema, eta zein izango den argitalpenen maiztasuna.]]></message>
 	<message key="manager.setup.publicationScheduling">Argitalpena programatu</message>
 	<message key="manager.setup.publicIdentifier">Aldizkariaren edukiaren identifikazioa</message>
 	<message key="manager.setup.publisher">Argitaratzailea</message>
-	<message key="manager.setup.publisherDescription">Aldizkaria argitaratzen duen erakundearen izena Aldizkariari buruz orrian agertuko da.</message>
+	<message key="manager.setup.publishingDescription">Aldizkaria argitaratzen duen erakundearen izena Aldizkariari buruz orrian agertuko da.</message>
 	<message key="manager.setup.referenceLinking">Erreferentziarako esteka</message>
-	<message key="manager.setup.refLinkInstructions.description">Erreferentzietarako estekak jartzeko maketazio-instrukzioak</message>
 	<message key="manager.setup.restrictArticleAccess">Sarrera libreko edukia ikusteko, erabiltzaileak erregistratuta egon behar du eta saioa hasi.</message>
 	<message key="manager.setup.restrictSiteAccess">Aldizkariaren gunea ikusteko, erabiltzaileak erregistratuta egon behar du eta saioa hasi.</message>
 	<message key="manager.setup.reviewGuidelines">Ebaluazioa egiteko gidalerroak</message>

@@ -123,8 +123,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Hakemlerin her bir değerlendirme gönderisi için Çıkar Çatışması bildirimi dosyası göndermeleri gereklidir.</message>
 	<message key="manager.setup.history">Dergi Geçmişi</message>
 	<message key="manager.setup.historyDescription">Buraya yazılan metin dergi web sayfasının "Hakkında" kısmında görüntülenir. Dergi geçmişi ve yayın kuruluna yönelik bilgiler verilir.</message>
-	<message key="manager.setup.copyeditInstructions">Sayfa Düzenleme Yönergesi</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Sayfa düzenleme yönergesi, baskı düzenlenme aşamasında sayfa düzenleyiciler, yazarlar ve bölüm editörlerine açıktır. Aşağıda yönergenin ön tanımlı biçimi HTML olarak verilmektedir. Dergi yöneticisi tarafından istenildiğinde değiştirilebilir. (HTML veya düz metin olarak).</message>
 	<message key="manager.setup.copyrightNotice">Telif Hakkı Bildirimi Duyurusu</message>
 	<message key="manager.setup.coverage">Kapsam</message>
 	<message key="manager.setup.coverageDescription">Coğrafik yerleşim, kronolojik veya tarihsel süreç, ve/veya araştırma örneklerinin özelliklerine başvur.</message>
@@ -232,15 +230,13 @@
 	<message key="manager.setup.printIssn">ISSN</message>
 	<message key="manager.setup.proofingInstructions">Düzenleme Yönergesi</message>
 	<message key="manager.setup.proofingInstructionsDescription">Düzenleme yönergesi düzenlenme basamağında mizanpajcılara, yazarlara ve bölüm editörlerine açık tutulur. Aşağıda, dergi yöneticisi tarafından istenildiğinde değiştirilebilecek, ön tanımlı (HTML veya düz metin) bir düzenleme verilmiştir.</message>
-	<message key="manager.setup.provideRefLinkInstructions">Açlıklama ile birlikte Mizanpajcı belirleyin.</message>
 	<message key="manager.setup.publicationSchedule">Yayın Planlaması</message>
 	<message key="manager.setup.publicationScheduleDescription">Makaleler, kendi içindekiler tablosu olan bir sayıda toplanarak  yayınlanabilir. Ayrıca hazır olan makale son sayının içindekiler tablosuna eklenerek yayınlanabilir. Dergi Hakkında bölümünde okuyucularınıza hangi sistemin kullanıldığı ve ne sıklıkta yeni sayı yayınlandığını belirtiniz.</message>
 	<message key="manager.setup.publicationScheduling">Yayın Planlaması</message>
 	<message key="manager.setup.publicIdentifier">Dergi İçeriğinin Tanımlanması</message>
 	<message key="manager.setup.publisher">Yayıncı</message>
-	<message key="manager.setup.publisherDescription">Dergiyi yayıncısının adı Dergi Hakkında kısmında görüntülenir.</message>
+	<message key="manager.setup.publishingDescription">Dergiyi yayıncısının adı Dergi Hakkında kısmında görüntülenir.</message>
 	<message key="manager.setup.referenceLinking">Referans Bağlama</message>
-	<message key="manager.setup.refLinkInstructions.description">Referans Bağlama İçin Mizanpaj Talimatları</message>
 	<message key="manager.setup.restrictArticleAccess">Kullanıcılar açık erişim içeriğini görüntüleyebilmek için kayıt yaparak giriş yapmak zorundadır.</message>
 	<message key="manager.setup.restrictSiteAccess">Kullanıcılar dergi sitesini görüntüleyebilmek için kayıt yaparak giriş yapmak zorundadır.</message>
 	<message key="manager.setup.reviewGuidelines">Değerlendirme Rehberi</message>

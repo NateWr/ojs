@@ -47,8 +47,8 @@ class SubmissionSubmitStep4Form extends PKPSubmissionSubmitStep4Form {
 		$router = $request->getRouter();
 		if ($mail->isEnabled()) {
 			// submission ack emails should be from the contact.
-			$mail->setFrom($this->context->getSetting('contactEmail'), $this->context->getSetting('contactName'));
-			$authorMail->setFrom($this->context->getSetting('contactEmail'), $this->context->getSetting('contactName'));
+			$mail->setFrom($this->context->getData('contactEmail'), $this->context->getData('contactName'));
+			$authorMail->setFrom($this->context->getData('contactEmail'), $this->context->getData('contactName'));
 
 			$user = $request->getUser();
 			$primaryAuthor = $submission->getPrimaryAuthor();
@@ -58,13 +58,13 @@ class SubmissionSubmitStep4Form extends PKPSubmissionSubmitStep4Form {
 			}
 			$mail->addRecipient($user->getEmail(), $user->getFullName());
 			// Add primary contact and e-mail address as specified in the journal submission settings
-			if ($context->getSetting('copySubmissionAckPrimaryContact')) {
+			if ($context->getData('copySubmissionAckPrimaryContact')) {
 				$mail->addBcc(
-					$context->getSetting('contactEmail'),
-					$context->getSetting('contactName')
+					$context->getData('contactEmail'),
+					$context->getData('contactName')
 				);
 			}
-			if ($copyAddress = $context->getSetting('copySubmissionAckAddress')) {
+			if ($copyAddress = $context->getData('copySubmissionAckAddress')) {
 				$mail->addBcc($copyAddress);
 			}
 
@@ -87,13 +87,13 @@ class SubmissionSubmitStep4Form extends PKPSubmissionSubmitStep4Form {
 			$mail->assignParams(array(
 				'authorName' => $user->getFullName(),
 				'authorUsername' => $user->getUsername(),
-				'editorialContactSignature' => $context->getSetting('contactName'),
+				'editorialContactSignature' => $context->getData('contactName'),
 				'submissionUrl' => $router->url($request, null, 'authorDashboard', 'submission', $submission->getId()),
 			));
 
 			$authorMail->assignParams(array(
 				'submitterName' => $user->getFullName(),
-				'editorialContactSignature' => $context->getSetting('contactName'),
+				'editorialContactSignature' => $context->getData('contactName'),
 			));
 
 			$mail->send($request);

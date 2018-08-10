@@ -45,25 +45,25 @@ class IndexHandler extends Handler {
 		if ($journal) {
 			// Assign header and content for home page
 			$templateMgr->assign(array(
-				'additionalHomeContent' => $journal->getLocalizedSetting('additionalHomeContent'),
-				'homepageImage' => $journal->getLocalizedSetting('homepageImage'),
-				'homepageImageAltText' => $journal->getLocalizedSetting('homepageImageAltText'),
-				'journalDescription' => $journal->getLocalizedSetting('description'),
+				'additionalHomeContent' => $journal->getLocalizedData('additionalHomeContent'),
+				'homepageImage' => $journal->getLocalizedData('homepageImage'),
+				'homepageImageAltText' => $journal->getLocalizedData('homepageImageAltText'),
+				'journalDescription' => $journal->getLocalizedData('description'),
 			));
 
 			$issueDao = DAORegistry::getDAO('IssueDAO');
 			$issue = $issueDao->getCurrent($journal->getId(), true);
-			if (isset($issue) && $journal->getSetting('publishingMode') != PUBLISHING_MODE_NONE) {
+			if (isset($issue) && $journal->getData('publishingMode') != PUBLISHING_MODE_NONE) {
 				import('pages.issue.IssueHandler');
 				// The current issue TOC/cover page should be displayed below the custom home page.
 				IssueHandler::_setupIssueTemplate($request, $issue);
 			}
 
-			$enableAnnouncements = $journal->getSetting('enableAnnouncements');
+			$enableAnnouncements = $journal->getData('enableAnnouncements');
 			if ($enableAnnouncements) {
-				$enableAnnouncementsHomepage = $journal->getSetting('enableAnnouncementsHomepage');
+				$enableAnnouncementsHomepage = $journal->getData('enableAnnouncementsHomepage');
 				if ($enableAnnouncementsHomepage) {
-					$numAnnouncementsHomepage = $journal->getSetting('numAnnouncementsHomepage');
+					$numAnnouncementsHomepage = $journal->getData('numAnnouncementsHomepage');
 					$announcementDao = DAORegistry::getDAO('AnnouncementDAO');
 					$announcements =& $announcementDao->getNumAnnouncementsNotExpiredByAssocId(ASSOC_TYPE_JOURNAL, $journal->getId(), $numAnnouncementsHomepage);
 					$templateMgr->assign('announcements', $announcements->toArray());

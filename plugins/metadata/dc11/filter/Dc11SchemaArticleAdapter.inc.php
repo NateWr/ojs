@@ -99,7 +99,7 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 		$this->_addLocalizedElements($dc11Description, 'dc:description', $article->getAbstract(null));
 
 		// Publisher
-		$publisherInstitution = $journal->getSetting('publisherInstitution');
+		$publisherInstitution = $journal->getData('publisherInstitution');
 		if (!empty($publisherInstitution)) {
 			$publishers = array($journal->getPrimaryLocale() => $publisherInstitution);
 		} else {
@@ -160,10 +160,10 @@ class Dc11SchemaArticleAdapter extends MetadataDataObjectAdapter {
 			$sources[$locale] .=  $pages;
 		}
 		$this->_addLocalizedElements($dc11Description, 'dc:source', $sources);
-		if ($issn = $journal->getSetting('onlineIssn')) {
+		if ($issn = $journal->getData('onlineIssn')) {
 			$dc11Description->addStatement('dc:source', $issn, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		}
-		if ($issn = $journal->getSetting('printIssn')) {
+		if ($issn = $journal->getData('printIssn')) {
 			$dc11Description->addStatement('dc:source', $issn, METADATA_DESCRIPTION_UNKNOWN_LOCALE);
 		}
 

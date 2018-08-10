@@ -125,8 +125,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Pedir a los revisores/as que adjunten una declaración de conflicto de intereses a cada evaluación por pares.</message>
 	<message key="manager.setup.history">Historial de la revista</message>
 	<message key="manager.setup.historyDescription">El siguiente texto se mostrará en la sección Acerca de la revista y se puede utilizar para describir cambios realizados en los títulos, en el Consejo editorial o en otros elementos relevantes a la historia de la revista.</message>
-	<message key="manager.setup.copyeditInstructions">Instrucciones de corrección de originales</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Las instrucciones para la corrección de originales se encuentran a disposición de los correctores/as de originales, autores/as y editores/as de sección en el paso correspondiente a la edición del envío. A continuación, se muestra un conjunto de instrucciones en HTML que el gestor/a de la revista puede modificar o reemplazar en cualquier momento (en HTML o texto plano).</message>
 	<message key="manager.setup.copyrightNotice">Aviso de derechos de autor/a</message>
 	<message key="manager.setup.coverage">Cobertura</message>
 	<message key="manager.setup.coverageDescription">Se refiere a la localización geográfica, a la cobertura cronológica o histórica o a las características de la muestra de investigación.</message>
@@ -241,15 +239,13 @@
 	<message key="manager.setup.printIssn">Imprimir ISSN</message>
 	<message key="manager.setup.proofingInstructions">Instrucciones de corrección de pruebas</message>
 	<message key="manager.setup.proofingInstructionsDescription">Las instrucciones para la corrección de pruebas se encuentran a disposición de los correctores/as de pruebas, autores/as, editores/as de maquetación, editores/as de sección en el paso correspondiente a la edición del envío. A continuación, se muestra un conjunto de instrucciones en HTML que el gestor/a de la revista puede modificar o reemplazar en cualquier momento (en HTML o texto plano).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Proporcione instrucciones a los maquetadores/as</message>
 	<message key="manager.setup.publicationSchedule">Planificación de la publicación</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Los elementos de la revista se pueden publicar de forma masiva como parte de un número con su propia tabla de contenidos. También, se pueden publicar separados tan pronto como se disponga de ellos, para lo cual, es preciso añadirlos en la tabla de contenidos del volumen "actual". En la sección Acerca de la revista, proporcione a los lectores/as información sobre el sistema que utilizará la revista y la frecuencia de publicación prevista.]]></message>
 	<message key="manager.setup.publicationScheduling">Planificación para publicaciones</message>
 	<message key="manager.setup.publicIdentifier">Identificación del contenido de la revista</message>
 	<message key="manager.setup.publisher">Editorial</message>
-	<message key="manager.setup.publisherDescription">El nombre de la organización que publica la revista aparecerá en la sección Acerca de la revista.</message>
+	<message key="manager.setup.publishingDescription">El nombre de la organización que publica la revista aparecerá en la sección Acerca de la revista.</message>
 	<message key="manager.setup.referenceLinking">Enlaces de referencia</message>
-	<message key="manager.setup.refLinkInstructions.description">Instrucciones de maquetación para los enlaces de referencia</message>
 	<message key="manager.setup.restrictArticleAccess">Los usuarios/as deben registrarse e iniciar sesión para ver el contenido de acceso abierto.</message>
 	<message key="manager.setup.restrictSiteAccess">Los usuarios/as deben registrarse e iniciar sesión para ver el sitio web de la revista.</message>
 	<message key="manager.setup.reviewGuidelines">Indicaciones para la revisión</message>
@@ -508,7 +504,6 @@
 	<message key="manager.section.noSectionEditors"><![CDATA[Aún no hay editores/as de sección. Añada este rol al menos a un usuario vía Administración > Ajustes > Users &amp; Roles first.]]></message>
 	<message key="manager.setup.masthead">Cabecera</message>
 	<message key="manager.setup.editorialTeam">Equipo editorial</message>
-	<message key="manager.setup.editorialTeam.description">Listar editores/as, directores/as de gestión y otras personas asociadas con la revista.</message>
 	<message key="manager.setup.homepageContent">Contenido de la página de inicio de la revista</message>
 	<message key="manager.setup.homepageContentDescription">La página de inicio de la revista consta de los enlaces por defecto. Se le puede añadir contenido adicional mediante una o todas las opciones siguientes, que aparecerán en el orden mostrado.</message>
 	<message key="manager.setup.layout">Estilo de la revista</message>
@@ -519,7 +514,6 @@
 	<message key="manager.setup.form.issnInvalid">El ISSN especificado no es válido.</message>
 	<message key="manager.setup.includeCreativeCommons">Las revistas que ofrecen acceso abierto inmediato o retardado deben incluir una licencia Creative Commons con todo el trabajo publicado en el momento adecuado.</message>
 	<message key="manager.setup.journalSummary">Índice de la revista</message>
-	<message key="manager.setup.journalSummary.description">Una breve descripción de su revista para mostrar en la lista de revistas.</message>
 	<message key="manager.setup.journalAbout">Acerca de la revista</message>
 	<message key="manager.setup.journalAbout.description">Incluya toda la información sobre su revista que considere de interés para lectores/as, autores/as o revisores/as, por ejemplo: la política de acceso abierto, el enfoque y ámbito de la revista, el aviso de derechos de autor, la declaración de esponsorización, la historia de la revista, la declaración de privacidad o la inclusión en algún sistema de archivo LOCKSS o CLOCKSS.</message>
 	<message key="manager.setup.favicon">Icono de página de la revista</message>
@@ -536,7 +530,6 @@
 	<message key="manager.setup.clockssLicenseLabel">Descripción de la licencia CLOCKSS</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Inscríbase al servicio CLOCKSS visitando su página web: <a href="http://clockss.org/" target="_blank"></a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.statistics.reports.defaultReport.issuePageViews">Visualizaciones de la tabla de contenidos del número</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionExpiryReminderBeforeMonthsValid">Por favor, use la casilla de verificación proporcionada.</message>
 	<message key="manager.subscriptionPolicies.expiryReminderAfterMonths1">Notificar a los suscriptores/as por correo electrónico</message>

@@ -110,8 +110,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Pojavljuje se u "o časopisu")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Zahtijevaj od autora da prilikom prijave svog rukopisa ispune izjavu o sukobu interesa.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Zahtijevaj od recenzenata da prilikom izrade svake recenzije ispune izjavu o sukobu interesa.</message>
-	<message key="manager.setup.copyeditInstructions">Upute za uređivanje lekture</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Upute za uređivanje lekture bit će dostupne lektorima, autorima i urednicima rubrika u fazi uređivanja priloga. Ovdje je priložen uobičajen skup uputa za lektore, koje glavni urednik prema potrebi može modificirati ili zamijeniti u bilo kojem trenutku (u HTML-u ili običnom tekstu).</message>
 	<message key="manager.setup.copyrightNotice">Obavijest o autorskim pravima</message>
 	<message key="manager.setup.coverage">Opseg</message>
 	<message key="manager.setup.coverageDescription">Odnosi se na geoprostornu lokaciju, kronološki ili povijesni opseg, odnosno na osobine istraživačkog uzorka.</message>
@@ -213,15 +211,13 @@
 	<message key="manager.setup.printIssn">ISSN tiskanog izdanja</message>
 	<message key="manager.setup.proofingInstructions">Upute za korekturu</message>
 	<message key="manager.setup.proofingInstructionsDescription">Upute za korekturu bit će dostupne korektorima, autorima, grafičkim urednicima i urednicima u fazi uređivanja prijave. Ovdje je priložen uobičajen skup uputa za korekturu, koje glavni urednik prema potrebi može modificirati ili zamijeniti u bilo kojem trenutku (u HTML-u ili običnom tekstu).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Priloži upute grafičkim urednicima.</message>
 	<message key="manager.setup.publicationSchedule">Raspored objavljivanja</message>
 	<message key="manager.setup.publicationScheduleDescription">Prilozi se obično objavljuju okupljeni u brojeve časopisa, kao dio broja časopisa s kazalom sadržaja. Alternativno, pojedinačni prilozi mogu biti objavljivani čim prođu kroz uređivački postupak, tako da se dodaju u sadržaj aktualnog sveska. Ovdje predstavite čitateljima princip objavljivanja koji će ovaj časopis koristiti te očekivanu učestalost izlaženja. Ove će informacije biti dostupne u rubrici "o časopisu".</message>
 	<message key="manager.setup.publicationScheduling">Objavljivanje časopisa</message>
 	<message key="manager.setup.publicIdentifier">Identifikacija sadržaja časopisa</message>
 	<message key="manager.setup.publisher">Nakladnik</message>
-	<message key="manager.setup.publisherDescription">Ime nakladnika koje se pojavljuje u časopisu u rubrici "o časopisu". Nakladnik je pravna ili fizička osoba koja pokreće objavljivanje publikacije, snosi troškove izdavanja i tiskanja te je odgovorna za proizvodnju i distribuciju.</message>
+	<message key="manager.setup.publishingDescription">Ime nakladnika koje se pojavljuje u časopisu u rubrici "o časopisu". Nakladnik je pravna ili fizička osoba koja pokreće objavljivanje publikacije, snosi troškove izdavanja i tiskanja te je odgovorna za proizvodnju i distribuciju.</message>
 	<message key="manager.setup.referenceLinking">Bibliografske poveznice</message>
-	<message key="manager.setup.refLinkInstructions.description">Upute za uključivanje poveznica u popis literature</message>
 	<message key="manager.setup.restrictArticleAccess">Korisnici se moraju prijaviti u sustav da bi vidjeli sadržaj otvorenog pristupa.</message>
 	<message key="manager.setup.restrictSiteAccess">Korisnici se moraju prijaviti u sustav da bi vidjeli stranicu časopisa.</message>
 	<message key="manager.setup.reviewGuidelines">Smjernice za recenziju</message>

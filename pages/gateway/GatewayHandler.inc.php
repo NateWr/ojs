@@ -10,7 +10,7 @@
  * @class GatewayHandler
  * @ingroup pages_gateway
  *
- * @brief Handle external gateway requests. 
+ * @brief Handle external gateway requests.
  */
 
 import('classes.handler.Handler');
@@ -29,7 +29,7 @@ class GatewayHandler extends Handler {
 		$templateMgr = TemplateManager::getManager($request);
 
 		if ($journal != null) {
-			if (!$journal->getSetting('enableLockss')) {
+			if (!$journal->getData(ableLockss')) {
 				$request->redirect(null, 'index');
 			}
 
@@ -110,7 +110,7 @@ class GatewayHandler extends Handler {
 		$templateMgr = TemplateManager::getManager($request);
 
 		if ($journal != null) {
-			if (!$journal->getSetting('enableClockss')) {
+			if (!$journal->getData(ableClockss')) {
 				$request->redirect(null, 'index');
 			}
 

@@ -125,8 +125,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Demana als revisors/ores que incloguin una declaració de CI per cada avaluació d'experts/ertes que trametin.</message>
 	<message key="manager.setup.history">Història de la revista</message>
 	<message key="manager.setup.historyDescription">Aquest text apareix a la pàgina «Sobre la revista» del lloc web de la revista i es pot utilitzar per descriure canvis en títols, el consell de redacció i altres elements rellevants per a la història de la publicació de la revista.</message>
-	<message key="manager.setup.copyeditInstructions">Instruccions per a la correcció d'originals</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Les instruccions per a la correcció d'originals es faran arribar als correctors/ores, autors/ores i editors/ores de secció durant l’etapa d’edició de trameses. A continuació s’ofereix un exemple d’instruccions en format HTML, que l’administrador/a de la revista pot modificar o reemplaçar en qualsevol moment (en HTML o en text net).</message>
 	<message key="manager.setup.copyrightNotice">Avís de drets d’autor/a</message>
 	<message key="manager.setup.coverage">Cobertura</message>
 	<message key="manager.setup.coverageDescription">Fa referència a la ubicació geoespacial, a la cobertura cronològica o històrica i/o a les característiques de la mostra de recerca.</message>
@@ -235,15 +233,13 @@
 	<message key="manager.setup.printIssn">ISSN en paper</message>
 	<message key="manager.setup.proofingInstructions">Instruccions per a la correcció de proves</message>
 	<message key="manager.setup.proofingInstructionsDescription">Les instruccions per a la correcció de proves es fan arribar als correctors/ores de proves, als autors/ores, als maquetistes i als editors/ores de secció durant l’etapa d’edició de trameses. A continuació s’ofereix un exemple d’instruccions en format HTML, que l'administrador/a de la revista pot editar o reemplaçar (en format HTML o en text net) en qualsevol moment.</message>
-	<message key="manager.setup.provideRefLinkInstructions">Proporciona instruccions als maquetistes.</message>
 	<message key="manager.setup.publicationSchedule">Planficació de publicació</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[És possible publicar col·lectivament elements de la revista com a part d’un número amb una taula de continguts específica per a aquesta part. De forma alternativa, es poden publicar elements de manera individual tan bon punt estiguin llestos, afegint-los a la taula de continguts del volum «actual». Informeu els lectors/ores, a la pàgina «Sobre la revista», del sistema utilitzat i de la freqüència de publicació prevista.]]></message>
 	<message key="manager.setup.publicationScheduling">Procés de planificació de publicacions</message>
 	<message key="manager.setup.publicIdentifier">Identificació dels continguts de la revista</message>
 	<message key="manager.setup.publisher">Institució publicadora</message>
-	<message key="manager.setup.publisherDescription">El nom de l’organització que publica la revista apareix a la pàgina «Sobre la revista».</message>
+	<message key="manager.setup.publishingDescription">El nom de l’organització que publica la revista apareix a la pàgina «Sobre la revista».</message>
 	<message key="manager.setup.referenceLinking">Enllaços de referència</message>
-	<message key="manager.setup.refLinkInstructions.description">Instruccions de maquetació per als enllaços de referència</message>
 	<message key="manager.setup.restrictArticleAccess">Els usuaris/àries han d’estar registrats i han d’haver iniciat la sessió per poder visualitzar els continguts d’accés lliure.</message>
 	<message key="manager.setup.restrictSiteAccess">Els usuaris/àries han d’estar registrats i han d’haver iniciat la sessió per poder visualitzar el lloc de la revista.</message>
 	<message key="manager.setup.reviewGuidelines">Directrius de revisió</message>
@@ -511,7 +507,6 @@
 	<message key="plugins.importexport.common.cliError">ERROR:</message>
 	<message key="manager.setup.masthead">Capçalera</message>
 	<message key="manager.setup.editorialTeam">Equip editorial</message>
-	<message key="manager.setup.editorialTeam.description">Llista els editors/es, els directors/es de gestió i les altres persones associades amb la revista.</message>
 	<message key="manager.setup.homepageContent">Contingut de la pàgina d'inici de la revista</message>
 	<message key="manager.setup.homepageContentDescription">La pàgina d'inici de la revista consta dels enllaços de navegació per defecte. S'hi pot afegir contingut addicional mitjançant una o totes les opcions següents, que apareixeran en l'ordre mostrat.</message>
 	<message key="manager.setup.layout">Disseny de la revista</message>
@@ -541,7 +536,6 @@
 	<message key="manager.setup.lockssTitle">LOCKSS</message>
 	<message key="manager.setup.clockssLicenseLabel">Descripció de la llicència CLOCKSS</message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.subscriptionPolicies.expiryReminderAfterMonths1">Notificar els subscriptors/es per correu electrònic</message>
 	<message key="manager.subscriptionPolicies.expiryReminderAfterMonths2">mes(os) després del venciment de la subscripció</message>
 	<message key="manager.subscriptionPolicies.expiryReminderBeforeMonths1">Notificar els subscriptors/es per correu electrònic</message>
@@ -561,7 +555,6 @@
 	<message key="plugins.importexport.common.export.representations">Galerades</message>
 	<message key="manager.setup.includeCreativeCommons">Les revistes que ofereixen accés obert immediat o retardat han d'incloure una llicència Creative Commons en el moment adequat amb tot el treball publicat.</message>
 	<message key="manager.setup.journalSummary">Índex de la revista</message>
-	<message key="manager.setup.journalSummary.description">Una breu descripció de la revista per mostrar-se en el llistat de revistes.</message>
 	<message key="manager.setup.journalAbout">Sobre la revista</message>
 	<message key="manager.setup.journalAbout.description">Inclogui qualsevol informació sobre la revista que pugui ser d'interès per a lectors/es, autors/es o revisors/es, com per exemple: política d'accés obert, focus i àmbit de la revista, avís de drets d'autor, divulgació del patrocini, història de la revista, declaració de privacitat o si està inclosa en algun sistema d'arxius LOCKSS o CLOCKSS.</message>
 	<message key="manager.setup.favicon">Icona web de la revista</message>

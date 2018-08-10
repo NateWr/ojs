@@ -32,7 +32,7 @@
 			</div>
 			<br />
 		{/if}
-	
+
 		<h3>{translate key="manager.statistics.statistics"}</h3>
 		<p>{translate key="manager.statistics.statistics.description"}</p>
 		<div id="selectSections">
@@ -52,7 +52,7 @@
 		</div>
 	</form>
 	<br/>
-	
+
 	<script type="text/javascript">
 		$(function() {ldelim}
 			// Attach the form handler.
@@ -68,7 +68,7 @@
 					<h4><a class="action" href="{url statisticsYear=$statisticsYear-1}">{translate key="navigation.previousPage"}</a>&nbsp;{$statisticsYear|escape}&nbsp;<a class="action" href="{url statisticsYear=$statisticsYear+1}">{translate key="navigation.nextPage"}</a></h4>
 				</td>
 			</tr>
-		
+
 			<tr valign="top">
 		<td class="label"><input type="checkbox" id="statNumPublishedIssues" name="statNumPublishedIssues" {if $statNumPublishedIssues}checked="checked" {/if}/><label for="statNumPublishedIssues">{translate key="manager.statistics.statistics.numIssues"}</label></td>
 		<td colspan="2" class="value">{$issueStatistics.numPublishedIssues}</td>
@@ -117,8 +117,8 @@
 		<td class="label"><input type="checkbox" id="statRegisteredReaders" name="statRegisteredReaders" {if $statRegisteredReaders}checked="checked" {/if}/><label for="statRegisteredReaders">{translate key="manager.statistics.statistics.registeredReaders"}</label></td>
 				<td colspan="2" class="value">{translate key="manager.statistics.statistics.totalNewValue" numTotal=$allUserStatistics.reader|default:"0" numNew=$userStatistics.reader|default:"0"}</td>
 			</tr>
-		
-			{if $currentJournal->getSetting('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION}
+
+			{if $currentJournal->getData('publishingMode') == $smarty.const.PUBLISHING_MODE_SUBSCRIPTION}
 		<tr>
 					<td colspan="3" class="label"><input type="checkbox" id="statSubscriptions" name="statSubscriptions" {if $statSubscriptions}checked="checked" {/if}/><label for="statSubscriptions">{translate key="manager.statistics.statistics.subscriptions"}</label></td>
 				</tr>
@@ -129,15 +129,14 @@
 				</tr>
 				{/foreach}
 			{/if}
-		
+
 	<tr>
 		<td colspan="3" class="label"><input type="checkbox" id="statViews" name="statViews" {if $statViews}checked="checked" {/if}/><label for="statViews">{translate key="manager.statistics.statistics.articleViews"}</label></td>
 			</tr>
 		</table>
 		<p>{translate key="manager.statistics.statistics.note"}</p>
-		
+
 		{translate key="manager.statistics.statistics.makePublic"}<br/>
 		<input type="submit" class="button defaultButton" value="{translate key="common.record"}"/>
 	</form>
 </div>
-

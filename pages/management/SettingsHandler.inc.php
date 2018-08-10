@@ -109,7 +109,7 @@ class SettingsHandler extends ManagementHandler {
 		$templateMgr = TemplateManager::getManager($request);
 		$this->setupTemplate($request);
 		$journal = $request->getJournal();
-		$templateMgr->assign('enableAnnouncements', $journal->getSetting('enableAnnouncements'));
+		$templateMgr->assign('enableAnnouncements', $journal->getData('enableAnnouncements'));
 		$templateMgr->display('management/settings/website.tpl');
 	}
 

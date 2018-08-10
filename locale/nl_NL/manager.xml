@@ -114,8 +114,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Om op te nemen in Over dit Tijdschrift)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Verplicht auteurs een verklaring omtrent  strijdige belangen in te dienen met hun inzending.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Verplicht reviewers een verklaring inzake strijdige belangen in te dienen met iedere review die ze insturen.</message>
-	<message key="manager.setup.copyeditInstructions">Instructies voor tekstredactie</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Instructies voor de tekstredactie worden in de inzendings-redactie fase beschikbaar gesteld aan de tekstredacteurs, auteurs en sectieredacteurs. Zie hieronder voor een set voorbeeldinstructies in HTML. Deze kunnen op ieder gewenst moment door de tijdschriftbeheerder gewijzigd of vervangen worden (in HTML of gewone tekst).</message>
 	<message key="manager.setup.copyrightNotice">Auteursrecht verklaring</message>
 	<message key="manager.setup.coverage">Bereik</message>
 	<message key="manager.setup.coverageDescription">Verwijst naar geo-spatiale locatie, chronologische of historische spreiding en/of steekproef-karakteristiek van het onderzoek.</message>
@@ -223,15 +221,13 @@
 	<message key="manager.setup.printIssn">ISSN gedrukte versie</message>
 	<message key="manager.setup.proofingInstructions">Instructies voor proeflezen</message>
 	<message key="manager.setup.proofingInstructionsDescription">De instructies voor proeflezen worden beschikbaar gesteld aan proeflezers, auteurs, opmaakredacteuren en sectieredacteuren tijdens de inzendingsbewerking-fase. Hieronder een standaard set instructies in HTML, die door de tijdschriftbeheerder op ieder moment veranderd of vervangen kan worden  (in HTML of tekst).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Lever instructies aan opmaakredacteuren.</message>
 	<message key="manager.setup.publicationSchedule">Publicatieschema</message>
 	<message key="manager.setup.publicationScheduleDescription">Artikelen kunnen collectief gepubliceerd worden als onderdeel van een nummer met een eigen inhoudsopgave. Het is ook mogelijk om artikelen te publiceren zodra ze gereed zijn door ze toe te voegen aan de inhoudsopgave van het "actuele" volume. Geef lezers in Over dit tijdschrift inzicht in het systeem dat door dit tijdschrift gebruikt wordt en in de verwachte verschijningsfrequentie.</message>
 	<message key="manager.setup.publicationScheduling">Publicatieplanning</message>
 	<message key="manager.setup.publicIdentifier">Identificatie van tijdschriftinhoud</message>
 	<message key="manager.setup.publisher">Uitgever</message>
-	<message key="manager.setup.publisherDescription">De naam van de organisatie die het tijdschrift uitgeeft wordt getoond bij Over dit tijdschrift.</message>
+	<message key="manager.setup.publishingDescription">De naam van de organisatie die het tijdschrift uitgeeft wordt getoond bij Over dit tijdschrift.</message>
 	<message key="manager.setup.referenceLinking">Linken van referenties</message>
-	<message key="manager.setup.refLinkInstructions.description">Opmaakinstructies voor het linken van referenties</message>
 	<message key="manager.setup.restrictArticleAccess">Gebruikers moeten geregistreerd en ingelogd zijn om open access materiaal te bekijken.</message>
 	<message key="manager.setup.restrictSiteAccess">Gebruikers moeten geregistreerd en ingelogd zijn om het tijdschrift te bekijken.</message>
 	<message key="manager.setup.reviewGuidelines">Review richtlijnen</message>

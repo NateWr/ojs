@@ -76,7 +76,7 @@ class OJSSwordDeposit {
 	 * Register the article's metadata with the SWORD deposit.
 	 */
 	function setMetadata() {
-		$this->package->setCustodian($this->journal->getSetting('contactName'));
+		$this->package->setCustodian($this->journal->getData('contactName'));
 		$this->package->setTitle(html_entity_decode($this->article->getTitle($this->journal->getPrimaryLocale()), ENT_QUOTES, 'UTF-8'));
 		$this->package->setAbstract(html_entity_decode(strip_tags($this->article->getAbstract($this->journal->getPrimaryLocale())), ENT_QUOTES, 'UTF-8'));
 		$this->package->setType($this->section->getIdentifyType($this->journal->getPrimaryLocale()));

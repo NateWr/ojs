@@ -29,19 +29,19 @@ class InformationHandler extends Handler {
 
 		switch(array_shift($args)) {
 			case 'readers':
-				$content = $journal->getLocalizedSetting('readerInformation');
+				$content = $journal->getLocalizedData('readerInformation');
 				$pageTitle = 'navigation.infoForReaders.long';
 				break;
 			case 'authors':
-				$content = $journal->getLocalizedSetting('authorInformation');
+				$content = $journal->getLocalizedData('authorInformation');
 				$pageTitle = 'navigation.infoForAuthors.long';
 				break;
 			case 'librarians':
-				$content = $journal->getLocalizedSetting('librarianInformation');
+				$content = $journal->getLocalizedData('librarianInformation');
 				$pageTitle = 'navigation.infoForLibrarians.long';
 				break;
 			case 'competingInterestGuidelines':
-				$content = $journal->getLocalizedSetting('competingInterestsPolicy');
+				$content = $journal->getLocalizedData('competingInterestsPolicy');
 				$pageTitle = 'navigation.competingInterestGuidelines';
 				break;
 			case 'sampleCopyrightWording':
@@ -85,7 +85,7 @@ class InformationHandler extends Handler {
 	 */
 	function setupTemplate($request) {
 		parent::setupTemplate($request);
-		if (!$request->getJournal()->getSetting('restrictSiteAccess')) {
+		if (!$request->getJournal()->getData('restrictSiteAccess')) {
 			$templateMgr = TemplateManager::getManager($request);
 			$templateMgr->setCacheability(CACHEABILITY_PUBLIC);
 		}

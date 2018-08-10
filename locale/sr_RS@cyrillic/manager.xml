@@ -50,7 +50,6 @@
 	<message key="manager.setup">Подешавања часописа</message>
 	<message key="manager.setup.masthead">Управа</message>
 	<message key="manager.setup.editorialTeam">Часопис уређују</message>
-	<message key="manager.setup.editorialTeam.description">Наведите уреднике, директоре секретаре и остале људе који су укључени у рад часописа.</message>
 	<message key="manager.setup.homepageContent">Садржај почетне стране часописа</message>
 	<message key="manager.setup.layout">Изглед часописа</message>
 	<message key="manager.setup.useStyleSheet">Style sheet часописа</message>
@@ -69,8 +68,6 @@
 	<message key="manager.setup.announcementsIntroduction">Додатне информације</message>
 	<message key="manager.setup.appearInAboutJournal">(Да се прикаже у "О часопису")</message>
 	<message key="manager.setup.history">Историја часописа</message>
-	<message key="manager.setup.copyeditInstructions">Инструкције за коректуру</message>
-	<message key="manager.setup.copyrightNotice">Коректорске напомене</message>
 	<message key="manager.setup.coverage">Покривеност</message>
 	<message key="manager.setup.currentIssue">Тренутни број</message>
 	<message key="manager.setup.customizingTheLook">5. корак Прилагођавање изгледа</message>
@@ -371,11 +368,9 @@
 	<message key="manager.setup.journalAbbreviation">Скраћеница часописа</message>
 	<message key="manager.setup.journalArchiving">Архивирање часописа</message>
 	<message key="manager.setup.journalSummary">Сажетак часописа</message>
-	<message key="manager.setup.journalSummary.description">Кратак опис вашег часописа који може бити објављен у листи часописа.</message>
 	<message key="manager.setup.journalAbout">О часопису</message>
 	<message key="manager.setup.alternateHeaderDescription">Могуће је унети HTML верзију уместо наслова и лого фајла за заглавље сајта, у кутију за текст испод. Уколико то не намервате учините оставите ту кутију за текст празну.</message>
 	<message key="manager.setup.historyDescription">Текст ће се појавити у страници О часопису и он треба да опише промене у наслову, редкацијски одбор и друге ставке релевантне за историју објављивања часописа.</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Инструкције за коректуру су намењене Коректорима, ауторима, уренциима секција у фази уређивања пријављеног чланка. Доле је понуђен почетни низ могућности у HTML који може бити модификован или замењен од стране Управника часописа у било које време (као HTML или као обичан текст).</message>
 	<message key="manager.setup.forAuthorsToIndexTheirWorkDescription"><![CDATA[OJS је усаглашен са <a href="http://www.openarchives.org/" target="_blank">Open Archives Initiative</a> протоколом за сакупљање метаподатака што је нови стандард за обезбеђивање добро индексираног приступа електронским ресурсима на глобалном нивоу. Уатори ће користити сличан шаблон за уписивање метаподатака о својим пријављеним чланцима. Управник часописа ће одабрати категорије за индексирање и представити их ауторима како би им помогао у току индексирања.]]></message>
 	<message key="manager.setup.journalAbout.description">Упишите информације које могу бити инетерсантне за ваше читаоце, ауторе и рецензенте. Ту можете уписати информације о политици отвореног приступа, фокуса и опсега часописа, ауторска права, спонзорства, историју часописа, изјаву о приватности и укљученост у неки од LOCKSS или CLOCKSS система за архивирање.</message>
 	<message key="manager.setup.favicon">Favicon часописа</message>
@@ -443,7 +438,6 @@
 	<message key="manager.setup.clockssLicenseLabel">Опис CLOCKSS лиценце</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Упишите се у CLOCKSS услугу преко <a href="http://clockss.org/" target="_blank">the CLOCKSS сајта</a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.setup.look">Изглед</message>
 	<message key="manager.setup.look.description">Заглавље почетне стране, садржај, заглавље часописа, подножје, навигацијска трака и страница стила.</message>
 	<message key="manager.setup.management">Управљање</message>
@@ -471,15 +465,13 @@
 	<message key="manager.setup.printIssn">Штампани ISSN</message>
 	<message key="manager.setup.proofingInstructions">Финалне инструкције</message>
 	<message key="manager.setup.proofingInstructionsDescription">Инструкције за финалну контролу ће бити доступне финалним контролорима, ауторима, Графичким уредницима, Уредницима секција у фази уређивања пријављеног чланка. Доле можете видети почетни низ инструкција у HTML које Управник часописа може изменити или заменити у било које време (у HTML или у чистом тексту).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Дајте инструкције Графичким уредницима.</message>
 	<message key="manager.setup.publicationSchedule">Планирање објављивања</message>
 	<message key="manager.setup.publicationScheduleDescription">Ставке часописа могу бити објављене колективно као део броја са својим Садржајем. Иначе, појединачне ставке могу бити објављене чим буду спремне за објављивање додавањем у тренутни број и њехов Садржај. Ставите у страни О часопису информацију који ће систем часопис имати у објављивању те колико често ће излазити.</message>
 	<message key="manager.setup.publicationScheduling">Планирање објављивања</message>
 	<message key="manager.setup.publicIdentifier">Идентификација садржаја часописа</message>
 	<message key="manager.setup.publisher">Издвач</message>
-	<message key="manager.setup.publisherDescription">Име организације која објављује часопис може бити укључено у метаподатке које дајете трећим лицима за архивирање.</message>
+	<message key="manager.setup.publishingDescription">Име организације која објављује часопис може бити укључено у метаподатке које дајете трећим лицима за архивирање.</message>
 	<message key="manager.setup.referenceLinking">Повезивање референци</message>
-	<message key="manager.setup.refLinkInstructions.description">Инструкције за изглед повезивања референци</message>
 	<message key="manager.setup.reviewGuidelines">Упутство за рецензију</message>
 	<message key="manager.setup.reviewGuidelinesDescription">Дајте критерије рецензентима како би судили о томе да ли пријављени чаланак одговара за објављивање. Дајте им инструкције које ће их водити да дају квалитетну рецензију. Рецензенти ће имати прилику да вам дају своје коментаре намењене аутору и уреднику као и посебне коментаре који су намењени само уреднику.</message>
 	<message key="manager.setup.reviewOptions">Опције за рецензију</message>

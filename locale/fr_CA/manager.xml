@@ -113,8 +113,6 @@
 	<message key="manager.setup.appearInAboutJournal">(À paraître dans À propos de la revue)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Les auteurs soumissionnaires doivent déposer une déclaration de conflits d'intérêts (CI) avec leur soumission.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Les évaluateurs doivent déposer une déclaration de CI avec chaque évaluation par les pairs qu'ils soumettent.</message>
-	<message key="manager.setup.copyeditInstructions">Directives pour la révision</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Les directives pour la révision seront mises à la disposition des Réviseurs, Auteurs et Rédacteurs de rubrique à l'étape de la révision de la soumission. Vous trouverez ci-dessous un ensemble d'instructions par défaut en HTML, qui peuvent être modifiées ou remplacées par le Directeur de la revue en tout temps (en HTML ou texte brut).</message>
 	<message key="manager.setup.copyrightNotice">Mention de droit d'auteur</message>
 	<message key="manager.setup.coverage">Couverture</message>
 	<message key="manager.setup.coverageDescription">Fait référence à l'emplacement géo-spatial, à la couverture historique ou chronologique, ou à des caractéristiques de l'échantillon de recherche.</message>
@@ -222,15 +220,13 @@
 	<message key="manager.setup.printIssn">ISSN imprimé</message>
 	<message key="manager.setup.proofingInstructions">Directives pour la correction d'épreuves</message>
 	<message key="manager.setup.proofingInstructionsDescription">Les directives pour la correction d'épreuves seront mises à la disposition des Correcteurs d'épreuves, Auteurs, Responsable de la mise en page, et Rédacteurs de rubrique à l'étape de la Révision de la soumission. Vous trouverez ci-dessous un ensemble de directives par défaut en HTML, qui peuvent être modifiées ou remplacées par le Directeur de la revue en tout temps (en HTML ou texte brut).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Fournir des directives aux Responsables de la mise en page.</message>
 	<message key="manager.setup.publicationSchedule">Calendrier de publication</message>
 	<message key="manager.setup.publicationScheduleDescription">Les articles de la revue peuvent être publiés ensemble, comme partie  d'un numéro avec son propre sommaire. Il est aussi possible de publier des articles individuels dès qu'ils sont prêts, en les ajoutant au sommaire d'un numéro courant. Il convient de fournir aux lecteurs, dans la section "À propos de la revue", des informations quant à la manière de procéder de la revue et sur la périodicité de publication prévue.</message>
 	<message key="manager.setup.publicationScheduling">Planification du calendrier de publication</message>
 	<message key="manager.setup.publicIdentifier">Identification du contenu de la revue</message>
 	<message key="manager.setup.publisher">Éditeur</message>
-	<message key="manager.setup.publisherDescription">Le nom de l'organisation qui publie la revue apparaîtra dans À propos de la revue.</message>
+	<message key="manager.setup.publishingDescription">Le nom de l'organisation qui publie la revue apparaîtra dans À propos de la revue.</message>
 	<message key="manager.setup.referenceLinking">Lien de référence</message>
-	<message key="manager.setup.refLinkInstructions.description">Directives pour la mise en page des liens de référence</message>
 	<message key="manager.setup.restrictArticleAccess">Les utilisateurs doivent être inscrits et se connecter pour afficher le contenu en accès libre.</message>
 	<message key="manager.setup.restrictSiteAccess">Les utilisateurs doivent être inscrits et se connecter pour afficher le site de la revue.</message>
 	<message key="manager.setup.reviewGuidelines">Directives pour l'évaluation</message>
@@ -510,7 +506,6 @@ Il y a des cas où seulement une seule statistique d'utilisation doit être util
 	<message key="manager.website.archiving">Archivage</message>
 	<message key="manager.setup.masthead">Bloc générique</message>
 	<message key="manager.setup.editorialTeam">Comité éditorial</message>
-	<message key="manager.setup.editorialTeam.description">Inscrire la liste de personnes impliquées dans la revue (directeur, rédacteurs et autres).</message>
 	<message key="manager.setup.homepageContent">Contenu de la page d'accueil de la revue</message>
 	<message key="manager.setup.homepageContentDescription">La page d'accueil de la revue consiste par défaut en liens pour la navigation. Des contenus additionnels peuvent être ajoutés en utilisant une ou toutes les options suivantes, qui apparaîtront dans l'ordre indiqué.</message>
 	<message key="manager.setup.layout">Mise en page de la revue</message>
@@ -521,7 +516,7 @@ Il y a des cas où seulement une seule statistique d'utilisation doit être util
 	<message key="grid.category.path">Chemin d'accès</message>
 	<message key="grid.action.addSection">Ajouter une section</message>
 	<message key="manager.setup.section.description">Les articles publiés dans une revue sont organisés en sections, généralement par thème ou par type de contenu (par exemple, articles de révision, recherche, etc.).</message>
-	<message key="settings.roles.gridDescription">Les rôles sont attribués aux utilisateurs de la revue afin de leur donner accès à différents niveaux d'autorisation et à différents flux de travail associés à la revue. 
+	<message key="settings.roles.gridDescription">Les rôles sont attribués aux utilisateurs de la revue afin de leur donner accès à différents niveaux d'autorisation et à différents flux de travail associés à la revue.
 Il existe cinq niveaux d'autorisation : Les Directeurs de revue ont accès à tout ce qui se trouve dans un journal (tous les contenus et les paramètres); Les Rédacteurs ont un accès complet à tout le contenu assigné; Les assistants de revue ont un accès limité aux seules soumissions qui leur ont été expressément attribuées par un éditeur; Les Évaluateurs peuvent voir et interagir avec les soumissions qui leur ont été assignés pour évaluation; Et les auteurs peuvent voir et interagir avec une quantité limitée d'informations en lien avec  leurs propres soumissions. En outre, il y a cinq différentes étapes auquelles les rôles peuvent avoir accès : soumission, évaluation interne, évaluation (review), édition (editorial) et production (production).</message>
 	<message key="manager.section.noSectionEditors"><![CDATA[*Aucun Rédacteur de rubrique n'a été désigné. Ajouter ce rôle à au moins un utilisateur via Administration > Paramètres > Rôles et utilisateurs.]]></message>
 	<message key="manager.setup.journalThumbnail.description">Un logo ou une image de la revue qui peut être utilisé dans des listes de revues.</message>
@@ -560,7 +555,6 @@ Il existe cinq niveaux d'autorisation : Les Directeurs de revue ont accès à to
 	<message key="plugins.importexport.common.export.representations">Épreuves</message>
 	<message key="plugins.importexport.common.status.markedRegistered">Marqué comme enregistré</message>
 	<message key="manager.setup.journalSummary">Présentation de la revue</message>
-	<message key="manager.setup.journalSummary.description">Une brève description de votre revue qui peut être présentée dans une liste de revues.</message>
 	<message key="manager.setup.journalAbout">À propos</message>
 	<message key="manager.setup.journalAbout.description">Inclure toute information sur votre revue qui pourrait intéresser les lecteurs, les auteurs ou les évaluateurs. Cela peut inclure votre politique de libre accès, les champs d'intérêt, les questions entourant les droits d'auteur, la divulgation des commandites, l'historique de la revue, une déclaration de confidentialité et l'inclusion dans n'importe quel système d'archives LOCKSS ou CLOCKSS.</message>
 	<message key="manager.setup.favicon">Favicon de la revue</message>
@@ -569,8 +563,6 @@ Il existe cinq niveaux d'autorisation : Les Directeurs de revue ont accès à to
 	<message key="manager.setup.clockssLicenseLabel">Description de la licence CLOCKSS</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Inscrivez-vous au service CLOCKSS en visitant le site <a href="http://clockss.org/" target="_blank"> CLOCKSS </a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
-	<message key="manager.statistics.reports.defaultReport.issuePageViews">Numéro Table des matières Pages vues</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionExpiryReminderBeforeMonthsValid">Utilisez la boîte à cocher fournie.</message>
 	<message key="manager.subscriptionPolicies.expiryReminderAfterMonths1">Avertir les abonnés par courriel</message>
 	<message key="manager.subscriptionPolicies.expiryReminderAfterMonths2">mois après  la date d'échéance de l'abonnement.</message>

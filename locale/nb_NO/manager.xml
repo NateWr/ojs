@@ -81,8 +81,6 @@
 	<message key="manager.setup.contributors">Andre støttespillere</message>
 	<message key="manager.setup.contributorsDescription">Ytterligere virksomheter eller organisasjoner som gir økonomisk eller annen støtte til tidsskriftet vil bli vist i Om tidsskriftet, og kan følges opp med en takksigelse.</message>
 	<message key="manager.setup.copyediting">Manusredaktører</message>
-	<message key="manager.setup.copyeditInstructions">Instruks for manusredigering</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Instruksen for manusredigering vil bli gjort tilgjengelig for manusredaktører, forfattere, og seksjonsredaktører i manusredigeringsstadiet. Nedenfor finner du standardinstruksjoner (i HTML). Disse kan omgjøres eller erstattes av redaksjonslederen når som helst (i HTML eller ren tekst).</message>
 	<message key="manager.setup.copyrightNotice">Erklæring om copyright</message>
 	<message key="manager.setup.coverage">Dekning</message>
 	<message key="manager.setup.coverageDescription">Viser til dekning i både tid og rom; geografisk, topologisk, kronologisk eller historisk dekning, og/eller karakteristika ved materialet/utvalget.</message>
@@ -226,7 +224,7 @@
 	<message key="manager.setup.publicationScheduling">Publiseringsplanlegging</message>
 	<message key="manager.setup.publicIdentifier">Identifikasjon av tidsskriftinnhold</message>
 	<message key="manager.setup.publisher">Utgiver</message>
-	<message key="manager.setup.publisherDescription">Navnet til organisasjonen som publiserer tidsskriftet vil bli vist i 'Om' tidsskriftet.</message>
+	<message key="manager.setup.publishingDescription">Navnet til organisasjonen som publiserer tidsskriftet vil bli vist i 'Om' tidsskriftet.</message>
 	<message key="manager.setup.registerJournalForIndexing">Registrer tidsskriftet for indeksering (Metadata Harvesting)</message>
 	<message key="manager.setup.restrictArticleAccess">Brukere må logge inn for å se publiserte artikler i fulltekst.</message>
 	<message key="manager.setup.restrictSiteAccess">Brukere må logge inn for å se tidsskriftets nettsted.</message>
@@ -500,10 +498,8 @@
 	<message key="manager.setup.journalLogo.altText">Tidsskriftlogo</message>
 	<message key="manager.setup.journalTheme">Tidsskriftnettsidenes designtema.</message>
 	<message key="manager.setup.notifyAllAuthorsOnDecision">Når e-postfunksjonen 'Send beskjed til forfatter' brukes skal e-posten sendes til alle medforfattere, ikke bare til den forfatteren som sendte inn manuskriptet.</message>
-	<message key="manager.setup.provideRefLinkInstructions">Gi instruks for layoutredaktører</message>
 	<message key="manager.setup.publicationFormatNumber">Nummer</message>
 	<message key="manager.setup.referenceLinking">Aktive henvisningslenker</message>
-	<message key="manager.setup.refLinkInstructions.description">Layoutinstruks for aktive henvisningslenker</message>
 	<message key="manager.setup.reviewerDatabaseLink">Database over potensielle fagkonsulenter</message>
 	<message key="manager.setup.reviewerDatabaseLink.desc">Legg til en lenke til en relevant og tilgjengelig litteraturdatabase på 'Velg fagkonsulent'-siden, for at databasen skal kunne brukes til å søke etter potensielle fagkonsulenter.</message>
 	<message key="manager.setup.reviewOptions.blindReview">Anonym fagvurdering</message>
@@ -612,7 +608,6 @@
 	<message key="manager.section.noSectionEditors"><![CDATA[Det er ikke oppnevnt en seksjonsredaktør. Tildel denne rollen til minst en bruker under Administrasjon > Innstillinger > Brukere &amp; roller først.]]></message>
 	<message key="manager.setup.masthead">Kolofon</message>
 	<message key="manager.setup.editorialTeam">Redaksjon</message>
-	<message key="manager.setup.editorialTeam.description">Opprett en liste over redaktører, redaksjonsledere  og andre personer tilknyttet tidsskriftet.</message>
 	<message key="manager.setup.homepageContent">Innhold på hjemmesiden</message>
 	<message key="manager.setup.homepageContentDescription">Som standard består hjemmesiden av navigasjonslenker. Ytterligere hjemmesideinnhold kan legges til ved å bruke en eller flere av følgende valgmuligheter, som vil bli vist i den viste rekkefølgen.</message>
 	<message key="manager.setup.layout">Tidsskriftets sideoppsett</message>
@@ -622,7 +617,6 @@
 	<message key="manager.setup.focusAndScope.description">Beskriv til forfattere, lesere og bibliotekarer spennvidden på artikler og annet innhold som tidsskriftet vil publisere.</message>
 	<message key="manager.setup.form.issnInvalid">Angitt ISSN er ugyldig.</message>
 	<message key="manager.setup.journalSummary">Tidsskriftsbeskrivelse</message>
-	<message key="manager.setup.journalSummary.description">En kort beskrivelse av tidsskriftet som kan vises i listen over tidsskrift.</message>
 	<message key="manager.setup.journalAbout">Om tidsskriftet</message>
 	<message key="manager.setup.journalAbout.description">Inkluder informasjon om tidsskriftet som kan være av interesse for lesere, forfattere eller fagfeller. Dette kan inkludere retningslinjer for open access, hovedfokus og spennvidde for tidsskriftet, opphavsrettsnotis, informasjon om sponsorer, tidsskriftets historie, erklæring om personopplysninger og arkivering i LOCKSS eller CLOCKSS arkivsystem.</message>
 	<message key="manager.setup.journalThumbnail">Tidsskriftets miniatyrbilde</message>
@@ -637,7 +631,6 @@
 	<message key="manager.setup.clockssLicenseLabel">Beskrivelse av CLOCKSS-lisens</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Meld deg på CLOCKSS-tjenesten ved å besøke nettsiden: <a href="http://clockss.org/" target="_blank"></a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.distribution.access">Tilgang</message>
 	<message key="grid.category.path">Sti</message>
 	<message key="grid.action.addSection">Legg til seksjon</message>

@@ -134,8 +134,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">لازم است داوران بیانیه تضاد منافع برای مقاله‌ای که داوری می‌کنند را اعلام کنند.</message>
 	<message key="manager.setup.history">تاریخچه مجله</message>
 	<message key="manager.setup.historyDescription">این متن در قسمت درباره مجله ظاهر می‌شود و از آن می‌توان برای توصیف تغییرات در عنوان، تیم سردبیری و دیگر موارد تغییر مربوط به تاریخچه انتشاراتی مجله استفاده کرد.</message>
-	<message key="manager.setup.copyeditInstructions">دستورالعمل ویراستاری</message>
-	<message key="manager.setup.copyeditInstructionsDescription">دستورالعمل ویراستاری در معرض دید ویراستاران، نویسندگان، و دبیران در هنگام ویراستاری مقاله ارسالی قرار می‌گیرد . متن زیر یک دستورالعمل ویراستاری پیشنهادی به‌صورت  HTML است. می‌توانید هم اکنون و یا بعداً آن را به دلخواه تغییر دهید.</message>
 	<message key="manager.setup.copyrightNotice">متن حق نشر</message>
 	<message key="manager.setup.coverage">پوشش</message>
 	<message key="manager.setup.coverageDescription">پوشش جغرافیائی ، زمانی یا تاریخی و یا ویژگی‌های نمونه مورد پژوهش</message>
@@ -192,7 +190,6 @@
 	<message key="manager.setup.journalAbbreviation">نام اختصاری مجله</message>
 	<message key="manager.setup.journalArchiving">بایگانی مجله</message>
 	<message key="manager.setup.journalSummary">توضیح مختصر درباره مجله</message>
-	<message key="manager.setup.journalSummary.description">شرح مختصری درباره مجله بنویسید تا در لیست مجلات نمایش داده شود.</message>
 	<message key="manager.setup.journalAbout">درباره مجله</message>
 	<message key="manager.setup.journalAbout.description">وارد کردن اطلاعاتی درباره مجله که ممکن است مورد علاقه‌ی خوانندگان و داوران باشد. اطلاعات می‌تواند شامل سیاست‌های دسترسی آزاد ، زمینه مطالعاتی مجله، حق نشر، حامیان مجله، پیشینه‌ی مجله؛ بیانیه حفظ حریمی شخصی و ... باشد.</message>
 	<message key="manager.setup.favicon">نماد سایت (FAVICON)</message>
@@ -239,7 +236,6 @@
 	<message key="manager.setup.clockssLicenseLabel">توضیح مجوز CLOCKSS</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[برای ثبت‌نام در سرویس CLOCKSS به <a href="http://clockss.org/" target="_blank">وب‌سایت CLOCKSS</a> مراجعه کنید.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">شاپا </message>
 	<message key="manager.setup.look">شکل ظاهری</message>
 	<message key="manager.setup.look.description">سرتیتر صفحه اصلی، محتوی، سرتیتر مجله، پاورقی، منوهای گشت‌وگذار و استیل شیت</message>
 	<message key="manager.setup.management">مدیریت</message>
@@ -265,15 +261,13 @@
 	<message key="manager.setup.printIssn">شاپا چاپی</message>
 	<message key="manager.setup.proofingInstructions">دستورالعمل بررسی نهائی</message>
 	<message key="manager.setup.proofingInstructionsDescription">دستورالعمل بازبینی نهائی در دسترس بازبینان نهائی ، نویسندگان ، صفحه‌آراها ، و دبیران در مرحله ویراستاری مقاله ارسالی قرار می‌گیرد. متن زیر یک دستورالعمل بازبینی نهائی پیشنهادی به صورت HTML است که می‌توانید به دلخواه آن را هم اکنون و یا بعداً تغییر دهید.</message>
-	<message key="manager.setup.provideRefLinkInstructions">دستورالعمل برای صفحه‌آرا</message>
 	<message key="manager.setup.publicationSchedule">زمان‌بندی چاپ</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[مقالات را می‌توان در قالب شماره مجله همراه با فهرست مقالات چاپ کرد. همچنین مقالات را به مجرد آماده شدن می‌توان از طریق افزودن آن‌ها به دوره جاری چاپ کرد. متنی تهیه کنید که در آن در مورد نحوه چاپ مجله و تعدد چاپ آن صحبت شده باشد. این متن در قسمت درباره مجله خواهد آمد.]]></message>
 	<message key="manager.setup.publicationScheduling">زمان‌بندی کردن چاپ</message>
 	<message key="manager.setup.publicIdentifier">شناسایی محتوای مجله</message>
 	<message key="manager.setup.publisher">ناشر</message>
-	<message key="manager.setup.publisherDescription">نام ناشر در صفحه «درباره مجله» خواهد آمد.</message>
+	<message key="manager.setup.publishingDescription">نام ناشر در صفحه «درباره مجله» خواهد آمد.</message>
 	<message key="manager.setup.referenceLinking">لینک به مراجع</message>
-	<message key="manager.setup.refLinkInstructions.description">دستورالعمل لینک به مراجع برای صفحه‌آرا</message>
 	<message key="manager.setup.restrictArticleAccess">برای دیدن متن کامل مقالات باید ثبت‌نام کنید</message>
 	<message key="manager.setup.restrictSiteAccess">برای دیدن سایت مجله باید ثبت‌نام کنید</message>
 	<message key="manager.setup.reviewGuidelines">راهنمای داوری</message>

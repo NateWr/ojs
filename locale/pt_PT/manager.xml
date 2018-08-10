@@ -113,8 +113,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Para inclusão na secção Sobre a Revista)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Exigir dos Autores o registo de Conflito de Interesses (CI) junto com a submissão.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Exigir dos revisores registo de Conflito de Interesses em cada revisão realizada.</message>
-	<message key="manager.setup.copyeditInstructions">Instruções de Edição de Texto</message>
-	<message key="manager.setup.copyeditInstructionsDescription">As Instruções de Edição de Texto estarão disponíveis aos Editores de Texto, Autores e Editores de Secção, no estágio de Edição de Submissão. A seguir apresenta-se um padrão de instruções em HTML, que pode ser modificado ou substituído pelo Director a qualquer momento (em HTML ou texto simples).</message>
 	<message key="manager.setup.copyrightNotice">Declaração de Direitos de Autor</message>
 	<message key="manager.setup.coverage">Cobertura</message>
 	<message key="manager.setup.coverageDescription">Referente à cobertura geo-espacial, cronológica ou histórica, e/ou características da pesquisa.</message>
@@ -221,15 +219,13 @@
 	<message key="manager.setup.printIssn">ISSN (Impresso)</message>
 	<message key="manager.setup.proofingInstructions">Instruções de Leitura de Provas</message>
 	<message key="manager.setup.proofingInstructionsDescription">As Instruções de Leitura de Provas estarão disponíveis para Leitores de Prova, Autores, Editores de Layout e Editores de Secção no estágio de Edição de Submissão. A seguir está um padrão de instruções em HTML, que pode ser modificado ou substituído pelo Director a qualquer tempo (em HTML ou texto simples).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Oferecer instruções aos Editores de Layout</message>
 	<message key="manager.setup.publicationSchedule">Formato de Publicação</message>
 	<message key="manager.setup.publicationScheduleDescription">Os artigos da revista podem ser publicados colectivamente quando o sumário estiver pronto, ou individualmente, adicionando-se os mesmos ao sumário actual quando prontos. Informe os leitores, na secção Sobre a Revista, sobre o formato adoptado pela revista e a periodicidade de publicação.</message>
 	<message key="manager.setup.publicationScheduling">Formato de Publicação</message>
 	<message key="manager.setup.publicIdentifier">Identificação do Conteúdo da Revista</message>
 	<message key="manager.setup.publisher">Editora</message>
-	<message key="manager.setup.publisherDescription">O nome da editora aparecerá na secção Sobre a Revista.</message>
+	<message key="manager.setup.publishingDescription">O nome da editora aparecerá na secção Sobre a Revista.</message>
 	<message key="manager.setup.referenceLinking">Links para Referências</message>
-	<message key="manager.setup.refLinkInstructions.description">Instruções de Layout para Links de Referências</message>
 	<message key="manager.setup.restrictArticleAccess">Utilizadores devem se registar e aceder ao sistema para visualizar conteúdo de acesso livre.</message>
 	<message key="manager.setup.restrictSiteAccess">Utilizadores devem se registar e aceder ao sistema para visualizar o conteúdo da revista.</message>
 	<message key="manager.setup.reviewGuidelines">Instruções para Revisão</message>
@@ -508,7 +504,6 @@
 	<message key="manager.section.noSectionEditors"><![CDATA[Ainda não existem Editores de Secção. Associe este papel a pelo menos um utilizador através da Administração>Configurações> Utilizadores& amp; Papéis em primeiro lugar.]]></message>
 	<message key="manager.setup.masthead">Título</message>
 	<message key="manager.setup.editorialTeam">Equipa Editorial</message>
-	<message key="manager.setup.editorialTeam.description">Lista de editores, diretores e outras pessoas associados à revista.</message>
 	<message key="manager.setup.homepageContent">Conteúdo da HomePage da Revista</message>
 	<message key="manager.setup.homepageContentDescription">A página inicial da revista consiste em links de navegação por padrão. O conteúdo adicional da página inicial pode ser anexado usando uma ou todas as seguintes opções, que aparecerão na ordem mostrada.</message>
 	<message key="manager.setup.layout">Layout Revista</message>
@@ -519,7 +514,6 @@
 	<message key="manager.setup.form.issnInvalid">O ISSN indicado não é válido.</message>
 	<message key="manager.setup.includeCreativeCommons">Para revistas que oferecem acesso aberto imediato ou adiado, inclua uma licença Creative Commons com todos os trabalhos publicados no momento apropriado.</message>
 	<message key="manager.setup.journalSummary">Sumário da Revista</message>
-	<message key="manager.setup.journalSummary.description">Uma breve descrição da revista que pode ser exibida em listas de revistas.</message>
 	<message key="manager.setup.journalAbout">Sobre a Revista</message>
 	<message key="manager.setup.journalAbout.description">Incluir qualquer informação sobre a revista que possa ser de interesse para leitores, autores ou revisores. Pode ser a política de acesso aberto, o enfoque da revista, aviso de direitos de autor, divulgação e patrocínio, histórico da revista, uma declaração de privacidade e inclusão em qualquer sistema de arquivamento LOCKSS ou CLOCKSS.</message>
 	<message key="manager.setup.favicon">Favicon da Revista</message>
@@ -572,7 +566,6 @@
 	<message key="manager.setup.lockssLicenseLabel">Descrição da licença LOCKSS</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Inscreva-se no serviço CLOCKSS visitando <a href="http://clockss.org/" target="_blank">o site CLOCKSS</a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.paymentTypes">Formas de Pagamento</message>
 	<message key="manager.setup.plnPluginEnable">Plugin PKP PN ativo</message>
 	<message key="subscriptionManager.subscription.confirmRemove">Deseja realmente apagar esta subscrição?</message>

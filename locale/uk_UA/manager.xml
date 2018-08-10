@@ -110,8 +110,6 @@
 	<message key="manager.setup">Налаштування журналу</message>
 	<message key="manager.setup.masthead">Вихідні данні</message>
 	<message key="manager.setup.editorialTeam">Редакційний штат</message>
-	<message key="manager.setup.editorialTeam.description">Список редакторів, керуючих директорів та інших осіб, пов'язаних з журналом.</message>
-	<message key="manager.setup.homepageContent">Контент головної сторінки журналу</message>
 	<message key="manager.setup.homepageContentDescription">Головна сторінка журналу за замовчуванням складається з навігаційних посилань. Додатковий контент на головній сторінці може бути доданий за допомогою одного або декількох наступних параметрів, що з'являться в показаному порядку.</message>
 	<message key="manager.setup.layout">Макет журналу</message>
 	<message key="manager.setup.useStyleSheet">Таблиця стилів</message>
@@ -136,8 +134,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Вимагати від рецензентів декларувати відсутність конфлікту інтересів щодо призначених їм на рецензування матеріалів.</message>
 	<message key="manager.setup.history">Історія журналу</message>
 	<message key="manager.setup.historyDescription">Цей текст з'явиться в розділі «Про журнал» на сайті, він може бути використаний для опису зміни назв журналу, складу редакції та іншої інформації, пов'язаної з історією журналу.</message>
-	<message key="manager.setup.copyeditInstructions">Керівництво з літературного редагування</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Керівництво з літературного редагування буде доступне літературним редакторам, авторам і редакторам розділів на етапі редагування матеріалу. Нижче наведено набір інструкцій за замовчуванням у форматі HTML, який може бути змінений або замінений менеджером журналу в будь-який час (в форматі HTML або як звичайний текст).</message>
 	<message key="manager.setup.copyrightNotice">Положення про авторські права</message>
 	<message key="manager.setup.coverage">Тематичне покриття</message>
 	<message key="manager.setup.coverageDescription">Геопросторове, хронологічне або історичне покриття та/або основні характеристики дослідження.</message>
@@ -194,7 +190,6 @@
 	<message key="manager.setup.journalAbbreviation">Абревіатура журналу</message>
 	<message key="manager.setup.journalArchiving">Архівування журналу</message>
 	<message key="manager.setup.journalSummary">Короткий опис журналу</message>
-	<message key="manager.setup.journalSummary.description">Короткий опис журналу, що відображатиметься в списку журналів.</message>
 	<message key="manager.setup.journalAbout">Про журнал</message>
 	<message key="manager.setup.journalAbout.description">Вкажіть основні відомості про журнал, що зацікавлять читачів, авторів або рецензентів. Це можуть бути положення про відкритий доступ, концепція журналу, умови передачі авторських прав, інформація про спонсорів, історія журналу, політика конфіденційності або відомості про включення матеріалів в архівну систему LOCKSS або CLOCKSS.</message>
 	<message key="manager.setup.favicon">Іконка журналу</message>
@@ -241,7 +236,6 @@
 	<message key="manager.setup.clockssLicenseLabel">Опис ліцензії CLOCKSS </message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Підпишіться на сервіс CLOCKSS, відвідавши <a href="http://clockss.org/" target="_blank">веб-сайт CLOCKSS</a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.setup.look">Вигляд</message>
 	<message key="manager.setup.look.description">Заголовок домашньої сторінки, зміст, заголовок журналу, підпис, навігаційна панель та таблиці стилів.</message>
 	<message key="manager.setup.management">Менеджмент</message>
@@ -267,15 +261,13 @@
 	<message key="manager.setup.printIssn">ISSN друкованої версії</message>
 	<message key="manager.setup.proofingInstructions">Інструкції з коректури</message>
 	<message key="manager.setup.proofingInstructionsDescription">Інструкції з коректури стануть доступними коректорам, авторам, редакторам верстки та редакторам розділів на етапі редагування подань. Нижче подано стандартний набір інструкцій у форматі HTML. Менеджер журналу в будь-який час може змінювати або замінювати ці інструкції (у текстовому або гіпертекстовому форматі).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Надати інструкції редакторам верстки.</message>
 	<message key="manager.setup.publicationSchedule">Графік публікації</message>
 	<message key="manager.setup.publicationScheduleDescription">Статті журналу можуть збиратися у випуски з власними сторінками змісту. Можливо також публікувати матеріали по мірі їх редакційного опрацювання, додаючи готові до друку статті до сторінки змісту "поточного" випуску журналу. Надайте читачам журналу інформацію щодо принципу, який використовуватиме цей журнал, та щодо очікуваної періодичності видання.</message>
 	<message key="manager.setup.publicationScheduling">Планування публікації</message>
 	<message key="manager.setup.publicIdentifier">Ідентифікація змісту журналу</message>
 	<message key="manager.setup.publisher">Видавець</message>
-	<message key="manager.setup.publisherDescription">Назва установи-видавця журналу, яка має бути відображена на сторінці "Про журнал".</message>
+	<message key="manager.setup.publishingDescription">Назва установи-видавця журналу, яка має бути відображена на сторінці "Про журнал".</message>
 	<message key="manager.setup.referenceLinking">Гіперпосилання у пристатейній бібліографії</message>
-	<message key="manager.setup.refLinkInstructions.description">Інструкції щодо налаштування гіперпосилань редакторами верстки</message>
 	<message key="manager.setup.restrictArticleAccess">Користувачі мають бути зареєстровані для перегляду змісту у відкритому доступі.</message>
 	<message key="manager.setup.restrictSiteAccess">Користувачі мають бути зареєстровані для перегляду веб-сайту журналу.</message>
 	<message key="manager.setup.reviewGuidelines">Керівництво для рецензентів</message>

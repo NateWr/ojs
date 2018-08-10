@@ -13,4 +13,10 @@
 
 <locale name="en_US" full_name="U.S. English">
 	<message key="api.submissions.403.unpublishedIssues">You do not have permission to view unpublished issues.</message>
+	<message key="api.contexts.403.requestedDisabledContexts">You can only view journals that have been enabled.</message>
+	<message key="api.contexts.403.notAllowed">You do not have permission to view this journal.</message>
+	<message key="api.contexts.403.contextsDidNotMatch">To edit this context, you must make a request to this context's API or the site-wide API.</message>
+	<message key="api.contexts.403.notAllowedEdit">You do not have permission to edit this journal.</message>
+	<message key="api.contexts.403.notAllowedDelete">You do not have permission to delete this journal.</message>
+	<message key="api.contexts.404.contextNotFound">The journal you requested was not found.</message>
 </locale>

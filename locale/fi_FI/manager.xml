@@ -110,7 +110,6 @@
 	<message key="manager.setup">Julkaisun asetukset</message>
 	<message key="manager.setup.masthead">Tunnuslaatikko</message>
 	<message key="manager.setup.editorialTeam">Toimituskunta</message>
-	<message key="manager.setup.editorialTeam.description">Luettele toimittajat, toimitusjohtajat ja muut julkaisuun liittyvät henkilöt.</message>
 	<message key="manager.setup.homepageContent">Julkaisun etusivun sisältö</message>
 	<message key="manager.setup.homepageContentDescription">Julkaisun etusivu koostuu oletusarvoisesti siirtymälinkeistä. Muuta sisältöä etusivulle voidaan liittää käyttämällä yhtä tai kaikkia seuraavista vaihtoehdoista, jotka ilmestyvät esitetyssä järjestyksessä.</message>
 	<message key="manager.setup.layout">Julkaisun taitto</message>
@@ -136,8 +135,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Vaadi arvioijia jättämään Sidonnaisuudet-lausunto jokaisen lähettämänsä vertaisarvioinnin yhteydessä.</message>
 	<message key="manager.setup.history">Julkaisun historiaa</message>
 	<message key="manager.setup.historyDescription">Tämä teksti tulee näkymään julkaisun verkkosivuston "Tietoa"-osassa ja sitä voidaan käyttää kuvaamaan titteleiden, toimituskunnan ja muiden julkaisuhistorian kannalta olennaisten asioiden muutoksia.</message>
-	<message key="manager.setup.copyeditInstructions">Teknisen toimittamisen ohjeet</message>
-	<message key="manager.setup.copyeditInstructionsDescription">Teknisen toimittamisen ohjeet tulevat teknisten toimittajien, kirjoittajien ja osastotoimittajien saataville käsikirjoituksen toimittamisvaiheessa. Alla HTML-muotoiset oletusohjeet, joita julkaisun hallinnoija voi muokata tai korvata missä tahansa vaiheessa (HTML-muodossa tai pelkkänä tekstinä).</message>
 	<message key="manager.setup.copyrightNotice">Tekijänoikeushuomautus</message>
 	<message key="manager.setup.coverage">Kattavuus</message>
 	<message key="manager.setup.coverageDescription">Viittaa geospatiaaliseen sijaintiin, kronologiseen tai historialliseen kattavuuteen ja/tai tutkimusotoksen ominaisuuksiin.</message>
@@ -194,7 +191,6 @@
 	<message key="manager.setup.journalAbbreviation">Julkaisun lyhenne</message>
 	<message key="manager.setup.journalArchiving">Julkaisun arkistointi</message>
 	<message key="manager.setup.journalSummary">Julkaisu lyhyesti</message>
-	<message key="manager.setup.journalSummary.description">Lyhyt kuvaus julkaisusta, joka voidaan näyttää julkaisulistassa.</message>
 	<message key="manager.setup.journalAbout">Tietoa julkaisusta</message>
 	<message key="manager.setup.journalAbout.description">Sisällytä tähän mitä tahansa tietoa julkaisusta, joka saattaa kiinnostaa lukijoita, kirjoittajia ja arvioijia. Kiinnostavia tietoja voivat olla esim. avoimen saatavuuden periaate, julkaisun tarkoitus ja toimintaperiaatteet, tekijänoikeushuomautus, tiedonanto tukemista koskien, julkaisun historia, tietosuojaseloste ja LOCKSS tai CLOCKSS-arkistojärjestelmiin kuuluminen.</message>
 	<message key="manager.setup.favicon">Julkaisun favicon (osoitekentän kuvake)</message>
@@ -241,7 +237,6 @@
 	<message key="manager.setup.clockssLicenseLabel">CLOCKSS-lisenssin kuvaus</message>
 	<message key="manager.setup.clockssRegister"><![CDATA[Rekisteröidy CLOCKSS-palveluun <a href="http://clockss.org/" target="_blank">CLOCKSS:in verkkosivustolla</a>.]]></message>
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.setup.look">Ulkoasu</message>
 	<message key="manager.setup.look.description">Etusivun ylätunniste, sisältö, julkaisun ylätunniste, alatunniste, navigointipalkki ja tyylitiedosto.</message>
 	<message key="manager.setup.management">Hallinnointi</message>
@@ -267,15 +262,13 @@
 	<message key="manager.setup.printIssn">Painetun julkaisun ISSN</message>
 	<message key="manager.setup.proofingInstructions">Oikolukuohjeet</message>
 	<message key="manager.setup.proofingInstructionsDescription">Oikoluvun ohjeet tulevat oikolukijoiden, kirjoittajien, taittajien ja osastotoimittajien saataville käsikirjoituksen toimittamisvaiheessa. Alla HTML-muotoiset oletusohjeet, joita julkaisun hallinnoija voi muokata tai korvata missä tahansa vaiheessa (HTML-muodossa tai pelkkänä tekstinä).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Anna ohjeet taittajille.</message>
 	<message key="manager.setup.publicationSchedule">Julkaisuaikataulu</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Julkaisun kohteet voidaan julkaista kollektiivisesti osana numeroa, jolla on oma sisällysluettelonsa. Vaihtoehtoisesti yksittäisiä kohteita voidaan julkaista heti niiden ollessa valmiita, lisäämällä ne uusimman volyymin sisällysluetteloon. Kerro lukijoille tämän julkaisun käytännöstä asian suhteen sekä oletetusta julkaisutiheydestä Tietoa julkaisusta -sivulla.]]></message>
 	<message key="manager.setup.publicationScheduling">Julkaisun aikataulutus</message>
 	<message key="manager.setup.publicIdentifier">Julkaisun sisällön tunnistetiedot</message>
 	<message key="manager.setup.publisher">Julkaisija</message>
-	<message key="manager.setup.publisherDescription">Julkaisevan organisaation nimi saatetaan sisällyttää metatietoihin, jotka annetaan ulkopuolisille arkistointielimille.</message>
+	<message key="manager.setup.publishingDescription">Julkaisevan organisaation nimi saatetaan sisällyttää metatietoihin, jotka annetaan ulkopuolisille arkistointielimille.</message>
 	<message key="manager.setup.referenceLinking">Lähdeviitteiden linkitys</message>
-	<message key="manager.setup.refLinkInstructions.description">Taiton ohjeet lähdeviitteiden linkitykseen</message>
 	<message key="manager.setup.restrictArticleAccess">Käyttäjien tulee olla rekisteröityneitä ja sisäänkirjautuneita katsellakseen avoimesti saatavilla olevaa sisältöä.</message>
 	<message key="manager.setup.restrictSiteAccess">Käyttäjien tulee olla rekisteröityneitä ja sisäänkirjautuneita katsellakseen julkaisun sivustoa.</message>
 	<message key="manager.setup.reviewGuidelines">Arviointiohjeet</message>

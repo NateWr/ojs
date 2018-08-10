@@ -119,8 +119,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">要求审稿人在每次提交同行评议的审稿的时候，提交一个利益冲突（CI）声明。</message>
 	<message key="manager.setup.history">期刊历史</message>
 	<message key="manager.setup.historyDescription">这段文字将显示在期刊网站的关于我们栏目，并且可以用来描述标题变化，编辑委员会，以及其他有关期刊的出版历史的变化.</message>
-	<message key="manager.setup.copyeditInstructions">文字编辑指引</message>
-	<message key="manager.setup.copyeditInstructionsDescription">「文字编辑指引」会在「投稿编辑」阶段显示给文字编辑、作者和栏目编辑看到。下面是一组预设的HTML格式指南，期刊管理员可以在任何阶段进行修订或者代换（以纯文字或HTML的方式）。</message>
 	<message key="manager.setup.copyrightNotice">版权注意事项</message>
 	<message key="manager.setup.coverage">涵盖范围</message>
 	<message key="manager.setup.coverageDescription">指涉地理空间上的位置、年代或者历史范围，以及＼或者研究样本的特征。</message>
@@ -228,15 +226,13 @@
 	<message key="manager.setup.printIssn">ISSN</message>
 	<message key="manager.setup.proofingInstructions">校对指引</message>
 	<message key="manager.setup.proofingInstructionsDescription">「校对指引」会在「投稿编辑」页面显示给校对者、作者、版面编辑与栏目编辑看到。下面是一组预设的HTML格式之指引，期刊管理员可以在任何阶段进行编辑或替换。（以纯文字或HTML的方式）</message>
-	<message key="manager.setup.provideRefLinkInstructions">提供排版编辑指示</message>
 	<message key="manager.setup.publicationSchedule">出版时程</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[期刊的各个项目能够一起出版，作为一期目录的一部份内容。否则，个别的项目能够在一准备好的时候，透过将它们加入到当期(或当卷)的「目录」中，迳行出版。请在「期刊介绍」中提供读者一个关于这份期刊会使用的系统以及其出刊频率的说明。]]></message>
 	<message key="manager.setup.publicationScheduling">出版时程配置</message>
 	<message key="manager.setup.publicIdentifier">期刊内容识别码</message>
 	<message key="manager.setup.publisher">出版者</message>
-	<message key="manager.setup.publisherDescription">出版这份期刊的组织单位名称会出现在这份期刊的「期刊介绍」中。</message>
+	<message key="manager.setup.publishingDescription">出版这份期刊的组织单位名称会出现在这份期刊的「期刊介绍」中。</message>
 	<message key="manager.setup.referenceLinking">参考文献链接</message>
-	<message key="manager.setup.refLinkInstructions.description">参考文献的排版指示</message>
 	<message key="manager.setup.restrictArticleAccess">用户必须登入才可以浏览已经出版论文的全文。</message>
 	<message key="manager.setup.restrictSiteAccess">用户必须登入才能浏览这个网站。</message>
 	<message key="manager.setup.reviewGuidelines">审稿须知</message>

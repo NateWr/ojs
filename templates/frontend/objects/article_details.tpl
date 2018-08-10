@@ -232,7 +232,7 @@
 					<ul class="value galleys_links">
 						{foreach from=$primaryGalleys item=galley}
 							<li>
-								{include file="frontend/objects/galley_link.tpl" parent=$article galley=$galley purchaseFee=$currentJournal->getSetting('purchaseArticleFee') purchaseCurrency=$currentJournal->getSetting('currency')}
+								{include file="frontend/objects/galley_link.tpl" parent=$article galley=$galley purchaseFee=$currentJournal->getData('purchaseArticleFee') purchaseCurrency=$currentJournal->getData('currency')}
 							</li>
 						{/foreach}
 					</ul>

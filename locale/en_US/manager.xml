@@ -111,7 +111,6 @@
 	<message key="manager.setup">Journal Settings</message>
 	<message key="manager.setup.masthead">Masthead</message>
 	<message key="manager.setup.editorialTeam">Editorial Team</message>
-	<message key="manager.setup.editorialTeam.description">List editors, managing directors, and other individuals associated with the journal.</message>
 	<message key="manager.setup.homepageContent">Journal Homepage Content</message>
 	<message key="manager.setup.homepageContentDescription">The journal homepage consists of navigation links by default. Additional homepage content can be appended by using one or all of the following options, which will appear in the order shown.</message>
 	<message key="manager.setup.layout">Journal Layout</message>
@@ -137,8 +136,7 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Require Reviewers to file a CI statement with each peer review they submit.</message>
 	<message key="manager.setup.history">Journal History</message>
 	<message key="manager.setup.historyDescription">This text will appear in the "About" section of the journal website and can be used to describe changes in titles, editorial board, and other items of relevance to the journal's publication history.</message>
-	<message key="manager.setup.copyeditInstructions">Copyedit Instructions</message>
-	<message key="manager.setup.copyeditInstructionsDescription">The Copyedit Instructions will be made available to Copyeditors, Authors, and Section Editors in the Submission Editing stage. Below is a default set of instructions in HTML, which can be modified or replaced by the Journal Manager at any point (in HTML or plain text).</message>
+	<message key="manager.setup.contact.success">The contact details for this journal have been successfully updated.</message>
 	<message key="manager.setup.copyrightNotice">Copyright notice</message>
 	<message key="manager.setup.coverage">Coverage</message>
 	<message key="manager.setup.coverageDescription">Refers to geo-spatial location, chronological or historical coverage, and/or characteristics of research sample.</message>
@@ -181,12 +179,14 @@
 	<message key="manager.setup.gettingDownTheDetails">Step 1. Getting Down the Details</message>
 	<message key="manager.setup.guidelines">Guidelines</message>
 	<message key="manager.setup.guidingSubmissions">Step 3. Guiding Submissions</message>
+	<message key="manager.setup.identity">Journal Identity</message>
 	<message key="manager.setup.includeCreativeCommons">For journals that offer immediate or delayed open access, include a Creative Commons license with all published work at the appropriate time.</message>
 	<message key="manager.setup.information">Information</message>
 	<message key="manager.setup.information.description">Brief descriptions of the journal for librarians and prospective authors and readers. These are made available in the site's sidebar when the Information block has been added.</message>
 	<message key="manager.setup.information.forAuthors">For Authors</message>
 	<message key="manager.setup.information.forLibrarians">For Librarians</message>
 	<message key="manager.setup.information.forReaders">For Readers</message>
+	<message key="manager.setup.information.success">The information for this journal was successfully updated.</message>
 	<message key="manager.setup.initialIssue">Initial issue</message>
 	<message key="manager.setup.initialIssueDescription">Depending on the format selected, identify the issue, volume, and/or year of the first issue to be published with OJS:</message>
 	<message key="manager.setup.institution">Institution</message>
@@ -195,7 +195,6 @@
 	<message key="manager.setup.journalAbbreviation">Journal Abbreviation</message>
 	<message key="manager.setup.journalArchiving">Journal Archiving</message>
 	<message key="manager.setup.journalSummary">Journal Summary</message>
-	<message key="manager.setup.journalSummary.description">A brief description of your journal that can be displayed in lists of journals.</message>
 	<message key="manager.setup.journalAbout">About the Journal</message>
 	<message key="manager.setup.journalAbout.description">Include any information about your journal which may be of interest to readers, authors or reviewers. This could include your open access policy, the focus and scope of the journal, copyright notice, sponsorship disclosure, history of the journal, a privacy statement, and inclusion in any LOCKSS or CLOCKSS archival system.</message>
 	<message key="manager.setup.favicon">Journal Favicon</message>
@@ -222,6 +221,8 @@
 	<message key="manager.setup.journalThumbnail.description">A small logo or representation of the journal that can be used in lists of journals.</message>
 	<message key="manager.setup.journalThumbnail.altText">Alternate text for thumbnail</message>
 	<message key="manager.setup.journalTitle">Journal title</message>
+	<message key="manager.setup.keyInfo">Key Information</message>
+	<message key="manager.setup.keyInfo.description">Provide a short description of your journal and identify editors, managing directors and other members of your editorial team.</message>
 	<message key="manager.setup.labelName">Label name</message>
 	<message key="manager.setup.layoutInstructions">Layout Instructions</message>
 	<message key="manager.setup.layoutInstructionsDescription">Layout Instructions can be prepared for the formatting of publishing items in the journal and be entered below in HTML or plain text. They will be made available to  the Layout Editor and Section Editor on the Editing page of each submission. (As each journal may employ its own file formats, bibliographic standards, style sheets, etc., a default set of instructions is not provided.)</message>
@@ -250,7 +251,6 @@
 	<message key="manager.setup.clockssTitle">CLOCKSS</message>
 	<message key="manager.setup.porticoEnable"><![CDATA[Enable Portico to store and distribute journal content to libraries participating in Portico.]]></message>
 	<message key="manager.setup.porticoTitle">Portico</message>
-	<message key="manager.setup.Issn">ISSN</message>
 	<message key="manager.setup.look">The Look</message>
 	<message key="manager.setup.look.description">Homepage header, content, journal header, footer, navigation bar, and style sheet.</message>
 	<message key="manager.setup.management">Management</message>
@@ -258,6 +258,7 @@
 	<message key="manager.setup.managementOfBasicEditorialSteps">Management of Basic Editorial Steps</message>
 	<message key="manager.setup.managingPublishingSetup">Management and Publishing Setup</message>
 	<message key="manager.setup.managingTheJournal">Step 4. Managing the Journal</message>
+	<message key="manager.setup.masthead.success">The masthead details for this journal have been successfully updated.</message>
 	<message key="manager.setup.navigationBar">Navigation Bar</message>
 	<message key="manager.setup.navigationBarDescription">Add or remove additional navigation bar items.</message>
 	<message key="manager.setup.navItemIsAbsolute">URL is an absolute URL (e.g., "http://www.example.com") rather than a path relative to the site (e.g., "/manager/setup")</message>
@@ -276,15 +277,14 @@
 	<message key="manager.setup.printIssn">Print ISSN</message>
 	<message key="manager.setup.proofingInstructions">Proofing Instructions</message>
 	<message key="manager.setup.proofingInstructionsDescription">The Proofreading Instructions will be made available to Proofreaders, Authors, Layout Editors, and Section Editors in the Submission Editing stage. Below is a default set of instructions in HTML, which can be edited or replaced by the Journal Manager at any point (in HTML or plain text).</message>
-	<message key="manager.setup.provideRefLinkInstructions">Provide Layout Editors with instructions.</message>
 	<message key="manager.setup.publicationSchedule">Publication Schedule</message>
 	<message key="manager.setup.publicationScheduleDescription"><![CDATA[Journal items can be published collectively, as part of an issue with its own Table of Contents. Alternatively, individual items can be published as soon as they are ready, by adding them to the "current" volume's Table of Contents. Provide readers, in About the Journal, with a statement about the system this journal will use and its expected frequency of publication.]]></message>
 	<message key="manager.setup.publicationScheduling">Publication Scheduling</message>
 	<message key="manager.setup.publicIdentifier">Identification of Journal Content</message>
+	<message key="manager.setup.publishing">Publishing Details</message>
 	<message key="manager.setup.publisher">Publisher</message>
-	<message key="manager.setup.publisherDescription">The name of the organization publishing the journal may be included in metadata provided to third-party archival bodies.</message>
+	<message key="manager.setup.publishingDescription">These details may be included in metadata provided to third-party archival bodies.</message>
 	<message key="manager.setup.referenceLinking">Reference Linking</message>
-	<message key="manager.setup.refLinkInstructions.description">Layout Instructions for Reference Linking</message>
 	<message key="manager.setup.restrictArticleAccess">Users must be registered and log in to view open access content.</message>
 	<message key="manager.setup.restrictSiteAccess">Users must be registered and log in to view the journal site.</message>
 	<message key="manager.setup.reviewGuidelines">Review Guidelines</message>
