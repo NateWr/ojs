@@ -15,9 +15,6 @@
 namespace OJS\Services;
 
 class ContextService extends \PKP\Services\PKPContextService {
-	/** @copydoc PKPContextService::$installSettingsFile */
-	var $installSettingsFile = 'registry/journalSettings.xml';
-
 	/** @copydoc PKPContextService::$contextsFileDirName */
 	var $contextsFileDirName = 'journals';
 

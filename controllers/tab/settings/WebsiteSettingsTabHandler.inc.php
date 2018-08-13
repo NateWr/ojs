@@ -28,7 +28,6 @@ class WebsiteSettingsTabHandler extends ManagerSettingsTabHandler {
 				'saveFile',
 				'deleteFile',
 				'fetchFile',
-				'reloadLocalizedDefaultSettings'
 			)
 		);
 		parent::__construct();
@@ -159,31 +158,6 @@ class WebsiteSettingsTabHandler extends ManagerSettingsTabHandler {
 		}
 		return $json;
 	}
-
-	/**
-	 * Reload the default localized settings for the journal
-	 * @param $args array
-	 * @param $request object
-	 * @return JSONMessage JSON object
-	 */
-	function reloadLocalizedDefaultSettings($args, $request) {
-		// make sure the locale is valid
-		$locale = $request->getUserVar('localeToLoad');
-		if ( !AppLocale::isLocaleValid($locale) ) {
-			return new JSONMessage(false);
-		}
-
-		$journal = $request->getJournal();
-		$settingsDao = Application::getContextSettingsDAO();
-		$settingsDao->reloadLocalizedDefaultContextSettings($request, $locale);
-
-		// also reload the user group localizable data
-		$userGroupDao = DAORegistry::getDAO('UserGroupDAO');
-		$userGroupDao->installLocale($locale, $journal->getId());
-
-		return DAO::getDataChangedEvent();
-	}
-
 
 	//
 	// Private helper methods.
