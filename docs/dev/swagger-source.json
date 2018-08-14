@@ -1,0 +1,168 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"version": "3.2.x",
+		"title": "Open Journal Systems - API Documentation",
+		"description": "This guide documents the REST API made available by instances of the [Open Journal Systems](https://pkp.sfu.ca/ojs/). It is a technical reference for software developers who wish to build custom interactions with the platform.",
+		"contact": {
+			"name": "Public Knowledge Project",
+			"url": "https://pkp.sfu.ca"
+		}
+	},
+	"produces": [
+		"application/json"
+	],
+	"tags": [
+		{
+			"name": "Submissions"
+		},
+		{
+			"name": "Issues"
+		},
+		{
+			"name": "Users",
+			"description": "Only admins, journal editors, and subeditors can access these endpoints."
+		},
+		{
+			"name": "Contexts",
+			"description": "Only admins and journal managers can access these endpoints."
+		},
+		{
+			"name": "Backend",
+			"description": "Private endpoints for OJS's UI. These endpoints will be less stable between versions. We discourage their use in third-party plugins or applications."
+		}
+	],
+	"definitions": {
+		"Context": "context",
+		"LocaleObject": {
+			"type": "object",
+			"description": "Key/value pairs containing data stored by locale key.",
+			"example": {
+				"en_US": "Filename",
+				"fr_CA": "Nom de fichier"
+			}
+		},
+		"ErrorResponse": {
+			"type": "object",
+			"description": "A response object that will be returned when the requested could not be fulfilled.",
+			"properties": {
+				"error": {
+					"type": "string"
+				},
+				"errorMessage": {
+					"type": "string"
+				}
+			}
+		},
+		"InvalidParametersResponse": {
+			"type": "object",
+			"description": "A response object that will be returned when there are validation errors for the request parameters. Typically used with forms.",
+			"example": {
+				"name": "You must provide a name to create a new user.",
+				"roles": "You must assign the user to one or more roles."
+			}
+		}
+	},
+	"paths": {
+		"/contexts": {
+			"get": {
+				"tags": [
+					"Contexts"
+				],
+				"summary": "Get a list of journals.",
+				"parameters": [
+					{
+						"name": "isEnabled",
+						"description": "Filter results by enabled/disabled contexts. Any truthy or falsey value will get enabled/disabled contexts. Leave this parameter out to get all contexts.",
+						"in": "query",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"name": "count",
+						"description": "How many results to return in a single request. Default is `20`. Max is `100`.",
+						"in": "query",
+						"required": false,
+						"type": "type"
+					},
+					{
+						"name": "offset",
+						"description": "Offset the results returned. Use this to receive subsequent pages of requests.",
+						"in": "query",
+						"required": false,
+						"type": "integer"
+					},
+					{
+						"name": "searchPhrase",
+						"description": "Filter results by a search phrase matched against the `name`, `description`, `acronym`, or `abbreviation`.",
+						"in": "query",
+						"required": false,
+						"type": "string"
+					}
+				],
+				"responses":  {
+					"200": {
+						"description": "List of contexts.",
+						"schema": {
+							"type": "object",
+							"properties": {
+								"itemsMax": {
+									"type": "integer"
+								},
+								"items": {
+									"type": "array",
+									"items": {
+										"$ref": "#/definitions/ContextSummary"
+									}
+								}
+							}
+						}
+					},
+					"403": {
+						"description": "You do not have permission to view disabled contexts.",
+						"schema": {
+							"$ref": "#/definitions/ErrorResponse"
+						}
+					}
+				}
+			}
+		},
+		"/contexts/{contextId}": {
+			"get": {
+				"tags": [
+					"Contexts"
+				],
+				"summary": "Get a context by ID.",
+				"parameters": [
+					{
+						"name": "contextId",
+						"description": "Context ID",
+						"in": "path",
+						"required": true,
+						"type": "integer"
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Context details. Some details may be withheld if you are not a site admin or manager of that context.",
+						"schema": {
+							"$ref": "#/definitions/Context"
+						}
+					},
+					"403": {
+						"description": "You do not have permission to view this context.",
+						"schema": {
+							"$ref": "#/definitions/ErrorResponse"
+						}
+					},
+					"404": {
+						"description": "The requested context could not be found.",
+						"schema": {
+							"$ref": "#/definitions/ErrorResponse"
+						}
+					}
+				}
+			}
+		}
+	}
+}
