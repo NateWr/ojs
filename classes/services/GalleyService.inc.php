@@ -76,10 +76,10 @@ class GalleyService extends PKPBaseEntityPropertyService {
 					$values[$prop] = $galley->getLabel(null);
 					break;
 				case 'urlRemote':
-					$values[$prop] = $isSubmissionGalley ? $galley->getRemoteURL() : null;
+					$values[$prop] = $isSubmissionGalley ? $galley->getRemoteURL() : '';
 					break;
 				case 'urlPublished':
-					$values[$prop] = null;
+					$values[$prop] = '';
 					if ($isSubmissionGalley) {
 						$parentPath = 'article';
 						$parentId = $parent->getBestArticleId();
