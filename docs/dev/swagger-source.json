@@ -2,8 +2,8 @@
 	"swagger": "2.0",
 	"info": {
 		"version": "3.2.x",
-		"title": "Open Journal Systems - API Specification",
-		"description": "This guide documents the REST API endpoints which can be accessed for any instance of [Open Journal Systems](https://pkp.sfu.ca/ojs/). It is a technical reference for software developers who wish to build custom interactions with the platform.\n\nPlease consult the [REST API Usage Guide](/dev/api) for an introduction to using the API or the [Developer Documentation Hub](/dev) for documentation on the platform's internals.\n\n**Changes since v3.1.x**\n* The Author property, `isBrowseable`, was renamed to `includeInBrowse`.\n* The Author property, `isPrimaryContact`, was renamed to `primaryContact`.\n* The Submission property, `status`, was changed from an `object` to an `integer`. Please see documentation for more information.",
+		"title": "Open Journal Systems - API Reference",
+		"description": "This guide documents the REST API endpoints which can be accessed with this version of [Open Journal Systems](https://pkp.sfu.ca/ojs/). It is a technical reference for software developers who wish to build custom interactions with the platform.\n\nPlease consult the [REST API Usage Guide](/dev/api) for an introduction to using the API or the [Developer Documentation Hub](/dev) for documentation on the platform's internals.\n\n**Changes since v3.1.x**\n* The Author property, `isBrowseable`, was renamed to `includeInBrowse`.\n* The Author property, `isPrimaryContact`, was renamed to `primaryContact`.\n* The Submission property, `status`, was changed from an `object` to an `integer`. Please see documentation for more information.",
 		"contact": {
 			"name": "Public Knowledge Project",
 			"url": "https://pkp.sfu.ca"
