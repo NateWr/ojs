@@ -61,6 +61,7 @@
   "dependencies": {
     "v-tooltip": "^2.0.0-rc.32",
     "vue-scrollto": "^2.11.0",
-    "vue-slider-component": "^2.5.3"
+    "vue-slider-component": "^2.5.3",
+    "vue-tabs-component": "^1.4.0"
   }
 }

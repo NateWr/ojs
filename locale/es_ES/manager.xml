@@ -125,7 +125,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Pedir a los revisores/as que adjunten una declaración de conflicto de intereses a cada evaluación por pares.</message>
 	<message key="manager.setup.history">Historial de la revista</message>
 	<message key="manager.setup.historyDescription">El siguiente texto se mostrará en la sección Acerca de la revista y se puede utilizar para describir cambios realizados en los títulos, en el Consejo editorial o en otros elementos relevantes a la historia de la revista.</message>
-	<message key="manager.setup.copyrightNotice">Aviso de derechos de autor/a</message>
 	<message key="manager.setup.coverage">Cobertura</message>
 	<message key="manager.setup.coverageDescription">Se refiere a la localización geográfica, a la cobertura cronológica o histórica o a las características de la muestra de investigación.</message>
 	<message key="manager.setup.currentIssue">Número actual</message>
@@ -142,11 +141,11 @@
 	<message key="manager.setup.displayCurrentIssue">Añadir la tabla de contenidos de esta publicación, si es posible.</message>
 	<message key="manager.setup.editorDecision">Decisión del editor/a</message>
 	<message key="manager.setup.emailBounceAddress">Dirección para los mensajes devueltos</message>
-	<message key="manager.setup.emailBounceAddressDescription">Si un correo electrónico no se puede enviar, se recibirá un mensaje de error en esta dirección.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Nota:</strong> Para activar esta opción, el administrador/a del sitio debe habilitar la opción <tt>allow_envelope_sender</tt> en el archivo de configuración de OJS. Es posible que se requiera una configuración adicional del servidor para admitir esta función (puede que no todos los servidores la permitan) siguiendo las indicaciones en la documentación del OJS.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Si un correo electrónico no se puede enviar, se recibirá un mensaje de error en esta dirección.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Nota:</strong> Para activar esta opción, el administrador/a del sitio debe habilitar la opción <tt>allow_envelope_sender</tt> en el archivo de configuración de OJS. Es posible que se requiera una configuración adicional del servidor para admitir esta función (puede que no todos los servidores la permitan) siguiendo las indicaciones en la documentación del OJS.]]></message>
 	<message key="manager.setup.emails">Identificación del correo electrónico</message>
 	<message key="manager.setup.emailSignature">Firma</message>
-	<message key="manager.setup.emailSignatureDescription">Las plantillas de correo que el sistema envíe en nombre de la revista llevarán esta firma al final. Es posible editar el cuerpo de estos correos en el apartado Gestión de la revista.</message>
+	<message key="manager.setup.emailSignature.description">Las plantillas de correo que el sistema envíe en nombre de la revista llevarán esta firma al final. Es posible editar el cuerpo de estos correos en el apartado Gestión de la revista.</message>
 	<message key="manager.setup.enableAnnouncements">Permitir que los gestores/as de la revista publiquen avisos.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Mostrar</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">los últimos avisos publicados en la página inicial.</message>
@@ -230,9 +229,9 @@
 	<message key="manager.setup.note">Nota</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Nota:</strong> Actualmente, el correo electrónico de confirmación está deshabilitado. Para utilizar esta función, habilite el correo electrónico de CONFIRMACIÓN en <a class="action" href="{$preparedEmailsUrl}">Correos preparados</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Enlaces de la página</message>
-	<message key="manager.setup.onlineAccessManagement">Acceso al contenido de la revista</message>
+	<message key="manager.setup.publishingMode">Acceso al contenido de la revista</message>
 	<message key="manager.setup.onlineIssn">ISSN en línea</message>
-	<message key="manager.setup.openAccess">La revista proporcionará acceso abierto a sus contenidos.</message>
+	<message key="manager.distribution.publishingMode.openAccess">La revista proporcionará acceso abierto a sus contenidos.</message>
 	<message key="manager.setup.pageNumberIdentifier">Opciones de numeración de páginas</message>
 	<message key="manager.setup.policies">Políticas</message>
 	<message key="manager.setup.policies.description">Objeto de la revista, proceso de evaluación por pares, secciones, privacidad, seguridad y otros.</message>
@@ -249,7 +248,7 @@
 	<message key="manager.setup.restrictArticleAccess">Los usuarios/as deben registrarse e iniciar sesión para ver el contenido de acceso abierto.</message>
 	<message key="manager.setup.restrictSiteAccess">Los usuarios/as deben registrarse e iniciar sesión para ver el sitio web de la revista.</message>
 	<message key="manager.setup.reviewGuidelines">Indicaciones para la revisión</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Las directrices para el revisor/a proporcionarán a los revisores/as el criterio necesario para juzgar si un envío es adecuado para ser publicado en la revista, y puede incluir cualquier tipo de instrucciones particulares para preparar una revisión efectiva y útil. Al realizar la revisión, los revisores/as disponen de dos cuadros de texto abiertos: el primero "para el autor/a y el editor/a" y el segundo "para el editor/a". El gestor/a de la revista también puede crear un formulario de revisión por pares en el apartado <a href="{$reviewFormsUrl}" class="action">Formularios de revisión</a>. En cualquier caso, los editores/as tendrán la opción de incluir las revisiones para el autor/a.]]></message>
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Las directrices para el revisor/a proporcionarán a los revisores/as el criterio necesario para juzgar si un envío es adecuado para ser publicado en la revista, y puede incluir cualquier tipo de instrucciones particulares para preparar una revisión efectiva y útil. Al realizar la revisión, los revisores/as disponen de dos cuadros de texto abiertos: el primero "para el autor/a y el editor/a" y el segundo "para el editor/a". El gestor/a de la revista también puede crear un formulario de revisión por pares en el apartado <a href="{$reviewFormsUrl}" class="action">Formularios de revisión</a>. En cualquier caso, los editores/as tendrán la opción de incluir las revisiones para el autor/a.]]></message>
 	<message key="manager.setup.reviewOptions">Opciones de revisión</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Aunque el editor/a pueda contactar directamente con el revisor/a, los mensajes predeterminados de OJS permiten enviar correos electrónicos automáticos a modo de recordatorio a los revisores/as bajo los siguientes supuestos:</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Nota:</strong> Para activar estas opciones, el administrador/a del sitio debe habilitar la opción <tt>scheduled_tasks</tt> en el archivo de configuración de OJS. Es posible que se requiera una configuración adicional del servidor para admitir esta función (puede que no todos los servidores la permitan) siguiendo las indicaciones en la documentación del OJS.]]></message>
@@ -264,12 +263,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Recordatorios para los revisores/as</message>
 	<message key="manager.setup.reviewPolicy">Política de revisión</message>
 	<message key="manager.setup.searchEngineIndexing">Indización en buscadores</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Para ayudar a los usuarios/as de buscadores a descubrir la revista, proporcione una breve descripción de ésta y las palabras clave que mejor la definan (separadas mediante punto y coma).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Para ayudar a los usuarios/as de buscadores a descubrir la revista, proporcione una breve descripción de ésta y las palabras clave que mejor la definan (separadas mediante punto y coma).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Secciones y editores/as de secciones</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Si no se han añadido secciones, los elementos se envían por defecto a la sección Artículos.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Para crear o modificar secciones en la revista (p. ej., Artículos, Revisión de libros, etc.), vaya a la sección Gestión. <br /><br />Los autores/as con elementos para enviar a la revista designarán...]]></message>
-	<message key="manager.setup.securitySettings">Configuración de acceso y seguridad</message>
-	<message key="manager.setup.securitySettingsDescription">OJS incluye una serie de opciones de seguridad que se pueden emplear para restringir los contenidos de la revista y mantener información adicional sobre los envíos a efectos de control.</message>
 	<message key="manager.setup.selectEditorDescription">El editor/a de la revista ejercerá de supervisor durante todo el proceso editorial.</message>
 	<message key="manager.setup.selectSectionDescription">La sección de la revista para la que se considerará el elemento.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Mostrar siempre los enlaces de galeradas e indicar que el acceso es restringido.</message>
@@ -283,9 +280,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Cuando se realice un envío a la revista, se pedirá a los autores/as que comprueben cada elemento enviado en la Lista de comprobación para preparar los envíos y registren el resultado como completado antes de continuar con el proceso. Esta lista también está disponible en la sección Indicaciones para los autores/as de la sección Acerca de la revista. Se puede editar aquí, aunque todos sus elementos necesitarán haberse comprobado y registrado para que los autores/as puedan continuar con la entrega.</message>
 	<message key="manager.setup.submissions">Envíos</message>
 	<message key="manager.setup.submissions.description">Indicaciones para los autores/as, derechos de autor/a e indexación (incluido el registro).</message>
-	<message key="manager.setup.subscription">Establecer como obligatoria la suscripción a la revista para acceder a algunos o a todos sus contenidos.</message>
-	<message key="manager.setup.subscriptionDescription">Para ello, se necesita nombrar a un gestor/a de suscripciones que tenga acceso a un módulo de suscripción. Este módulo incluye opciones adicionales de acceso abierto, autoarchivado y notificaciones por correo electrónico.</message>
-	<message key="manager.setup.noPublishing">No debe utilizar OJS para publicar en línea los contenidos de la revista.</message>
+	<message key="manager.distribution.publishingMode.subscription">Establecer como obligatoria la suscripción a la revista para acceder a algunos o a todos sus contenidos.</message>
+	<message key="manager.distribution.publishingMode.none">No debe utilizar OJS para publicar en línea los contenidos de la revista.</message>
 	<message key="manager.setup.typeExamples">(p. ej., investigación histórica; casi experimental; análisis literario; encuesta/entrevista)</message>
 	<message key="manager.setup.typeMethodApproach">Tipo (método/enfoque)</message>
 	<message key="manager.setup.typeProvideExamples">Proporcione ejemplos de tipos de investigación, métodos y enfoques para este campo</message>
@@ -329,8 +325,6 @@
 	<message key="manager.statistics.statistics.selectSections">Seleccione las secciones para calcular las estadísticas de evaluación por pares para esta revista.</message>
 	<message key="manager.statistics.statistics.subscriptions">Suscripciones</message>
 	<message key="manager.subscriptionPolicies">Políticas de suscripción</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Política de autoarchivo por parte del autor/a</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">La siguiente política se incluirá dentro del apartado Políticas de la sección Acerca de la revista.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Acceso abierto diferido</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Por medio de esta opción, los editores/as pueden especificar qué artículos de una publicación van a disponer de acceso abierto inmediato.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Los números anteriores serán de acceso abierto</message>

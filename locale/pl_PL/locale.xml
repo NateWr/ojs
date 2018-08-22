@@ -397,7 +397,7 @@
 Konfiguracja LOCKSS dla OJS może zostać przeprowadzona zarówno przed jak i po opublikowaniu treści w czasopiśmie. Możesz włączyć system LOCKSS poniżej:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Informacje o prawach autorskich zaproponowane przez Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Informacje o prawach autorskich zaproponowane przez Creative Commons</h3>
 <h4>1. Zaproponowana polityka dla czasopisma, które zapewnia otwarty dostęp</h4>
 Autorzy publikujący w czasopiśmie zgadzają się na następujące zasady:
 <ol type="a">
@@ -737,7 +737,6 @@ Autorzy publikujący w czasopiśmie zgadzają się na następujące zasady:
 	<message key="about.delayedOpenAccess">Odroczony w czasie wolny dostęp do treści</message>
 	<message key="about.delayedOpenAccessDescription1">Zawartość tego czasopisma będzie dostępna na zasadach open access</message>
 	<message key="about.delayedOpenAccessDescription2">miesięcy od czasu opublikowania numeru.</message>
-	<message key="about.authorSelfArchive">Archiwizowanie dla autorów</message>
 	<message key="about.archiving">Archiwizowanie</message>
 	<message key="about.subscriptions">Subskrypcje</message>
 	<message key="about.subscriptions.individual">Indywidualne subskrypcje</message>

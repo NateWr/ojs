@@ -598,7 +598,6 @@ Escolha um modelo para administrar os aspectos do processo editorial. (Para desi
 	<message key="about.delayedOpenAccess">Acesso Livre Adiado</message>
 	<message key="about.delayedOpenAccessDescription1">O conteúdo desta revista estará disponível para Acesso Livre</message>
 	<message key="about.delayedOpenAccessDescription2">mês(es) após a publicação da edição.</message>
-	<message key="about.authorSelfArchive">Autoarquivamento</message>
 	<message key="about.archiving">Arquivamento</message>
 	<message key="about.subscriptions">Assinaturas</message>
 	<message key="about.subscriptionsContact">Contato para Assinaturas</message>
@@ -763,7 +762,7 @@ A validação pode falhar em URLs para pesquisa que requeiram dados via método 
 	<message key="reader.openAccess">Acesso Livre</message>
 	<message key="reader.subscriptionAccess">Acesso Restrito</message>
 	<message key="reader.subscriptionOrFeeAccess">Acesso Restrito ou Pago</message>
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Proposta de Aviso de Direito Autoral Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Proposta de Aviso de Direito Autoral Creative Commons</h3>
 <h4>1. Proposta de Política para Periódicos de Acesso Livre</h4>
 Autores que publicam nesta revista concordam com os seguintes termos:
 <ol type="a">

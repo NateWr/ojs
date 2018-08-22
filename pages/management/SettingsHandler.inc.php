@@ -53,13 +53,13 @@ class SettingsHandler extends ManagementHandler {
 			case 'index':
 			case '':
 			case 'context':
-				$this->journal($args, $request);
+				$this->context($args, $request);
 				break;
 			case 'website':
 				$this->website($args, $request);
 				break;
-			case 'publication':
-				$this->publication($args, $request);
+			case 'workflow':
+				$this->workflow($args, $request);
 				break;
 			case 'distribution':
 				$this->distribution($args, $request);
@@ -68,49 +68,9 @@ class SettingsHandler extends ManagementHandler {
 				$this->access($args, $request);
 				break;
 			default:
+				$request->getDispatcher()->handle404();
 				assert(false);
 		}
-	}
-
-	/**
-	 * Display The Journal page.
-	 * @param $args array
-	 * @param $request PKPRequest
-	 */
-	function journal($args, $request) {
-		$templateMgr = TemplateManager::getManager($request);
-		$this->setupTemplate($request);
-
-		// Display a warning message if there is a new version of OJS available
-		if (Config::getVar('general', 'show_upgrade_warning')) {
-			import('lib.pkp.classes.site.VersionCheck');
-			if ($latestVersion = VersionCheck::checkIfNewVersionExists()) {
-				$templateMgr->assign('newVersionAvailable', true);
-				$templateMgr->assign('latestVersion', $latestVersion);
-				$currentVersion = VersionCheck::getCurrentDBVersion();
-				$templateMgr->assign('currentVersion', $currentVersion->getVersionString());
-
-				// Get contact information for site administrator
-				$roleDao = DAORegistry::getDAO('RoleDAO');
-				$siteAdmins = $roleDao->getUsersByRoleId(ROLE_ID_SITE_ADMIN);
-				$templateMgr->assign('siteAdmin', $siteAdmins->next());
-			}
-		}
-
-		$templateMgr->display('management/settings/journal.tpl');
-	}
-
-	/**
-	 * Display website page.
-	 * @param $args array
-	 * @param $request PKPRequest
-	 */
-	function website($args, $request) {
-		$templateMgr = TemplateManager::getManager($request);
-		$this->setupTemplate($request);
-		$journal = $request->getJournal();
-		$templateMgr->assign('enableAnnouncements', $journal->getData('enableAnnouncements'));
-		$templateMgr->display('management/settings/website.tpl');
 	}
 
 	/**
@@ -122,18 +82,6 @@ class SettingsHandler extends ManagementHandler {
 		$templateMgr = TemplateManager::getManager($request);
 		$this->setupTemplate($request);
 		$templateMgr->display('management/settings/workflow.tpl');
-	}
-
-	/**
-	 * Display distribution process page.
-	 * @param $args array
-	 * @param $request PKPRequest
-	 */
-	function distribution($args, $request) {
-		$templateMgr = TemplateManager::getManager($request);
-		$this->setupTemplate($request);
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_SUBMISSION); // submission.permissions
-		$templateMgr->display('management/settings/distribution.tpl');
 	}
 
 	/**

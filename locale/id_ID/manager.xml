@@ -134,7 +134,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Mengharuskan Reviewer untuk memberikan pernyataan Konflik Kepentingan dalam tiap peer review yang mereka serahkan.</message>
 	<message key="manager.setup.history">Sejarah Jurnal</message>
 	<message key="manager.setup.historyDescription">Teks ini akan ditampilkan di bagian website jurnal "Tentang Jurnal" dan dapat digunakan untuk mendeskripsikan perubahan pada judul, Dewan editorial, dan item lain yang relevan dengan penerbitan jurnal.</message>
-	<message key="manager.setup.copyrightNotice">Pernyataan Hak Cipta</message>
 	<message key="manager.setup.coverage">Cakupan</message>
 	<message key="manager.setup.coverageDescription">Mengacu ke lokasi geospasial, cakupan kronologis atau historis, dan/atau karakteristik sampel riset.</message>
 	<message key="manager.setup.currentIssue">Terbitan Terkini</message>
@@ -151,11 +150,11 @@
 	<message key="manager.setup.displayCurrentIssue">Tambahkan daftar isi untuk terbitan terkini (jika tersedia).</message>
 	<message key="manager.setup.editorDecision">Keputusan Editor</message>
 	<message key="manager.setup.emailBounceAddress">Bounce Address</message>
-	<message key="manager.setup.emailBounceAddressDescription">Setiap email yang tidak terkirim akan menghasilkan pesan eror ke alamat ini.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus mengaktifkan pilihan <tt>allow_envelope_sender</tt> di file konfigurasi OJS. Konfigurasi server tambahan mungkin diperlukan untuk mendukung fungsi ini (tidak semua server bisa), seperti yang tercantum di dokumentasi OJS.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Setiap email yang tidak terkirim akan menghasilkan pesan eror ke alamat ini.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus mengaktifkan pilihan <tt>allow_envelope_sender</tt> di file konfigurasi OJS. Konfigurasi server tambahan mungkin diperlukan untuk mendukung fungsi ini (tidak semua server bisa), seperti yang tercantum di dokumentasi OJS.]]></message>
 	<message key="manager.setup.emails">Identifikasi Email</message>
 	<message key="manager.setup.emailSignature">Tandatangan</message>
-	<message key="manager.setup.emailSignatureDescription">Email yang disiapkan dan dikirim oleh sistem atas nama jurnal akan memiliki tandatangan berikut ini di akhir pesan.</message>
+	<message key="manager.setup.emailSignature.description">Email yang disiapkan dan dikirim oleh sistem atas nama jurnal akan memiliki tandatangan berikut ini di akhir pesan.</message>
 	<message key="manager.setup.enableAnnouncements">Memungkinkan manajer jurnal untuk menambahkan pengumuman jurnal.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Tampilkan</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">pengumuman terkini di beranda jurnal.</message>
@@ -252,9 +251,9 @@
 	<message key="manager.setup.note">Catatan</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Catatan:</strong> Email pemberitahuan penyerahan saat ini tidak diaktifkan. Untuk menggunakan fitur ini, aktifkan email SUBMISSION_ACK di menu Email</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Tautan Halaman</message>
-	<message key="manager.setup.onlineAccessManagement">Akses ke Konten Jurnal</message>
+	<message key="manager.setup.publishingMode">Akses ke Konten Jurnal</message>
 	<message key="manager.setup.onlineIssn">ISSN Online</message>
-	<message key="manager.setup.openAccess">Jurnal akan mendukung Open Access untuk konten jurnal.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Jurnal akan mendukung Open Access untuk konten jurnal.</message>
 	<message key="manager.setup.pageNumberIdentifier">Pilihan Nomor Halaman</message>
 	<message key="manager.setup.policies">Kebijakan</message>
 	<message key="manager.setup.policies.description">Fokus, peer review, bagian, privasi, keamanan, dan item tambahan tentang kami.</message>
@@ -271,7 +270,7 @@
 	<message key="manager.setup.restrictArticleAccess">Pengguna harus terdaftar dan login untuk melihat konten Akses Terbuka.</message>
 	<message key="manager.setup.restrictSiteAccess">Pengguna harus terdaftar dan login untuk melihat situs jurnal.</message>
 	<message key="manager.setup.reviewGuidelines">Panduan Review</message>
-	<message key="manager.setup.reviewGuidelinesDescription">Memberi panduan bagi Reviewer tentang kriteria untuk menilai kelayakan naskah yang akan diterbitkan di jurnal, dapat berisi instruksi untuk menyiapkan review yang efektif dan berguna. Reviewer berkesempatan untuk memberikan komentar untuk penulis dan editor, dan juga komentar yang khusus untuk editor saja.</message>
+	<message key="manager.setup.reviewGuidelines.description">Memberi panduan bagi Reviewer tentang kriteria untuk menilai kelayakan naskah yang akan diterbitkan di jurnal, dapat berisi instruksi untuk menyiapkan review yang efektif dan berguna. Reviewer berkesempatan untuk memberikan komentar untuk penulis dan editor, dan juga komentar yang khusus untuk editor saja.</message>
 	<message key="manager.setup.reviewOptions">Pilihan Review</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Email pengingat otomatis</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Catatan:</strong> Untuk mengaktifkan pilihan ini, administrator situs harus mengaktifkan pilihan <tt>scheduled_tasks</tt> di file konfigurasi jurnal. Konfigurasi server tambahan mungkin diperlukan untuk mendukung fungsi ini (tidak semua server bisa), seperti ditunjukkan di dokumentasi OJS.]]></message>
@@ -286,12 +285,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Pengingat Review</message>
 	<message key="manager.setup.reviewPolicy">Kebijakan Review</message>
 	<message key="manager.setup.searchEngineIndexing">Pengindeksan Mesin Pencari</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Untuk membantu pengguna dalam menemukan jurnal pada search engine, masukkan deskripsi singkat tentang kami dan kata kunci yang relevan (dipisahkan oleh titik koma).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Untuk membantu pengguna dalam menemukan jurnal pada search engine, masukkan deskripsi singkat tentang kami dan kata kunci yang relevan (dipisahkan oleh titik koma).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Bagian dan Editor Bagian</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Jika bagian tidak diisi, secara default item akan diserahkan kepada bagian Artikel.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Untuk membuat atau memodifikasi bagian untuk jurnal (contoh: artikel, review buku, dll), pergi ke Manajemen Bagian.<br /><br /> Penulis dalam menyerahkan item untuk jurnal akan menentukan....]]></message>
-	<message key="manager.setup.securitySettings">Pengaturan Akses dan Keamanan</message>
-	<message key="manager.setup.securitySettingsDescription">OJS menyediakan sejumlah pilihan yang berkaitan dengan keamanan yang dapat digunakan untuk membatasi konten jurnal, dan menjaga informasi tambahan tentang naskah untuk proses audit.</message>
 	<message key="manager.setup.selectEditorDescription">Editor jurnal yang akan menyelesaikan proses editorial.</message>
 	<message key="manager.setup.selectSectionDescription">Bagian jurnal di mana item akan dipertimbangkan.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Selalu tampilkan tautan galley dan tunjukkan bahwa akses dibatasi.</message>
@@ -305,9 +302,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Saat melakukan penyerahan naskah untuk jurnal, Penulis terlebih dahulu diminta untuk mengecek kelengkapan item di daftar ini, sebelum melanjutkan proses. Daftar tersebut juga ditampilkan di Panduan Penulis, di bawah Tentang Jurnal.  Daftar ini dapat diedit, tapi terlebih dahulu diberi tanda centang sebelum diproses.</message>
 	<message key="manager.setup.submissions">Penyerahan Naskah</message>
 	<message key="manager.setup.submissions.description">Panduan Penulis, hak cipta, dan pengindeksan (termasuk registrasi).</message>
-	<message key="manager.setup.subscription">Jurnal akan mensyaratkan langganan untuk mengakses beberapa atau semua konten jurnal.</message>
-	<message key="manager.setup.subscriptionDescription">Menugaskan seorang Manajer Langganan yang memiliki akses ke modul langganan, yang termasuk akses terbuka tambahan, pengarsipan mandiri, dan notifikasi email.</message>
-	<message key="manager.setup.noPublishing">OJS tidak akan digunakan untuk menerbitkan konten jurnal secara online.</message>
+	<message key="manager.distribution.publishingMode.subscription">Jurnal akan mensyaratkan langganan untuk mengakses beberapa atau semua konten jurnal.</message>
+	<message key="manager.distribution.publishingMode.none">OJS tidak akan digunakan untuk menerbitkan konten jurnal secara online.</message>
 	<message key="manager.setup.typeExamples">(Contoh: Survey; Wawancara; Analisis Sastra)</message>
 	<message key="manager.setup.typeMethodApproach">Tipe (Metode/Pendekatan)</message>
 	<message key="manager.setup.typeProvideExamples">Masukkan tipe riset yang relevan, metode, dan pendekatan untuk bidang ini.</message>
@@ -355,8 +351,6 @@
 	<message key="manager.statistics.reports.filters.byObject.description">Persempit hasil berdasar tipe objek (jurnal, terbitan, artikel, tipe file) dan/atau satu atau lebih id objek.</message>
 
 	<message key="manager.subscriptionPolicies">Kebijakan Langganan</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Kebijakan Pengarsipan Mandiri Penulis</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Kebijakan pengarsipan mandiri penulis berikut ini akan ditampilkan di Tentang Jurnal di bawah Kebijakan.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Delayed Open Access</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Dengan Delayed Open Access, editor masih bisa mengangkat artikel spesifik dalam sebuah terbitan untuk langsung dijadikan Open Access.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Terbitan terdahulu jurnal ini akan menjadi Open Access</message>

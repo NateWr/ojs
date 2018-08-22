@@ -115,7 +115,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Vises under Om tidsskriftet)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Kræv, at forfattere, der fremsender et manuskript, skal indsende en erklæring om konkurrerende interesser sammen med deres manuskript.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Kræv, at bedømmere skal indsende en erklæring om konkurrerende interesser sammen med hver enkelt peer review, de fremsender.</message>
-	<message key="manager.setup.copyrightNotice">Oplysninger om ophavsret</message>
 	<message key="manager.setup.coverage">Dækning</message>
 	<message key="manager.setup.coverageDescription">Henviser til geografisk placering, kronologisk eller historisk dækning og/eller karaktertræk ved forskningseksempel.</message>
 	<message key="manager.setup.currentIssue">Aktuelt nummer</message>
@@ -132,11 +131,11 @@
 	<message key="manager.setup.displayCurrentIssue">Føj indholdsfortegnelsen til det aktuelle nummer (hvis den er tilgængelig).</message>
 	<message key="manager.setup.editorDecision">Redaktørbeslutning</message>
 	<message key="manager.setup.emailBounceAddress">Returadresse</message>
-	<message key="manager.setup.emailBounceAddressDescription">Alle e-mails, der ikke kan leveres, resulterer i en fejlmeddelelse til denne adresse.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>allow_envelope_sender</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Alle e-mails, der ikke kan leveres, resulterer i en fejlmeddelelse til denne adresse.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Bemærk!</strong> Hvis du vil aktivere denne indstilling, skal webstedsadministratoren aktivere indstillingen <tt>allow_envelope_sender</tt> i OJS-konfigurationsfilen. Understøttelse af denne funktionalitet (som eventuelt ikke er muligt på alle servere) kan kræve yderligere konfiguration af serveren som angivet i dokumentationen til OJS.]]></message>
 	<message key="manager.setup.emails">E-mail-identifikation</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
-	<message key="manager.setup.emailSignatureDescription">De forberedte e-mails, der sendes af systemet på vegne af tidsskriftet, får følgende signatur tilføjet nederst. Brødteksten til de forberedte e-mails kan redigeres under Administration af tidsskrifter.</message>
+	<message key="manager.setup.emailSignature.description">De forberedte e-mails, der sendes af systemet på vegne af tidsskriftet, får følgende signatur tilføjet nederst. Brødteksten til de forberedte e-mails kan redigeres under Administration af tidsskrifter.</message>
 	<message key="manager.setup.enableAnnouncements">Gør det muligt for tidsskriftschefer at tilføje tidsskriftsmeddelelser.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Visning</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">af de seneste meddelelser på tidsskriftets hjemmeside.</message>
@@ -212,9 +211,9 @@
 	<message key="manager.setup.note">Note</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Bemærk!</strong> E-mail-bekræftelsen vedrørende manuskripter er i øjeblikket deaktiveret. Hvis du vil benytte denne funktion, skal du aktivere e-mailen SUBMISSION_ACK under <a class="action" href="{$preparedEmailsUrl}">Forberedte e-mails</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Sidelinks</message>
-	<message key="manager.setup.onlineAccessManagement">Adgang til tidsskriftsindhold</message>
+	<message key="manager.setup.publishingMode">Adgang til tidsskriftsindhold</message>
 	<message key="manager.setup.onlineIssn">Online-ISSN</message>
-	<message key="manager.setup.openAccess">Tidsskriftet tilbyder Open Access til dets indhold.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Tidsskriftet tilbyder Open Access til dets indhold.</message>
 	<message key="manager.setup.pageNumberIdentifier">Sidetalsindstilling</message>
 	<message key="manager.setup.policies">Politikker</message>
 	<message key="manager.setup.policies.description">Fokus, peer review, sektioner, beskyttelse af personlige oplysninger, sikkerhed og flere oplysninger om elementer.</message>
@@ -231,7 +230,7 @@
 	<message key="manager.setup.restrictArticleAccess">Brugere skal være registreret og logge på for at få vist Open Access-indhold.</message>
 	<message key="manager.setup.restrictSiteAccess">Brugere skal være registreret og logge på for at få vist tidsskriftets websted.</message>
 	<message key="manager.setup.reviewGuidelines">Retningslinjer for bedømmelser</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Retningslinjer for bedømmelser indeholder kriterier, som bedømmere skal bruge til at vurdere, om et manuskript egner sig til at blive publiceret i tidsskriftet, samt specielle instruktioner til udarbejdelse af en effektiv og konstruktiv bedømmelse. Ved bedømmelsen kan bedømmeren skrive kommentarer i to tekstbokse, den første ”til forfatter og redaktør”, den anden ”til redaktør”. Som et alternativ kan Tidsskriftschefen udforme sin egen bedømmelsesformular under <a href="{$reviewFormsUrl}" class="action">Review formular</a>.
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Retningslinjer for bedømmelser indeholder kriterier, som bedømmere skal bruge til at vurdere, om et manuskript egner sig til at blive publiceret i tidsskriftet, samt specielle instruktioner til udarbejdelse af en effektiv og konstruktiv bedømmelse. Ved bedømmelsen kan bedømmeren skrive kommentarer i to tekstbokse, den første ”til forfatter og redaktør”, den anden ”til redaktør”. Som et alternativ kan Tidsskriftschefen udforme sin egen bedømmelsesformular under <a href="{$reviewFormsUrl}" class="action">Review formular</a>.
 I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommentarerne i kommunikationen med forfatteren.]]></message>
 	<message key="manager.setup.reviewOptions">Bedømmelsesindstillinger</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Det er muligt at sende automatiske e-mail-påmindelser (tilgængelige i OJS-systemets standard-e-mails) til bedømmere på to tidspunkter (redaktøren kan desuden altid sende en e-mail direkte til bedømmeren)</message>
@@ -247,12 +246,10 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.reviewOptions.reviewerReminders">Påmindelser til bedømmere</message>
 	<message key="manager.setup.reviewPolicy">Bedømmelsespolitik</message>
 	<message key="manager.setup.searchEngineIndexing">Søgemaskineindeksering</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Hjælp brugere af søgemaskiner med at finde dette tidsskrift ved at angive en kort beskrivelse af tidsskriftet samt relevante nøgleord (adskilt af semikolon).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Hjælp brugere af søgemaskiner med at finde dette tidsskrift ved at angive en kort beskrivelse af tidsskriftet samt relevante nøgleord (adskilt af semikolon).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Sektioner og sektionsredaktører</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Hvis der ikke er angivet sektioner, sendes elementer som standard til sektionen Artikler).</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Hvis du vil oprette eller ændre sektioner for tidsskriftet (f.eks. artikler, boganmeldelser osv.), skal du gå til Administration af sektioner.<br /><br />Ved fremsendelse af elementer til tidsskriftet skal forfattere angive...]]></message>
-	<message key="manager.setup.securitySettings">Adgangs- og sikkerhedsindstillinger</message>
-	<message key="manager.setup.securitySettingsDescription">OJS indeholder en række sikkerhedsrelaterede indstillinger, der kan bruges til at begrænse tidsskriftets indhold og bevare yderligere oplysninger om manuskripter til kontrolformål.</message>
 	<message key="manager.setup.selectEditorDescription">Hvilken tidsskriftsredaktør, der skal føre elementet igennem den redaktionelle proces.</message>
 	<message key="manager.setup.selectSectionDescription">Hvilken tidsskriftssektion, elementet skal tages i betragtning til.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Vis altid links til publiceringsversioner, og angiv begrænset adgang.</message>
@@ -266,8 +263,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.submissionPreparationChecklistDescription">Forfattere, der fremsender et manuskript til tidsskriftet, bliver først bedt om at fuldføre hvert enkelt element på Tjekliste til forberedelse af manuskript, inden de fortsætter. Tjeklisten vises også under Retningslinjer for forfattere under Om tidsskriftet. Listen kan redigeres nedenfor, men alle elementer på listen skal afkrydses, inden forfatterne kan fortsætte med deres manuskript.</message>
 	<message key="manager.setup.submissions">Manuskripter</message>
 	<message key="manager.setup.submissions.description">Retningslinjer for forfattere, ophavsret og indeksering (herunder registrering).</message>
-	<message key="manager.setup.subscription">Tidsskriftet kræver tegning af abonnement for adgang til en del af eller hele tidsskriftets indhold.</message>
-	<message key="manager.setup.subscriptionDescription">Dette kræver tildeling af en abonnementschef, som har adgang til abonnementsmodulet, der omfatter indstillinger for yderligere Open Access, selvarkivering og e-mail-beskeder.</message>
+	<message key="manager.distribution.publishingMode.subscription">Tidsskriftet kræver tegning af abonnement for adgang til en del af eller hele tidsskriftets indhold.</message>
 	<message key="manager.setup.typeExamples">(F.eks. Historisk undersøgelse; Kvasieksperimentel; Litterær analyse; Undersøgelse/interview)</message>
 	<message key="manager.setup.typeMethodApproach">Type (metode/fremgangsmåde)</message>
 	<message key="manager.setup.typeProvideExamples">Angiv eksempler på relevante forskningstyper, -metoder og -fremgangsmåder inden for dette felt</message>
@@ -301,8 +297,6 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.statistics.statistics.selectSections">Vælg de sektioner, der skal bruges til beregning af dette tidsskrifts statistikker, som har undergået peer review</message>
 	<message key="manager.statistics.statistics.subscriptions">Abonnementer</message>
 	<message key="manager.subscriptionPolicies">Abonnementspolitikker</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Politik for selvarkivering for forfattere</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Følgende politik for selvarkivering for forfattere findes under Om tidsskriftet under Politikker.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Forsinket Open Access</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Ved hjælp af forsinket Open Access kan redaktører stadig udpege specifikke artikler i et nummer, der skal være øjeblikkelig Open Access til.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Tidligere numre af dette tidsskrift er tilgængelige i et Open Access-format</message>
@@ -423,7 +417,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.sections.wordCountInstructions">Begræns ordantal for resumé i denne sektion (0 for ingen grænse):</message>
 	<message key="manager.setup.history">Tidsskrifthistorik</message>
 	<message key="manager.setup.historyDescription">Denne tekst vises i sektionen "Om" på tidsskriftets websted og kan anvendes til at beskrive ændringer i titler, redaktionen og andet, der er relevant for tidsskriftets udgivelseshistorik.</message>
-	<message key="manager.setup.noPublishing">OJS vil ikke blive anvendt til at udgive tidsskriftets indhold online.</message>
+	<message key="manager.distribution.publishingMode.none">OJS vil ikke blive anvendt til at udgive tidsskriftets indhold online.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Meddelelser vedrørende online-betalinger</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Der kan sendes automatiske e-mail-meddelelser (kan redigeres af tidsskriftschefer i OJS's e-mail-skabeloner) til abonnementschefen, når der er gennemført abonnementsbetalinger online.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Underret abonnementschefen via e-mail ved online-køb af et individuelt abonnement.</message>

@@ -380,7 +380,7 @@ Wenn Sie denken, dass Sie Zugriff auf eines oder mehrere der <a href="http://www
 Die CLOCKSS-Unterstützung in OJS sollte erst konfiguriert werden, wenn tatsächlich Inhalte publiziert werden.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Beispiele für die Anzeige von Creative-Commons-Lizenzen in den Copyright-Vermerken</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Beispiele für die Anzeige von Creative-Commons-Lizenzen in den Copyright-Vermerken</h3>
 <h4>1. Empfohlene Copyright-Regelungen für Zeitschriften mit Open Access</h4>
 Autor/innen, die in dieser Zeitschrift publizieren möchten, stimmen den folgenden Bedingungen zu:
 <ol type="a">
@@ -793,7 +793,6 @@ Sie können der Nutzerin/dem Nutzer einen Grund für die Sperrung des Zugangs an
 	<message key="about.delayedOpenAccess">Verzögerter Open Access</message>
 	<message key="about.delayedOpenAccessDescription1">Der Inhalt dieser Zeitschrift erscheint in einem frei zugänglichen Format</message>
 	<message key="about.delayedOpenAccessDescription2">Monat(e) nach der Veröffentlichung einer Ausgabe.</message>
-	<message key="about.authorSelfArchive">Selbstarchivierung durch die/den Autor/in</message>
 	<message key="about.archiving">Archivierung</message>
 	<message key="about.subscriptions">Abonnements</message>
 	<message key="about.subscriptions.individual">Individuelle Abonnements</message>

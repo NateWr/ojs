@@ -136,7 +136,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Granskare måste skicka med en intressekonfliktsförklaring i samband med varje sakkunniggranskning som görs.</message>
 	<message key="manager.setup.history">Utgivningshistorik</message>
 	<message key="manager.setup.historyDescription">Den här texten visas under rubriken "Om" och är till för att beskriva exempelvis förändringar av titel, redaktionens sammansättning, eller andra relevanta detaljer rörande tidskriftens utgivningshistorik.</message>
-	<message key="manager.setup.copyrightNotice">Upphovsrättsdeklaration</message>
 	<message key="manager.setup.coverage">Täckning</message>
 	<message key="manager.setup.coverageDescription">Hänvisar till geografisk, kronologisk eller historisk täckning, och/eller speciella ämnesegenskaper för det publicerade materialet.</message>
 	<message key="manager.setup.currentIssue">Senaste numret</message>
@@ -153,11 +152,11 @@
 	<message key="manager.setup.displayCurrentIssue">Lägg till en innehållsförteckning för det senaste numret (om det finns).</message>
 	<message key="manager.setup.editorDecision">Redaktörens beslut</message>
 	<message key="manager.setup.emailBounceAddress">Bounce-adress</message>
-	<message key="manager.setup.emailBounceAddressDescription">E-postmeddelanden som inte kan levereras producerar ett felmeddelande som skickas till denna e-postadress.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Observera:</strong> För att välja det här alternativet måste sidadministratören aktivera <tt>allow_envelope_sender</tt> i OJS konfigureringsfil. Ytterligare serverkonfigurering kan komma att bli nödvändiga för att stödja den här funktionaliteten (något som inte alla servrar tillåter, se OJS-dokumentationen för information.)]]></message>
+	<message key="manager.setup.emailBounceAddress.description">E-postmeddelanden som inte kan levereras producerar ett felmeddelande som skickas till denna e-postadress.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Observera:</strong> För att välja det här alternativet måste sidadministratören aktivera <tt>allow_envelope_sender</tt> i OJS konfigureringsfil. Ytterligare serverkonfigurering kan komma att bli nödvändiga för att stödja den här funktionaliteten (något som inte alla servrar tillåter, se OJS-dokumentationen för information.)]]></message>
 	<message key="manager.setup.emails">E-post-identifiering</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
-	<message key="manager.setup.emailSignatureDescription">Färdiga e-postmeddelanden som skickas från tidskriften kommer ha följande signatur infogad sist i e-posten.</message>
+	<message key="manager.setup.emailSignature.description">Färdiga e-postmeddelanden som skickas från tidskriften kommer ha följande signatur infogad sist i e-posten.</message>
 	<message key="manager.setup.enableAnnouncements">Möjliggör för tidskriftsansvariga att lägga till meddelanden.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Visning</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">av tidskriftens senaste meddelanden.</message>
@@ -261,9 +260,9 @@
 	<message key="manager.setup.note">Anteckning</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Anmärkning:</strong> Funktionen för utskick av e-post som bekräftar att bidrag har emottagits är avstängd. För att använda funktionen, aktivera "SUBMISSION ACK"-e-postmeddelandet i E-postmeddelanden.]]></message>
 	<message key="manager.setup.numPageLinks">Sidlänkar</message>
-	<message key="manager.setup.onlineAccessManagement">Tillgång till tidskriftens innehåll</message>
+	<message key="manager.setup.publishingMode">Tillgång till tidskriftens innehåll</message>
 	<message key="manager.setup.onlineIssn">e-ISSN</message>
-	<message key="manager.setup.openAccess">Tidskriftens innehåll är tillgängligt som open access.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Tidskriftens innehåll är tillgängligt som open access.</message>
 	<message key="manager.setup.pageNumberIdentifier">Alternativ för sidnumrering</message>
 	<message key="manager.setup.policies">Policyer</message>
 	<message key="manager.setup.policies.description">Tidskriftens fokus, sakkunninggranskning, sektioner, personuppgifter, säkerhet och övrigt.</message>
@@ -280,7 +279,7 @@
 	<message key="manager.setup.restrictArticleAccess">Användare måste vara registrerade och inloggade för att se open access-innehållet.</message>
 	<message key="manager.setup.restrictSiteAccess">Användare måste vara registrerade och inloggade för att se tidskriften.</message>
 	<message key="manager.setup.reviewGuidelines">Riktlinjer för granskare</message>
-	<message key="manager.setup.reviewGuidelinesDescription">I Riktlinjer för granskare finns kriterier för granskarnas bedömning av tidskriftens bidrag. Kan även innehålla instruktioner för att utföra en konstruktiv och effektiv granskning.</message>
+	<message key="manager.setup.reviewGuidelines.description">I Riktlinjer för granskare finns kriterier för granskarnas bedömning av tidskriftens bidrag. Kan även innehålla instruktioner för att utföra en konstruktiv och effektiv granskning.</message>
 	<message key="manager.setup.reviewOptions">Alternativ för granskning</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Automatiska e-postpåminnelser</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[För att aktivera dessa alternativ måste den webbplatsansvarige aktivera <tt>scheduled_tasks</tt> funktionen i OJS:s konfigurationsfil. Ytterligare serverkonfiguration kan komma att behöva göras för att stödja denna funktion (något som inte är möjligt på alla typer av servrar) som beskrivs i OJS-dokumentationen.]]></message>
@@ -295,12 +294,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Påminnelse (för granskare)</message>
 	<message key="manager.setup.reviewPolicy">Granskningspolicy</message>
 	<message key="manager.setup.searchEngineIndexing">Indexering för sökmotorer</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Lägg till en kort beskrivning av tidskriften som sökmotorer kan visa när tidskriften visas i sökresultatet</message>
+	<message key="manager.setup.searchEngineIndexing.description">Lägg till en kort beskrivning av tidskriften som sökmotorer kan visa när tidskriften visas i sökresultatet</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Sektioner och sektionsredaktörer</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Om inga sektioner har skapats så kommer bidragen automatiskt att läggas under sektionen Artikel.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[För att skapa eller redigera tidskriftens sektioner (t.ex.; Artiklar, Bokrecensioner, etc.), gå till Hantera sektioner.<br /><br />Författare som skickar in bidrag till tidskriften kommer att ange...]]></message>
-	<message key="manager.setup.securitySettings">Tillgång- och säkerhetsinställningar</message>
-	<message key="manager.setup.securitySettingsDescription">I OJS finns olika säkerhetsalternativ som kan användas för att begränsa tidskriftens innehåll, men ändå bibehålla övrig information om bidragen för granskningsprocessen.</message>
 	<message key="manager.setup.selectEditorDescription">Tidskriftsredaktören som kommer att följa bidraget genom den redaktionella processen.</message>
 	<message key="manager.setup.selectSectionDescription">Lämplig tidskriftssektion för bidraget.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Visa alltid länkar till publiceringsversionerna och markera när tillgången är begränsad.</message>
@@ -314,9 +311,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">När ett bidrag skickas in till tidskriften måste författaren först kontrollera de olika momenten i Checklista för insändning av bidrag. Checklistan syns också i Författarinstruktioner under Om tidskriften. Checklistan kan redigeras nedan men alla delmoment på listan måste markeras av författaren innan bidraget skickas in.</message>
 	<message key="manager.setup.submissions">Bidrag</message>
 	<message key="manager.setup.submissions.description">Riktlinjer för författare, upphovsrätt, och indexering (även registrering).</message>
-	<message key="manager.setup.subscription">Tidskriften kräver prenumeration för hela eller delar av innehållet.</message>
-	<message key="manager.setup.subscriptionDescription">Det innebär att det behövs en prenumerationssansvarig som har tillgång till prenumerationssmodulen, där ytterligare alternativ för open access, parallellpublicering och e-postaviseringar administreras.</message>
-	<message key="manager.setup.noPublishing">OJS kommer inte användas för att publicera tidskriftens innehåll online.</message>
+	<message key="manager.distribution.publishingMode.subscription">Tidskriften kräver prenumeration för hela eller delar av innehållet.</message>
+	<message key="manager.distribution.publishingMode.none">OJS kommer inte användas för att publicera tidskriftens innehåll online.</message>
 	<message key="manager.setup.typeExamples">(t.ex., Historiska studier; Experimentella studier; Litteraturanalyser; Enkäter och intervjuer)</message>
 	<message key="manager.setup.typeMethodApproach">Metod och/eller tillvägagångssätt</message>
 	<message key="manager.setup.typeProvideExamples">Anger exempel på typer av metoder och tillvägagångssätt inom ämnesområdet</message>
@@ -364,8 +360,6 @@
 	<message key="manager.statistics.reports.filters.byObject.description">Begränsa resultaten med objektstyp (tidskrift, nummer, artikel, filtyp) och/eller med en eller flera identifikatorer.</message>
 	<message key="manager.subscriptionPolicies">Prenumerationspolicyer</message>
 
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Författarens egenarkiveringspolicy</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Följande egenarkiveringspolicy kommer att visas i Policyer under Om tidskriften.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Fördröjd open access</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Även om tidskriften använder sig av fördröjd open access kan redaktören ändå publicera enskilda artiklar som open access i numret direkt.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Äldre nummer av tidskriften kommer vara tillgängligt som open access</message>

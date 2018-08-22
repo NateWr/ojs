@@ -377,7 +377,7 @@
 إن إعداد نظام CLOCKSS ليقدم الدعم لنظام المجلات المفتوحة لا يستلزم أن يحدث حتى تبدأ المجلة بإصدار أعدادها بشكل نهائي.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>أمثلة على إشعارات الترخيص الخلاقة الدارجة ضمن ملاحظات الحقوق الفكرية</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>أمثلة على إشعارات الترخيص الخلاقة الدارجة ضمن ملاحظات الحقوق الفكرية</h3>
 <h4>1. السياسة المقترحة للمجلات التي تتيح الوصول المفتوح</h4>
 المؤلفون الناشرون عبر هذه المجلة يوافقون على البنود الآتية:
 <ol type="a">
@@ -789,7 +789,6 @@
 	<message key="about.delayedOpenAccess">الوصول المفتوح المؤجل</message>
 	<message key="about.delayedOpenAccessDescription1">محتويات هذه المجلة ستكون متوافرة بشكل يسمح للوصول المفتوح</message>
 	<message key="about.delayedOpenAccessDescription2">شهر/أشهر بعد نشر الإصدار</message>
-	<message key="about.authorSelfArchive">الأرشفة الذاتية للمؤلف</message>
 	<message key="about.archiving">الأرشفة</message>
 	<message key="about.subscriptions">الاشتراكات</message>
 	<message key="about.subscriptions.individual">اشتراكات منفردة</message>

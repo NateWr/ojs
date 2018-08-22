@@ -134,7 +134,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Вимагати від рецензентів декларувати відсутність конфлікту інтересів щодо призначених їм на рецензування матеріалів.</message>
 	<message key="manager.setup.history">Історія журналу</message>
 	<message key="manager.setup.historyDescription">Цей текст з'явиться в розділі «Про журнал» на сайті, він може бути використаний для опису зміни назв журналу, складу редакції та іншої інформації, пов'язаної з історією журналу.</message>
-	<message key="manager.setup.copyrightNotice">Положення про авторські права</message>
 	<message key="manager.setup.coverage">Тематичне покриття</message>
 	<message key="manager.setup.coverageDescription">Геопросторове, хронологічне або історичне покриття та/або основні характеристики дослідження.</message>
 	<message key="manager.setup.currentIssue">Поточний випуск</message>
@@ -151,11 +150,11 @@
 	<message key="manager.setup.displayCurrentIssue">Додати сторінку змісту поточного випуску, якщо він існує.</message>
 	<message key="manager.setup.editorDecision">Рішення редактора</message>
 	<message key="manager.setup.emailBounceAddress">Адреса повернення</message>
-	<message key="manager.setup.emailBounceAddressDescription">На цю адресу будуть надсилатися повідомлення про всі недоставлені листи.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор повинен дозволити директиву <tt>allow_envelope_sender</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
+	<message key="manager.setup.emailBounceAddress.description">На цю адресу будуть надсилатися повідомлення про всі недоставлені листи.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію, адміністратор повинен дозволити директиву <tt>allow_envelope_sender</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може вимагати також додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
 	<message key="manager.setup.emails">Налаштування листування</message>
 	<message key="manager.setup.emailSignature">Підпис</message>
-	<message key="manager.setup.emailSignatureDescription">Підготовлені листи, які будуть розсилатися системою від імені журналу, матимуть у кінці зазначений нижче підпис. Посилання для редагування змісту шаблонів листів доступне на сторінці "Менеджмент журналу".</message>
+	<message key="manager.setup.emailSignature.description">Підготовлені листи, які будуть розсилатися системою від імені журналу, матимуть у кінці зазначений нижче підпис. Посилання для редагування змісту шаблонів листів доступне на сторінці "Менеджмент журналу".</message>
 	<message key="manager.setup.enableAnnouncements">Дозволити менеджерам журналу додавати анонси журналу.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Показати</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">найновіших анонсів на домашній сторінці журналу.</message>
@@ -252,9 +251,9 @@
 	<message key="manager.setup.note">Примітка</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Примітка:</strong> Наразі розсилання листів подяки відключене. Щоб користуватися цією функціональністю дозвольте лист SUBMISSION_ACK на сторінці <a class="action" href="{$preparedEmailsUrl}">Шаблони листів</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Посилань на сторінки</message>
-	<message key="manager.setup.onlineAccessManagement">Доступ до змісту журналу</message>
+	<message key="manager.setup.publishingMode">Доступ до змісту журналу</message>
 	<message key="manager.setup.onlineIssn">ISSN онлайнової версії</message>
-	<message key="manager.setup.openAccess">Журнал надаватиме відкритий доступ до свого змісту.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Журнал надаватиме відкритий доступ до свого змісту.</message>
 	<message key="manager.setup.pageNumberIdentifier">Налаштування пагінації</message>
 	<message key="manager.setup.policies">Політика</message>
 	<message key="manager.setup.policies.description">Проблематика, рецензування, розділи, приватність, безпека та додаткові відомості про журнал.</message>
@@ -271,7 +270,7 @@
 	<message key="manager.setup.restrictArticleAccess">Користувачі мають бути зареєстровані для перегляду змісту у відкритому доступі.</message>
 	<message key="manager.setup.restrictSiteAccess">Користувачі мають бути зареєстровані для перегляду веб-сайту журналу.</message>
 	<message key="manager.setup.reviewGuidelines">Керівництво для рецензентів</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Керівництво для рецензентів має пропонувати рецензентам критерії для оцінювання подань з точки зору їх придатності до публікації у цьому журналі; воно може містити будь-які інструкції щодо підготовки влучної та корисної рецензії. В процесі підготовки рецензії рецензентам будуть доступні два текстових блоки, перший "для автора та редактора" та другий "лише для редактора". Як варіант, менеджер журналу може створювати форми рецензій у розділі <a href="{$reviewFormsUrl}" class="action">Форми рецензій</a>. У обох випадках редактори матимуть змогу включення рецензій до кореспонденції з автором.]]></message>
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Керівництво для рецензентів має пропонувати рецензентам критерії для оцінювання подань з точки зору їх придатності до публікації у цьому журналі; воно може містити будь-які інструкції щодо підготовки влучної та корисної рецензії. В процесі підготовки рецензії рецензентам будуть доступні два текстових блоки, перший "для автора та редактора" та другий "лише для редактора". Як варіант, менеджер журналу може створювати форми рецензій у розділі <a href="{$reviewFormsUrl}" class="action">Форми рецензій</a>. У обох випадках редактори матимуть змогу включення рецензій до кореспонденції з автором.]]></message>
 	<message key="manager.setup.reviewOptions">Налаштування рецензування</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Хоча редактор завжди може особисто контактувати з рецензентами по email, можливі також два варіанта налаштування автоматичного розсилання нагадувань (зміст листів-нагадувань можна змінити у розділі "Шаблони листів")</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Примітка:</strong> Щоб активувати цю опцію адміністратор сайту повинен дозволити директиву <tt>scheduled_tasks</tt> у файлі конфігурації OJS. Крім того, як зазначено у документації OJS, налаштування цієї опції може потребувати додаткових конфігурацій (що можливо не на всіх серверах).]]></message>
@@ -286,12 +285,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Нагадування рецензентам</message>
 	<message key="manager.setup.reviewPolicy">Політика рецензування</message>
 	<message key="manager.setup.searchEngineIndexing">Індексування пошуковими системами</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Щоб допомогти користувачам пошукових систем знаходити журнал, надайте короткий опис журналу та набір релевантних ключових слів (розділених крапкою з комою).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Щоб допомогти користувачам пошукових систем знаходити журнал, надайте короткий опис журналу та набір релевантних ключових слів (розділених крапкою з комою).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Розділи та редактори розділів</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Якщо розділи не додані, матеріали будуть надсилатися до розділу статей за замовчуванням).</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Щоб додати або змінити розділи журналу (наприклад, Статті, Рецензії тощо), перейдіть на сторінку "Розділи журналу".<br /><br />Автори рукописів вказуватимуть...]]></message>
-	<message key="manager.setup.securitySettings">Налаштування доступу та безпеки</message>
-	<message key="manager.setup.securitySettingsDescription">OJS пропонує численні опції налаштування безпеки, які можуть використовуватись для обмеження доступу до змісту журналу та збереження додаткової інформації про подання з метою удосконалення аудиту.</message>
 	<message key="manager.setup.selectEditorDescription">Редактор журналу, який наглядатиме за редакційним процесом.</message>
 	<message key="manager.setup.selectSectionDescription">Розділ журналу для об'єктів.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Завжди відображати посилання на повні тексти та повідомляти про обмежений доступ.</message>
@@ -305,9 +302,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Під час подання рукопису до журналу автори не зможуть завершити цей процес, поки вони не підтвердять відповідність рукопису всім встановленим вимогам. Список вимог також з'явиться у розділі "Керівництво для авторів" сторінки "Про журнал". Поданий нижче список вимог можна редагувати, але зауважте, що автор повинен буде підтвердити відповідність рукопису кожному з пунктів вимог, без цього він не зможе завершити процес подання рукопису до журналу.</message>
 	<message key="manager.setup.submissions">Подання</message>
 	<message key="manager.setup.submissions.description">Інформація для авторів, авторські права та індексування (в тому числі, реєстрація).</message>
-	<message key="manager.setup.subscription">Для доступу до змісту журналу (всього або деякого) буде потрібна передплата.</message>
-	<message key="manager.setup.subscriptionDescription">Це потребує призначення менеджера передплати з правом доступу до модуля передплати, який дозволяє додаткові налаштування відкритого доступу, депонування та поштових сповіщень.</message>
-	<message key="manager.setup.noPublishing">OJS не буде використовуватись для електронної публікації змісту журналу.</message>
+	<message key="manager.distribution.publishingMode.subscription">Для доступу до змісту журналу (всього або деякого) буде потрібна передплата.</message>
+	<message key="manager.distribution.publishingMode.none">OJS не буде використовуватись для електронної публікації змісту журналу.</message>
 	<message key="manager.setup.typeExamples">(наприклад, Історичний екскурс; Результати експерименту; Огляд літератури; Опитування/Інтерв'ю)</message>
 	<message key="manager.setup.typeMethodApproach">Тип дослідження (методологія/підходи)</message>
 	<message key="manager.setup.typeProvideExamples">Наведіть приклади термінів, які автори можуть застосовувати для характеристики типу дослідження, методології та використаних ними підходів</message>
@@ -354,8 +350,6 @@
 	<message key="manager.statistics.reports.filters.byContext.description">Фільтрувати результати по контексту (випуску і/або статті).</message>
 	<message key="manager.statistics.reports.filters.byObject.description">Фільтрувати результати за типом об'єкта (журнал, випуск, стаття, типи файлів) і/або по одному або декільком ID об'єктів.</message>
 	<message key="manager.subscriptionPolicies">Політика передплат</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Політика депонування робіт авторами</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Викладене нижче положення щодо політики депонування робіт авторами буде розміщене у розділі "Політика" сторінки "Про журнал".</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Відстрочений відкритий доступ</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Відстрочений відкритий доступ не забороняє редакторам робити виключення і публікувати окремі статті у випусках на умовах миттєвого відкритого доступу до них.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Архівні випуски журналу ставатимуть доступними на умовах відкритого доступу через</message>

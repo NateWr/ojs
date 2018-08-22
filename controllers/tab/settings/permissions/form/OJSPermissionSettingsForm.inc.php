@@ -23,8 +23,6 @@ class OJSPermissionSettingsForm extends PermissionSettingsForm {
 	function __construct($wizardMode = false) {
 		parent::__construct(
 			array(
-				'enableAuthorSelfArchive' => 'bool',
-				'authorSelfArchivePolicy' => 'string',				
 				'copyrightYearBasis' => 'string',
 			),
 			$wizardMode
@@ -34,13 +32,6 @@ class OJSPermissionSettingsForm extends PermissionSettingsForm {
 	//
 	// Implement template methods from Form.
 	//
-	/**
-	 * @copydoc Form::getLocaleFieldNames
-	 */
-	function getLocaleFieldNames() {
-		return array_merge(parent::getLocaleFieldNames(), array('authorSelfArchivePolicy'));
-	}
-
 	/**
 	 * @copydoc ContextSettingsForm::fetch
 	 */

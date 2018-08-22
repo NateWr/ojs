@@ -380,7 +380,7 @@ Du behöver inte aktivera LOCKSS i Open Journal Systems förrän publiceringen �
 Du behöver inte aktivera CLOCKSS-stöd i Open Journal Systems förrän publiceringen är i full gång.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Föreslagna upphovsrättsdeklarationer baserade på Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Föreslagna upphovsrättsdeklarationer baserade på Creative Commons</h3>
 <h4>1. Förslag på deklaration för tidskrifter som erbjuder open access</h4>
 Författare som publicerar i den här tidskriften accepterar följande villkor:
 <ol type="a">
@@ -793,7 +793,6 @@ Du kan välja att ge användaren en förklaring till varför kontot har spärrat
 	<message key="about.delayedOpenAccess">Fördröjd open access</message>
 	<message key="about.delayedOpenAccessDescription1">Innehållet i den här tidskriften kommer att tillgängligöras som open access</message>
 	<message key="about.delayedOpenAccessDescription2">månad(er) efter att numret har publicerats.</message>
-	<message key="about.authorSelfArchive">Parallellpublicering</message>
 	<message key="about.archiving">Arkivering</message>
 	<message key="about.subscriptions">Prenumerationer</message>
 	<message key="about.subscriptions.individual">Enskilda prenumerationer</message>

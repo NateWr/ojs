@@ -123,7 +123,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Hakemlerin her bir değerlendirme gönderisi için Çıkar Çatışması bildirimi dosyası göndermeleri gereklidir.</message>
 	<message key="manager.setup.history">Dergi Geçmişi</message>
 	<message key="manager.setup.historyDescription">Buraya yazılan metin dergi web sayfasının "Hakkında" kısmında görüntülenir. Dergi geçmişi ve yayın kuruluna yönelik bilgiler verilir.</message>
-	<message key="manager.setup.copyrightNotice">Telif Hakkı Bildirimi Duyurusu</message>
 	<message key="manager.setup.coverage">Kapsam</message>
 	<message key="manager.setup.coverageDescription">Coğrafik yerleşim, kronolojik veya tarihsel süreç, ve/veya araştırma örneklerinin özelliklerine başvur.</message>
 	<message key="manager.setup.currentIssue">Son Sayı</message>
@@ -140,11 +139,11 @@
 	<message key="manager.setup.displayCurrentIssue">Son sayının içindekiler bölümünü ekle (mevcut ise).</message>
 	<message key="manager.setup.editorDecision">Editör Kararı</message>
 	<message key="manager.setup.emailBounceAddress">Yanıt vermeyen e-posta adresi</message>
-	<message key="manager.setup.emailBounceAddressDescription">İletilemeyen her posta bu adreste hata mesajı olarak sonuçlanacaktır.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Not:</strong> Bu seçeneği etkinleştirmek için ADS konfigürasyon dosyasında <tt>allow_envelope_sender</tt> seçeneği etkin olmalıdır. Bu işlevin kullanılabilmesi için sunucu (tüm sunucularda çalışmayabilir) ayarlarında da değişiklik yapılması gerekir. Daha fazla bilgi için ADS belgelerine bakınız.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">İletilemeyen her posta bu adreste hata mesajı olarak sonuçlanacaktır.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Not:</strong> Bu seçeneği etkinleştirmek için ADS konfigürasyon dosyasında <tt>allow_envelope_sender</tt> seçeneği etkin olmalıdır. Bu işlevin kullanılabilmesi için sunucu (tüm sunucularda çalışmayabilir) ayarlarında da değişiklik yapılması gerekir. Daha fazla bilgi için ADS belgelerine bakınız.]]></message>
 	<message key="manager.setup.emails">E-posta Tanımlama</message>
 	<message key="manager.setup.emailSignature">İmza</message>
-	<message key="manager.setup.emailSignatureDescription">Dergi adına hazırlanmış ve sistem tarafından gönderilen e-postalara eklenen imzadır. Hazır e-posta metinleri Dergi Yönetimi sayfası altındadır.</message>
+	<message key="manager.setup.emailSignature.description">Dergi adına hazırlanmış ve sistem tarafından gönderilen e-postalara eklenen imzadır. Hazır e-posta metinleri Dergi Yönetimi sayfası altındadır.</message>
 	<message key="manager.setup.enableAnnouncements">Dergi yöneticilerinin dergilerine duyuru eklemelerini etkinleştir.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Göster</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">Dergi sayfasındaki en son duyurular.</message>
@@ -221,9 +220,9 @@
 	<message key="manager.setup.note">Not</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Not:</strong> Otomatik başvuru e-posta gönderme seçeneği başlangıçta pasifleştirildi. Açmak için <a class="action" href="{$preparedEmailsUrl}">Hazır E-Posta Mesajları</a> sayfasında "SUBMISSION_ACK" olarak tanımlanan mesajı etkinleştirin.]]></message>
 	<message key="manager.setup.numPageLinks">Sayfa bağlantıları</message>
-	<message key="manager.setup.onlineAccessManagement">Dergi İçeriğine Erişim</message>
+	<message key="manager.setup.publishingMode">Dergi İçeriğine Erişim</message>
 	<message key="manager.setup.onlineIssn">eISSN</message>
-	<message key="manager.setup.openAccess">Dergi açık erişime izin verir.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Dergi açık erişime izin verir.</message>
 	<message key="manager.setup.pageNumberIdentifier">Sayfa Numarası Seçenekleri</message>
 	<message key="manager.setup.policies">Politikalar</message>
 	<message key="manager.setup.policies.description">Odak, hakem değerlendirmesi, bölümler, gizlilik, güvenlik ve erişim öğeler hakkında ekler.</message>
@@ -240,7 +239,7 @@
 	<message key="manager.setup.restrictArticleAccess">Kullanıcılar açık erişim içeriğini görüntüleyebilmek için kayıt yaparak giriş yapmak zorundadır.</message>
 	<message key="manager.setup.restrictSiteAccess">Kullanıcılar dergi sitesini görüntüleyebilmek için kayıt yaparak giriş yapmak zorundadır.</message>
 	<message key="manager.setup.reviewGuidelines">Değerlendirme Rehberi</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Hakem Rehberleri dergide yayımlanmak üzere yapılan gönderilerin uygunluğunu denetlemek üzere hazırlanan kriterleri ve değerlendirmeye yardımcı olan anlaşılabilir kimi talimatları içermelidir. Değerlendirme sırasında hakeme iki açılabilir kutu sunulur. Bunlardan ilki "yazar ve editöre" ikincisi ise sadece "editöre" yorum ve mesaj göndermek içindir. Alternatif olarak Dergi Yöneticisi <a href="{$reviewFormsUrl}" class="action">Değerlendirme Formları</a> altında  özel bir değerlendirme formu oluşturabilir. Editörler her koşulda değerlendirme dahil tüm seçeneklere sahip olacaktır.]]></message>
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Hakem Rehberleri dergide yayımlanmak üzere yapılan gönderilerin uygunluğunu denetlemek üzere hazırlanan kriterleri ve değerlendirmeye yardımcı olan anlaşılabilir kimi talimatları içermelidir. Değerlendirme sırasında hakeme iki açılabilir kutu sunulur. Bunlardan ilki "yazar ve editöre" ikincisi ise sadece "editöre" yorum ve mesaj göndermek içindir. Alternatif olarak Dergi Yöneticisi <a href="{$reviewFormsUrl}" class="action">Değerlendirme Formları</a> altında  özel bir değerlendirme formu oluşturabilir. Editörler her koşulda değerlendirme dahil tüm seçeneklere sahip olacaktır.]]></message>
 	<message key="manager.setup.reviewOptions">Değerlendirme Seçenekleri</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Hakemlere iki durumda uyarı için otomatik e-posta gönderilecektir (editör istediği her zaman gönderebilir)</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Not:</strong> Bu özelliğin çalışabilmesi için site yöneticisinin ADS kurulum dosyasında <tt>scheduled_tasks</tt> seçeneğini etkinleştirmesi gerekir. Bu iş için sunucuda da ayarlar yapmak gerekebilir ve her sunucuda bu işlev çalışmayabilir. (Daha fazla bilgi için ADS belgelerine bakınız).]]></message>
@@ -255,12 +254,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Hakem Hatırlatmaları</message>
 	<message key="manager.setup.reviewPolicy">Değerlendirme Politikası</message>
 	<message key="manager.setup.searchEngineIndexing">Arama Motoru Dizinlemesi</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Kullanıcılara yardımcı olmak üzere arama motorlarının dergiyi dizinlemesi için dergiyle ilgili anahtar kelimeleri (noktalı virgülle ayırarak) yazabilirsiniz. Ör. İktisat; İşletme; Finans.</message>
+	<message key="manager.setup.searchEngineIndexing.description">Kullanıcılara yardımcı olmak üzere arama motorlarının dergiyi dizinlemesi için dergiyle ilgili anahtar kelimeleri (noktalı virgülle ayırarak) yazabilirsiniz. Ör. İktisat; İşletme; Finans.</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Bölümler ve Bölüm Editörleri</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Eğer bölüm eklenmemişse, öğeler Makaleler bölümüne varsayılan olarak gönderilir.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Dergi için bölümler oluşturmak veya değiştirmek (Örneğin; Makaleler, Kitap Değerlendirmeleri, v.b.) için Bölüm Yönetimine gidin. <br /><br /> Yazarlar dergiye gönderi yaparken seçim yapacaklardır...]]></message>
-	<message key="manager.setup.securitySettings">Erişim ve Güvenlik Ayarları</message>
-	<message key="manager.setup.securitySettingsDescription">ADS güvenlikle ilgili bir dizi seçenek sunar. Bu seçenek sınırlı dergi içeriğine erişim için kullanılabilir ve denetim amaçlı başvurular hakkında ek bilgi sağlar.</message>
 	<message key="manager.setup.selectEditorDescription">Dergi editörü bunu editoryal süreç olarak görecektir.</message>
 	<message key="manager.setup.selectSectionDescription">Dergi bölümü göz önüne alınacaktır.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Daima dizgi bağantısını göster ve sınırlı erişimi belirt.</message>
@@ -274,9 +271,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Dergiye makale başvurusu yaparken, yazarlar önce Başvuru Hazırlık Kontrol Listesini kontrol etmelidirler. Kontrol listesi "Dergi Hakkında" altındaki "Yazar Rehberi" bölümündedir. Liste aşağıda düzenlenebilir, ama listedeki bütün öğelerin bir sonraki basamağa geçebilmek için yazarlar tarafından işaretlenmesi gerekmektedir.</message>
 	<message key="manager.setup.submissions">Başvurular</message>
 	<message key="manager.setup.submissions.description">Yazar rehberleri, telif hakkı ve dizinleme (kayıt dahil).</message>
-	<message key="manager.setup.subscription">Dergi içeriğinin tümüne veya bir bölümüne erişim için abonelik gerekir.</message>
-	<message key="manager.setup.subscriptionDescription">Bu gereklilik bir Abone Yöneticisinin atanması, abone yöneticisinin abone modülüne girmesi, kişisel arşiv ve e-posta bildirim seçenekleri içindir.</message>
-	<message key="manager.setup.noPublishing">ADS derginin online içeriğini yayımlamak için kullanılmaz.</message>
+	<message key="manager.distribution.publishingMode.subscription">Dergi içeriğinin tümüne veya bir bölümüne erişim için abonelik gerekir.</message>
+	<message key="manager.distribution.publishingMode.none">ADS derginin online içeriğini yayımlamak için kullanılmaz.</message>
 	<message key="manager.setup.typeExamples">(Örneğin: Tarihsel Sorgu; Yarı Deneysel; Edebi Analiz; Araştırma/Görüşme)</message>
 	<message key="manager.setup.typeMethodApproach">Tür (Yöntem/Yaklaşım)</message>
 	<message key="manager.setup.typeProvideExamples">Bu alan için araştırma türleri, yöntemleri ve yaklaşımlarıyla ilgili örnekler sağlayınız.</message>
@@ -310,8 +306,6 @@
 	<message key="manager.statistics.statistics.selectSections">Bu dergide hakem değerlendirme istatistiklerinin yapılmasını istediğiniz bölümlerini seçiniz.</message>
 	<message key="manager.statistics.statistics.subscriptions">Abonelik:</message>
 	<message key="manager.subscriptionPolicies">Abonelik Politikası</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Yazar Kişisel Arşivleme Politikası</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Aşağıdaki Yazar Kişisel Arşivleme Politikası Dergi Hakkında kısmında Politikalar altında yer alacaktır.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Gecikmiş Açık Erişim</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Gecikmiş açık erişim seçildiğinde, editörler seçtikleri makaleler için gecikmeden açık erişime izin verebilirler.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Bu derginin eski sayılarına açık erişim vardır. Yayınlandıktan</message>

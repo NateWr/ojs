@@ -11,6 +11,7 @@
 import PkpLoad from '../lib/pkp/js/load.js';
 
 // Import controllers used by OJS
+import Container from '@/components/SettingsContainer/SettingsContainer.vue';
 import Form from '@/components/Form/Form.vue';
 import ListPanel from '@/components/ListPanel/ListPanel.vue';
 import MultilingualProgress from '@/components/MultilingualProgress/MultilingualProgress.vue';
@@ -23,6 +24,7 @@ import Tooltip from '@/components/Tooltip/Tooltip.vue';
 // Expose Vue, the registry and controllers in a global var
 window.pkp = Object.assign(PkpLoad, {
 	controllers: {
+		Container,
 		Form,
 		ListPanel,
 		MultilingualProgress,

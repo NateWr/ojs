@@ -510,7 +510,6 @@ Prendre note que si votre administrateur de site a déjà inscrit ce site auprè
 	<message key="about.delayedOpenAccess">Accès libre différé</message>
 	<message key="about.delayedOpenAccessDescription1">Le contenu de cette revue sera disponible en accès libre.</message>
 	<message key="about.delayedOpenAccessDescription2">mois après la publication d'un numéro.</message>
-	<message key="about.authorSelfArchive">Auto-archivage par l'auteur</message>
 	<message key="about.archiving">Archivage</message>
 	<message key="about.subscriptions">Abonnements</message>
 	<message key="about.subscriptionsContact">Contact des abonnements</message>
@@ -691,7 +690,7 @@ Actuellement, votre serveur prend en charge mbstring: <strong>{$supportsMBString
 		<li>OJS n'est pas capable de modifier le fichier de registre de langues, généralement "registry/locales.xml".</li>
 	</ul>
 <p>Les modules linguistiques peuvent être téléchargés manuellement à partir du <a href="http://pkp.sfu.ca">site Web de PKP</a>.</p>]]></message>
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Mentions de droit d'auteurs de Creative Commons proposés</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Mentions de droit d'auteurs de Creative Commons proposés</h3>
 <h4>1. Politique proposée pour les revues qui offrent l'accès libre</h4>
 Les auteurs qui publient dans cette revue acceptent les termes suivants :
 <ol type="a">

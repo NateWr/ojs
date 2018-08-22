@@ -381,7 +381,7 @@
 Встановлення підтримки LOCKSS для Open Journal Systems не повинно здійснюватись до того часу, доки видавничий процес не розгорнутий повністю.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Запропоноване Положення про авторські права Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Запропоноване Положення про авторські права Creative Commons</h3>
 <h4>1. Політика, яка рекомендується журналам, що пропонують відкритий доступ</h4>
 Автори, які подають матеріали до цього журналу, погоджуються з наступними положеннями:
 <ol type="a">
@@ -795,7 +795,6 @@
 	<message key="about.delayedOpenAccess">Відстрочений відкритий доступ</message>
 	<message key="about.delayedOpenAccessDescription1">Зміст цього журналу буде доступний у форматі відкритого доступу через</message>
 	<message key="about.delayedOpenAccessDescription2">місяців після дати публікації випуску.</message>
-	<message key="about.authorSelfArchive">Депонування робіт у відкритих архівах</message>
 	<message key="about.archiving">Архівування</message>
 	<message key="about.subscriptions">Передплати</message>
 	<message key="about.subscriptions.individual">Індивідуальні передплати</message>

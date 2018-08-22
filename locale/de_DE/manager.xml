@@ -136,7 +136,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Verlangen Sie von Gutachter/innen zusammen mit jeder Begutachtung eine Erklärung zu möglicherweise bestehenden Interessenkonflikten.</message>
 	<message key="manager.setup.history">Zeitschriften-Geschichte</message>
 	<message key="manager.setup.historyDescription">Dieser Text erscheint auf der "Über uns"-Seite der Zeitschrift und kann genutzt werden, um Änderungen des Titels, in der Besetzung des Beirats und in anderen wesentlichen Belangen der Zeitschriftengeschichte zu beschreiben.</message>
-	<message key="manager.setup.copyrightNotice">Copyright-Vermerk</message>
 	<message key="manager.setup.coverage">Themenbereich</message>
 	<message key="manager.setup.coverageDescription">Bezieht sich auf den räumlich-geografischen, auf den zeitlichen Bereich und auf die Eigenschaften des Fachgebiets.</message>
 	<message key="manager.setup.currentIssue">Aktuelle Ausgabe</message>
@@ -153,10 +152,10 @@
 	<message key="manager.setup.displayCurrentIssue">Fügen Sie das Inhaltsverzeichnis (falls vorhanden) der aktuellen Ausgabe ein.</message>
 	<message key="manager.setup.editorDecision">Redaktionsentscheidung</message>
 	<message key="manager.setup.emailBounceAddress">Antwortadresse</message>
-	<message key="manager.setup.emailBounceAddressDescription">Jede E-Mail, die nicht zugestellt werden kann, erzeugt eine Fehlermeldung, die an diese Adresse geschickt wird.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Anmerkung:</strong> Die Website-Administrator/in muss in der OJS-Konfigurationsdatei die Option <tt>allow_envelope_sender</tt> aktivieren, um dies zu ermöglichen. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Jede E-Mail, die nicht zugestellt werden kann, erzeugt eine Fehlermeldung, die an diese Adresse geschickt wird.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Anmerkung:</strong> Die Website-Administrator/in muss in der OJS-Konfigurationsdatei die Option <tt>allow_envelope_sender</tt> aktivieren, um dies zu ermöglichen. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
 	<message key="manager.setup.emails">E-Mail-Kennzeichnung</message>
-	<message key="manager.setup.emailSignatureDescription">Alle E-Mail-Vorlagen, die vom System im Namen der Zeitschrift verschickt werden, tragen die folgende Signatur. Die E-Mail-Vorlagen können unter "Zeitschriftenverwaltung" bearbeitet werden.</message>
+	<message key="manager.setup.emailSignature.description">Alle E-Mail-Vorlagen, die vom System im Namen der Zeitschrift verschickt werden, tragen die folgende Signatur. Die E-Mail-Vorlagen können unter "Zeitschriftenverwaltung" bearbeitet werden.</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.enableAnnouncements">Erlauben Sie den Zeitschriftenverwalter/innen, Mitteilungen hinzuzufügen.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Anzeige der</message>
@@ -262,9 +261,9 @@
 	<message key="manager.setup.note">Anmerkung</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Anmerkung:</strong> Die Funktion "Eingangsbestätigung per E-Mail" ist deaktiviert. Aktivieren Sie "SUBMISSION_ACK email" in <a class="action" href="{$preparedEmailsUrl}">E-Mail-Vorlagen</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Links</message>
-	<message key="manager.setup.onlineAccessManagement">Zugang zum Zeitschrifteninhalt</message>
+	<message key="manager.setup.publishingMode">Zugang zum Zeitschrifteninhalt</message>
 	<message key="manager.setup.onlineIssn">ISSN Internet</message>
-	<message key="manager.setup.openAccess">Die Zeitschrift bietet freien Zugang (Open Access) zu ihren Inhalten.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Die Zeitschrift bietet freien Zugang (Open Access) zu ihren Inhalten.</message>
 	<message key="manager.setup.pageNumberIdentifier">Seitenzahl-Option</message>
 	<message key="manager.setup.policies">Zur Zeitschrift</message>
 	<message key="manager.setup.policies.description">Schwerpunkt, Begutachtung, Rubriken, Schutz persönlicher Daten, Sicherheit und andere Themen.</message>
@@ -281,7 +280,7 @@
 	<message key="manager.setup.restrictArticleAccess">Benutzer/innen müssen registriert und angemeldet sein, um Open-Access-Inhalte aufrufen zu können.</message>
 	<message key="manager.setup.restrictSiteAccess">Benutzer/innen müssen registriert und angemeldet sein, um die Zeitschriftenseite aufrufen zu können.</message>
 	<message key="manager.setup.reviewGuidelines">Begutachtungsrichtlinien</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Die Begutachtungsrichtlinien liefern Gutachter/innen Kriterien für die Beurteilung der Eignung einer Einreichung für die Veröffentlichung in der Zeitschrift und können spezielle Hinweise, um ein wirksames und hilfreiches Gutachten zu verfassen. Den Gutachter/innen werden während der Anfertigung des Gutachtens zwei Freitextfelder angeboten, das erste "für Autor/in und Redakteur/in", das zweite "für Redakteur/in". Alternativ kann der/die Zeitschriftenverwalter/in ein Begutachtungsformular unter <a href="{$reviewFormsUrl}" class="action">Review Forms</a> anlegen. In jedem Fall werden Redakteur/innen die Möglichkeit haben, die Gutachten in die Korrespondenz mit dem/der Autor/in aufzunehmen.]]></message>
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Die Begutachtungsrichtlinien liefern Gutachter/innen Kriterien für die Beurteilung der Eignung einer Einreichung für die Veröffentlichung in der Zeitschrift und können spezielle Hinweise, um ein wirksames und hilfreiches Gutachten zu verfassen. Den Gutachter/innen werden während der Anfertigung des Gutachtens zwei Freitextfelder angeboten, das erste "für Autor/in und Redakteur/in", das zweite "für Redakteur/in". Alternativ kann der/die Zeitschriftenverwalter/in ein Begutachtungsformular unter <a href="{$reviewFormsUrl}" class="action">Review Forms</a> anlegen. In jedem Fall werden Redakteur/innen die Möglichkeit haben, die Gutachten in die Korrespondenz mit dem/der Autor/in aufzunehmen.]]></message>
 	<message key="manager.setup.reviewOptions">Optionen für die Begutachtung</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Automatische Erinnerung der Gutachter/innen per E-Mail (aus den OJS-Standard-E-Mails) kann an zwei Stellen erfolgen. Die Redakteurin/der Redakteur kann hingegen den Gutachter/innen zu jeder Zeit direkt eine E-Mail schicken</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Anmerkung:</strong> Hierfür muss die/der Website-Administrator/in die <tt>scheduled_tasks</tt>-Option in der Konfigurationsdatei von OJS aktivieren. Weitere Servereinstellungen können erforderlich sein (und sind nicht unbedingt auf allen Servern verfügbar). Siehe OJS-Dokumentation.]]></message>
@@ -295,13 +294,11 @@
 	<message key="manager.setup.reviewOptions.reviewerRatings">Bewertung der Gutachterin/des Gutachters</message>
 	<message key="manager.setup.reviewOptions.reviewerReminders">Erinnerung für Gutachter/innen</message>
 	<message key="manager.setup.reviewPolicy">Begutachtungsgrundsätze</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Damit die Nutzer/innen von Suchmaschinen die Zeitschrift einfacher finden, stellen Sie bitte eine kurze Beschreibung der Zeitschrift und charakteristische Schlagworte (durch Semikolon getrennt) zusammen.</message>
+	<message key="manager.setup.searchEngineIndexing.description">Damit die Nutzer/innen von Suchmaschinen die Zeitschrift einfacher finden, stellen Sie bitte eine kurze Beschreibung der Zeitschrift und charakteristische Schlagworte (durch Semikolon getrennt) zusammen.</message>
 	<message key="manager.setup.searchEngineIndexing">Für Suchmaschinen indizieren</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Rubriken und Rubrikredakteur/innen</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Falls keine Rubrik angegeben wird, werden die Beiträge standardmäßig für die Rubrik Artikel eingereicht.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Gehen Sie zur Rubrikverwaltung, um Zeitschriftenrubriken einzurichten oder zu verändern (z.B. Artikel, Rezensionen usw.).<br /><br /> Wenn Beiträge eingereicht werden, schlagen die Autor/innen eine Rubrik vor.]]></message>
-	<message key="manager.setup.securitySettings">Zugangs- und Sicherheitseinstellungen</message>
-	<message key="manager.setup.securitySettingsDescription">OJS bietet eine Reihe von sicherheitsrelevanten Optionen, mit denen die Inhalte der Zeitschrift beschränkt werden können oder die zusätzliche Informationen über Beiträge für Kontrollzwecke liefern.</message>
 	<message key="manager.setup.selectEditorDescription">Redakteur/in, die/der den Beitrag betreut</message>
 	<message key="manager.setup.selectSectionDescription">Die Rubrik der Zeitschrift, für die der Beitrag in Frage kommt</message>
 	<message key="manager.setup.showGalleyLinksDescription">Links auf die Fahne immer anzeigen und beschränkten Zugang kennzeichnen.</message>
@@ -315,9 +312,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Autor/innen, die beabsichtigen, einen Beitrag einzureichen, werden zunächst gebeten, die Checkliste Punkt für Punkt abzuarbeiten. Die Liste erscheint bei den Richtlinien für Autor/innen unter "Über uns". Die Liste kann weiter unten verändert werden, doch müssen alle Punkte der Liste abgehakt sein, bevor die Autor/innen mit dem Einreichen ihres Beitrags fortfahren können.</message>
 	<message key="manager.setup.submissions">Beitragseinreichung</message>
 	<message key="manager.setup.submissions.description">Richtlinien für Autor/innen, Copyright und Indizierung (einschließlich Registrierung).</message>
-	<message key="manager.setup.subscription">Einige oder alle Inhalte der Zeitschrift sind nur für Abonnent/innen zugänglich.</message>
-	<message key="manager.setup.subscriptionDescription">Die Einrichtung der Funktion einer Abonnementverwaltung ist in diesem Fall nötig. Diese hat Zugang zu den Abonnement-Modulen, was auch frei zugängliche Angebote, Selbst-Archivierung und Benachrichtigungen per E-Mail beinhaltet.</message>
-	<message key="manager.setup.noPublishing">OJS wird nicht verwendet, um die Zeitschrifteninhalte online zu veröffentlichen.</message>
+	<message key="manager.distribution.publishingMode.subscription">Einige oder alle Inhalte der Zeitschrift sind nur für Abonnent/innen zugänglich.</message>
+	<message key="manager.distribution.publishingMode.none">OJS wird nicht verwendet, um die Zeitschrifteninhalte online zu veröffentlichen.</message>
 	<message key="manager.setup.typeExamples">(z.B. historische Untersuchung; quasi-experimentell; Literaturanalyse; Umfrage/Interview)</message>
 	<message key="manager.setup.typeMethodApproach">Forschungsansatz, -methode oder -verfahren</message>
 	<message key="manager.setup.typeProvideExamples">Beispiele für im Fachgebiet relevante Forschungsansätze, -methoden oder -verfahren angeben.</message>
@@ -365,8 +361,6 @@
 	<message key="manager.statistics.reports.filters.byObject.description">Ergebnisse nach Objekttyp (Zeitschrift, Ausgabe, Artikel, PDF-Fahne, andere Fahnen) und/oder nach einer oder mehrerer Objekt-ID filtern.</message>
 
 	<message key="manager.subscriptionPolicies">Abonnementrichtlinien</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Richtlinien zur Selbstarchivierung durch die/den Autor/in</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Die folgenden Richtlinien zur Selbstarchivierung durch die/den Autor/in erscheinen im "Über uns" unter "Zur Zeitschrift"</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Verzögerter Open Access</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Auch bei verzögertem Open Access können Redakteur/innen einzelne Beiträge unmittelbar frei zugänglich machen.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Die zurückliegenden Ausgaben der Zeitschrift sind</message>

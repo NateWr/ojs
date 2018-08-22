@@ -135,7 +135,6 @@
 	<message key="manager.setup.competingInterests.requireReviewers">Vaadi arvioijia jättämään Sidonnaisuudet-lausunto jokaisen lähettämänsä vertaisarvioinnin yhteydessä.</message>
 	<message key="manager.setup.history">Julkaisun historiaa</message>
 	<message key="manager.setup.historyDescription">Tämä teksti tulee näkymään julkaisun verkkosivuston "Tietoa"-osassa ja sitä voidaan käyttää kuvaamaan titteleiden, toimituskunnan ja muiden julkaisuhistorian kannalta olennaisten asioiden muutoksia.</message>
-	<message key="manager.setup.copyrightNotice">Tekijänoikeushuomautus</message>
 	<message key="manager.setup.coverage">Kattavuus</message>
 	<message key="manager.setup.coverageDescription">Viittaa geospatiaaliseen sijaintiin, kronologiseen tai historialliseen kattavuuteen ja/tai tutkimusotoksen ominaisuuksiin.</message>
 	<message key="manager.setup.currentIssue">Uusin numero</message>
@@ -152,11 +151,11 @@
 	<message key="manager.setup.displayCurrentIssue">Lisää uusimman numeron sisällysluettelo (jos saatavilla).</message>
 	<message key="manager.setup.editorDecision">Toimittajan päätös</message>
 	<message key="manager.setup.emailBounceAddress">Palautusosoite</message>
-	<message key="manager.setup.emailBounceAddressDescription">Tähän osoitteeseen lähetetään virheilmoitus aina, kun sähköpostia ei voida toimittaa perille.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Huom.</strong> Aktivoidakseen tämän valinnan sivuston ylläpitäjän täytyy ottaa käyttöön <tt>allow_envelope_sender</tt> -valinta OJS:n määritystiedostossa. Palvelimen lisämäärityksiä saatetaan edellyttää tämän toiminnon tukemiseksi (joka ei välttämättä ole mahdollista kaikilla palvelimilla), kuten OJS:n käyttöohjeissa mainitaan.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Tähän osoitteeseen lähetetään virheilmoitus aina, kun sähköpostia ei voida toimittaa perille.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Huom.</strong> Aktivoidakseen tämän valinnan sivuston ylläpitäjän täytyy ottaa käyttöön <tt>allow_envelope_sender</tt> -valinta OJS:n määritystiedostossa. Palvelimen lisämäärityksiä saatetaan edellyttää tämän toiminnon tukemiseksi (joka ei välttämättä ole mahdollista kaikilla palvelimilla), kuten OJS:n käyttöohjeissa mainitaan.]]></message>
 	<message key="manager.setup.emails">Sähköpostitunnistautuminen</message>
 	<message key="manager.setup.emailSignature">Allekirjoitus</message>
-	<message key="manager.setup.emailSignatureDescription">Valmiisiin sähköposteihin, jotka järjestelmä lähettää julkaisun puolesta, lisätään seuraava allekirjoitus.</message>
+	<message key="manager.setup.emailSignature.description">Valmiisiin sähköposteihin, jotka järjestelmä lähettää julkaisun puolesta, lisätään seuraava allekirjoitus.</message>
 	<message key="manager.setup.enableAnnouncements">Salli julkaisun hallinnoijien lisätä julkaisuun liittyviä ilmoituksia.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Näytä</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">viimeisintä ilmoitusta julkaisun etusivulla.</message>
@@ -253,9 +252,9 @@
 	<message key="manager.setup.note">Huomautus</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Huom.</strong> Käsikirjoituksen vastaanotosta ilmoittava sähköposti on tällä hetkellä pois käytöstä. Käyttääksesi tätä ominaisuutta, ota "Käsikirjoituksen vastaanottaminen"-sähköposti käyttöön Sähköpostit-kohdassa.]]></message>
 	<message key="manager.setup.numPageLinks">Sivun linkit</message>
-	<message key="manager.setup.onlineAccessManagement">Julkaisun sisällön saatavuus</message>
+	<message key="manager.setup.publishingMode">Julkaisun sisällön saatavuus</message>
 	<message key="manager.setup.onlineIssn">Verkkojulkaisun ISSN</message>
-	<message key="manager.setup.openAccess">Julkaisun sisältö on avoimesti saatavilla.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Julkaisun sisältö on avoimesti saatavilla.</message>
 	<message key="manager.setup.pageNumberIdentifier">Sivunumerovalinta</message>
 	<message key="manager.setup.policies">Toimintaperiaatteet</message>
 	<message key="manager.setup.policies.description">Julkaisun tarkoitus, vertaisarviointi, osastot, yksityisyyden suoja, turvallisuus, ja lisätietoja kohteista.</message>
@@ -272,7 +271,7 @@
 	<message key="manager.setup.restrictArticleAccess">Käyttäjien tulee olla rekisteröityneitä ja sisäänkirjautuneita katsellakseen avoimesti saatavilla olevaa sisältöä.</message>
 	<message key="manager.setup.restrictSiteAccess">Käyttäjien tulee olla rekisteröityneitä ja sisäänkirjautuneita katsellakseen julkaisun sivustoa.</message>
 	<message key="manager.setup.reviewGuidelines">Arviointiohjeet</message>
-	<message key="manager.setup.reviewGuidelinesDescription">Anna arvioijille kriteerit, joiden perusteella he arvioivat soveltuuko käsikirjoitus julkaistavaksi julkaisussa. Ohjeet voivat sisältää myös ohjeita vaikuttavan ja hyödyllisen arvion kirjoittamiseksi. Arvioijilla on mahdollisuus antaa sekä kirjoittajalle että toimittajalle tarkoitettuja kommentteja ja erillisiä, vain toimittajalle tarkoitettuja kommentteja.</message>
+	<message key="manager.setup.reviewGuidelines.description">Anna arvioijille kriteerit, joiden perusteella he arvioivat soveltuuko käsikirjoitus julkaistavaksi julkaisussa. Ohjeet voivat sisältää myös ohjeita vaikuttavan ja hyödyllisen arvion kirjoittamiseksi. Arvioijilla on mahdollisuus antaa sekä kirjoittajalle että toimittajalle tarkoitettuja kommentteja ja erillisiä, vain toimittajalle tarkoitettuja kommentteja.</message>
 	<message key="manager.setup.reviewOptions">Arviointiin liittyvät valinnat</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Automaattiset sähköpostimuistutukset</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[Aktivoidakseen nämä valinnat sivuston ylläpitäjän täytyy ottaa käyttöön <tt>scheduled_tasks</tt> -valinta OJS:n määritystiedostossa. Palvelimen lisämäärityksiä saatetaan edellyttää tämän toiminnon tukemiseksi (joka ei välttämättä ole mahdollista kaikilla palvelimilla), kuten OJS:n käyttöohjeissa mainitaan.]]></message>
@@ -288,12 +287,10 @@
 	<message key="manager.setup.reviewOptions.showEnsuringLink"><![CDATA[Anna linkki kohtaan <a href="javascript:openHelp('{$blindReviewHelpId}')" class="action">Sokkoarvioinnin varmistaminen</a> sellaisilla sivuilla, joissa kirjoittajat ja arvioijat lataavat tiedostoja.]]></message>
 	<message key="manager.setup.reviewPolicy">Arviointiperiaatteet</message>
 	<message key="manager.setup.searchEngineIndexing">Hakukoneindeksointi</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Anna julkaisusta lyhyt kuvaus, jonka hakukoneet voivat näyttää listatessaan julkaisun hakutuloksissa.</message>
+	<message key="manager.setup.searchEngineIndexing.description">Anna julkaisusta lyhyt kuvaus, jonka hakukoneet voivat näyttää listatessaan julkaisun hakutuloksissa.</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Osastot ja osastotoimittajat</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Jos osastoja ei ole lisätty, kohteet lähetetään oletusarvoisesti artikkeliosastoon.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Luodaksesi tai muokataksesi julkaisun osastoja (esim. artikkelit, kirja-arvostelut jne.) mene Osaston hallinnointi -kohtaan.<br /><br />Julkaisuun kohteita lähettävät kirjoittajat nimittävät...]]></message>
-	<message key="manager.setup.securitySettings">Saatavuus- ja turvallisuusasetukset</message>
-	<message key="manager.setup.securitySettingsDescription">OJS tarjoaa monia turvallisuuteen liittyviä valintoja, joiden avulla voidaan rajoittaa julkaisun sisältöä sekä säilyttää lisätietoja käsikirjoituksista tarkastustarkoituksiin.</message>
 	<message key="manager.setup.selectEditorDescription">Julkaisun toimittaja, joka on mukana toimitusprosessin alusta loppuun asti.</message>
 	<message key="manager.setup.selectSectionDescription">Julkaisun osasto, johon kohdetta harkitaan.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Näytä aina julkaistavien tiedostojen linkit ja ilmaise rajoitettu saatavuus.</message>
@@ -307,9 +304,8 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Käsikirjoituksen lähetettäessä kirjoittajia pyydetään ennen jatkamista vahvistamaan (rastittamalla kohdat), että käsikirjoitus noudattaa tarkistuslistan jokaista kohtaa. Tarkistuslista on näkyvillä myös Kirjoittajan ohjeet -sivun Tietoa julkaisusta -kohdassa. Listaa voidaan muokata alla, mutta kaikki listan kohdat on rastitettava ennen kuin kirjoittaja voi jatkaa lähetysprosessia.</message>
 	<message key="manager.setup.submissions">Käsikirjoitukset</message>
 	<message key="manager.setup.submissions.description">Ohjeet kirjoittajille, tekijänoikeudet ja indeksointi (sis. rekisteröinnin).</message>
-	<message key="manager.setup.subscription">Julkaisun joidenkin osien tai koko sisällön saatavuus edellyttää tilausta.</message>
-	<message key="manager.setup.subscriptionDescription">Tämä vaatii tilaussihteerin valitsemisen. Tilaussihteerillä on pääsy tilaustoimintoihin, jotka sisältävät avoimen saatavuuden, rinnakkaistallentamisen ja sähköposti-ilmoitusten lisävaihtoehdot.</message>
-	<message key="manager.setup.noPublishing">OJS:iä ei käytetä julkaisun sisällön julkaisuun verkossa.</message>
+	<message key="manager.distribution.publishingMode.subscription">Julkaisun joidenkin osien tai koko sisällön saatavuus edellyttää tilausta.</message>
+	<message key="manager.distribution.publishingMode.none">OJS:iä ei käytetä julkaisun sisällön julkaisuun verkossa.</message>
 	<message key="manager.setup.typeExamples">(Esim. historiatutkimus; kvasikokeellinen, kirjallisuusanalyysi; kysely/haastattelu)</message>
 	<message key="manager.setup.typeMethodApproach">Tyyppi (menetelmä/lähestymistapa)</message>
 	<message key="manager.setup.typeProvideExamples">Anna esimerkkejä tälle alalle oleellisista tutkimustyypeistä ja -menetelmistä sekä lähestymistavoista</message>
@@ -356,8 +352,6 @@ Julkaisusi on määritetty tallentamaan useita käytön mittareita. Käyttötila
 	<message key="manager.statistics.reports.filters.byObject.description">Rajaa tuloksia kohteen tyypin (julkaisu, numero, artikkeli, tiedostotyypit) ja/tai yhden tai useamman kohteen tunnisteen perusteella.</message>
 
 	<message key="manager.subscriptionPolicies">Tilauskäytännöt</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Kirjoittajan rinnakkaistallentamisen periaate</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Seuraava Kirjoittajan rinnakkaistallentamisen periaate -kohta sisällytetään myös Tietoa julkaisusta -sivun Toimintaperiaatteet-kohtaan.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Viiveellinen avoin saatavuus</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Viiveellisen avoimen saatavuuden yhteydessä, toimittajat voivat kuitenkin määrätä numeron tiettyjä artikkeleita välittömästi avoimesti saataville.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Tämän julkaisun aiemmat numerot tulevat avoimesti saataville</message>

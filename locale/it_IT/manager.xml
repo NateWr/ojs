@@ -117,7 +117,6 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.appearInAboutJournal">(compare nella sezione "Informazioni sulla rivista")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Richiedi agli autori di inviare una dichiarazione di assenza di conflitto di interessi durante l'invio della proposta.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Richiedi ai revisori di allegare una dichiarazione di assenza di conflitto di interessi per ogni revisione che invieranno.</message>
-	<message key="manager.setup.copyrightNotice">Nota di copyright</message>
 	<message key="manager.setup.copyrightYearBasis">Fissa per default i diritti d'autore dei nuovi articoli su</message>
 	<message key="manager.setup.coverage">Ambito</message>
 	<message key="manager.setup.coverageDescription">Si riferisce alla locazione geografica, all'ambito cronologico o storico, e/o alle caratteristiche del campione di ricerca.</message>
@@ -135,11 +134,11 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.displayCurrentIssue">Mostra il sommario del fascicolo corrente (se disponibile).</message>
 	<message key="manager.setup.editorDecision">Decisione dell'editor</message>
 	<message key="manager.setup.emailBounceAddress">Indirizzo per i messaggi respinti</message>
-	<message key="manager.setup.emailBounceAddressDescription">Nel caso l'invio di un messaggio di posta elettronica non dovesse andare a buon fine, verrà inviata una notifica di errore a questo indirizzo.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Nota:</strong> per attivare questa opzione, l'amministratore del sito deve abilitare l'opzione <tt>allow_envelope_sender</tt>  nel file di configurazione di OJS. Configurazioni aggiuntive del server possono essere necessarie per supportare questa funzione (che potrebbe non essere disponibile su tutti i server), come indicato nella documentazione di OJS.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Nel caso l'invio di un messaggio di posta elettronica non dovesse andare a buon fine, verrà inviata una notifica di errore a questo indirizzo.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Nota:</strong> per attivare questa opzione, l'amministratore del sito deve abilitare l'opzione <tt>allow_envelope_sender</tt>  nel file di configurazione di OJS. Configurazioni aggiuntive del server possono essere necessarie per supportare questa funzione (che potrebbe non essere disponibile su tutti i server), come indicato nella documentazione di OJS.]]></message>
 	<message key="manager.setup.emails">Firma delle email</message>
 	<message key="manager.setup.emailSignature">Firma</message>
-	<message key="manager.setup.emailSignatureDescription">Le email inviate in automatico dal sistema avranno la seguente firma alla fine del messaggio. Il contenuto di queste email può essere modificato nella sezione di amministrazione della rivista.</message>
+	<message key="manager.setup.emailSignature.description">Le email inviate in automatico dal sistema avranno la seguente firma alla fine del messaggio. Il contenuto di queste email può essere modificato nella sezione di amministrazione della rivista.</message>
 	<message key="manager.setup.enableAnnouncements">Abilita gli amministratori della rivista ad aggiungere avvisi.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Mostra</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">avvisi recenti nella homepage della rivista.</message>
@@ -215,9 +214,9 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.note">Nota</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Nota:</strong> L'email di ringraziamento per il completamento della proposta &#x00E8; attualmente disabilitata. Per usare questa funzione, abilita il SUBMISSION_ACK email <a class="action" href="{$preparedEmailsUrl}">Modelli email</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Link alle pagine</message>
-	<message key="manager.setup.onlineAccessManagement">Accesso al contenuto della rivista</message>
+	<message key="manager.setup.publishingMode">Accesso al contenuto della rivista</message>
 	<message key="manager.setup.onlineIssn">E-ISSN</message>
-	<message key="manager.setup.openAccess">La rivista pubblica i suoi contenuti ad accesso aperto.</message>
+	<message key="manager.distribution.publishingMode.openAccess">La rivista pubblica i suoi contenuti ad accesso aperto.</message>
 	<message key="manager.setup.pageNumberIdentifier">Numerazione delle pagine</message>
 	<message key="manager.setup.policies">Politiche</message>
 	<message key="manager.setup.policies.description">Argomento, peer review, sezioni, privacy, accesso, sicurezza e altre voci riguardanti gli articoli.</message>
@@ -234,7 +233,7 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.restrictArticleAccess">Gli utenti devono essere registrati e aver effettuato il log in per vedere i contenuti open access.</message>
 	<message key="manager.setup.restrictSiteAccess">Gli utenti devono essere registrati e aver effettuato il log in per vedere il sito della rivista.</message>
 	<message key="manager.setup.reviewGuidelines"></message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[Le Linee guida per la revisione delle proposte forniscono ai revisori i criteri per giudicare la qualità di una proposta e la relativa possibilità di pubblicazione all'interno della rivista, così come qualsiasi tipo informazioni particolare per preparare una revisione valida e utile.
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[Le Linee guida per la revisione delle proposte forniscono ai revisori i criteri per giudicare la qualità di una proposta e la relativa possibilità di pubblicazione all'interno della rivista, così come qualsiasi tipo informazioni particolare per preparare una revisione valida e utile.
 
 Al momento di concludere una revisione, ai revisori vengono presentate due box, la prima "per l'autore e per l'editor" e la seconda solamente "per l'editor". In alternativa, l'amministratore della rivista può creare <a href="{$reviewFormsUrl}" class="action">moduli per la peer review</a>. In ogni caso, gli editor potranno includere i commenti dei revisori nella corrispondenza con gli autori.]]></message>
 	<message key="manager.setup.reviewOptions">Opzioni di revisione</message>
@@ -251,12 +250,10 @@ Al momento di concludere una revisione, ai revisori vengono presentate due box, 
 	<message key="manager.setup.reviewOptions.reviewerReminders">Promemoria per i revisori</message>
 	<message key="manager.setup.reviewPolicy">Politiche di revisione</message>
 	<message key="manager.setup.searchEngineIndexing">SEO (Ottimizzazione per i motori di ricerca)</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Per aumentare la visibilità della rivista nei motori di ricerca, inserisci una breve descrizione e le relative keyword (separate da virgola).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Per aumentare la visibilità della rivista nei motori di ricerca, inserisci una breve descrizione e le relative keyword (separate da virgola).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Sezioni ed editor di sezione</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Se non viene aggiunta nessuna sezione, i documenti verranno inviati per default alla sezione Articoli)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Per creare o modificare le sezioni della rivista (ad esempio: Articoli, Recensioniecc.), andate alla sezione Section Management.<br /><br />Gli autori, nell'inviare gli articoli alla rivista, indicheranno...]]></message>
-	<message key="manager.setup.securitySettings">Impostazioni di accesso e sicurezza</message>
-	<message key="manager.setup.securitySettingsDescription">OJS fornisce alcune opzioni relative alla sicurezza che può essere usato per restringere l'accesso ai contenuti della rivista e mantiene un registro di informazioni aggiuntive sulle proposte ricevute, per fini di controllo.</message>
 	<message key="manager.setup.selectEditorDescription">L'editor della rivista che seguirà l'articolo lungo il processo editoriale.</message>
 	<message key="manager.setup.selectSectionDescription">La sezione della rivista cui è destinato l'articolo.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Mostra sempre i link alle bozze e indica l'accesso ristretto.</message>
@@ -270,8 +267,7 @@ Al momento di concludere una revisione, ai revisori vengono presentate due box, 
 	<message key="manager.setup.submissionPreparationChecklistDescription">Nell'effettuare una submission alla rivista gli autori dovrebbero prima controllare le varie voci della Checklist prima di procedere oltre. Questa checklist è presente nelle Linee guida per gli autori, nella sezione About. Questa lista può essere modificata qui di seguito, ma tutte le voci della lista dovranno essere spuntate dall'autore per proseguire con la submission.</message>
 	<message key="manager.setup.submissions">Invio di una proposta</message>
 	<message key="manager.setup.submissions.description">Indicazioni per gli autori, copyright e indicizzazione (compresa la registrazione).</message>
-	<message key="manager.setup.subscription">Gestione degli abbonamenti</message>
-	<message key="manager.setup.subscriptionDescription">Questo richiede l'assegnazione di un amministratore degli abbonamenti che abbia accesso al modulo Abbonamenti, che include opzioni di accesso aperto, autoarchiviazione, e notifiche email.</message>
+	<message key="manager.distribution.publishingMode.subscription">Gestione degli abbonamenti</message>
 	<message key="manager.setup.typeExamples">(Es. Ricerca storica; Quasi-Sperimentale; Analisi letteraria; Indagine/Intervista)</message>
 	<message key="manager.setup.typeMethodApproach">Tipo (Metodo/Approccio)</message>
 	<message key="manager.setup.typeProvideExamples">Fornisci esempi di tipi di ricerca, metodi, ed approcci rilevanti per questo settore</message>
@@ -312,8 +308,6 @@ Al momento di concludere una revisione, ai revisori vengono presentate due box, 
 	<message key="manager.statistics.statistics.selectSections">Seleziona le sezioni sulle quali calcolare le statistiche sulla peer-review di questa rivista.</message>
 	<message key="manager.statistics.statistics.subscriptions">Abbonamenti</message>
 	<message key="manager.subscriptionPolicies">Politiche di abbonamento</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Self-Archiving dell'autore</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">la politica sul self-archiving verrà mostrata tra le informazioni della rivista (sotto Politiche).</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Accesso aperto posticipato (delayed)</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Pur posticipando l'accesso aperto dell'intero fascicolo, gli editor possono decidere quali articoli all'interno di un fascicolo siano immediatamente disponibili in OA.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">I contenuti di questa rivista saranno liberamente disponibili</message>
@@ -460,7 +454,7 @@ I valori ammessi sono i nomi di dominio (es. www.cilea.it).</message>
 	<message key="manager.subscriptionTypes.form.subscriptions">Abbonamenti</message>
 	<message key="manager.subscriptionTypes.form.individual">Individuale (gli utenti sono autenticati con username/password)</message>
 	<message key="manager.subscriptionTypes.form.options">Opzioni</message>
-	<message key="manager.setup.noPublishing">OJS non viene utilizzato per pubblicare on line i contenuti della rivista</message>
+	<message key="manager.distribution.publishingMode.none">OJS non viene utilizzato per pubblicare on line i contenuti della rivista</message>
 	<message key="manager.individualSubscriptions">Abbonamento individuale</message>
 	<message key="manager.institutionalSubscriptions">Abbonamento istituzionale</message>
 	<message key="manager.subscriptions.summary">Riepilogo degli abbonamenti</message>

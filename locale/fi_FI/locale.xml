@@ -374,7 +374,7 @@ LOCKSS-tukea ei tarvitse ottaa Open Journal Systemsissä käyttöön, ennen kuin
 CLOCKSS-tukea ei tarvitse ottaa Open Journal Systemsissä käyttöön, ennen kuin julkaiseminen on jo täydessä vauhdissa.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Ehdotetut Creative Commons-tekijänoikeushuomautukset</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Ehdotetut Creative Commons-tekijänoikeushuomautukset</h3>
 <h4>1. Ehdotettu käytäntö julkaisuille, jotka tarjoavat avoimen saatavuuden (Open Access)</h4>
 Tässä julkaisussa julkaisevat kirjoittajat hyväksyvät seuraavat ehdot:
 <ol type="a">
@@ -785,7 +785,6 @@ Tämän tehtävän voi suorittaa vain sivuston ylläpitäjä.
 	<message key="about.delayedOpenAccess">Viiveellinen avoin saatavuus</message>
 	<message key="about.delayedOpenAccessDescription1">Tämän julkaisun sisältö tulee avoimesti saataville</message>
 	<message key="about.delayedOpenAccessDescription2">kuukautta numeron julkaisemisen jälkeen.</message>
-	<message key="about.authorSelfArchive">Kirjoittajan rinnakkaistallentaminen</message>
 	<message key="about.archiving">Arkistointi</message>
 	<message key="about.subscriptions">Tilaukset</message>
 	<message key="about.subscriptions.individual">Yksittäistilaukset</message>

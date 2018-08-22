@@ -31,7 +31,6 @@
 	<message key="default.journalSettings.checklist.bibliographicRequirements">Pengetikan naskah dan sitasi mengikuti gaya selingkung yang disyaratkan dalam Panduan Penulis</message>
  	<message key="default.journalSettings.privacyStatement">Nama dan alamat email yang dimasukkan di website ini hanya akan digunakan untuk tujuan yang sudah disebutkan, tidak akan disalahgunakan untuk tujuan lain atau untuk disebarluaskan ke pihak lain.</message>
 	<message key="default.journalSettings.openAccessPolicy">Jurnal ini menyediakan akses terbuka yang pada prinsipnya membuat riset tersedia secara gratis untuk publik dan akan mensupport pertukaran pengetahuan global terbesar.</message>
-	<message key="default.journalSettings.authorSelfArchivePolicy">Jurnal ini memberi izin dan mendorong penulis untuk memposting item yang diserahkan ke jurnal di website personal atau repositori institusional sebelum dan sesudah penerbitan, sementara itu menyediakan detail bibliografi yang akan memberikan kredit, jika bisa diterapkan, penerbitannya di jurnal ini.</message>
 	<message key="default.journalSettings.proofingInstructions"><![CDATA[ <p>Tahap proofreading dimaksudkan untuk menemukan kesalahan di format, tata bahasa, dan ejaan galley. Perubahan substansi tidak bisa dibuat di tahap ini, kecuali didiskusikan dengan Editor Bagian. Di Layout, klik di VIEW PROOF untuk melihat HTML, PDF, dan format file lain yang tersedia dalam menerbitkan naskah ini.</p>
 	<h4>Untuk kesalahan tata bahasa dan ejaan</h4>
 

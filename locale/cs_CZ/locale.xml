@@ -357,7 +357,7 @@
 <br /><br />
 Nastavení podpory technologie LOCKSS pro OJS nemusí být provedeno, dokud není publikování časopisu zaběhané. Potom následujte tyto dva kroky:]]></message>
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Navrhovaná oznámení o copyrightu Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Navrhovaná oznámení o copyrightu Creative Commons</h3>
 <h4>1. Navrhovaná pravidla pro časopisy, které nabízejí otevřený přístup</h4>
 Autoři, kteří publikují v tomto časopise, souhlasí s následujícími body:
 <ol type="a">
@@ -756,7 +756,6 @@ Volitelně můžete uživateli poskytnout zdůvodnění, proč byl jeho účet z
 	<message key="about.delayedOpenAccess">Zpožděný otevřený přístup</message>
 	<message key="about.delayedOpenAccessDescription1">Obsah tohoto čísla bude dostupný ve formátu otevřeného přístupu</message>
 	<message key="about.delayedOpenAccessDescription2">měsíc(e) poté, co bylo číslo publikováno.</message>
-	<message key="about.authorSelfArchive">Vlastní archivování autora</message>
 	<message key="about.archiving">Archivování</message>
 	<message key="about.subscriptions">Předplatné</message>
 	<message key="about.subscriptions.individual">Předplatné pro jednotlivce</message>

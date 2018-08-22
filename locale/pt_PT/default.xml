@@ -28,7 +28,6 @@
 	<message key="default.journalSettings.checklist.bibliographicRequirements"><![CDATA[O texto segue os padrões de estilo e requisitos bibliográficos descritos em <a href="{$indexUrl}/{$journalPath}/about/submissions#authorGuidelines">Instruções para Autores</a>, na secção Sobre a Revista.]]></message>
 	<message key="default.journalSettings.privacyStatement">Os nomes e endereços fornecidos nesta revista serão usados exclusivamente para os serviços prestados por esta publicação, não sendo disponibilizados para outras finalidades ou a terceiros.</message>
 	<message key="default.journalSettings.openAccessPolicy">Esta revista oferece acesso livre imediato ao seu conteúdo, seguindo o princípio de que disponibilizar gratuitamente o conhecimento científico ao público proporciona maior democratização mundial do conhecimento.</message>
-	<message key="default.journalSettings.authorSelfArchivePolicy">Esta revista permite e encoraja os autores a submeterem artigos para a revista ou repositórios institucionais, antes e após a publicação (sempre oferecendo uma indexação detalhada do artigo).</message>
 	<message key="default.journalSettings.emailSignature"><![CDATA[<br/>
 ________________________________________________________________________<br/>
 <a href="{$contextUrl}">{$contextName}</a>]]></message>

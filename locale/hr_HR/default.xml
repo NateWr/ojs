@@ -22,7 +22,6 @@
 
 	<message key="default.journalSettings.privacyStatement">Imena i adrese e-pošte registrirane na ovim stranicama koristit će se isključivo u navedene svrhe časopisa i neće biti dostupne niti jednoj drugoj stranci.</message>
 	<message key="default.journalSettings.openAccessPolicy">Ovaj časopis omogućuje trenutni otvoren pristup svojem cjelokupnom sadržaju u skladu s uvjerenjem kako javna dostupnost istraživačkih spoznaja potiče veću razmjenu znanja i ideja.</message>
-	<message key="default.journalSettings.authorSelfArchivePolicy">Autorima je dozvoljeno i potiču se da tekstove koje su objavili u ovom časopisu postavljaju na osobne ili mrežne stranice svoje institucija, prije i nakon objave u časopisu, uz uvijet da prilože pune bibliografske informacije o tome gdje je članak izvorno objavljen.</message>
 	<message key="default.journalSettings.proofingInstructions"><![CDATA[<p>Faza korekture je namijenjena kako bi ukazala na bilo koje pravopisne, gramatičke i oblikovne pogreške u prijelomu. U ovoj fazi nema značajnih promjena, osim ako ih je odobrio Urednik rubrika. U prijelomu, kliknite na PREGLED KOREKTURE da biste vidjeli HTML, PDF i ostale moguće formate datoteka korištenih u objavljivanju ove stavke.</p>
 <h4>Za pravopisne i gramatičke pogreške</h4>
 

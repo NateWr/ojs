@@ -46,7 +46,7 @@ class InformationHandler extends Handler {
 				break;
 			case 'sampleCopyrightWording':
 				AppLocale::requireComponents(LOCALE_COMPONENT_APP_MANAGER);
-				$content = __('manager.setup.authorCopyrightNotice.sample');
+				$content = __('manager.setup.copyrightNotice.sample');
 				$pageTitle = 'manager.setup.copyrightNotice';
 				break;
 			default:

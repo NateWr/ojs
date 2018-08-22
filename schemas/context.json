@@ -2,11 +2,6 @@
 	"title": "Journal",
 	"description": "A journal.",
 	"properties": {
-		"authorSelfArchivePolicy": {
-			"type": "string",
-			"multilingual": true,
-			"defaultLocaleKey": "default.journalSettings.authorSelfArchivePolicy"
-		},
 		"clockssLicense": {
 			"type": "string",
 			"multilingual": true,
@@ -21,9 +16,6 @@
 		"delayedOpenAccessPolicy": {
 			"type": "string",
 			"multilingual": true
-		},
-		"enableAuthorSelfArchive": {
-			"type": "boolean"
 		},
 		"enableOpenAccessNotification": {
 			"type": "boolean"

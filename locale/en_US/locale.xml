@@ -380,7 +380,7 @@
 	<message key="manager.setup.porticoDescription"><![CDATA[Portico is a not-for-profit service committed to the preservation of digital publications, including e-journals, e-books, and digitized historical collections. If your journal signed a contract with Portico, enable it here:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Proposed Creative Commons Copyright Notices</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Proposed Creative Commons Copyright Notices</h3>
 <h4>1. Proposed Policy for Journals That Offer Open Access</h4>
 Authors who publish with this journal agree to the following terms:
 <ol type="a">
@@ -793,7 +793,6 @@ You may optionally provide the user with a reason for disabling their account.</
 	<message key="about.delayedOpenAccess">Delayed Open Access</message>
 	<message key="about.delayedOpenAccessDescription1">The contents of this journal will be available in an open access format</message>
 	<message key="about.delayedOpenAccessDescription2">month(s) after an issue is published.</message>
-	<message key="about.authorSelfArchive">Author Self-Archiving</message>
 	<message key="about.archiving">Archiving</message>
 	<message key="about.subscriptions">Subscriptions</message>
 	<message key="about.subscriptions.individual">Individual Subscriptions</message>

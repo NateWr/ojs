@@ -734,7 +734,6 @@
 	<message key="about.delayedOpenAccess">延迟开放存取</message>
 	<message key="about.delayedOpenAccessDescription1">本期刊的内容将采用开发存取的格式</message>
 	<message key="about.delayedOpenAccessDescription2">个月后期刊将出版.</message>
-	<message key="about.authorSelfArchive">作者自存档</message>
 	<message key="about.archiving">存档</message>
 	<message key="about.subscriptions">订阅</message>
 	<message key="about.subscriptions.individual">个人订阅</message>

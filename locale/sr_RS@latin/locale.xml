@@ -470,7 +470,6 @@ Sadržaj priloženog fajla možete proveriti ukoliko kliknete na njegovo ime. Um
 	<message key="about.delayedOpenAccess">Odgođeni otvoreni pristup</message>
 	<message key="about.delayedOpenAccessDescription1">Sadržaj ovog časopisa bit će dostupan u formatu otvorenog pristupa</message>
 	<message key="about.delayedOpenAccessDescription2">mesec(i) nakon objavljivanja broja časopisa.</message>
-	<message key="about.authorSelfArchive">Autoarhiviranje autora</message>
 	<message key="about.archiving">Arhiviranje</message>
 	<message key="about.subscriptions">Pretplate</message>
 	<message key="about.subscriptionsContact">Kontakt za pretplate</message>
@@ -613,7 +612,7 @@ Vaš server trenutno podržava mbstring: <strong>{$supportsMBString}</strong>]]>
 	<message key="reader.openAccess">Otvoren pristup</message>
 	<message key="reader.subscriptionAccess">Pretplatnički pristup</message>
 	<message key="reader.subscriptionOrFeeAccess">Pretplatnički ili otvoren pristup</message>
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Predložene Creative Commons odredbe o autorskim pravima</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Predložene Creative Commons odredbe o autorskim pravima</h3>
 <h4>1. Predlog za časopise koji omogućuju otvoren pristup</h4>
 Autori koji objavljuju u ovom časopisu pristaju na sledeće uslove:
 <ol type="a">

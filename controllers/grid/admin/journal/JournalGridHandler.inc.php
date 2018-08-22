@@ -47,8 +47,8 @@ class JournalGridHandler extends ContextGridHandler {
 			$action = $router->getApiUrl($request, '*', 'v1', 'contexts');
 		}
 
-		import('lib.pkp.controllers.form.FormHandler');
-		$contextForm = new FormHandler(
+		import('lib.pkp.components.form.FormComponent');
+		$contextForm = new FormComponent(
 			'editContext',
 			$context ? 'PUT' : 'POST',
 			$action,

@@ -276,7 +276,7 @@
 Konfigurationen af LOCKSS-understøttelse for Open Journal Systems behøver ikke finde sted, før publiceringen er i fuld gang. På dette tidspunkt skal du følge disse to trin:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Forslag til oplysninger om ophavsret på baggrund af Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Forslag til oplysninger om ophavsret på baggrund af Creative Commons</h3>
 <h4>1. Forslag til politik for tidsskrifter, der tilbyder Open Access</h4>
 Forfattere, der publicerer deres værker via dette tidsskrift, accepterer følgende vilkår:
 <ol type="a">
@@ -557,7 +557,6 @@ Du kan vælge at give brugeren en begrundelse for deaktiveringen af kontoen.</me
 	<message key="about.delayedOpenAccess">Forsinket Open Access</message>
 	<message key="about.delayedOpenAccessDescription1">Dette tidsskrifts indhold vil være tilgængeligt i et Open Access-format</message>
 	<message key="about.delayedOpenAccessDescription2">måned(er) efter publiceringen af et nummer.</message>
-	<message key="about.authorSelfArchive">Selvarkivering for forfattere</message>
 	<message key="about.archiving">Arkivering</message>
 	<message key="about.subscriptions">Abonnementer</message>
 	<message key="about.subscriptionsContact">Kontaktperson for abonnementer</message>

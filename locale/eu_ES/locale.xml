@@ -340,7 +340,7 @@ Ebaluazio-orrian, ebaluazio-prozesua erregistratuta uzteko.</message>
 Argitaratzen hasi arte, ez da beharrezkoa LOCKSS euskarria gehitzea Open Journal Systems-i. Orduan, bi urrats hauek egin beharko dira:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Creative Commons Copyright informazio proposatuak</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Creative Commons Copyright informazio proposatuak</h3>
 <h4>1. Sarrera librea ematen duten Aldizkarientzat proposatutako politika</h4>
 Aldizkari honetan argitaratzen duten egileak ados daude baldintza hauekin:
 <ol type="a">
@@ -688,7 +688,6 @@ da bidali zuzentzeko fitxategia hautatu arte Ebaluazio-orrian, Editorearen eraba
 	<message key="about.delayedOpenAccess">Sarrera libre geroratua</message>
 	<message key="about.delayedOpenAccessDescription1">Aldizkari honen edukia, argitaratu eta handik</message>
 	<message key="about.delayedOpenAccessDescription2">hilabetera egongo da erabilgarri sarrera libreko formatuan.</message>
-	<message key="about.authorSelfArchive">Egileen auto-artxibatzea</message>
 	<message key="about.archiving">Artxibatzea</message>
 	<message key="about.subscriptions">Harpidetzak</message>
 	<message key="about.subscriptionsContact">Harpidetzen kontaktua</message>

@@ -377,7 +377,7 @@ Setting dukungan LOCKSS di Open Journal Systems tidak perlu dilakukan sebelum pr
 Setting dukungan LOCKSS di Open Journal Systems tidak perlu dilakukan sebelum proses penerbitan benar-benar selesai.]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Contoh Pemberitahuan Pembuatan Creative Commons Copyright</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Contoh Pemberitahuan Pembuatan Creative Commons Copyright</h3>
 <h4>1. Contoh Kebijakan Jurnal yang Menawarkan Open Access</h4>
 Penulis yang mempublikasikan naskahnya di jurnal ini menyetujui hal-hal berikut:
 <ol type="a">
@@ -790,7 +790,6 @@ Anda dapat memberi alasan penonaktifannya kepada pengguna.</message>
 	<message key="about.delayedOpenAccess">Delayed Open Access</message>
 	<message key="about.delayedOpenAccessDescription1">Isi jurnal ini akan tersedia dalam format Open Access</message>
 	<message key="about.delayedOpenAccessDescription2">bulan setelah naskah diterbitkan.</message>
-	<message key="about.authorSelfArchive">Arsip Mandiri Penulis</message>
 	<message key="about.archiving">Pengarsipan</message>
 	<message key="about.subscriptions">Langganan</message>
 	<message key="about.subscriptions.individual">Langganan Individu</message>

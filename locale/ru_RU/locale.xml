@@ -380,7 +380,7 @@
 	<message key="manager.setup.porticoDescription"><![CDATA[Portico — это некоммерческий сервис, предназначенный для сохранения цифровых публикаций, в том числе электронных журналов, книг и оцифрованных исторических коллекций. Если ваш журнал подписал контракт с Portico, включите здесь необходимые настройки:]]></message>
 
 	<!-- Настройка (Шаг 3) -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Примеры уведомлений о передаче авторских прав на основе лицензии Creative Commons</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Примеры уведомлений о передаче авторских прав на основе лицензии Creative Commons</h3>
 <h4>1. Предлагаемая политика для журналов, предлагающих открытый доступ</h4>
 Авторы, которые публикуются в данном журнале, соглашаются со следующими условиями:
 <ol type="a">
@@ -794,7 +794,6 @@
 	<message key="about.delayedOpenAccess">Отложенный открытый доступ</message>
 	<message key="about.delayedOpenAccessDescription1">Содержимое этого журнала будет опубликовано в открытом доступе через</message>
 	<message key="about.delayedOpenAccessDescription2">месяцев после публикации выпуска.</message>
-	<message key="about.authorSelfArchive">Самостоятельное создание архива автором</message>
 	<message key="about.archiving">Архивация</message>
 	<message key="about.subscriptions">Подписки</message>
 	<message key="about.subscriptions.individual">Индивидуальные подписки</message>

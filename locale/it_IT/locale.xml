@@ -356,7 +356,7 @@
 <br /><br />
 Se ritieni di aver accesso a una o pià reti LOCKSS elencate <a href="http://www.lockss.org/community/networks/" target="_blank">qui</a>, contatta l'amministratore della rete di tuo interesse per richiedere l'inclusione. Il completamento del modulo qui sotto permetterà l'inclusione della rivista nella rete. <em>Non verrà conservato alcun contenuto prima che tu avverta il gestore della rete di tuo interesse</em>.]]></message>
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Proposta di notifica dell'uso di una licenza Creative Commons nell'Informativa sui diritti</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Proposta di notifica dell'uso di una licenza Creative Commons nell'Informativa sui diritti</h3>
 <h4>1. Proposta per riviste Open Access</h4>
 Gli autori che pubblicano su questa rivista accettano le seguenti condizioni:
 <ol type="a">
@@ -753,7 +753,6 @@ Seleziona un modello per gestire questi aspetti del processo editoriale. (Per de
 	<message key="about.delayedOpenAccess">Open Access con embargo</message>
 	<message key="about.delayedOpenAccessDescription1">I contenuti di questa rivista saranno resi disponibili ad accesso aperto</message>
 	<message key="about.delayedOpenAccessDescription2">mese/i dopo la pubblicazione di ciascun fascicolo.</message>
-	<message key="about.authorSelfArchive">Author Self-Archiving</message>
 	<message key="about.archiving">Archiviazione</message>
 	<message key="about.subscriptions">Abbonamenti</message>
 	<message key="about.subscriptions.individual">Abbonamenti individuali</message>

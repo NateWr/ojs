@@ -766,7 +766,6 @@ Editöryel süreçte bu basamakların nasıl işleyeceği konusunda bir model se
 	<message key="about.delayedOpenAccess">Gecikmeli Açık Erişim</message>
 	<message key="about.delayedOpenAccessDescription1">Bu derginin içeriği</message>
 	<message key="about.delayedOpenAccessDescription2">ay sonra açık erişim biçiminde erişilebilir olacaktır.</message>
-	<message key="about.authorSelfArchive">Yazar Kişisel Arşivleme</message>
 	<message key="about.archiving">Arşivleme</message>
 	<message key="about.subscriptions">Abonelik</message>
 	<message key="about.subscriptions.individual">Bireysel Abonelik</message>

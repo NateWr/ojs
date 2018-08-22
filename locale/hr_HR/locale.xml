@@ -551,7 +551,6 @@ Sadržaj priložene datoteke možete provjeriti ukoliko kliknete na njezino ime.
 	<message key="about.delayedOpenAccess">Odgođeni otvoreni pristup</message>
 	<message key="about.delayedOpenAccessDescription1">Sadržaj ovog časopisa bit će dostupan u formatu otvorenog pristupa</message>
 	<message key="about.delayedOpenAccessDescription2">mjesec(i) nakon objave broja časopisa.</message>
-	<message key="about.authorSelfArchive">Autoarhiviranje autora</message>
 	<message key="about.archiving">Arhiviranje</message>
 	<message key="about.subscriptions">Pretplate</message>
 	<message key="about.subscriptionsContact">Kontakt za pretplate</message>
@@ -730,7 +729,7 @@ Vaš poslužitelj trenutno podržava mbstring: <strong>{$supportsMBString}</stro
 		<li>OJS ne može modificirati lokalizacijsku registry datoteku, obično "registry/locales.xml".</li>
 	</ul>
 <p>Datoteku s jezicima možete ručno preuzeti sa <a href="http://pkp.sfu.ca">PKP web site</a>.</p>]]></message>
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Predložene Creative Commons odredbe o autorskim pravima</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Predložene Creative Commons odredbe o autorskim pravima</h3>
 <h4>1. Prijedlog za časopise koji omogućuju otvoren pristup</h4>
 Autori koji objavljuju u ovom časopisu pristaju na sljedeće uvijete:
 <ol type="a">

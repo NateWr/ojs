@@ -113,7 +113,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Para inclusão na página Sobre a revista)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Exigir dos autores o registro de conflito de interesses (CI) junto com a submissão.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Exigir dos avaliadores registro de conflito de interesses com cada avaliação realizada.</message>
-	<message key="manager.setup.copyrightNotice">Declaração de Direito Autoral</message>
 	<message key="manager.setup.coverage">Cobertura</message>
 	<message key="manager.setup.coverageDescription">Referente à cobertura geoespacial, cronológica ou histórica, e/ou características da pesquisa.</message>
 	<message key="manager.setup.currentIssue">Edição Atual</message>
@@ -130,11 +129,11 @@
 	<message key="manager.setup.displayCurrentIssue">Incluir sumário na edição atual (se disponível).</message>
 	<message key="manager.setup.editorDecision">Decisão editorial</message>
 	<message key="manager.setup.emailBounceAddress">Endereço de retorno de e-mail</message>
-	<message key="manager.setup.emailBounceAddressDescription">Qualquer e-mail retornado (não recebido pelo destinatário) produzirá uma mensagem de erro encaminhada para o endereço definido aqui.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Aviso:</strong> Para ativar esta opção, o administrador do portal deve habilitar a opção <tt>allow_envelope_sender</tt> no documento de configuração do sistema. Configurações adicionais no servidor podem ser necessárias para suportar tal funcionalidade (pode não ser possível em todos os tipos de servidores!), como descrito na documentação do sistema.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Qualquer e-mail retornado (não recebido pelo destinatário) produzirá uma mensagem de erro encaminhada para o endereço definido aqui.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Aviso:</strong> Para ativar esta opção, o administrador do portal deve habilitar a opção <tt>allow_envelope_sender</tt> no documento de configuração do sistema. Configurações adicionais no servidor podem ser necessárias para suportar tal funcionalidade (pode não ser possível em todos os tipos de servidores!), como descrito na documentação do sistema.]]></message>
 	<message key="manager.setup.emails">Identificação de e-mail</message>
 	<message key="manager.setup.emailSignature">Assinatura</message>
-	<message key="manager.setup.emailSignatureDescription">Os e-mails padrão enviados pelo sistema em nome da revista incluirão a seguinte assinatura no final. O corpo do texto pode ser editado na seção E-mails da Administração da revista.</message>
+	<message key="manager.setup.emailSignature.description">Os e-mails padrão enviados pelo sistema em nome da revista incluirão a seguinte assinatura no final. O corpo do texto pode ser editado na seção E-mails da Administração da revista.</message>
 	<message key="manager.setup.enableAnnouncements">Habilitar ferramenta de notícias a Editores-Gerentes.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Exibir</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">das notícias mais recentes na página inicial da revista.</message>
@@ -210,9 +209,9 @@
 	<message key="manager.setup.note">Nota de agradecimento</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Aviso:</strong> O e-mail de notificação de submissão está desativado. Para utilizar esta opção, ative o e-mail padrão SUBMISSION_ACK na configuração de <a class="action" href="{$preparedEmailsUrl}">E-mails</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Links de paginação</message>
-	<message key="manager.setup.onlineAccessManagement">Acesso ao conteúdo</message>
+	<message key="manager.setup.publishingMode">Acesso ao conteúdo</message>
 	<message key="manager.setup.onlineIssn">ISSN Eletrônico</message>
-	<message key="manager.setup.openAccess">A revista oferecerá acesso livre ao seu conteúdo.</message>
+	<message key="manager.distribution.publishingMode.openAccess">A revista oferecerá acesso livre ao seu conteúdo.</message>
 	<message key="manager.setup.pageNumberIdentifier">Opção de número de página</message>
 	<message key="manager.setup.policies">Políticas</message>
 	<message key="manager.setup.policies.description">Foco, avaliação pelos pares, seções, privacidade, acesso, segurança e itens adicionais sobre da revista.</message>
@@ -229,7 +228,7 @@
 	<message key="manager.setup.restrictArticleAccess">Usuários devem se cadastrar e acessar o sistema para visualizar conteúdo de acesso livre.</message>
 	<message key="manager.setup.restrictSiteAccess">Usuários devem se cadastrar e acessar o sistema para visualizar a página da revista.</message>
 	<message key="manager.setup.reviewGuidelines">Diretrizes para avaliação</message>
-	<message key="manager.setup.reviewGuidelinesDescription"><![CDATA[As diretrizes para avaliação proporcionam um guia de critérios essencial para o julgamento da submissão e avaliar se está de acordo com as políticas e conteúdo da revista, assim como instruções especiais para preparar uma crítica eficaz, eficiente e construtiva. Ao realizar uma avaliação, estão disponíveis aos avaliadores dois campos de texto livre, o primeiro "para o autor e o editor" e o segundo "para o editor". Opcionalmente, o Gerente da Revista pode criar <a href="{$reviewFormsUrl}" class="action">formulários de avaliação</a>. Em qualquer caso, os editores terão a opção de incluir as avaliações aos autores em suas comunicações.]]></message>
+	<message key="manager.setup.reviewGuidelines.description"><![CDATA[As diretrizes para avaliação proporcionam um guia de critérios essencial para o julgamento da submissão e avaliar se está de acordo com as políticas e conteúdo da revista, assim como instruções especiais para preparar uma crítica eficaz, eficiente e construtiva. Ao realizar uma avaliação, estão disponíveis aos avaliadores dois campos de texto livre, o primeiro "para o autor e o editor" e o segundo "para o editor". Opcionalmente, o Gerente da Revista pode criar <a href="{$reviewFormsUrl}" class="action">formulários de avaliação</a>. Em qualquer caso, os editores terão a opção de incluir as avaliações aos autores em suas comunicações.]]></message>
 	<message key="manager.setup.reviewOptions">Opções para avaliação</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">E-mails automatizados serão enviados ao avaliador (o editor também pode enviar lembretes ao avaliador)</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Aviso:</strong> Para ativar estas opções, o administrador do portal deve habilitar a opção de <tt>scheduled_tasks</tt> no documento de configuração do sistema. Configurações adicionais no servidor podem ser necessárias para suportar tais funcionalidades (pode não ser possível em todos os tipos de servidores!), como descrito na documentação do sistema.]]></message>
@@ -244,12 +243,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Lembretes aos avaliadores</message>
 	<message key="manager.setup.reviewPolicy">Política de avaliação</message>
 	<message key="manager.setup.searchEngineIndexing">Indexação para mecanismos de busca</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Para auxiliar usuários de mecanismos de busca a descobrir sua revista, inclua uma breve descrição sobre a revista e palavras-chave relevantes (separadas por ponto-e-vírgula ";").</message>
+	<message key="manager.setup.searchEngineIndexing.description">Para auxiliar usuários de mecanismos de busca a descobrir sua revista, inclua uma breve descrição sobre a revista e palavras-chave relevantes (separadas por ponto-e-vírgula ";").</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Seções e editores de seção</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Caso não sejam incluídas outras seções, todos os itens serão submetidos para Artigos.)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[Para modificar as seções da revista (Ex.: Artigos, Resenhas, etc.), entre em Seções.<br /><br />Ao submeter documentos para a revista, os autores definirão:]]></message>
-	<message key="manager.setup.securitySettings">Configurações de acesso e segurança</message>
-	<message key="manager.setup.securitySettingsDescription">O sistema oferece opções de segurança para restringir acesso ao conteúdo da revista, mantendo controles de atividade sobre a submissão para auditoria.</message>
 	<message key="manager.setup.selectEditorDescription">O editor será responsável pelo processo editorial.</message>
 	<message key="manager.setup.selectSectionDescription">A seção para qual o documento deverá ser considerado.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Sempre exibir links para composições e indicar acesso restrito.</message>
@@ -263,8 +260,7 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Ao submeter um trabalho para a revista, os autores devem ler, aceitar e marcar como realizados cada condição para a submissão, antes de proceder. A lista de condições também é apresentada em Diretrizes para autores, na página Sobre a revista. A lista pode ser modificada, porém todos os itens requerem a marcação dos autores para procederem à submissão.</message>
 	<message key="manager.setup.submissions">Submissões</message>
 	<message key="manager.setup.submissions.description">Diretrizes para o autor, direito autoral e indexação (incluindo registro).</message>
-	<message key="manager.setup.subscription">A revista terá controle de assinaturas para acesso ao seu conteúdo, ou parte dele.</message>
-	<message key="manager.setup.subscriptionDescription">Ao habilitar o controle de assinaturas, deverá ser designado um gerente de assinaturas que terá acesso ao componente, permitindo definir as formas de acesso ao conteúdo, auto-arquivamento e notificações via e-mail.</message>
+	<message key="manager.distribution.publishingMode.subscription">A revista terá controle de assinaturas para acesso ao seu conteúdo, ou parte dele.</message>
 	<message key="manager.setup.typeExamples">(Ex.: Pesquisa Histórica; Revisão de Literatura; Pesquisa Empírica de Campo; Entrevista Controlada; Prototipagem)</message>
 	<message key="manager.setup.typeMethodApproach">Tipo (Método/Processo/Enfoque)</message>
 	<message key="manager.setup.typeProvideExamples">Informe exemplos de tipos relevantes de pesquisa, métodos e abordagens</message>
@@ -298,8 +294,6 @@
 	<message key="manager.statistics.statistics.selectSections">Escolha as seções para calcular as estatísicas de avaliação pelos pares.</message>
 	<message key="manager.statistics.statistics.subscriptions">Assinaturas</message>
 	<message key="manager.subscriptionPolicies">Políticas de assinaturas</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Política de auto-arquivamento</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">A política a seguir será exibida na página Sobre a revista, na seção Políticas.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Acesso Livre adiado</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Mesmo com o uso de Acesso Livre adiado, os editores poderão escolher artigos de qualquer edição para Acesso Livre imediato.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">As edições passadas desta revistas estarão disponíveis para Acesso Livre</message>
@@ -423,7 +417,7 @@
 	<message key="manager.sections.wordCountInstructions">Limitar a quantidade de palavras do resumo para esta seção (0 para ilimitado):</message>
 	<message key="manager.setup.history">Histórico da revista</message>
 	<message key="manager.setup.historyDescription">Este texto aparecerá na seção "Sobre" da revista e pode ser usado para detalhar mudanças de título, corpo editorial e outros itens de relevância na história da publicação.</message>
-	<message key="manager.setup.noPublishing">O sistema não será usado para publicar o conteúdo da revista online.</message>
+	<message key="manager.distribution.publishingMode.none">O sistema não será usado para publicar o conteúdo da revista online.</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotifications">Notificações de pagamento online</message>
 	<message key="manager.subscriptionPolicies.onlinePaymentNotificationsDescription">Notificações automáticas via e-mail (disponíveis para personalização pelo Gerente da Revista na seção E-mails) podem ser enviados ao gerente de assinaturas após a conclusão de pagamentos online.</message>
 	<message key="manager.subscriptionPolicies.enableSubscriptionOnlinePaymentNotificationPurchaseIndividual">Notificar o gerente de assinaturas via e-mail após a realização de um pagamento de assinatura individual online.</message>

@@ -20,12 +20,11 @@
 	{csrf}
 	{include file="controllers/notification/inPlaceNotification.tpl" notificationId="accessFormNotification"}
 
-	{fbvFormArea id="userRegistration" title="manager.setup.onlineAccessManagement"}
-		<p>{translate key="manager.setup.securitySettingsDescription"}</p>
+	{fbvFormArea id="userRegistration" title="manager.setup.publishingMode"}
 		{fbvFormSection list=true}
-			{fbvElement type="radio" id="publishingMode-0" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_OPEN checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_OPEN label="manager.setup.openAccess"}
-			{fbvElement type="radio" id="publishingMode-1" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_SUBSCRIPTION checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_SUBSCRIPTION label="manager.setup.subscription"}
-			{fbvElement type="radio" id="publishingMode-2" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_NONE checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_NONE label="manager.setup.noPublishing"}
+			{fbvElement type="radio" id="publishingMode-0" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_OPEN checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_OPEN label="manager.distribution.publishingMode.openAccess"}
+			{fbvElement type="radio" id="publishingMode-1" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_SUBSCRIPTION checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_SUBSCRIPTION label="manager.distribution.publishingMode.subscription"}
+			{fbvElement type="radio" id="publishingMode-2" name="publishingMode" value=$smarty.const.PUBLISHING_MODE_NONE checked=$publishingMode|compare:$smarty.const.PUBLISHING_MODE_NONE label="manager.distribution.publishingMode.none"}
 		{/fbvFormSection}
 	{/fbvFormArea}
 

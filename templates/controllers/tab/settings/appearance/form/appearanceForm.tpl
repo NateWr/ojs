@@ -39,9 +39,6 @@
 	{* Additional Homepage Content *}
 	{include file="core:controllers/tab/settings/appearance/form/additionalHomepageContent.tpl"}
 
-	{* List Display Options *}
-	{include file="core:controllers/tab/settings/appearance/form/lists.tpl"}
-
 	{* Journal thumbnail *}
 	{assign var="journal_thumbnail_field_id" value=$uploadImageLinkActions.journalThumbnail->getId()}
 	{fbvFormArea id="thumbnailArea" class="$wizard_class"}

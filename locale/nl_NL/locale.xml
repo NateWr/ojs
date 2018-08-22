@@ -273,7 +273,7 @@
 Het inrichten van LOCKSS ondersteuning voor Open Journal Systems hoeft pas te gebeuren als publicatie plaatsvindt. Volg dan deze twee stappen:]]></message>
 
 	<!-- Setup Step 3 -->
-	<message key="manager.setup.authorCopyrightNotice.sample"><![CDATA[<h3>Voorgestelde Creative Commons auteursrecht verklaringen</h3>
+	<message key="manager.setup.copyrightNotice.sample"><![CDATA[<h3>Voorgestelde Creative Commons auteursrecht verklaringen</h3>
 <h4>1. Concept beleid voor Open Access tijdschriften</h4>
 Auteurs die publiceren bij dit tijdschrift, onderschrijven de volgende voorwaarden:
 <ol type="a">
@@ -579,7 +579,6 @@ Eventueel kunt u de gebruiker een reden voor het blokkeren geven.</message>
 	<message key="about.delayedOpenAccess">Vertraagde Open Access</message>
 	<message key="about.delayedOpenAccessDescription1">De inhoud van dit tijdschrift zal beschikbaar zijn in een open access formaat</message>
 	<message key="about.delayedOpenAccessDescription2">maand(en) nadat een nummer gepubliceerd is.</message>
-	<message key="about.authorSelfArchive">Zelf-archiveren auteurs</message>
 	<message key="about.archiving">Archiveren</message>
 	<message key="about.subscriptions">Abonnementen</message>
 	<message key="about.subscriptionsContact">Contact voor abonnementen</message>

@@ -110,7 +110,6 @@
 	<message key="manager.setup.appearInAboutJournal">(Pojavljuje se u "o časopisu")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Zahtijevaj od autora da prilikom prijave svog rukopisa ispune izjavu o sukobu interesa.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Zahtijevaj od recenzenata da prilikom izrade svake recenzije ispune izjavu o sukobu interesa.</message>
-	<message key="manager.setup.copyrightNotice">Obavijest o autorskim pravima</message>
 	<message key="manager.setup.coverage">Opseg</message>
 	<message key="manager.setup.coverageDescription">Odnosi se na geoprostornu lokaciju, kronološki ili povijesni opseg, odnosno na osobine istraživačkog uzorka.</message>
 	<message key="manager.setup.currentIssue">Trenutni broj časopisa</message>
@@ -126,11 +125,11 @@
 	<message key="manager.setup.displayCurrentIssue">Dodaj kazalo sadržaja za trenutni broj časopisa (ako postoji).</message>
 	<message key="manager.setup.editorDecision">Urednička odluka</message>
 	<message key="manager.setup.emailBounceAddress">Adresa obavijesti o nedostavljanju</message>
-	<message key="manager.setup.emailBounceAddressDescription">Bilo koja nedostavljena e-pošta rezultirat će slanjem poruke o pogrešci na ovu adresu.</message>
-	<message key="manager.setup.emailBounceAddressDisabled"><![CDATA[<strong>Obavijest:</strong> Kako bi aktivirao ovu opciju, administrator stranice mora omogućiti <tt>allow_envelope_sender</tt> u konfiguracijskoj datoteci OJS-a. Dodatna konfiguracija poslužitelja je potrebna da bi podržala ovu funkcionalnost (što nije moguće na svim poslužiteljima) -  naznačeno u  OJS dokumentaciji.]]></message>
+	<message key="manager.setup.emailBounceAddress.description">Bilo koja nedostavljena e-pošta rezultirat će slanjem poruke o pogrešci na ovu adresu.</message>
+	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Obavijest:</strong> Kako bi aktivirao ovu opciju, administrator stranice mora omogućiti <tt>allow_envelope_sender</tt> u konfiguracijskoj datoteci OJS-a. Dodatna konfiguracija poslužitelja je potrebna da bi podržala ovu funkcionalnost (što nije moguće na svim poslužiteljima) -  naznačeno u  OJS dokumentaciji.]]></message>
 	<message key="manager.setup.emails">Identifikacija e-pošte</message>
 	<message key="manager.setup.emailSignature">Potpis</message>
-	<message key="manager.setup.emailSignatureDescription">Pripremljeni obrasci e-pošte poslani od strane sustava u ime časopisa na kraju će sadržavati ovdje priložen potpis. Sam sadržaj obrazaca e-pošte može uređivati glavni urednik opcijom "pripremljeni obrasci e-pošte" u izborniku "uređivački postupci".</message>
+	<message key="manager.setup.emailSignature.description">Pripremljeni obrasci e-pošte poslani od strane sustava u ime časopisa na kraju će sadržavati ovdje priložen potpis. Sam sadržaj obrazaca e-pošte može uređivati glavni urednik opcijom "pripremljeni obrasci e-pošte" u izborniku "uređivački postupci".</message>
 	<message key="manager.setup.enableAnnouncements">Omogući glavnim urednicima da postavljaju obavijesti.</message>
 	<message key="manager.setup.enableAnnouncementsHomepage1">Prikaz</message>
 	<message key="manager.setup.enableAnnouncementsHomepage2">posljednje objavljene obavijesti na naslovnoj stranici časopisa.</message>
@@ -202,9 +201,9 @@
 	<message key="manager.setup.note">Bilješka</message>
 	<message key="manager.setup.notifications.submissionAckDisabled"><![CDATA[<strong>Obavijest:</strong> E-pošta potvrde prijave je trenutno onemogućena. Da biste koristili ovu mogućnost, omogućite SUBMISSION_ACK e-poštu u <a class="action" href="{$preparedEmailsUrl}">Pripremljenoj e-pošti</a>.]]></message>
 	<message key="manager.setup.numPageLinks">Broj prikazanih stranica</message>
-	<message key="manager.setup.onlineAccessManagement">Pristup sadržaju časopisa.</message>
+	<message key="manager.setup.publishingMode">Pristup sadržaju časopisa.</message>
 	<message key="manager.setup.onlineIssn">E-ISSN</message>
-	<message key="manager.setup.openAccess">Časopis omogućuje otvoreni pristup svojem cjelokupnom sadržaju.</message>
+	<message key="manager.distribution.publishingMode.openAccess">Časopis omogućuje otvoreni pristup svojem cjelokupnom sadržaju.</message>
 	<message key="manager.setup.pageNumberIdentifier">Navođenje broja stranica</message>
 	<message key="manager.setup.policies">Uređivačka politika</message>
 	<message key="manager.setup.policies.description">Fokus, recenzijski postupak, rubrike, privatnost, sigurnost i dodatne informacije o časopisu.</message>
@@ -221,7 +220,7 @@
 	<message key="manager.setup.restrictArticleAccess">Korisnici se moraju prijaviti u sustav da bi vidjeli sadržaj otvorenog pristupa.</message>
 	<message key="manager.setup.restrictSiteAccess">Korisnici se moraju prijaviti u sustav da bi vidjeli stranicu časopisa.</message>
 	<message key="manager.setup.reviewGuidelines">Smjernice za recenziju</message>
-	<message key="manager.setup.reviewGuidelinesDescription">Smjernice za recenziju pružaju recenzentima kriterij za procjenu primjerenosti prijavljenih priloga za objavljivanje u časopisu. Također, smjernice mogu sadržavati i dodatne naputke za izradu učinkovite i korisne recenzije.</message>
+	<message key="manager.setup.reviewGuidelines.description">Smjernice za recenziju pružaju recenzentima kriterij za procjenu primjerenosti prijavljenih priloga za objavljivanje u časopisu. Također, smjernice mogu sadržavati i dodatne naputke za izradu učinkovite i korisne recenzije.</message>
 	<message key="manager.setup.reviewOptions">Opcije recenzije</message>
 	<message key="manager.setup.reviewOptions.automatedReminders">Poruke e-pošte kojima se recenzente podsjeća na njihov zadatak (dostupni među obrascima e-pošte OJS-a) mogu se automatski odaslati recenzentima u dva slučaja (također, urednik može uvijek osobno kroz sustav poslati obrazac e-pošte s upitom recenzentu)</message>
 	<message key="manager.setup.reviewOptions.automatedRemindersDisabled"><![CDATA[<strong>Napomena:</strong> Da biste aktivirali ovu opciju, administrator stranice mora omogućiti <tt>scheduled_tasks</tt> opciju u konfiguracijskoj datoteci (što nije moguće učiniti na svim poslužiteljima), kao što je pojašnjeno u OJS dokumentaciji.]]></message>
@@ -236,12 +235,10 @@
 	<message key="manager.setup.reviewOptions.reviewerReminders">Podsjetnici za recenzente</message>
 	<message key="manager.setup.reviewPolicy">Recenzijska politika</message>
 	<message key="manager.setup.searchEngineIndexing">Indeksiranje časopisa za tražilice</message>
-	<message key="manager.setup.searchEngineIndexingDescription">Kako bi olakšali pronalaženje ovog časopisa pomoću mrežnih tražilica, priložite kratak opis časopisa i relevantnih ključnih riječi (odvojenih točka-zarezima).</message>
+	<message key="manager.setup.searchEngineIndexing.description">Kako bi olakšali pronalaženje ovog časopisa pomoću mrežnih tražilica, priložite kratak opis časopisa i relevantnih ključnih riječi (odvojenih točka-zarezima).</message>
 	<message key="manager.setup.sectionsAndSectionEditors">Rubrike i rubrika urednika</message>
 	<message key="manager.setup.sectionsDefaultSectionDescription">(Ako rubrike nisu dodane, stavke će biti dodane standardnoj rubrici "članci".)</message>
 	<message key="manager.setup.sectionsDescription"><![CDATA[DA biste kreirali ili modificirali rubrike za časopis (npr. Članci, Recenzije knjiga itd.), odite na "upravljenje rubrikama"<br /><br />Autori će biti označeni pri predaji stavki...]]></message>
-	<message key="manager.setup.securitySettings">Postavke pristupa</message>
-	<message key="manager.setup.securitySettingsDescription"><![CDATA[<B> OJS omogućuje aktivaciju nekoliko sigurnosnih opcija koje se mogu koristiti kako bi se regulirao pristup sadržaju časopisa. Također, sustav omogućuje evidentiranje svih radnji i poruka e-pošte vezanih uz sve prijavljene poruke kako bi se sačuvale sve informacije o tijeku uređivačkog postupka u svrhu arhiviranja te eventualne revizije uređivačkih aktivnosti. </B>]]></message>
 	<message key="manager.setup.selectEditorDescription">Urednik časopisa koji će to vidjeti kroz postupak uređivanja.</message>
 	<message key="manager.setup.selectSectionDescription">Rubrika časopisa za koju će stavka biti razmatrana.</message>
 	<message key="manager.setup.showGalleyLinksDescription">Uvijek prikaži poveznicu na pun tekst priloga, uz naznaku ograničenja pristupa.</message>
@@ -255,8 +252,7 @@
 	<message key="manager.setup.submissionPreparationChecklistDescription">Pri prijavljivanju priloga za časopis, od autora se prvo traži da potvrde kako njihov prilog zadovoljava svaku stavku "uvjeta za predaju priloga" prije nego što mogu nastaviti s postupkom prijave. Uvjeti za predaju priloga se također navode i kod "smjernica za autore", unutar rubrike "o časopisu". Popis uvjeta se može nadopuniti ili prilagoditi, a autori će uz svaku navedenu stavku svoju suglasnost morati označiti kvačicom.</message>
 	<message key="manager.setup.submissions">Prijave</message>
 	<message key="manager.setup.submissions.description">Smjernice za autore, autorska prava i indeksiranje sadržaja.</message>
-	<message key="manager.setup.subscription">Časopis zahtijeva pretplatu za pristup nekim ili svim svojim sadržajima.</message>
-	<message key="manager.setup.subscriptionDescription">Ovaj modus pristupa aktivira modul "upravljanje pretplatom" u kojem se mogu definirati oblici pretplate, dodavati individualnipretplatnici, kao i regulirati odgođeni otvoreni pristup, praksu samoarhiviranja te obavještavanja pretplatnika putem e-pošte. Ovim modulom upravljaju osobe kojima je dodijeljena uloga administrator pretplate.</message>
+	<message key="manager.distribution.publishingMode.subscription">Časopis zahtijeva pretplatu za pristup nekim ili svim svojim sadržajima.</message>
 	<message key="manager.setup.typeExamples">(Npr. povijesno istraživanje; prirodni eksperiment; književna analiza; anketa/intervju)</message>
 	<message key="manager.setup.typeMethodApproach">Tip (Metoda/Pristup)</message>
 	<message key="manager.setup.typeProvideExamples">Navedite primjere tipova istraživanja, te istraživačkih metoda i pristupa relevantne za područje ovog časopisa</message>
@@ -289,8 +285,6 @@
 	<message key="manager.statistics.statistics.selectSections">Odaberite rubrike na osnovi čijih priloga želite da se računaju recenzijske statistike časopisa:</message>
 	<message key="manager.statistics.statistics.subscriptions">Pretplata</message>
 	<message key="manager.subscriptionPolicies">Politika pretplate</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchive">Politika autorskog samoarhiviranja</message>
-	<message key="manager.subscriptionPolicies.authorSelfArchiveDescription">Sljedeća preporuka o samoarhiviranju bit će postavljena u rubrici "uređivačka politika" pod poveznicom "o časopisu".</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccess">Odgođeni otvoreni pristup</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription">Ukoliko koriste odgođeni otvoreni pristup, urednici su u mogućnosti da odrede pojedine članke unutar broja časopisa za puni i trenutni otvoreni pristup.</message>
 	<message key="manager.subscriptionPolicies.delayedOpenAccessDescription1">Prijašnji brojevi ovoga časopisa bit će dostupni u formatu otvorenog pristupa</message>
@@ -472,7 +466,7 @@
 	<message key="manager.setup.journalThumbnail">Mala sličica časopisa</message>
 	<message key="manager.setup.managingTheJournal">Korak 4. Upravljanje časopisom</message>
 	<message key="manager.setup.useThumbnail">Mala sličica</message>
-	<message key="manager.setup.noPublishing">OJS neće biti upotrebljen za objavljivanje sadržaja časopisa na internetu.</message>
+	<message key="manager.distribution.publishingMode.none">OJS neće biti upotrebljen za objavljivanje sadržaja časopisa na internetu.</message>
 	<message key="manager.statistics.reports.defaultReport.articleDownloads">Broj preuzimanja datoteka članka</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstract">Broj pregleda stranice sa sažetkom</message>
 	<message key="manager.statistics.reports.defaultReport.articleAbstractAndDownloads">Sažetak članka i preuzimanja</message>
