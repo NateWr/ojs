@@ -127,9 +127,8 @@
 	<message key="manager.setup.alternateHeader">رأس صفحة بديل</message>
 	<message key="manager.setup.alternateHeaderDescription">عوضاً عن ذلك، بدلاً من العنوان والشعار، يمكن إضافة نسخة من رأس الصفحة بصيغة HTML مخصصة بالطريقة التي تريدها في مربع النص أدناه. أترك مربع النص فارغاً إن لم تتطلب ذلك.</message>
 	<message key="manager.setup.announcements">الإعلانات</message>
-	<message key="manager.setup.announcementsDescription">يمكن نشر الإعلانات لإعلام قراء المجلة عن الأخبار والأحداث. الإعلانات المنشورة ستظهر على صفحة الإعلانات.</message>
-	<message key="manager.setup.announcementsIntroduction">معلومات إضافية</message>
-	<message key="manager.setup.announcementsIntroductionDescription">أدخل أي معلومات إضافية ينبغي عرضها للقراء على صفحة الإعلانات.</message>
+	<message key="manager.setup.enableAnnouncements.description">يمكن نشر الإعلانات لإعلام قراء المجلة عن الأخبار والأحداث. الإعلانات المنشورة ستظهر على صفحة الإعلانات.</message>
+	<message key="manager.setup.announcementsIntroduction.description">أدخل أي معلومات إضافية ينبغي عرضها للقراء على صفحة الإعلانات.</message>
 	<message key="manager.setup.appearInAboutJournal">(لتظهر في "عن المجلة")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">يتطلب تقديم المؤلفين لبيان المصالح المتضاربة (CI) مع طلبات النشر الخاصة بهم.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">يتطلب من المحكمين تقديم بيان المصالح المتضاربة (CI) مع كل تحكيم مناظر يقوموم به.</message>
@@ -156,9 +155,7 @@
 	<message key="manager.setup.emails">تحديد هوية البريد الالكتروني</message>
           <message key="manager.setup.emailSignature">التوقيع</message>
 	<message key="manager.setup.emailSignature.description">رسائل البريد الالكتروني المُحضرَّة آلياً والمرسلة من قبل النظام نيابة عن المجلة، ستكون مذيلة بالتوقيع الآتي، علماً أن محتوى تلك الرسائل قابل للتعديل ضمن باب (الإعدادات).</message>
-	<message key="manager.setup.enableAnnouncements">تمكين مدراء المجلة من إضافة إعلاناتهم على الموقع</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">عرض</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">من الإعلانات الأخيرة الموجودة في صفحة المجلة الرئيسية.</message>
+	<message key="manager.setup.enableAnnouncements.enable">تمكين مدراء المجلة من إضافة إعلاناتهم على الموقع</message>
 	<message key="manager.setup.enableUserRegistration">يمكن للمستخدمين تسجيل أنفسهم في موقع المجلة</message>
 	<message key="manager.setup.focusAndScope">التركيز ومجال التخصص</message>
 	<message key="manager.setup.focusAndScope.description">أعط وصفاً للمؤلفين، القراء وأمناء المكتبات عن مجالات النشر التي تُعنى بها هذه المجلة.</message>
@@ -278,7 +275,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">التحكيم السري</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">المهلة المتاحة اعتيادياً للمحكمين</message>
 	<message key="manager.setup.reviewOptions.onQuality">سيقوم المحررون بتقييم المحكمين عبر سلم تقييم من خمس نقاط بعد كل عملية تحكيم.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">سيكون ملف طلب النشر متاحاً للمحكمين فقط عند قبولهم لمهمة تحكيمه.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">سيكون ملف طلب النشر متاحاً للمحكمين فقط عند قبولهم لمهمة تحكيمه.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">صلاحية وصول المحكم</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">تمكين وصول المحكم بنقرة واحدة.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>ملاحظة:</strong> إن دعوة المحكمين عبر البريد الالكتروني ستتضمن رابطاً خاصاً يأخذهم مباشرة إلى صفحة التحكيم الخاصة بالطلب المعني (مع إمكانية الوصول إلى أي صفحات أخرى يتطلبها تسجيل دخولهم). لأسباب أمنية مع هذا الخيار، لا يكون بإمكان المحررين تعديل عناوين البريد الالكتروني أو تمرير نسخة من الرسالة إلى أطراف أخرى ليس لها علاقة بالتحكيم.]]></message>

@@ -128,9 +128,8 @@
 	<message key="manager.setup.alternateHeader">Альтернативный заголовок</message>
 	<message key="manager.setup.alternateHeaderDescription">В качестве альтернативы, вместо названия и логотипа, в текстовое поле ниже может быть вставлена HTML-версия заголовка. Оставьте текстовое поле пустым, если альтернативный заголовок не нужен.</message>
 	<message key="manager.setup.announcements">Объявления</message>
-	<message key="manager.setup.announcementsDescription">Объявления могут быть опубликованы, чтобы проинформировать читателей о новостях и событиях журнала. Опубликованные объявления будут размещаться на странице «Объявления».</message>
-	<message key="manager.setup.announcementsIntroduction">Дополнительная информация</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Введите дополнительную информацию, которая будет показана для читателей на странице «Объявления».</message>
+	<message key="manager.setup.enableAnnouncements.description">Объявления могут быть опубликованы, чтобы проинформировать читателей о новостях и событиях журнала. Опубликованные объявления будут размещаться на странице «Объявления».</message>
+	<message key="manager.setup.announcementsIntroduction.description">Введите дополнительную информацию, которая будет показана для читателей на странице «Объявления».</message>
 	<message key="manager.setup.appearInAboutJournal">(появится в разделе «О журнале»)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Требовать от авторов представлять Декларацию о конфликте интересов вместе с отправляемым материалом.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Требовать от рецензентов представлять Декларацию о конфликте интересов с каждой отправляемой рецензией.</message>
@@ -157,9 +156,7 @@
 	<message key="manager.setup.emails">Идентификация в письме электронной почты</message>
 	<message key="manager.setup.emailSignature">Подпись</message>
 	<message key="manager.setup.emailSignature.description">Подготовленные письма, отправляемые системой от имени журнала, будут содержать следующую подпись, добавленную в конце письма.</message>
-	<message key="manager.setup.enableAnnouncements">Разрешить управляющим журналами добавлять объявления в журналы.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Показать</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">последних обьявлений на главной странице журнала.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Разрешить управляющим журналами добавлять объявления в журналы.</message>
 	<message key="manager.setup.enableUserRegistration">Посетители могут зарегистрировать учетную запись в журнале.</message>
 	<message key="manager.setup.focusAndScope">Концепция журнала</message>
 	<message key="manager.setup.focusAndScope.description">Опишите для авторов, читателей и библиотек диапазон статей и других материалов, которые будет публиковать журнал.</message>
@@ -287,7 +284,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Слепое рецензирование</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Число недель на выполнение рецензии</message>
 	<message key="manager.setup.reviewOptions.onQuality">Редакторы будут оценивать качество работы рецензентов по пятибалльной шкале после каждой рецензии.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Рецензенты получат доступ к файлу материала только после того, как согласятся дать рецензию.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Рецензенты получат доступ к файлу материала только после того, как согласятся дать рецензию.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Доступ рецензента</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Включить прямой доступ для рецензента.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Обратите внимание:</strong> Письмо рецензентам с запросом будет содержать специальный URL-адрес (ссылку), по которой рецензенты смогут напрямую попасть на страницу «Рецензирование» материала (доступ ко всем другим страницам будет требовать входа в систему с их учетной записью). Из соображений безопасности, при использовании этой возможности редакторы не могут изменять адреса электронной почты или добавлять адреса для копий (CC) и скрытых копий (BCC) перед отправкой запросов рецензентам.]]></message>

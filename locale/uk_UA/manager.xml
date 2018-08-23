@@ -126,9 +126,8 @@
 	<message key="manager.setup.alternateHeader">Альтернативний заголовок</message>
 	<message key="manager.setup.alternateHeaderDescription">Альтернативно, замість назви та логотипу, у поле нижче можна ввести HTML-версію заголовку сторінки. Залиште текстове поле порожнім, якщо альтернативний заголовок не потрібен.</message>
 	<message key="manager.setup.announcements">Анонси</message>
-	<message key="manager.setup.announcementsDescription">Для інформування читачів про новини та події редакція журналу може публікувати окрему сторінку "Анонси".</message>
-	<message key="manager.setup.announcementsIntroduction">Додаткова інформація</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Додайте будь-яку інформацію, що відображатиметься для читачів, на сторінці "Анонси".</message>
+	<message key="manager.setup.enableAnnouncements.description">Для інформування читачів про новини та події редакція журналу може публікувати окрему сторінку "Анонси".</message>
+	<message key="manager.setup.announcementsIntroduction.description">Додайте будь-яку інформацію, що відображатиметься для читачів, на сторінці "Анонси".</message>
 	<message key="manager.setup.appearInAboutJournal">(показувати на сторінці "Про журнал")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Вимагати від авторів декларувати відсутність конфлікту інтересів щодо поданих матеріалів.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Вимагати від рецензентів декларувати відсутність конфлікту інтересів щодо призначених їм на рецензування матеріалів.</message>
@@ -155,9 +154,7 @@
 	<message key="manager.setup.emails">Налаштування листування</message>
 	<message key="manager.setup.emailSignature">Підпис</message>
 	<message key="manager.setup.emailSignature.description">Підготовлені листи, які будуть розсилатися системою від імені журналу, матимуть у кінці зазначений нижче підпис. Посилання для редагування змісту шаблонів листів доступне на сторінці "Менеджмент журналу".</message>
-	<message key="manager.setup.enableAnnouncements">Дозволити менеджерам журналу додавати анонси журналу.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Показати</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">найновіших анонсів на домашній сторінці журналу.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Дозволити менеджерам журналу додавати анонси журналу.</message>
 	<message key="manager.setup.enableUserRegistration">Відвідувачі можуть зареєструвати обліковий запис у журналі.</message>
 	<message key="manager.setup.focusAndScope">Галузь та проблематика</message>
 	<message key="manager.setup.focusAndScope.description">Опишіть для авторів, читачів і бібліотек діапазон статей або інших матеріалів, що будуть публікуватись у журналі.</message>
@@ -277,7 +274,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Анонімне рецензування</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Типовий період, необхідний для проведення рецензування</message>
 	<message key="manager.setup.reviewOptions.onQuality">Після кожного рецензування редактори зможуть оцінювати рецензентів за п'ятибальною шкалою.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Рецензенти будуть мати доступ до рукописів лише після згоди рецензувати їх.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Рецензенти будуть мати доступ до рукописів лише після згоди рецензувати їх.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Доступ рецензентів</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Дозволити доступ рецензента "єдиним натисканням".</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Примітка:</strong> Листи-запрошення рецензентів включатимуть спеціальний прямий URL до сторінки з поданням (при цьому для доступу до всіх інших сторінок їм буде необхідно зайти у систему з іменем/паролем). З міркувань безпеки, за умов використання цієї опції, редактори не зможуть змінювати адреси email або додавати додаткові адреси (CC та BCC) під час написання листів-запрошень рецензентів.]]></message>

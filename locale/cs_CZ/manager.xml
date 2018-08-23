@@ -109,9 +109,8 @@
 	<message key="manager.setup.alternateHeader">Alternativní hlavička</message>
 	<message key="manager.setup.alternateHeaderDescription">Alternativně lze místo názvu a loga vložit do textového pole níže HTML verzi hlavičky. Pokud nechcete tuto možnost využít, nechte pole prázdné.</message>
 	<message key="manager.setup.announcements">Oznámení</message>
-	<message key="manager.setup.announcementsDescription">Mohou být publikována oznámení informující čtenáře o událostech a novinkách spojených s časopisem. Vydaná oznámení se zobrazí na stránce Oznámení.</message>
-	<message key="manager.setup.announcementsIntroduction">Doplňující informace</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Vložte jakékoliv doplňující informace, které by měly být zobrazeny čtenářům na stránce Oznámení.</message>
+	<message key="manager.setup.enableAnnouncements.description">Mohou být publikována oznámení informující čtenáře o událostech a novinkách spojených s časopisem. Vydaná oznámení se zobrazí na stránce Oznámení.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Vložte jakékoliv doplňující informace, které by měly být zobrazeny čtenářům na stránce Oznámení.</message>
 	<message key="manager.setup.appearInAboutJournal">(K zobrazení v části O časopisu)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Požadovat od autorů, aby spolu s příspěvkem zaslali soubor s prohlášením o střetu zájmů.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Požadovat od recenzentů, aby s každým svým posudkem zasílali soubor s prohlášením o střetu zájmů.</message>
@@ -137,9 +136,7 @@
 	<message key="manager.setup.emails">E-mailová identifikace</message>
 	<message key="manager.setup.emailSignature">Podpis</message>
 	<message key="manager.setup.emailSignature.description">Připravené e-maily, které jsou systémem posílány ve jménu časopisu budou mít na konci přidán následující podpis. Obsah připravených e-mailů je možné editovat v části Správa časopisu.</message>
-	<message key="manager.setup.enableAnnouncements">Umožnit manažerům časopisu přidávat oznámení časopisu.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Zobrazit</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">z nejnovějších oznámení na domácí stránce časopisu.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Umožnit manažerům časopisu přidávat oznámení časopisu.</message>
 	<message key="manager.setup.enableUserRegistration">Uživatelé se mohou do časopisu registrovat v jedné nebo více z následujících rolí:</message>
 	<message key="manager.setup.focusAndScope">Zaměření a záběr</message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Autorům pro indexaci jejich práce</message>
@@ -238,7 +235,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Anonymní recenze</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Obvyklé povolené časové období pro zpracování recenzí</message>
 	<message key="manager.setup.reviewOptions.onQuality">Editor bude hodnotit recenzenty na pětistupňové škále kvality po každé recenzi.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Recenzenti budou mít přístup k souboru s příspěvkem pouze poté, co odsouhlasí, že zpracují jeho recenzi.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Recenzenti budou mít přístup k souboru s příspěvkem pouze poté, co odsouhlasí, že zpracují jeho recenzi.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Přístup pro recenzenta</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Umožnit přístup recenzentovi na-jedno-kliknutí.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Poznámka:</strong> E-mailové pozvání pro recenzenta bude obsahovat speciální URL, které dovede pozvané recenzenty přímo na Recenzní stránku k danému příspěvku (s přístupem na jakékoliv další stránky normálně vyžadující přihlášení). Z bezpečnostních důvodů nemohou editoři při tomto nastavení pozměnit e-mailové adresy nebo přidat CC nebo BCC předtím, než pošlou recenzentům pozvání.]]></message>

@@ -104,9 +104,8 @@
 	<message key="manager.setup.alternateHeader">Alternativno zaglavlje</message>
 	<message key="manager.setup.alternateHeaderDescription">Alternativno, moguće je postaviti HTML verziju zaglavlja umjesto naslova ili logotipa. Ukoliko to ne želite, ostavite priloženi tekstni okvir prazan.</message>
 	<message key="manager.setup.announcements">Obavijesti</message>
-	<message key="manager.setup.announcementsDescription">Čitatelji mogu biti informirani o novostima i događanjima vezanim uz časopis koje se objavljuju unutar zasebne stranice "obavijesti".</message>
-	<message key="manager.setup.announcementsIntroduction">Dodatne informacije</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Unesite dodatne informacije koje će biti stalno prikazane čitateljima na stranici "obavijesti".</message>
+	<message key="manager.setup.enableAnnouncements.description">Čitatelji mogu biti informirani o novostima i događanjima vezanim uz časopis koje se objavljuju unutar zasebne stranice "obavijesti".</message>
+	<message key="manager.setup.announcementsIntroduction.description">Unesite dodatne informacije koje će biti stalno prikazane čitateljima na stranici "obavijesti".</message>
 	<message key="manager.setup.appearInAboutJournal">(Pojavljuje se u "o časopisu")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Zahtijevaj od autora da prilikom prijave svog rukopisa ispune izjavu o sukobu interesa.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Zahtijevaj od recenzenata da prilikom izrade svake recenzije ispune izjavu o sukobu interesa.</message>
@@ -130,9 +129,7 @@
 	<message key="manager.setup.emails">Identifikacija e-pošte</message>
 	<message key="manager.setup.emailSignature">Potpis</message>
 	<message key="manager.setup.emailSignature.description">Pripremljeni obrasci e-pošte poslani od strane sustava u ime časopisa na kraju će sadržavati ovdje priložen potpis. Sam sadržaj obrazaca e-pošte može uređivati glavni urednik opcijom "pripremljeni obrasci e-pošte" u izborniku "uređivački postupci".</message>
-	<message key="manager.setup.enableAnnouncements">Omogući glavnim urednicima da postavljaju obavijesti.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Prikaz</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">posljednje objavljene obavijesti na naslovnoj stranici časopisa.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Omogući glavnim urednicima da postavljaju obavijesti.</message>
 	<message key="manager.setup.enablePublicIssueId">Časopis koristi posebne identifikatore za identifikaciju brojeva časopisa.</message>
 	<message key="manager.setup.enableUserRegistration">Korisnici se mogu sami registrirati na stranicama časopisa u jednoj ili više od sljedećih uloga:</message>
 	<message key="manager.setup.focusAndScope">Fokus i područje primjene</message>
@@ -227,7 +224,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Anonimnost recenzije</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Tipičan rok dozvoljen za recenzije</message>
 	<message key="manager.setup.reviewOptions.onQuality">Urednici će nakon svake recenzije procjenjivati kvalitetu rada i suradnje pojedinih recenzenata ocjenom između 1 i 5.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Recenzenti će imati pristup punom tekstu priloga tek nakon što pristanu na njegovu recenziju.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Recenzenti će imati pristup punom tekstu priloga tek nakon što pristanu na njegovu recenziju.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Pristup za recenzente</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Omogući recenzentima pristup recenziji preko poveznice.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Napomena:</strong> Pozivnica e-pošte za recenzente sadržavat će poseban URL koji vodi recenzente izravno na stranicu za recenziju prijava (za pristup bilo kojoj drugoj stranici potrebno je prijaviti se u sustav). Iz sigurnosnih razloga pri korištenju ove opcije urednici neće moći modificirati adrese primatelja e-pošte ili poslati kopiju poruke "na znanje" drugim primateljima pri slanju pozivnica recenzentima.]]></message>

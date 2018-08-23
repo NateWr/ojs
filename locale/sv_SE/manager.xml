@@ -128,9 +128,8 @@
 	<message key="manager.setup.alternateHeader">Alternativt sidhuvud</message>
 	<message key="manager.setup.alternateHeaderDescription">Istället för namn och logotyp kan en HTML-version av sidhuvudet skrivas in i textrutan nedan. Lämna textrutan tom om den inte behövs.</message>
 	<message key="manager.setup.announcements">Meddelanden</message>
-	<message key="manager.setup.announcementsDescription">Meddelanden kan publiceras för att informera tidskriftens läsare om nyheter och olika händelser. Publicerade meddelanden kommer att synas under "Meddelanden".</message>
-	<message key="manager.setup.announcementsIntroduction">Ytterligare information</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Lägg till ytterligare information som ska visas för läsare under Meddelanden.</message>
+	<message key="manager.setup.enableAnnouncements.description">Meddelanden kan publiceras för att informera tidskriftens läsare om nyheter och olika händelser. Publicerade meddelanden kommer att synas under "Meddelanden".</message>
+	<message key="manager.setup.announcementsIntroduction.description">Lägg till ytterligare information som ska visas för läsare under Meddelanden.</message>
 	<message key="manager.setup.appearInAboutJournal">(Kommer att visas under Om tidskriften)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Författare måste skicka in en intressekonfliktsförklaring i samband med att bidraget skickas in.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Granskare måste skicka med en intressekonfliktsförklaring i samband med varje sakkunniggranskning som görs.</message>
@@ -157,9 +156,7 @@
 	<message key="manager.setup.emails">E-post-identifiering</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.emailSignature.description">Färdiga e-postmeddelanden som skickas från tidskriften kommer ha följande signatur infogad sist i e-posten.</message>
-	<message key="manager.setup.enableAnnouncements">Möjliggör för tidskriftsansvariga att lägga till meddelanden.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Visning</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">av tidskriftens senaste meddelanden.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Möjliggör för tidskriftsansvariga att lägga till meddelanden.</message>
 	<message key="manager.setup.enableUserRegistration">Besökare kan skapa ett användarkonto för tidskriften.</message>
 	<message key="manager.setup.focusAndScope">Ämne och fokus</message>
 	<message key="manager.setup.focusAndScope.description">Beskriv för författare, läsare och bibliotekarier vilken typ av artiklar som tidskriften publicerar.</message>
@@ -286,7 +283,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Anonym granskning</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Det antal veckor som granskningen av artikel/artiklar högst får ta</message>
 	<message key="manager.setup.reviewOptions.onQuality">Redaktörerna betygsätter granskarna utifrån en fempoängs-skala efter avslutad granskning.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Granskarna kommer endast ha tillgång till bidragsfilen efter att de har accepterat att vara granskare.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Granskarna kommer endast ha tillgång till bidragsfilen efter att de har accepterat att vara granskare.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Granskarens tillgång</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Aktivera granskning utan inloggning.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Observera:</strong> Inbjudan via e-post till granskare innehåller en URL som pekar direkt till sidan för granskning av bidraget (med tillgång till andra sidor som kräver inloggning). Av säkerhetsskäl kan inte redaktörer cc:a eller lägga till andras e-postadresser när de skickar inbjudan till granskare.]]></message>

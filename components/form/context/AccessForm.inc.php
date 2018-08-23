@@ -45,7 +45,7 @@ class AccessForm extends FormComponent {
 					['value' => PUBLISHING_MODE_SUBSCRIPTION, 'label' => __('manager.distribution.publishingMode.subscription')],
 					['value' => PUBLISHING_MODE_NONE, 'label' => __('manager.distribution.publishingMode.none')],
 				],
-				'value' => $context->getData('publishingMode'),
+				'value' => (bool) $context->getData('publishingMode'),
 			]));
 
 		return $this;

@@ -111,9 +111,8 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.alternateHeader">Testata alternativa</message>
 	<message key="manager.setup.alternateHeaderDescription">In alternativa, invece del titolo e del logo, è possibile inserire una versione in HTML della testata, utilizzando il box di testo sottostante. Per non modificare nulla, lascia il box vuoto.</message>
 	<message key="manager.setup.announcements">Avvisi</message>
-	<message key="manager.setup.announcementsDescription">Si possono pubblicare avvisi per informare i lettori su novità ed eventi legati alla rivista. Gli avvisi pubblicati verrano mostrati in una pagina specifica.</message>
-	<message key="manager.setup.announcementsIntroduction">Informazioni aggiuntive</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Inserisci ogni ulteriore informazione che vuoi mostrare ai lettori nella pagina degli avvisi.</message>
+	<message key="manager.setup.enableAnnouncements.description">Si possono pubblicare avvisi per informare i lettori su novità ed eventi legati alla rivista. Gli avvisi pubblicati verrano mostrati in una pagina specifica.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Inserisci ogni ulteriore informazione che vuoi mostrare ai lettori nella pagina degli avvisi.</message>
 	<message key="manager.setup.appearInAboutJournal">(compare nella sezione "Informazioni sulla rivista")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Richiedi agli autori di inviare una dichiarazione di assenza di conflitto di interessi durante l'invio della proposta.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Richiedi ai revisori di allegare una dichiarazione di assenza di conflitto di interessi per ogni revisione che invieranno.</message>
@@ -139,9 +138,7 @@ Una volta aggiunto, il SE sarà automaticamente assegnato  alla gestione della R
 	<message key="manager.setup.emails">Firma delle email</message>
 	<message key="manager.setup.emailSignature">Firma</message>
 	<message key="manager.setup.emailSignature.description">Le email inviate in automatico dal sistema avranno la seguente firma alla fine del messaggio. Il contenuto di queste email può essere modificato nella sezione di amministrazione della rivista.</message>
-	<message key="manager.setup.enableAnnouncements">Abilita gli amministratori della rivista ad aggiungere avvisi.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Mostra</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">avvisi recenti nella homepage della rivista.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Abilita gli amministratori della rivista ad aggiungere avvisi.</message>
 	<message key="manager.setup.enableUserRegistration">Gli utenti possono autoregistrarsi alla rivista con uno o più dei seguenti ruoli:</message>
 	<message key="manager.setup.focusAndScope">Scopo e ambito</message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Indicizzare gli articoli</message>
@@ -242,7 +239,7 @@ Al momento di concludere una revisione, ai revisori vengono presentate due box, 
 	<message key="manager.setup.reviewOptions.blindReview">Revisione cieca</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Il periodo di tempo medio concesso ai revisori</message>
 	<message key="manager.setup.reviewOptions.onQuality">Gli editor, dopo ogni revisione, daranno ai revisori un voto su una scala da uno a cinque.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">I revisori avranno accesso ai file della submission solo dopo aver dato la propria disponibilità alla revisione.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">I revisori avranno accesso ai file della submission solo dopo aver dato la propria disponibilità alla revisione.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Accesso per i revisori</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Abilita l'accesso diretto per i revisori.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Nota:</strong> Quando questa opzione &#x00E8; abilitata, le URL delle submission nelle email di notifica e promemoria conterranno una chiave d'accesso che scavalca l'usuale processo di login. Usando questo link, i revisori possono fare revisioni senza inserire username e password; mentre debbono comunque  fare il log in per completare gli altri compiti.]]></message>

@@ -8,7 +8,10 @@
 			"defaultLocaleKey": "default.journalSettings.clockssLicense"
 		},
 		"currency": {
-			"type": "string"
+			"type": "string",
+			"validation": [
+				"currency"
+			]
 		},
 		"delayedOpenAccessDuration": {
 			"type": "integer"

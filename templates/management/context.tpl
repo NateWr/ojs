@@ -1,5 +1,5 @@
 {**
- * templates/management/settings/journal.tpl
+ * templates/management/journal.tpl
  *
  * Copyright (c) 2014-2018 Simon Fraser University
  * Copyright (c) 2003-2018 John Willinsky
@@ -38,6 +38,7 @@
 			/>
 		</tab>
 		<tab name="{translate key="section.sections"}">
+			{help file="settings.md" section="context" class="pkp_help_tab"}
 			{capture assign=sectionsGridUrl}{url router=$smarty.const.ROUTE_COMPONENT component="grid.settings.sections.SectionGridHandler" op="fetchGrid" escape=false}{/capture}
 			{load_url_in_div id="sectionsGridContainer" url=$sectionsGridUrl}
 		</tab>

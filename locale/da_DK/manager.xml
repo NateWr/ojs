@@ -109,9 +109,8 @@
 	<message key="manager.setup.alternateHeader">Alternativt sidehoved</message>
 	<message key="manager.setup.alternateHeaderDescription">I stedet for titel og logo kan du indsætte en HTML-version af sidehovedet i tekstboksen nedenfor. Undlad at udfylde tekstboksen, hvis det ikke er påkrævet.</message>
 	<message key="manager.setup.announcements">Meddelelser</message>
-	<message key="manager.setup.announcementsDescription">Du kan publicere meddelelser for at underrette læsere om tidsskriftets nyheder og begivenheder. Publicerede meddelelser vises på siden Meddelelser.</message>
-	<message key="manager.setup.announcementsIntroduction">Flere oplysninger</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Angiv eventuelt flere oplysninger, som læsere kan få vist på siden Meddelelser.</message>
+	<message key="manager.setup.enableAnnouncements.description">Du kan publicere meddelelser for at underrette læsere om tidsskriftets nyheder og begivenheder. Publicerede meddelelser vises på siden Meddelelser.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Angiv eventuelt flere oplysninger, som læsere kan få vist på siden Meddelelser.</message>
 	<message key="manager.setup.appearInAboutJournal">(Vises under Om tidsskriftet)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Kræv, at forfattere, der fremsender et manuskript, skal indsende en erklæring om konkurrerende interesser sammen med deres manuskript.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Kræv, at bedømmere skal indsende en erklæring om konkurrerende interesser sammen med hver enkelt peer review, de fremsender.</message>
@@ -136,9 +135,7 @@
 	<message key="manager.setup.emails">E-mail-identifikation</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.emailSignature.description">De forberedte e-mails, der sendes af systemet på vegne af tidsskriftet, får følgende signatur tilføjet nederst. Brødteksten til de forberedte e-mails kan redigeres under Administration af tidsskrifter.</message>
-	<message key="manager.setup.enableAnnouncements">Gør det muligt for tidsskriftschefer at tilføje tidsskriftsmeddelelser.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Visning</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">af de seneste meddelelser på tidsskriftets hjemmeside.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Gør det muligt for tidsskriftschefer at tilføje tidsskriftsmeddelelser.</message>
 	<message key="manager.setup.enableUserRegistration">Brugere kan lade sig registrere hos tidsskriftet.</message>
 	<message key="manager.setup.focusAndScope">Fokus og område</message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Til forfattere til indeksering af deres værker</message>
@@ -238,7 +235,7 @@ I begge tilfælde har redaktøren mulighed for at inkludere bedømmelseskommenta
 	<message key="manager.setup.reviewOptions.blindReview">Blind review</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Antal uger afsat til bedømmelse</message>
 	<message key="manager.setup.reviewOptions.onQuality">Redaktører klassificerer bedømmere på en fempunktskvalitetsskala efter hver bedømmelse.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Bedømmere får kun adgang til manuskriptfilen, efter de har accepteret at bedømme den.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Bedømmere får kun adgang til manuskriptfilen, efter de har accepteret at bedømme den.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Adgang for bedømmere</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Aktiver adgang for bedømmere ved hjælp af ét klik.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Bemærk!:</strong> E-mail-invitationen til bedømmere indeholder en speciel URL-adresse, der sender de inviterede bedømmere direkte til siden Bedømmelse for manuskriptet (med adgang til andre sider, hvor de skal logge på). Af sikkerhedshensyn i forbindelse med denne indstilling kan redaktører ikke ændre e-mail-adresser eller tilføje CC'er eller BCC'er forud for afsendelse af invitationer til bedømmere.]]></message>

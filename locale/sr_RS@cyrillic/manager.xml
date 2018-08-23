@@ -65,7 +65,6 @@
 	<message key="manager.setup.addSponsor">Додај организацију подршке</message>
 	<message key="manager.setup.alternateHeader">Наизменични наслов</message>
 	<message key="manager.setup.announcements">Обавештења</message>
-	<message key="manager.setup.announcementsIntroduction">Додатне информације</message>
 	<message key="manager.setup.appearInAboutJournal">(Да се прикаже у "О часопису")</message>
 	<message key="manager.setup.history">Историја часописа</message>
 	<message key="manager.setup.coverage">Покривеност</message>
@@ -316,8 +315,8 @@
 	<message key="manager.statistics.statistics.reviewsPerReviewer">Број рецензија</message>
 	<message key="manager.statistics.statistics.selectSections">Одаберите секције/рубрике да би израчунали статистике стручних рецензија за овај часопис.</message>
 	<message key="manager.statistics.statistics.subscriptions">Претплате</message>
-	<message key="manager.setup.announcementsDescription">Објављивање обавештења је намењено да се читаоци обавесте о новостима и догађајима везаним за часопис. Објављена обавештења ће се појавити на страници Обавештења.</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Унесите додатне информације које ће бити приказане читаоцима на страници Обавештења.</message>
+	<message key="manager.setup.enableAnnouncements.description">Објављивање обавештења је намењено да се читаоци обавесте о новостима и догађајима везаним за часопис. Објављена обавештења ће се појавити на страници Обавештења.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Унесите додатне информације које ће бити приказане читаоцима на страници Обавештења.</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Захтевајте од аутора да у току пријаве чланка потврде изјаву о Конфликту интереса.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Захтевајте од рецензената да потврде изјаву о Конфликту интереса  за сваку стручну рецензију коју вам пошаљу.</message>
 	<message key="manager.setup.customTagsDescription">Посебне ознаке за HTML заглавља који ће бити уметнути у заглавље сваке странице (нпр. META ознаке-тагови).</message>
@@ -333,9 +332,7 @@
 	<message key="manager.setup.emails">Емаил идентификација</message>
 	<message key="manager.setup.emailSignature">Потпис</message>
 	<message key="manager.setup.emailSignature.description">Припремљене поруке које ће слати овај часопис ће имати следећи потпис додат на крај поруке.</message>
-	<message key="manager.setup.enableAnnouncements">Омогућите да Управник часописа додаје обавештења.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Приказ</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">од последњњих обавештења на почетној страници часописа.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Омогућите да Управник часописа додаје обавештења.</message>
 	<message key="manager.setup.coverageDescription">Односи се на гео-спацијалну локацију, хронолошки или историјски период и/или карактеристичке узорка истраживања.</message>
 	<message key="manager.setup.disciplineDescription">ово је корисно кад часопис прелази границе дисциплине и/или кад аутори прилажу чланке које имају мултидисциплинарни приступ.</message>
 	<message key="manager.setup.emailBounceAddress.disabled"><![CDATA[<strong>Напомена:</strong> Да би активирали ову опцију администратор мора укључити <tt>allow_envelope_sender</tt> опцију у  OJS конфигурационом фајлу. Додатна конфигурација сервера може бити потребна да би се подржала ова функција  (кој аможда није могућа на свим серверима), као што је назнаћено у  OJS документацији.]]></message>
@@ -479,7 +476,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Слепа рецензија</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Дозвољен број недеља да се заврши рецензија</message>
 	<message key="manager.setup.reviewOptions.onQuality">Уредници ће бодовати квалитет рецензената на скали од 1-5 након сваке рецензије.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Рецензенти ће имати приступ пријављеном чланку тек након што прихвате рецензију.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Рецензенти ће имати приступ пријављеном чланку тек након што прихвате рецензију.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Рецензентов приступ</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Укључи приступ рецензента једним кликом.</message>
 	<message key="manager.setup.reviewOptions.reviewerRatings">Бодовања рецензента</message>

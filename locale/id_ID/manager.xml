@@ -126,9 +126,8 @@
 	<message key="manager.setup.alternateHeader">Header Alternatif</message>
 	<message key="manager.setup.alternateHeaderDescription">Selain judul atau logo, dapat disisipkan versi HTML header ke dalam textbox di bawah ini. Biarkan teks kosong jika tidak diperlukan.</message>
 	<message key="manager.setup.announcements">Pengumuman</message>
-	<message key="manager.setup.announcementsDescription">Pengumuman bisa diterbitkan untuk menginformasikan kepada pembaca tentang berita dan agenda jurnal. Pengumuman yang diterbitkan akan ditampilkan di halaman Pengumuman.</message>
-	<message key="manager.setup.announcementsIntroduction">Informasi Tambahan</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Masukkan informasi tambahan yang harus ditampilkan kepada pembaca di halaman Pengumuman.</message>
+	<message key="manager.setup.enableAnnouncements.description">Pengumuman bisa diterbitkan untuk menginformasikan kepada pembaca tentang berita dan agenda jurnal. Pengumuman yang diterbitkan akan ditampilkan di halaman Pengumuman.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Masukkan informasi tambahan yang harus ditampilkan kepada pembaca di halaman Pengumuman.</message>
 	<message key="manager.setup.appearInAboutJournal">(Untuk ditampilkan di Tentang Jurnal) </message>
 	<message key="manager.setup.competingInterests.requireAuthors">Mengharuskan Penulis untuk memberikan pernyataan Konflik Kepentingan dalam naskah mereka.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Mengharuskan Reviewer untuk memberikan pernyataan Konflik Kepentingan dalam tiap peer review yang mereka serahkan.</message>
@@ -155,9 +154,7 @@
 	<message key="manager.setup.emails">Identifikasi Email</message>
 	<message key="manager.setup.emailSignature">Tandatangan</message>
 	<message key="manager.setup.emailSignature.description">Email yang disiapkan dan dikirim oleh sistem atas nama jurnal akan memiliki tandatangan berikut ini di akhir pesan.</message>
-	<message key="manager.setup.enableAnnouncements">Memungkinkan manajer jurnal untuk menambahkan pengumuman jurnal.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Tampilkan</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">pengumuman terkini di beranda jurnal.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Memungkinkan manajer jurnal untuk menambahkan pengumuman jurnal.</message>
 	<message key="manager.setup.enableUserRegistration">Penunjung dapat membuat akun pengguna.</message>
 	<message key="manager.setup.focusAndScope">Fokus dan Ruang Lingkup</message>
 	<message key="manager.setup.focusAndScope.description">Jelaskan kepada penulis, pembaca, dan pustakawan bahasan artikel dan item lain yang akan dipublikasikan oleh jurnal.</message>
@@ -277,7 +274,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Review Anonim</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Jangka waktu review (dalam minggu)</message>
 	<message key="manager.setup.reviewOptions.onQuality">Editor akan menilai reviewer dengan skala kualitas lima poin setiap selesai mereview.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Reviewer akan memiliki akses ke file naskah hanya setelah setuju untuk mereviewnya.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Reviewer akan memiliki akses ke file naskah hanya setelah setuju untuk mereviewnya.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Akses Review</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Memberi akses One-Click review.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Catatan:</strong>  email undangan ke Reviewer akan berisi URL yang akan membawa Reviewer yang diundang secara langsung ke halaman review untuk naskah (untuk akses ke halaman lain mengharuskan mereka untuk login). Untuk alasan keamanan dengan pilihan ini, editor tidak bisa memodifikasi alamat email atau menambahkan CCs atau BCCs sebelum mengirimkan undangan kepada Reviewer.]]></message>

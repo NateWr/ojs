@@ -110,9 +110,8 @@
 	<message key="manager.setup.alternateHeader">En-tête secondaire</message>
 	<message key="manager.setup.alternateHeaderDescription">Au lieu du titre et du logo, une version HTML de l'en-tête peut aussi être insérée dans la zone de texte ci-dessous. Laisser la zone de texte vide si elle n'est pas obligatoire.</message>
 	<message key="manager.setup.announcements">Annonces</message>
-	<message key="manager.setup.announcementsDescription">Des annonces peuvent être publiées pour informer les lecteurs de nouvelles et d'événements relatifs à la revue. Les annonces publiées apparaîtront sur la page des Annonces.</message>
-	<message key="manager.setup.announcementsIntroduction">Information additionnelle</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Ajouter toute information additionnelle qui devrait être affichée aux lecteurs sur la page des Annonces.</message>
+	<message key="manager.setup.enableAnnouncements.description">Des annonces peuvent être publiées pour informer les lecteurs de nouvelles et d'événements relatifs à la revue. Les annonces publiées apparaîtront sur la page des Annonces.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Ajouter toute information additionnelle qui devrait être affichée aux lecteurs sur la page des Annonces.</message>
 	<message key="manager.setup.appearInAboutJournal">(À paraître dans À propos de la revue)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Les auteurs soumissionnaires doivent déposer une déclaration de conflits d'intérêts (CI) avec leur soumission.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Les rapporteurs doivent déposer une déclaration de CI avec chaque évaluation par les pairs qu'ils soumettent.</message>
@@ -137,9 +136,7 @@
 	<message key="manager.setup.emails">Identification par courriel</message>
 	<message key="manager.setup.emailSignature">Signature</message>
 	<message key="manager.setup.emailSignature.description">La signature suivante sera ajoutée à la fin de chaque courriel préparé et envoyé par le système, au nom de la revue. Le corps des courriels préparés sont disponibles pour modification sous Gestion de la revue.</message>
-	<message key="manager.setup.enableAnnouncements">Permettre aux Directeurs de revues d'ajouter des annonces relatives à la revue.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Afficher les</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">annonces les plus récentes dans la page d'accueil de la revue.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Permettre aux Directeurs de revues d'ajouter des annonces relatives à la revue.</message>
 	<message key="manager.setup.enablePageNumber">La pagination pour les articles sera calculée et saisie manuellement dans le sommaire de cette revue (par ex., p. 13-26).</message>
 	<message key="manager.setup.enablePublicArticleId">Des identifiants personnalisés seront utilisés pour identifier les articles publiés.</message>
 	<message key="manager.setup.enablePublicGalleyId">Des identifiants personnalisés seront utilisés pour identifier les épreuves (par ex., des fichiers HTML ou PDF) pour les éléments publiés.</message>
@@ -243,7 +240,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Évaluation à l'aveugle</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Temps habituellement alloué aux évaluations</message>
 	<message key="manager.setup.reviewOptions.onQuality">Les rédacteurs noteront les rapporteurs sur une échelle qualitative de cinq points après chaque évaluation.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Les rapporteurs auront accès au fichier de soumission seulement après avoir accepté de l'évaluer.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Les rapporteurs auront accès au fichier de soumission seulement après avoir accepté de l'évaluer.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Accès pour le rapporteur</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Activer l'accès en un clic pour le rapporteur.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Note :</strong> Le courriel d'invitation destiné aux rapporteurs contient une URL qui les mène directement à la page d'évaluation de la soumission. L'accès à toute autre page requiert de se connecter. Pour des raisons de sécurité, les rédacteurs ne peuvent pas modifier les adresses de courriel, ni ajouter des CC ou CCI avant d'envoyer une invitation aux rapporteurs.]]></message>

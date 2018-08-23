@@ -69,9 +69,8 @@
 	<message key="manager.setup.alternateHeader">Alternativ topptekst</message>
 	<message key="manager.setup.alternateHeaderDescription">I stedet for tittel og logo kan en HTML-versjon av toppteksten skrives inn i tekstboksen nedenfor. La ellers tekstboksen stå tom.</message>
 	<message key="manager.setup.announcements">Oppslagstavle</message>
-	<message key="manager.setup.announcementsDescription">Oppslag kan publiseres for å informere lesere om tidsskriftnyheter og begivenheter. Publiserte oppslag vises på oppslagstavlen.</message>
-	<message key="manager.setup.announcementsIntroduction">Ytterligere informasjon</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Skriv inn øvrig informasjon som skal vises til lesere på oppslagstavlen.</message>
+	<message key="manager.setup.enableAnnouncements.description">Oppslag kan publiseres for å informere lesere om tidsskriftnyheter og begivenheter. Publiserte oppslag vises på oppslagstavlen.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Skriv inn øvrig informasjon som skal vises til lesere på oppslagstavlen.</message>
 	<message key="manager.setup.appearInAboutJournal">(Vil bli vist i Om tidsskriftet)</message>
 	<message key="manager.setup.copyrightNotice.description">Krev at forfatterene aksepterer erklæringen om copyright i løpet av innsendingsprosessen.</message>
 	<message key="manager.setup.authorGuidelines">Forfatterinstruks</message>
@@ -100,9 +99,7 @@
 	<message key="manager.setup.emails">E-post identifikasjon</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
 	<message key="manager.setup.emailSignature.description">De forberedte e-postene som blir sendt av systemet på vegne av tidsskriftet kommer til å ha følgende signatur nederst. Selve meldingstekstene til de forberedte e-postene er tilgjengelig for redigering under Tidsskriftadministrasjon.</message>
-	<message key="manager.setup.enableAnnouncements">Tillat redaksjonsledere å legge til tidsskriftsoppslag.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Vis de</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">nyeste oppslagene på tidsskriftets hjemmeside.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Tillat redaksjonsledere å legge til tidsskriftsoppslag.</message>
 	<message key="manager.setup.enableUserRegistration">Tillat brukere å registrere selv på tidsskriftets nettsted som:</message>
 	<message key="manager.setup.focusAndScope">Hovedfokus og spennvidde</message>
 	<message key="manager.setup.focusAndScopeDescription">Skriv inn en erklæring nedenfor, som vil bli vist i Om tidsskriftet. Den skal forklare forfattere, lesere, og bibliotekarer hva slags artikler og andre elementer tidsskriftet kommer til å publisere.</message>
@@ -238,7 +235,7 @@
 	<message key="manager.setup.reviewOptions.remindForInvite2">dager.</message>
 	<message key="manager.setup.reviewOptions.remindForSubmit1">Hvis fagkonsulenten ikke har sendt inn en anbefaling innen</message>
 	<message key="manager.setup.reviewOptions.remindForSubmit2">dager etter oppdragets ventet-dato.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Fagkonsulenter kommer til å få tilgang til manuskriptfilen bare etter å ha akseptert vurderingsoppdraget.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Fagkonsulenter kommer til å få tilgang til manuskriptfilen bare etter å ha akseptert vurderingsoppdraget.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Fagkonsulenttilgang</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Slå på ettklikks fagkonsulenttilgang.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>NB:</strong> E-post-invitasjonen til fagkonsulenter kommer til å inneholde en spesiell URL som binger den inviterte fagkonsulenten direkte til fagvurderingssiden for det aktuelle manuskriptet (tilgang til andre sider vil likevel kreve innlogging).  Med denne valgmuligheten slått på, kan ikke redaktørene endre e-postadresser eller legge til kopier eller blindkopier ved bestilling av fagvurderinger (av sikkerhetsgrunner).]]></message>

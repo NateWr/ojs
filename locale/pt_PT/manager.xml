@@ -107,9 +107,8 @@
 	<message key="manager.setup.alternateHeader">Cabeçalho Alternativo</message>
 	<message key="manager.setup.alternateHeaderDescription">Pode-se incluir um cabeçalho em HTML, para substituir o padrão. Deixar em branco caso não seja utilizado.</message>
 	<message key="manager.setup.announcements">Notícias</message>
-	<message key="manager.setup.announcementsDescription">Notícias podem ser publicadas para informar leitores sobre novidades e eventos, disponíveis na página Notícias.</message>
-	<message key="manager.setup.announcementsIntroduction">Informação Adicional</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Insira um texto introdutório, ou qualquer informação desejada, a ser exibida aos leitores na página de Notícias.</message>
+	<message key="manager.setup.enableAnnouncements.description">Notícias podem ser publicadas para informar leitores sobre novidades e eventos, disponíveis na página Notícias.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Insira um texto introdutório, ou qualquer informação desejada, a ser exibida aos leitores na página de Notícias.</message>
 	<message key="manager.setup.appearInAboutJournal">(Para inclusão na secção Sobre a Revista)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Exigir dos Autores o registo de Conflito de Interesses (CI) junto com a submissão.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Exigir dos revisores registo de Conflito de Interesses em cada revisão realizada.</message>
@@ -134,9 +133,7 @@
 	<message key="manager.setup.emails">Identificação de E-mail</message>
 	<message key="manager.setup.emailSignature">Subscrição</message>
 	<message key="manager.setup.emailSignature.description">Os modelos e-mails enviados pelo sistema em nome da revista incluirão a seguinte assinatura no final. O corpo do texto pode ser editado na secção E-mails da Administração da Revista.</message>
-	<message key="manager.setup.enableAnnouncements">Permitir que os directores da revista adicionem anúncios.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Mostrar</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">das notícias mais recentes na página inicial da revista.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Permitir que os directores da revista adicionem anúncios.</message>
 	<message key="manager.setup.enableUserRegistration">Utilizadores podem se registar numa revista, assumindo um ou mais papéis, listados a seguir:</message>
 	<message key="manager.setup.focusAndScope">Foco e Âmbito</message>
 	<message key="manager.setup.forAuthorsToIndexTheirWork">Indexação da submissão</message>
@@ -235,7 +232,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Revisão Cega por Pares</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Tempo padrão permitido para conlusão de uma revisão</message>
 	<message key="manager.setup.reviewOptions.onQuality">Editores poderão classificar revisores numa escala de cinco pontos após cada revisão.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Revisores terão acesso ao documento da submissão somente após indicar disponibilidade para revisão.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Revisores terão acesso ao documento da submissão somente após indicar disponibilidade para revisão.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Área do Revisor</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Activar Acesso 1-Clique</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Aviso:</strong> O convite ao revisor conterá um URL especial que levará os revisores directamente à página de Revisão para a submissão em questão (sendo necessário realizar a autenticação para aceder a outras páginas). Para garantir a segurança do processo ao usar esta opção, não é permitido ao editor alterar endereços de e-mail ou Cópias Carbono (CCs) ou Cópias Ocultas (BCCs) antes de enviar a mensagem aos revisores.]]></message>

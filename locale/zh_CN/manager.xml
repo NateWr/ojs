@@ -111,9 +111,8 @@
 	<message key="manager.setup.alternateHeader">其它标题</message>
 	<message key="manager.setup.alternateHeaderDescription">否则，代替标题和图标，可以在上面的文字输入框之中插入一个HTML版本的标题。如果不需要的话就保持空白。</message>
 	<message key="manager.setup.announcements">公告</message>
-	<message key="manager.setup.announcementsDescription">可以发布公告以通知期刊的读者关于期刊的新闻稿以及活动。已发布的公告会出现在「公告」页面。</message>
-	<message key="manager.setup.announcementsIntroduction">额外的信息</message>
-	<message key="manager.setup.announcementsIntroductionDescription">输入在公告网页上要给读者看到的额外的信息</message>
+	<message key="manager.setup.enableAnnouncements.description">可以发布公告以通知期刊的读者关于期刊的新闻稿以及活动。已发布的公告会出现在「公告」页面。</message>
+	<message key="manager.setup.announcementsIntroduction.description">输入在公告网页上要给读者看到的额外的信息</message>
 	<message key="manager.setup.appearInAboutJournal">(将在「期刊介绍」中出现)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">要求投稿作者提供一个利益冲突（CI）的文字声明。</message>
 	<message key="manager.setup.competingInterests.requireReviewers">要求审稿人在每次提交同行评议的审稿的时候，提交一个利益冲突（CI）声明。</message>
@@ -140,9 +139,7 @@
 	<message key="manager.setup.emails">电子邮件认证</message>
 	<message key="manager.setup.emailSignature">签名</message>
 	<message key="manager.setup.emailSignature.description">系统代表这份期刊所寄发的预备电子邮件会具有下面的签名列在信末。预备电子邮件的正文部分允许「期刊管理员」进行编辑。</message>
-	<message key="manager.setup.enableAnnouncements">让期刊管理员可以增加期刊公告。</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">显示</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">之期刊首页最近公告。</message>
+	<message key="manager.setup.enableAnnouncements.enable">让期刊管理员可以增加期刊公告。</message>
 	<message key="manager.setup.enablePublicIssueId">自订的识别码将会被用来识别期数。</message>
 	<message key="manager.setup.enableUserRegistration">允设用户在本期刊网站注册为：</message>
 	<message key="manager.setup.focusAndScope">焦点和范围</message>
@@ -242,7 +239,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">盲审</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">一般审稿时间</message>
 	<message key="manager.setup.reviewOptions.onQuality">对每一篇审稿结果，编辑将会由1到5评比审稿人。</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">审稿人只有在答应审稿之后才能浏稿件文件。</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">审稿人只有在答应审稿之后才能浏稿件文件。</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">审稿人阅读选项</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">启用审稿人「一点即入」模式。</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>注意：</strong> 这封给审稿人的电子邮件邀请函会包涵一个特殊的网址链接，邀请审稿人直接进入稿件的「审稿」页面（同时可以存取其他需要登入身份的页面）。基于与这个选项相关的安全性理由，编辑在寄出给审稿人的邀请函之前，不能变更电子邮件或者增加副本(CCs)或密件副本(BCCs)。]]></message>

@@ -127,9 +127,8 @@
 	<message key="manager.setup.addSponsor">Eine Organisation hinzufügen</message>
 	<message key="manager.setup.alternateHeader">Alternative Kopfzeile</message>
 	<message key="manager.setup.alternateHeaderDescription">Anstelle von Zeitschriftentitel und -logo können Sie auch eine HTML-Version der Kopfzeile in das nachstehende Feld eingeben. Falls dies nicht gewünscht ist, lassen Sie das Feld frei.</message>
-	<message key="manager.setup.announcementsDescription">Sie können die Leser/innen über die Zeitschrift betreffende Neuigkeiten und Ereignisse auf der Mitteilungsseite der Zeitschrift informieren.</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Geben Sie zusätzliche Informationen ein, die den Leser/innen auf der Mitteilungsseite angezeigt werden.</message>
-	<message key="manager.setup.announcementsIntroduction">Zusätzliche Informationen</message>
+	<message key="manager.setup.enableAnnouncements.description">Sie können die Leser/innen über die Zeitschrift betreffende Neuigkeiten und Ereignisse auf der Mitteilungsseite der Zeitschrift informieren.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Geben Sie zusätzliche Informationen ein, die den Leser/innen auf der Mitteilungsseite angezeigt werden.</message>
 	<message key="manager.setup.announcements">Mitteilungen</message>
 	<message key="manager.setup.appearInAboutJournal">(Erscheint unter "Über uns")</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Verlangen Sie von Autor/innen, die einen Beitrag einreichen wollen, zusätzlich eine Erklärung zu möglicherweise bestehenden Interessenkonflikten.</message>
@@ -157,9 +156,7 @@
 	<message key="manager.setup.emails">E-Mail-Kennzeichnung</message>
 	<message key="manager.setup.emailSignature.description">Alle E-Mail-Vorlagen, die vom System im Namen der Zeitschrift verschickt werden, tragen die folgende Signatur. Die E-Mail-Vorlagen können unter "Zeitschriftenverwaltung" bearbeitet werden.</message>
 	<message key="manager.setup.emailSignature">Signatur</message>
-	<message key="manager.setup.enableAnnouncements">Erlauben Sie den Zeitschriftenverwalter/innen, Mitteilungen hinzuzufügen.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Anzeige der</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">neuesten Mitteilungen auf der Startseite der Zeitschrift</message>
+	<message key="manager.setup.enableAnnouncements.enable">Erlauben Sie den Zeitschriftenverwalter/innen, Mitteilungen hinzuzufügen.</message>
 	<message key="manager.setup.enableUserRegistration">Besucher/innen können einen Benutzeraccount bei der Zeitschrift registrieren.</message>
 	<message key="manager.setup.focusAndScope">Konzept</message>
 	<message key="manager.setup.focusAndScope.description">Beschreiben Sie Autor/innen, Leser/innen und Bibliothekar/innen die Bandbreite der Artikel und anderer hier zu veröffentlichenden Werke.</message>
@@ -287,7 +284,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Anonyme Begutachtung</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Vorgesehener Zeitaufwand für eine Begutachtung</message>
 	<message key="manager.setup.reviewOptions.onQuality">Redakteur/innen bewerten die Gutachter/innen nach jeder Begutachtung auf einer fünfstufigen Skala.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Erst wenn Sie der Übernahme der Begutachtung zugestimmt haben, erhalten Gutachter/innen Zugriff auf die jeweilige Beitragsdatei.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Erst wenn Sie der Übernahme der Begutachtung zugestimmt haben, erhalten Gutachter/innen Zugriff auf die jeweilige Beitragsdatei.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Zugang für Gutachter/innen</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">One-Click-Zugang für Gutachter/innen aktiviert.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Anmerkung:</strong> Die Einladungs-E-Mail an die Gutachter/innen enthält eine URL, die direkt zur Begutachtungsseite für den Beitrag (mit Zugang zu allen anderen Seiten, die ein Einloggen voraussetzen) führt. Aus Sicherheitsgründen können die Redakteur/innen vor dem Absenden der Einladung weder E-Mail-Adressen verändern noch CC- oder BCC-Empfänger/innen hinzufügen.]]></message>

@@ -117,9 +117,8 @@
 	<message key="manager.setup.alternateHeader">Encabezado alternativo</message>
 	<message key="manager.setup.alternateHeaderDescription">En el siguiente cuadro de texto puede insertar una versión HTML del encabezado, en lugar del título y logotipo habituales. Si no desea introducirlo, déjelo en blanco.</message>
 	<message key="manager.setup.announcements">Avisos</message>
-	<message key="manager.setup.announcementsDescription">Pueden publicarse avisos para informar a los lectores/as sobre noticias y eventos de la revista. Estos se mostrarán en la página Avisos.</message>
-	<message key="manager.setup.announcementsIntroduction">Información adicional</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Introduzca la información adicional que ha de mostrarse en la página Avisos.</message>
+	<message key="manager.setup.enableAnnouncements.description">Pueden publicarse avisos para informar a los lectores/as sobre noticias y eventos de la revista. Estos se mostrarán en la página Avisos.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Introduzca la información adicional que ha de mostrarse en la página Avisos.</message>
 	<message key="manager.setup.appearInAboutJournal">(Para que se muestre en la sección Acerca de la revista)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Pedir a los autores/as que adjunten una declaración de conflicto de intereses a su envío.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Pedir a los revisores/as que adjunten una declaración de conflicto de intereses a cada evaluación por pares.</message>
@@ -146,9 +145,7 @@
 	<message key="manager.setup.emails">Identificación del correo electrónico</message>
 	<message key="manager.setup.emailSignature">Firma</message>
 	<message key="manager.setup.emailSignature.description">Las plantillas de correo que el sistema envíe en nombre de la revista llevarán esta firma al final. Es posible editar el cuerpo de estos correos en el apartado Gestión de la revista.</message>
-	<message key="manager.setup.enableAnnouncements">Permitir que los gestores/as de la revista publiquen avisos.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Mostrar</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">los últimos avisos publicados en la página inicial.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Permitir que los gestores/as de la revista publiquen avisos.</message>
 	<message key="manager.setup.enablePublicIssueId">Se usarán identificadores personalizados para identificar las publicaciones.</message>
 	<message key="manager.setup.enableUserRegistration">Los visitantes pueden registrar una cuenta de usuario/a en la revista.</message>
 	<message key="manager.setup.focusAndScope">Objeto y alcance</message>
@@ -255,7 +252,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Evaluación anónima</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">El plazo habitual establecido para las revisiones es de</message>
 	<message key="manager.setup.reviewOptions.onQuality">Los editores/as pueden calificar a los revisores/as en una escala de de cinco puntos después de cada revisión.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Permitir que los revisores/as tengan acceso a los archivos de envío sólo después de que éstos/as hayan aceptado la revisión.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Permitir que los revisores/as tengan acceso a los archivos de envío sólo después de que éstos/as hayan aceptado la revisión.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Acceso para los revisores/as</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Habilitar el acceso de los revisores/as con un solo clic.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Nota:</strong> La invitación por correo electrónico para revisores/as contendrá una dirección URL especial que dirige a los revisores/as directamente a la página de revisión para el envío (con acceso a cualquier otra página que requiera iniciar sesión). Por razones de seguridad, los editores/as no pueden modificar las direcciones de correo electrónico o añadir direcciones en copia o copia oculta antes de enviar las invitaciones a los revisores/as.]]></message>

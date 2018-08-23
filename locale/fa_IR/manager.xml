@@ -126,9 +126,8 @@
 	<message key="manager.setup.alternateHeader">سرتیتر جایگزین</message>
 	<message key="manager.setup.alternateHeaderDescription">به جای عنوان و لوگو یک نسخه HTML سرتیتر را می‌توان در جعبه متن زیر وارد کرد. در صورتی که نمی‌خواهید آن را خالی بگذارید.</message>
 	<message key="manager.setup.announcements">اطلاعیه‌ها</message>
-	<message key="manager.setup.announcementsDescription">اطلاعیه‌ها برای مطلع ساختن خوانندگان از خبرها و رویدادها می‌باشد که در صفحه اطلاعیه‌ها ظاهر می‌شود.</message>
-	<message key="manager.setup.announcementsIntroduction">اطلاعات تکمیلی</message>
-	<message key="manager.setup.announcementsIntroductionDescription">اطلاعات تکمیلی را که می‌باید در معرض دید خوانندگان  در صفحه اطلاعیه‌ها قرار گیرد وارد کنید.</message>
+	<message key="manager.setup.enableAnnouncements.description">اطلاعیه‌ها برای مطلع ساختن خوانندگان از خبرها و رویدادها می‌باشد که در صفحه اطلاعیه‌ها ظاهر می‌شود.</message>
+	<message key="manager.setup.announcementsIntroduction.description">اطلاعات تکمیلی را که می‌باید در معرض دید خوانندگان  در صفحه اطلاعیه‌ها قرار گیرد وارد کنید.</message>
 	<message key="manager.setup.appearInAboutJournal">(در قسمت درباره مجله نمایش داده می‌شود)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">لازم است که نویسنده ارسال کننده مقاله بیانیه تضاد منافع در رابطه با مقاله خود را اعلام کند.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">لازم است داوران بیانیه تضاد منافع برای مقاله‌ای که داوری می‌کنند را اعلام کنند.</message>
@@ -155,9 +154,7 @@
 	<message key="manager.setup.emails">شناسایی ایمیل</message>
 	<message key="manager.setup.emailSignature">امضا</message>
 	<message key="manager.setup.emailSignature.description">تمام ایمیل‌های از قبل تهیه شده که از طرف مجله ارسال می‌شود در انتها دارای امضای زیر است.</message>
-	<message key="manager.setup.enableAnnouncements">فعال‌سازی امکان افزودن اطلاعیه توسط مدیر مجله.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">نمایش</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">جدیدترین اطلاعیه‌ها در صفحه خانگی مجله.</message>
+	<message key="manager.setup.enableAnnouncements.enable">فعال‌سازی امکان افزودن اطلاعیه توسط مدیر مجله.</message>
 	<message key="manager.setup.enableUserRegistration">خوانندگان بتوانند در مجله ثبت‌نام کنند.</message>
 	<message key="manager.setup.focusAndScope">زمینه مطالعاتی</message>
 	<message key="manager.setup.focusAndScope.description">به اطلاع خوانندگان، نویسندگان و کتابخانه‌ها رسانید که مقالات این مجله در چه حیطه‌ای بوده و چه زمینه‌های مطالعاتی را پوشش می‌دهد.</message>
@@ -277,7 +274,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">داوری محرمانه</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">متوسط مهلت داوری</message>
 	<message key="manager.setup.reviewOptions.onQuality">دبیر بر مبنای یک تا پنج نمره‌ای به داور در مورد کیفیت کار وی در مورد هر داوری می‌دهد.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">داور هنگامی به فایل ارسال شده دسترسی دارد که انجام داوری را قبول کرده باشد.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">داور هنگامی به فایل ارسال شده دسترسی دارد که انجام داوری را قبول کرده باشد.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">دسترسی داور</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">فعال ساختن گزینه تک کلیک دسترسی داور</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>توجه: </strong> دعوت‌نامه ارسالی برای داور  حاوی یک URL است که با کلیک بر روی آن، داور را مستقیماً به صفحه داوری مقاله ارسالی مورد نظر هدایت می‌کند. به دلایل امنیتی در صورت فعال‌سازی این گزینه دبیران نمی‌توانند آدرس‌های ایمیل و رونوشت‌های آن را تغییر دهند.]]></message>

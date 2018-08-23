@@ -108,9 +108,8 @@
 	<message key="manager.setup.alternateHeader">Alternatieve kop</message>
 	<message key="manager.setup.alternateHeaderDescription">Als alternatief voor titel en logo kan in het tekstvak hieronder een HTML versie van de kop opgegeven worden. Laat het tekstvak leeg als dit niet van toepassing is.</message>
 	<message key="manager.setup.announcements">Nieuwsberichten</message>
-	<message key="manager.setup.announcementsDescription">Er kunnen nieuwsberichten gepubliceerd worden om lezers op  de hoogte te brengen van nieuws en gebeurtenissen gerelateerd aan het tijdschrift. Gepubliceerde nieuwsberichten verschijnen op de Nieuwsberichten pagina.</message>
-	<message key="manager.setup.announcementsIntroduction">Additionele informatie</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Andere informatie die op de Nieuwsberichten pagina getoond moet worden aan de lezers.</message>
+	<message key="manager.setup.enableAnnouncements.description">Er kunnen nieuwsberichten gepubliceerd worden om lezers op  de hoogte te brengen van nieuws en gebeurtenissen gerelateerd aan het tijdschrift. Gepubliceerde nieuwsberichten verschijnen op de Nieuwsberichten pagina.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Andere informatie die op de Nieuwsberichten pagina getoond moet worden aan de lezers.</message>
 	<message key="manager.setup.appearInAboutJournal">(Om op te nemen in Over dit Tijdschrift)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Verplicht auteurs een verklaring omtrent  strijdige belangen in te dienen met hun inzending.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Verplicht reviewers een verklaring inzake strijdige belangen in te dienen met iedere review die ze insturen.</message>
@@ -135,9 +134,7 @@
 	<message key="manager.setup.emails">E-mail identificatie</message>
 	<message key="manager.setup.emailSignature">Ondertekening</message>
 	<message key="manager.setup.emailSignature.description">De voorbewerkte e-mails die door het systeem namens het tijdschrift verzonden worden, krijgen de volgende ondertekening toegevoegd aan het einde. De tekst van de voorbwerkte e-mails kan aangepast worden bij tijdschriftbeheer.</message>
-	<message key="manager.setup.enableAnnouncements">Geef tijdschriftbeheerders de mogelijkheid om nieuwsberichten bij het tijdschrift te plaatsen</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Toon</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">van de nieuwste berichten op de homepage van het tijdschrift</message>
+	<message key="manager.setup.enableAnnouncements.enable">Geef tijdschriftbeheerders de mogelijkheid om nieuwsberichten bij het tijdschrift te plaatsen</message>
 	<message key="manager.setup.enablePublicIssueId">Er worden aangepaste identificaties gebruikt voor het identificeren van nummers.</message>
 	<message key="manager.setup.enableUserRegistration">Gebruikers kunnen zichzelf registreren bij het tijdschrift in een of meer van de volgende rollen:</message>
 	<message key="manager.setup.focusAndScope">Focus en missie</message>
@@ -237,7 +234,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Blinde review</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">De vastgestelde tijd voor een review</message>
 	<message key="manager.setup.reviewOptions.onQuality">Redacteurs beoordelen de reviewers op een vijfpuntsschaal op kwaliteit na iedere review.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Reviewers hebben pas toegang tot een inzending nadat ze toegestemd hebben om die te beoordelen.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Reviewers hebben pas toegang tot een inzending nadat ze toegestemd hebben om die te beoordelen.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Toegang voor reviewers</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Schakel één-klik toegang voor reviewers in.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Noot:</strong> De e-mail uitnodiging voor reviewers zal een speciale URL bevatten die uitgenodigde reviewers meteen naar de review-pagina voor de betreffende inzending brengt (toegang tot andere pagina's vereist inloggen). Om redenen van beveiliging kunnen redacteuren geen e-mailadressen veranderen of CC's of BCC's toevoegen voor het verzenden van uitnodigingen aan reviewers als deze optie is ingeschakeld.]]></message>

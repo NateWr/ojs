@@ -60,16 +60,12 @@ class IndexHandler extends Handler {
 			}
 
 			$enableAnnouncements = $journal->getData('enableAnnouncements');
-			if ($enableAnnouncements) {
-				$enableAnnouncementsHomepage = $journal->getData('enableAnnouncementsHomepage');
-				if ($enableAnnouncementsHomepage) {
-					$numAnnouncementsHomepage = $journal->getData('numAnnouncementsHomepage');
-					$announcementDao = DAORegistry::getDAO('AnnouncementDAO');
-					$announcements =& $announcementDao->getNumAnnouncementsNotExpiredByAssocId(ASSOC_TYPE_JOURNAL, $journal->getId(), $numAnnouncementsHomepage);
-					$templateMgr->assign('announcements', $announcements->toArray());
-					$templateMgr->assign('enableAnnouncementsHomepage', $enableAnnouncementsHomepage);
-					$templateMgr->assign('numAnnouncementsHomepage', $numAnnouncementsHomepage);
-				}
+			$numAnnouncementsHomepage = $journal->getData('numAnnouncementsHomepage');
+			if ($enableAnnouncements && $numAnnouncementsHomepage) {
+				$announcementDao = DAORegistry::getDAO('AnnouncementDAO');
+				$announcements =& $announcementDao->getNumAnnouncementsNotExpiredByAssocId(ASSOC_TYPE_JOURNAL, $journal->getId(), $numAnnouncementsHomepage);
+				$templateMgr->assign('announcements', $announcements->toArray());
+				$templateMgr->assign('numAnnouncementsHomepage', $numAnnouncementsHomepage);
 			}
 
 			$templateMgr->display('frontend/pages/indexJournal.tpl');

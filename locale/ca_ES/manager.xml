@@ -117,9 +117,8 @@
 	<message key="manager.setup.alternateHeader">Capçalera de pàgina alternativa</message>
 	<message key="manager.setup.alternateHeaderDescription">Si ho preferiu, en lloc d’inserir un títol i un logotip com a capçalera de pàgina, podeu inserir una capçalera en format HTML en el quadre de text que hi ha a continuació. Deixeu aquest quadre en blanc si no voleu utilitzar aquesta opció.</message>
 	<message key="manager.setup.announcements">Avisos</message>
-	<message key="manager.setup.announcementsDescription">És possible publicar avisos per informar els lectors/ores sobre notícies i esdeveniments relacionats amb la revista. Els avisos publicats apareixen a la pàgina «Avisos».</message>
-	<message key="manager.setup.announcementsIntroduction">Informació addicional</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Introduïu la informació addicional que vulgueu que vegin els lectors/ores a la pàgina «Avisos».</message>
+	<message key="manager.setup.enableAnnouncements.description">És possible publicar avisos per informar els lectors/ores sobre notícies i esdeveniments relacionats amb la revista. Els avisos publicats apareixen a la pàgina «Avisos».</message>
+	<message key="manager.setup.announcementsIntroduction.description">Introduïu la informació addicional que vulgueu que vegin els lectors/ores a la pàgina «Avisos».</message>
 	<message key="manager.setup.appearInAboutJournal">(Apareixerà a «Sobre la revista»)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Demana als autors/ores que presentin una declaració de conflictes d’interessos (CI) juntament amb la tramesa.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Demana als revisors/ores que incloguin una declaració de CI per cada avaluació d'experts/ertes que trametin.</message>
@@ -146,9 +145,7 @@
 	<message key="manager.setup.emails">Identificació per correu electrònic</message>
 	<message key="manager.setup.emailSignature">Signatura</message>
 	<message key="manager.setup.emailSignature.description">Les plantilles dels missatges de correu electrònic enviats pel sistema en nom de la revista tenen la signatura següent al final. Podeu editar el cos de la plantilla dels missatges de correu electrònic a la secció «Administració de la revista».</message>
-	<message key="manager.setup.enableAnnouncements">Permet als administradors/ores de la revista que afegeixin avisos.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Mostra</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">dels avisos més recents a la pàgina inicial de la revista.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Permet als administradors/ores de la revista que afegeixin avisos.</message>
 	<message key="manager.setup.enablePublicIssueId">S’utilitzen identificadors personalitzats per identificar números.</message>
 	<message key="manager.setup.enableUserRegistration">Els usuaris/àries es poden registrar a la revista amb un o més dels rols següents:</message>
 	<message key="manager.setup.focusAndScope">Objectius i temàtica</message>
@@ -249,7 +246,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Avaluació anònima</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Temps mitjà de què disposaran els revisors/ores</message>
 	<message key="manager.setup.reviewOptions.onQuality">Després de cada revisió, els editors/ores han de puntuar els revisors/ores segons una escala de qualitat de cinc punts.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Els revisors/ores només tenen accés al fitxer de la tramesa si han acceptat revisar-la.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Els revisors/ores només tenen accés al fitxer de la tramesa si han acceptat revisar-la.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Accés per als revisors/ores</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Habilita l’accés per a revisors/ores en un clic.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Nota:</strong> La invitació per correu electrònic als revisors/ores conté un URL especial que dirigeix directament els revisors/ores convidats a la pàgina de revisió de la tramesa (amb accés a qualsevol altra pàgina que requereixi identificació). Per motius de seguretat, els editors/ores no poden modificar les adreces de correu electrònic ni afegir-ne als camps CC o CCO abans d’enviar les invitacions als revisors/ores.]]></message>

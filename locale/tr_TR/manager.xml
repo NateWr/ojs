@@ -115,9 +115,8 @@
 	<message key="manager.setup.alternateHeader">Alternatif Başlık</message>
 	<message key="manager.setup.alternateHeaderDescription">Alternatif olarak, başlık ve logo yerine, başlık HTML biçiminde hazırlanarak bu alana eklenebilir, gerekli değil ise bu alanı boş bırakınız.</message>
 	<message key="manager.setup.announcements">Duyurular</message>
-	<message key="manager.setup.announcementsDescription">Duyurular dergi okuyucularına haber veya gelişmeleri iletmek için yayımlanır. Yayınlananlar  duyurular sayfasında görüntülenir.</message>
-	<message key="manager.setup.announcementsIntroduction">Ek Bilgi</message>
-	<message key="manager.setup.announcementsIntroductionDescription">Duyuru sayfasında okuyuculara gösterilmek üzere ek bilgi gir.</message>
+	<message key="manager.setup.enableAnnouncements.description">Duyurular dergi okuyucularına haber veya gelişmeleri iletmek için yayımlanır. Yayınlananlar  duyurular sayfasında görüntülenir.</message>
+	<message key="manager.setup.announcementsIntroduction.description">Duyuru sayfasında okuyuculara gösterilmek üzere ek bilgi gir.</message>
 	<message key="manager.setup.appearInAboutJournal">(Dergi Hakkında sayfasında görülmek üzere)</message>
 	<message key="manager.setup.competingInterests.requireAuthors">Yazarların gönderileriyle birlikte bir Çıkar Çatışması bildirimi dosyası göndermeleri gereklidir.</message>
 	<message key="manager.setup.competingInterests.requireReviewers">Hakemlerin her bir değerlendirme gönderisi için Çıkar Çatışması bildirimi dosyası göndermeleri gereklidir.</message>
@@ -144,9 +143,7 @@
 	<message key="manager.setup.emails">E-posta Tanımlama</message>
 	<message key="manager.setup.emailSignature">İmza</message>
 	<message key="manager.setup.emailSignature.description">Dergi adına hazırlanmış ve sistem tarafından gönderilen e-postalara eklenen imzadır. Hazır e-posta metinleri Dergi Yönetimi sayfası altındadır.</message>
-	<message key="manager.setup.enableAnnouncements">Dergi yöneticilerinin dergilerine duyuru eklemelerini etkinleştir.</message>
-	<message key="manager.setup.enableAnnouncementsHomepage1">Göster</message>
-	<message key="manager.setup.enableAnnouncementsHomepage2">Dergi sayfasındaki en son duyurular.</message>
+	<message key="manager.setup.enableAnnouncements.enable">Dergi yöneticilerinin dergilerine duyuru eklemelerini etkinleştir.</message>
 	<message key="manager.setup.enablePublicIssueId">Sayılar için özel tanımlayıcı kullanılacaktır.</message>
 	<message key="manager.setup.enableUserRegistration">Kullanıcılar aşağıda belirtilen bir veya birden çok rol ile dergiye kendileri üye olabilirler.</message>
 	<message key="manager.setup.focusAndScope">Odak ve kapsam</message>
@@ -246,7 +243,7 @@
 	<message key="manager.setup.reviewOptions.blindReview">Kör Hakemlik</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Değerlendirme için tipik olarak kabul edilen süre</message>
 	<message key="manager.setup.reviewOptions.onQuality">Editörler her bir hakem incelemesinden sonra hakemler için 1-5 puan arasında kalite ölçeğine göre değerlendirme yapabilir.</message>
-	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess">Hakemler değerlendirme isteğini kabul ettikten sonra değerlendirme dosyasına giriş yapabilirler.</message>
+	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Hakemler değerlendirme isteğini kabul ettikten sonra değerlendirme dosyasına giriş yapabilirler.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Hakem Erişimi</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Tek tıkla hakem erişimini etkinleştir.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled.description"><![CDATA[<strong>Not:</strong> Hakemlere gönderilen e-posta, hakemlerin davet edildiği değerlendirme gönderisine doğrudan erişebilmesi için özel bir URL adresi içerir (oturum açılması gereken diğer sayfalar ile birlikte).  Bu seçenek, güvenlik nedenleriyle editörlerin CCs veya BCCs adresleri eklemelerine izin vermez.]]></message>

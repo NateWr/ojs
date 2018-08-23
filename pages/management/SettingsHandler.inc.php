@@ -38,52 +38,6 @@ class SettingsHandler extends ManagementHandler {
 		);
 	}
 
-
-	//
-	// Public handler methods
-	//
-	/**
-	 * Route to other settings operations.
-	 * @param $args array
-	 * @param $request PKPRequest
-	 */
-	function settings($args, $request) {
-		$path = array_shift($args);
-		switch($path) {
-			case 'index':
-			case '':
-			case 'context':
-				$this->context($args, $request);
-				break;
-			case 'website':
-				$this->website($args, $request);
-				break;
-			case 'workflow':
-				$this->workflow($args, $request);
-				break;
-			case 'distribution':
-				$this->distribution($args, $request);
-				break;
-			case 'access':
-				$this->access($args, $request);
-				break;
-			default:
-				$request->getDispatcher()->handle404();
-				assert(false);
-		}
-	}
-
-	/**
-	 * Display publication process page.
-	 * @param $args array
-	 * @param $request PKPRequest
-	 */
-	function publication($args, $request) {
-		$templateMgr = TemplateManager::getManager($request);
-		$this->setupTemplate($request);
-		$templateMgr->display('management/settings/workflow.tpl');
-	}
-
 	/**
 	 * Display Access and Security page.
 	 * @param $args array
@@ -92,7 +46,7 @@ class SettingsHandler extends ManagementHandler {
 	function access($args, $request) {
 		$templateMgr = TemplateManager::getManager($request);
 		$this->setupTemplate($request);
-		$templateMgr->display('management/settings/access.tpl');
+		$templateMgr->display('management/access.tpl');
 	}
 }
 
