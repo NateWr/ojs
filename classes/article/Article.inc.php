@@ -48,16 +48,16 @@ class Article extends Submission {
 				$fieldValue = $context->getData('licenseURL');
 				break;
 			case PERMISSIONS_FIELD_COPYRIGHT_HOLDER:
-				switch($context->getData('copyrightHolderType')) {
+				switch($context->getData('copyrightHolder')) {
 					case 'author':
 						$fieldValue = array($context->getPrimaryLocale() => $this->getAuthorString(false));
 						break;
-					case 'other':
-						$fieldValue = $context->getData('copyrightHolderOther');
-						break;
 					case 'context':
-					default:
+					case null:
 						$fieldValue = $context->getName(null);
+						break;
+					default:
+						$fieldValue = $context->getData('copyrightHolder');
 						break;
 				}
 				break;
