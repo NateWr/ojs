@@ -231,10 +231,10 @@
 	<message key="manager.setup.reviewOptions.noteOnModification">Kan endres i løpet av den redaksjonelle prosessen.</message>
 	<message key="manager.setup.reviewOptions.numWeeksPerReview">Vanlig varighet tillatt for fagfellevurderinger</message>
 	<message key="manager.setup.reviewOptions.onQuality">Redaktører kommer til å rangere fagkonsulentene på en fempunkts skala etter hvert vurderingsoppdrag.</message>
-	<message key="manager.setup.reviewOptions.remindForInvite1">Hvis fagkonsulenten ikke har svart på en forespørsel om vurderingsoppdrag innen</message>
-	<message key="manager.setup.reviewOptions.remindForInvite2">dager.</message>
-	<message key="manager.setup.reviewOptions.remindForSubmit1">Hvis fagkonsulenten ikke har sendt inn en anbefaling innen</message>
-	<message key="manager.setup.reviewOptions.remindForSubmit2">dager etter oppdragets ventet-dato.</message>
+	<message key="manager.setup.reviewOptions.reminders.response.description1">Hvis fagkonsulenten ikke har svart på en forespørsel om vurderingsoppdrag innen</message>
+	<message key="manager.setup.reviewOptions.reminders.response.description2">dager.</message>
+	<message key="manager.setup.reviewOptions.reminders.submit.description1">Hvis fagkonsulenten ikke har sendt inn en anbefaling innen</message>
+	<message key="manager.setup.reviewOptions.reminders.submit.description2">dager etter oppdragets ventet-dato.</message>
 	<message key="manager.setup.reviewOptions.restrictReviewerFileAccess.description">Fagkonsulenter kommer til å få tilgang til manuskriptfilen bare etter å ha akseptert vurderingsoppdraget.</message>
 	<message key="manager.setup.reviewOptions.reviewerAccess">Fagkonsulenttilgang</message>
 	<message key="manager.setup.reviewOptions.reviewerAccessKeysEnabled">Slå på ettklikks fagkonsulenttilgang.</message>
