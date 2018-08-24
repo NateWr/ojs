@@ -19,14 +19,14 @@ class AccessForm extends FormComponent {
 	/**
 	 * Constructor
 	 *
-	 * @param $apiUrl string URL to submit the form to
+	 * @param $url string URL to submit the form to
 	 * @param $localeKeys array Allowed locales
 	 */
-	public function __construct($apiUrl) {
+	public function __construct($url) {
 		parent::__construct(
 			FORM_ACCESS,
 			'PUT',
-			$apiUrl,
+			$url,
 			__('manager.distribution.publishingMode.success')
 		);
 	}

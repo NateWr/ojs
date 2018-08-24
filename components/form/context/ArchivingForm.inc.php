@@ -20,14 +20,14 @@ class ArchivingForm extends FormComponent {
 	/**
 	 * Constructor
 	 *
-	 * @param $apiUrl string URL to submit the form to
+	 * @param $url string URL to submit the form to
 	 * @param $localeKeys array Allowed locales
 	 */
-	public function __construct($apiUrl, $localeKeys) {
+	public function __construct($url, $localeKeys) {
 		parent::__construct(
 			FORM_ARCHIVING,
 			'PUT',
-			$apiUrl,
+			$url,
 			__('manager.setup.archiving.success'),
 			$localeKeys
 		);

@@ -18,14 +18,14 @@ class PaymentSettingsForm extends FormComponent {
 	/**
 	 * Constructor
 	 *
-	 * @param $apiUrl string URL to submit the form to
+	 * @param $url string URL to submit the form to
 	 * @param $localeKeys array Allowed locales
 	 */
-	public function __construct($apiUrl) {
+	public function __construct($url) {
 		parent::__construct(
 			FORM_PAYMENT_SETTINGS,
 			'PUT',
-			$apiUrl,
+			$url,
 			__('manager.payment.success'),
 			$localeKeys
 		);
