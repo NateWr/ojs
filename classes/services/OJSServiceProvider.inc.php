@@ -18,6 +18,7 @@ namespace OJS\Services;
 use \Pimple\Container;
 use \PKP\Services\AuthorService;
 use \PKP\Services\UserService;
+use \PKP\Services\PKPAnnouncementService;
 use \OJS\Services\SubmissionService;
 use \OJS\Services\SectionService;
 use \OJS\Services\NavigationMenuService;
@@ -65,6 +66,11 @@ class OJSServiceProvider implements \Pimple\ServiceProviderInterface {
 		// User service
 		$pimple['user'] = function() {
 			return new UserService();
+		};
+
+		// Announcement service
+		$pimple['announcement'] = function() {
+			return new PKPAnnouncementService();
 		};
 	}
 }
