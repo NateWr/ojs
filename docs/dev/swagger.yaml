@@ -26,6 +26,8 @@ tags:
   - name: "Issues"
   - name: "Users"
     description: Only admins, journal editors, and subeditors can access these endpoints.
+  - name: "Announcements"
+    description: Only admins and managers can access these endpoints.
   - name: "Backend"
     description: "Private endpoints for OJS UI."
 definitions:
@@ -593,6 +595,23 @@ definitions:
         type: integer
       interest:
         type: string
+  Announcement:
+    type: object
+    properties:
+      id:
+        type: integer
+      title:
+        $ref: '#/definitions/LocaleObject'
+      datePosted:
+        type: string
+      typeId:
+        type: integer
+      dateExpire:
+        type: string
+      descriptionShort:
+        $ref: '#/definitions/LocaleObject'
+      description:
+        $ref: '#/definitions/LocaleObject'
   LocaleObject:
     type: object
     description: Key/value pairs containing strings by locale key.
@@ -1106,6 +1125,45 @@ paths:
           description: Only administrators, journal managers and editors are allowed to access users on this site.
           schema:
             $ref: '#/definitions/ErrorResponse'
+
+  '/announcements':
+    get:
+      tags:
+        - Announcements
+      summary: Get a list of announcements.
+      parameters:
+        - name: type
+          description: Filter results by announcement type ID. Pass more than one type ID in a comma-separated list (eg - `1,3`). Must match the ID of one of the existing announcement types.
+          in: query
+          required: false
+          type: string
+        - name: count
+          description: How many results to return in a single request. Default is `20`. Max is `100`.
+          in: query
+          required: false
+          type: integer
+        - name: offset
+          description: Offset the results returned. Use this to receive subsequent pages of requests. A `count` of `10` and `offset` of `15` will return results `15` to `25`.
+          in: query
+          required: false
+          type: integer
+        - name: searchPhrase
+          description: Filter the results by a search phrase matched against the `title`, `descriptionShort` and `description`.
+          in: query
+          required: false
+          type: string
+      responses:
+        '200':
+          description: List of announcements.
+          schema:
+            type: object
+            properties:
+              itemsMax:
+                type: integer
+              items:
+                type: array
+                items:
+                  $ref: '#/definitions/Announcement'
 
   '/_submissions':
     get:
