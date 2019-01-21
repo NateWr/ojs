@@ -28,12 +28,12 @@ class StatsHandler extends APIHandler {
 		$this->_endpoints = array(
 			'GET' => array (
 				array(
-					'pattern' => $this->getEndpointPattern() . '/submissions',
+					'pattern' => $this->getEndpointPattern() . '/articles',
 					'handler' => array($this, 'getSubmissionList'),
 					'roles' => $roles
 				),
 				array(
-					'pattern' => $this->getEndpointPattern() . '/submissions/{submissionId}',
+					'pattern' => $this->getEndpointPattern() . '/articles/{submissionId}',
 					'handler' => array($this, 'getSubmission'),
 					'roles' => $roles
 				),
@@ -66,7 +66,7 @@ class StatsHandler extends APIHandler {
 			$routeName = $route->getName();
 		}
 
-		if ($routeName === 'getSubmission' || $routeName === 'getGalleys' || $routeName === 'getParticipants') {
+		if ($routeName === 'getSubmission') {
 			import('lib.pkp.classes.security.authorization.SubmissionAccessPolicy');
 			$this->addPolicy(new SubmissionAccessPolicy($request, $args, $roleAssignments));
 		}
@@ -84,39 +84,36 @@ class StatsHandler extends APIHandler {
 	 */
 	public function getSubmissionList($slimRequest, $response, $args) {
 		$request = Application::getRequest();
-		$currentUser = $request->getUser();
-		$dispatcher = $request->getDispatcher();
 		$context = $request->getContext();
-		$submissionService = ServicesContainer::instance()->get('submission');
 
 		if (!$context) {
 			return $response->withStatus(404)->withJsonError('api.submissions.404.resourceNotFound');
 		}
 
 		$params = $this->_buildListRequestParams($slimRequest);
-
-		// Prevent users from viewing submissions they're not assigned to,
-		// except for journal managers and admins.
-		$userRoles = $this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES);
-		$canAccessUnassignedSubmission = !empty(array_intersect(array(ROLE_ID_SITE_ADMIN, ROLE_ID_MANAGER), $userRoles));
-		if (!$canAccessUnassignedSubmission && $params['assignedTo'] != $currentUser->getId()) {
-			return $response->withStatus(403)->withJsonError('api.submissions.403.requestedOthersUnpublishedSubmissions');
+		if (array_key_exists('submissionIds', $params) && empty($params['submissionIds'])) {
+			$submissionsRecords = array();
+		} else {
+			$statsService = ServicesContainer::instance()->get('stats');
+			$submissionsRecords = $statsService->getSubmissions($context->getId(), $params);
 		}
 
 		$items = array();
-		$submissions = $submissionService->getSubmissions($context->getId(), $params);
-		if (!empty($submissions)) {
+		if (!empty($submissionsRecords)) {
 			$propertyArgs = array(
 				'request' => $request,
 				'slimRequest' => $slimRequest,
+				'params' => $params
 			);
-			foreach ($submissions as $submission) {
-				$items[] = $submissionService->getSummaryProperties($submission, $propertyArgs);
+			foreach ($submissionsRecords as $submissionsRecord) {
+				$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
+				$submission = $publishedArticleDao->getById($submissionsRecord['submission_id']);
+				$items[] = $statsService->getSummaryProperties($submission, $propertyArgs);
 			}
 		}
 
 		$data = array(
-			'itemsMax' => $submissionService->getSubmissionsMaxCount($context->getId(), $params),
+			'itemsMax' => count($submissionsRecords),
 			'items' => $items,
 		);
 
@@ -132,20 +129,18 @@ class StatsHandler extends APIHandler {
 	 * @return Response
 	 */
 	public function getSubmission($slimRequest, $response, $args) {
-		/* SELECT assoc_type, file_type, SUM(metric) as metric FROM `metrics` WHERE submission_id = 3 GROUP BY assoc_type, file_type */
-		AppLocale::requireComponents(LOCALE_COMPONENT_PKP_READER, LOCALE_COMPONENT_PKP_SUBMISSION);
-
 		$request = Application::getRequest();
-		$dispatcher = $request->getDispatcher();
-		$context = $request->getContext();
 
 		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
+
+		$params = $this->_buildListRequestParams($slimRequest);
 
 		$data = ServicesContainer::instance()
 			->get('stats')
 			->getFullProperties($submission, array(
 				'request' => $request,
-				'slimRequest' 	=> $slimRequest
+				'slimRequest' 	=> $slimRequest,
+				'params' => $params
 			));
 
 		return $response->withJson($data, 200);
@@ -161,20 +156,13 @@ class StatsHandler extends APIHandler {
 	private function _buildListRequestParams($slimRequest) {
 
 		$request = Application::getRequest();
-		$currentUser = $request->getUser();
 		$context = $request->getContext();
 
 		// Merge query params over default params
 		$defaultParams = array(
-			'count' => 20,
+			'count' => 30,
 			'offset' => 0,
 		);
-
-		$userRoles = $this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES);
-		$canAccessUnassignedSubmission = !empty(array_intersect(array(ROLE_ID_SITE_ADMIN, ROLE_ID_MANAGER), $userRoles));
-		if (!$canAccessUnassignedSubmission) {
-			$defaultParams['assignedTo'] = $currentUser->getId();
-		}
 
 		$requestParams = array_merge($defaultParams, $slimRequest->getQueryParams());
 
@@ -185,32 +173,13 @@ class StatsHandler extends APIHandler {
 			switch ($param) {
 
 				case 'orderBy':
-					if (in_array($val, array('dateSubmitted', 'lastModified', 'title'))) {
+					if (in_array($val, array('total'))) {
 						$returnParams[$param] = $val;
 					}
 					break;
 
 				case 'orderDirection':
 					$returnParams[$param] = $val === 'ASC' ? $val : 'DESC';
-					break;
-
-				// Always convert status and stageIds to array
-				case 'status':
-				case 'stageIds':
-					if (is_string($val) && strpos($val, ',') > -1) {
-						$val = explode(',', $val);
-					} elseif (!is_array($val)) {
-						$val = array($val);
-					}
-					$returnParams[$param] = array_map('intval', $val);
-					break;
-
-				case 'assignedTo':
-					$returnParams[$param] = (int) $val;
-					break;
-
-				case 'searchPhrase':
-					$returnParams[$param] = $val;
 					break;
 
 				// Enforce a maximum count to prevent the API from crippling the
@@ -222,11 +191,56 @@ class StatsHandler extends APIHandler {
 				case 'offset':
 					$returnParams[$param] = (int) $val;
 					break;
-
-				case 'isIncomplete':
-				case 'isOverdue':
-					$returnParams[$param] = true;
+				case 'timeSegment':
+					$returnParams[$param] = (int) $val;
 					break;
+				case 'dateRange':
+					$from = $to = $dimension = null;
+					if (preg_match('/(\d{8})-(\d{8})/', $val, $matches) === 1) {
+						$from = $matches[1];
+						$to = $matches[2];
+						$dimension = STATISTICS_DIMENSION_DAY;
+					} elseif (preg_match('/(\d{6})-(\d{6})/', $val, $matches) === 1) {
+						$from = $matches[1];
+						$to = $matches[2];
+						$dimension = STATISTICS_DIMENSION_DAY;
+					} elseif (preg_match('/(\d{8})/', $val, $matches) === 1) {
+						$from = $matches[1];
+						$dimension = STATISTICS_DIMENSION_DAY;
+					} elseif (preg_match('/(\d{6})/', $val, $matches) === 1) {
+						$from = $matches[1];
+						$dimension = STATISTICS_DIMENSION_MONTH;
+					} elseif (preg_match('/(\d{4})/', $val, $matches) === 1) {
+						$from = $matches[1] . '0101';
+						$to = $matches[1] . '1231';
+						$dimension = STATISTICS_DIMENSION_DAY;
+					} else {
+						//error
+					}
+					$returnParams['from'] = $from;
+					$returnParams['to'] = $to;
+					$returnParams['dimension'] = $dimension;
+					break;
+				case 'sectionIds':
+					if (is_string($val) && strpos($val, ',') > -1) {
+						$val = explode(',', $val);
+					} elseif (!is_array($val)) {
+						$val = array($val);
+					}
+					$returnParams['sectionIds'] = array_map('intval', $val);
+					break;
+				case 'searchPhrase':
+					$submissionsParams[$param] = $val;
+					$submissionService = ServicesContainer::instance()->get('submission');
+					$submissions = $submissionService->getSubmissions($context->getId(), $submissionsParams);
+					$returnParams['submissionIds'] = array_map(
+						function($submission){
+							return $submission->getId();
+						},
+						$submissions
+					);
+					break;
+
 			}
 		}
 
