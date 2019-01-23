@@ -75,10 +75,10 @@ class StatsHandler extends APIHandler {
 	}
 
 	/**
-	 * Get a collection of submissions
+	 * Get total stats and a collection of submissions
 	 * @param $slimRequest Request Slim request object
 	 * @param $response Response object
-	 * @param array $args arguments
+	 * @param $args array
 	 *
 	 * @return Response
 	 */
@@ -91,31 +91,47 @@ class StatsHandler extends APIHandler {
 		}
 
 		$params = $this->_buildListRequestParams($slimRequest);
+
 		if (array_key_exists('submissionIds', $params) && empty($params['submissionIds'])) {
 			$submissionsRecords = array();
 		} else {
 			$statsService = ServicesContainer::instance()->get('stats');
-			$submissionsRecords = $statsService->getSubmissions($context->getId(), $params);
+			$submissionsRecords = $statsService->getOrderedSubmissions($context->getId(), $params);
 		}
 
-		$items = array();
+		$data = $items = array();
 		if (!empty($submissionsRecords)) {
 			$propertyArgs = array(
 				'request' => $request,
 				'slimRequest' => $slimRequest,
 				'params' => $params
 			);
-			foreach ($submissionsRecords as $submissionsRecord) {
+			$totalStatsRecords = $statsService->getTotalStats($context->getId(), $params);
+			/*
+			$file = 'debug.txt';
+			$current = file_get_contents($file);
+			$current .= print_r("\n++++ totalStatsRecords ++++\n", true);
+			$current .= print_r($totalStatsRecords, true);
+			file_put_contents($file, $current);
+			*/
+			$data = $statsService->getTotalStatsProperties($totalStatsRecords, $propertyArgs);
+
+			$slicedSubmissionsRecords = array_slice($submissionsRecords, isset($params['offset'])?$params['offset']:0, $params['count']);
+			foreach ($slicedSubmissionsRecords as $submissionsRecord) {
 				$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
 				$submission = $publishedArticleDao->getById($submissionsRecord['submission_id']);
 				$items[] = $statsService->getSummaryProperties($submission, $propertyArgs);
 			}
+		} else {
+			$data = array(
+				'abstractViews' => 0,
+				'totalGalleyViews' => 0,
+				'timeSegments' => array()
+			);
 		}
 
-		$data = array(
-			'itemsMax' => count($submissionsRecords),
-			'items' => $items,
-		);
+		$data['itemsMax'] = count($submissionsRecords);
+		$data['items'] = $items;
 
 		return $response->withJson($data, 200);
 	}
@@ -124,7 +140,7 @@ class StatsHandler extends APIHandler {
 	 * Get a single submission usage statistics
 	 * @param $slimRequest Request Slim request object
 	 * @param $response Response object
-	 * @param array $args arguments
+	 * @param $args array
 	 *
 	 * @return Response
 	 */
@@ -147,14 +163,13 @@ class StatsHandler extends APIHandler {
 	}
 
 	/**
-	 * Convert params passed to list requests. Coerce type and only return
+	 * Convert params passed to the api end point. Coerce type and only return
 	 * white-listed params.
 	 *
 	 * @param $slimRequest Request Slim request object
 	 * @return array
 	 */
 	private function _buildListRequestParams($slimRequest) {
-
 		$request = Application::getRequest();
 		$context = $request->getContext();
 
@@ -162,64 +177,47 @@ class StatsHandler extends APIHandler {
 		$defaultParams = array(
 			'count' => 30,
 			'offset' => 0,
+			'timeSegment' => 'monthly'
 		);
-
 		$requestParams = array_merge($defaultParams, $slimRequest->getQueryParams());
 
 		$returnParams = array();
-
 		// Process query params to format incoming data as needed
 		foreach ($requestParams as $param => $val) {
 			switch ($param) {
-
 				case 'orderBy':
 					if (in_array($val, array('total'))) {
-						$returnParams[$param] = $val;
+						$returnParams[$param] = STATISTICS_METRIC;
 					}
 					break;
 
 				case 'orderDirection':
-					$returnParams[$param] = $val === 'ASC' ? $val : 'DESC';
+					$returnParams[$param] = $val === STATISTICS_ORDER_ASC ? $val : STATISTICS_ORDER_DESC;
 					break;
-
 				// Enforce a maximum count to prevent the API from crippling the
 				// server
 				case 'count':
 					$returnParams[$param] = min(100, (int) $val);
 					break;
-
 				case 'offset':
 					$returnParams[$param] = (int) $val;
 					break;
 				case 'timeSegment':
-					$returnParams[$param] = (int) $val;
-					break;
-				case 'dateRange':
-					$from = $to = $dimension = null;
-					if (preg_match('/(\d{8})-(\d{8})/', $val, $matches) === 1) {
-						$from = $matches[1];
-						$to = $matches[2];
-						$dimension = STATISTICS_DIMENSION_DAY;
-					} elseif (preg_match('/(\d{6})-(\d{6})/', $val, $matches) === 1) {
-						$from = $matches[1];
-						$to = $matches[2];
-						$dimension = STATISTICS_DIMENSION_DAY;
-					} elseif (preg_match('/(\d{8})/', $val, $matches) === 1) {
-						$from = $matches[1];
-						$dimension = STATISTICS_DIMENSION_DAY;
-					} elseif (preg_match('/(\d{6})/', $val, $matches) === 1) {
-						$from = $matches[1];
-						$dimension = STATISTICS_DIMENSION_MONTH;
-					} elseif (preg_match('/(\d{4})/', $val, $matches) === 1) {
-						$from = $matches[1] . '0101';
-						$to = $matches[1] . '1231';
-						$dimension = STATISTICS_DIMENSION_DAY;
-					} else {
-						//error
+					if ($val == 'daily') {
+						$returnParams['dimension'] = STATISTICS_DIMENSION_DAY;
+					} elseif ($val == 'monthly') {
+						$returnParams['dimension'] = STATISTICS_DIMENSION_MONTH;
 					}
-					$returnParams['from'] = $from;
-					$returnParams['to'] = $to;
-					$returnParams['dimension'] = $dimension;
+					break;
+				case 'dateStart':
+					if (preg_match('/(\d{4})-(\d{2})-(\d{2})/', $val, $matches) === 1) {
+						$returnParams['from'] = $matches[1] . $matches[2] . $matches[3];
+					}
+					break;
+				case 'dateEnd':
+					if (preg_match('/(\d{4})-(\d{2})-(\d{2})/', $val, $matches) === 1) {
+						$returnParams['to'] = $matches[1] . $matches[2] . $matches[3];
+					}
 					break;
 				case 'sectionIds':
 					if (is_string($val) && strpos($val, ',') > -1) {
@@ -240,7 +238,26 @@ class StatsHandler extends APIHandler {
 						$submissions
 					);
 					break;
+			}
+		}
 
+		// check date range and time segment parameters
+		if (isset($returnParams['from']) && !isset($returnParams['to'])) {
+			$returnParams['to'] = date('Ymd', time());
+		} elseif (isset($returnParams['to']) && !isset($returnParams['from'])) {
+			// TO-DO: chose the start date differently ?
+			$returnParams['from'] = '20010101';
+		}
+		// check if dateEnd is bigger than dateStart
+		$fromTimestamp = strtotime($returnParams['from']);
+		$toTimestamp = strtotime($returnParams['to']);
+		if ($toTimestamp < $fromTimestamp) {
+			// error
+		} else {
+			// check the timeSegmet = daily and if the dateStart is withing the last 90 days
+			$lastNinetyDaysTimestamp = strtotime('-90 days');
+			if ($returnParams['dimension'] == STATISTICS_DIMENSION_DAY && $fromTimestamp < $lastNinetyDaysTimestamp) {
+				// error
 			}
 		}
 
