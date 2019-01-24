@@ -24,7 +24,7 @@ class StatsHandler extends APIHandler {
 	 */
 	public function __construct() {
 		$this->_handlerPath = 'stats';
-		$roles = array(ROLE_ID_MANAGER, ROLE_ID_SUB_EDITOR, ROLE_ID_ASSISTANT, ROLE_ID_REVIEWER, ROLE_ID_AUTHOR);
+		$roles = array(ROLE_ID_SITE_ADMIN, ROLE_ID_MANAGER);
 		$this->_endpoints = array(
 			'GET' => array (
 				array(
@@ -65,7 +65,6 @@ class StatsHandler extends APIHandler {
 		if (!is_null($slimRequest) && ($route = $slimRequest->getAttribute('route'))) {
 			$routeName = $route->getName();
 		}
-
 		if ($routeName === 'getSubmission') {
 			import('lib.pkp.classes.security.authorization.SubmissionAccessPolicy');
 			$this->addPolicy(new SubmissionAccessPolicy($request, $args, $roleAssignments));
@@ -79,7 +78,6 @@ class StatsHandler extends APIHandler {
 	 * @param $slimRequest Request Slim request object
 	 * @param $response Response object
 	 * @param $args array
-	 *
 	 * @return Response
 	 */
 	public function getSubmissionList($slimRequest, $response, $args) {
@@ -91,6 +89,8 @@ class StatsHandler extends APIHandler {
 		}
 
 		$params = $this->_buildListRequestParams($slimRequest);
+		$validParams = $this->_validateParams($params, $response);
+		if ($validParams !== true) return $validParams;
 
 		if (array_key_exists('submissionIds', $params) && empty($params['submissionIds'])) {
 			$submissionsRecords = array();
@@ -106,16 +106,10 @@ class StatsHandler extends APIHandler {
 				'slimRequest' => $slimRequest,
 				'params' => $params
 			);
+			// get total stats data
 			$totalStatsRecords = $statsService->getTotalStats($context->getId(), $params);
-			/*
-			$file = 'debug.txt';
-			$current = file_get_contents($file);
-			$current .= print_r("\n++++ totalStatsRecords ++++\n", true);
-			$current .= print_r($totalStatsRecords, true);
-			file_put_contents($file, $current);
-			*/
 			$data = $statsService->getTotalStatsProperties($totalStatsRecords, $propertyArgs);
-
+			// get submisisons stats items
 			$slicedSubmissionsRecords = array_slice($submissionsRecords, isset($params['offset'])?$params['offset']:0, $params['count']);
 			foreach ($slicedSubmissionsRecords as $submissionsRecord) {
 				$publishedArticleDao = DAORegistry::getDAO('PublishedArticleDAO');
@@ -129,7 +123,6 @@ class StatsHandler extends APIHandler {
 				'timeSegments' => array()
 			);
 		}
-
 		$data['itemsMax'] = count($submissionsRecords);
 		$data['items'] = $items;
 
@@ -141,7 +134,6 @@ class StatsHandler extends APIHandler {
 	 * @param $slimRequest Request Slim request object
 	 * @param $response Response object
 	 * @param $args array
-	 *
 	 * @return Response
 	 */
 	public function getSubmission($slimRequest, $response, $args) {
@@ -150,6 +142,8 @@ class StatsHandler extends APIHandler {
 		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
 
 		$params = $this->_buildListRequestParams($slimRequest);
+		$validParams = $this->_validateParams($params, $response);
+		if ($validParams !== true) return $validParams;
 
 		$data = ServicesContainer::instance()
 			->get('stats')
@@ -248,21 +242,32 @@ class StatsHandler extends APIHandler {
 			// TO-DO: chose the start date differently ?
 			$returnParams['from'] = '20010101';
 		}
-		// check if dateEnd is bigger than dateStart
-		$fromTimestamp = strtotime($returnParams['from']);
-		$toTimestamp = strtotime($returnParams['to']);
-		if ($toTimestamp < $fromTimestamp) {
-			// error
-		} else {
-			// check the timeSegmet = daily and if the dateStart is withing the last 90 days
-			$lastNinetyDaysTimestamp = strtotime('-90 days');
-			if ($returnParams['dimension'] == STATISTICS_DIMENSION_DAY && $fromTimestamp < $lastNinetyDaysTimestamp) {
-				// error
-			}
-		}
 
 		\HookRegistry::call('API::statistics::params', array(&$returnParams, $slimRequest));
 
 		return $returnParams;
 	}
+
+	/**
+	 * Validate prepared request parameters
+	 * @param $params array
+	 * @param $response Response
+	 * @return Response
+	 */
+	private function _validateParams($params, $response) {
+		// check if dateEnd is bigger than dateStart
+		$fromTimestamp = strtotime($params['from']);
+		$toTimestamp = strtotime($params['to']);
+		if ($toTimestamp < $fromTimestamp) {
+			return $response->withStatus(400)->withJsonError('api.stats.400.wrongDateRange');
+		} else {
+			// check the timeSegmet = daily and if the dateStart is withing the last 90 days
+			$lastNinetyDaysTimestamp = strtotime('-90 days');
+			if ($params['dimension'] == STATISTICS_DIMENSION_DAY && $fromTimestamp < $lastNinetyDaysTimestamp) {
+				return $response->withStatus(400)->withJsonError('api.stats.400.wrongTimeSegmentDaily');
+			}
+		}
+		return true;
+	}
+
 }

@@ -22,14 +22,15 @@ use \DAORegistry;
 class StatsService extends PKPBaseEntityPropertyService {
 
 	/**
-	 * Initialize hooks for extending PKPSubmissionService
+	 * Constructor
 	 */
 	public function __construct() {
 		parent::__construct($this);
 	}
 
 	/**
-	 * Get statistics records of the most used submissions
+	 * Get statistics records of the submissions (filtered by request parameters),
+	 * ordered DESC by total stats numbers of their abstract and galley views.
 	 *
 	 * @param int $contextId
 	 * @param array $args {
@@ -49,17 +50,8 @@ class StatsService extends PKPBaseEntityPropertyService {
 	public function getOrderedSubmissions($contextId, $args = array()) {
 		$statsListQB = $this->_buildGetOrderedSubmissionsQueryObject($contextId, $args);
 		$statsQO = $statsListQB->get();
-		/* DEFAULT: SELECT submission_id, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY submission_id  ORDER BY metric DESC */
-		/*
-		$file = 'debug.txt';
-		$current = file_get_contents($file);
-		$current .= print_r("++++++++ ordered submissions ++++++++++++++++++++\n", true);
-		$current .= print_r($statsQO->toSql(), true);
-		$current .= print_r("#####\n", true);
-		$current .= print_r($statsQO->getBindings(), true);
-		$current .= print_r("++++++++++++++++++++++++++++\n", true);
-		file_put_contents($file, $current);
-		*/
+		/* default: SELECT submission_id, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY submission_id  ORDER BY metric DESC */
+		/* with all filters: SELECT submission_id, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' AND pkp_section_id = ? AND day BETWEEN ? AND ? AND submission_id = ? GROUP BY submission_id  ORDER BY metric DESC */
 
 		$dao = \DAORegistry::getDAO('MetricsDAO');
 		$result = $dao->retrieve($statsQO->toSql(), $statsQO->getBindings());
@@ -69,7 +61,9 @@ class StatsService extends PKPBaseEntityPropertyService {
 	}
 
 	/**
-	 * Get statistics records of the most used submissions
+	 * Get statistics records of the submissions (filtered by request parameters),
+	 * containing given time segments, abstractViews and totalGalleyViews,
+	 * ordered DESC by the time segments.
 	 *
 	 * @param int $contextId
 	 * @param array $args {
@@ -89,17 +83,8 @@ class StatsService extends PKPBaseEntityPropertyService {
 	public function getTotalStats($contextId, $args = array()) {
 		$statsListQB = $this->_buildGetTotalStatsQueryObject($contextId, $args);
 		$statsQO = $statsListQB->get();
-		/* DEFAULT: SELECT month, assoc_type, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY month, assoc_type ORDER BY month DESC */
-		/*
-		$file = 'debug.txt';
-		$current = file_get_contents($file);
-		$current .= print_r("++++++++ total stats ++++++++++++++++++++\n", true);
-		$current .= print_r($statsQO->toSql(), true);
-		$current .= print_r("#####\n", true);
-		$current .= print_r($statsQO->getBindings(), true);
-		$current .= print_r("++++++++++++++++++++++++++++\n", true);
-		file_put_contents($file, $current);
-		*/
+		/* default monthly: SELECT month, assoc_type, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY month, assoc_type ORDER BY month DESC */
+		/* with filters monthly: SELECT month, assoc_type, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' AND pkp_section_id = ? AND day BETWEEN ? AND ? AND submission_id = ? GROUP BY month, assoc_type ORDER BY month DESC */
 
 		$dao = \DAORegistry::getDAO('MetricsDAO');
 		$result = $dao->retrieve($statsQO->toSql(), $statsQO->getBindings());
@@ -124,25 +109,15 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$entityService = null;
 		if (is_a($entity, 'Submission')) {
 			$entityService = \ServicesContainer::instance()->get('submission');
+			$entityProperty = 'submission';
 			$params = array(
 				'entityAssocType' => ASSOC_TYPE_SUBMISSION,
 				'galleyAssocType' => ASSOC_TYPE_SUBMISSION_FILE,
 			);
 			$statsListQB = $this->_buildGetSubmissionQueryObject($entity->getContextId(), $entity->getId(), $args['params']);
 			$statsQO = $statsListQB->get();
-			/*  SELECT month, assoc_type, file_type, SUM(metric) AS metric FROM metrics WHERE submission_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY month, assoc_type, file_type, month */
-			/*
-			$file = 'debug.txt';
-			$current = file_get_contents($file);
-			$current .= print_r("+++++++++ get submisison properties +++++++++++++++++++\n", true);
-			$current .= print_r($statsQO->toSql(), true);
-			$current .= print_r("#####\n", true);
-			$current .= print_r($statsQO->getBindings(), true);
-			$current .= print_r("++++++++++++++++++++++++++++\n", true);
-			file_put_contents($file, $current);
-			*/
-		} elseif (is_a($entity, 'Issue')) {
-			$entityService = \ServicesContainer::instance()->get('issue');
+			/* default monthly: SELECT month, assoc_type, file_type, SUM(metric) AS metric FROM metrics WHERE submission_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY month, assoc_type, file_type, month */
+			/* with filters monthly: SELECT month, assoc_type, file_type, SUM(metric) AS metric FROM metrics WHERE submission_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' AND day BETWEEN ? AND ? GROUP BY month, assoc_type, file_type, month */
 		}
 
 		$dao = \DAORegistry::getDAO('MetricsDAO');
@@ -152,7 +127,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$values = $this->_getValues($records, $params, $props, $args);
 
 		if ($entityService) {
-			$values['submission'][] = $entityService->getSummaryProperties($entity, $args);
+			$values[$entityProperty][] = $entityService->getSummaryProperties($entity, $args);
 		}
 
 		\HookRegistry::call('Stats::getProperties::values', array(&$values, $entity, $props, $args));
@@ -213,7 +188,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 	 */
 	public function getTotalStatsProperties($records, $args = null) {
 		$props = array (
-			'abstractViews', 'totalGalleyViews',
+			'total', 'abstractViews', 'totalGalleyViews',
 		);
 
 		\HookRegistry::call('Stats::getProperties::totalStatsProperties', array(&$props, $records, $args));
@@ -356,19 +331,21 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$values = array();
 		$entityAssocType = $params['entityAssocType'];
 		$galleyAssocType = $params['galleyAssocType'];
-		$dimension = $args['params']['dimension'];
+		$dimension = $args['params']['dimension']; // 'month' or 'day'
 
 		// Prepare stats by month
-		$months = array();
+		$dimensionValues = array(); // existing months or days
 		foreach ($records as $record) {
-			if (!in_array($record[$dimension], $months)) $months[] = $record[$dimension];
+			if (!in_array($record[$dimension], $dimensionValues)) $dimensionValues[] = $record[$dimension];
 		}
 
-		$monthlyStats = $timeSegments = array();
-		foreach ($months as $month) {
+		// Get stats for all existing months or days, and
+		// prepare the timeSegments return values (date, dateLabel and dimensionStats)
+		$dimensionStats = $timeSegments = array();
+		foreach ($dimensionValues as $dimensionValue) {
 			$total = $abstractViews = $galleyViews = $pdfs = $htmls = $others = 0;
-			$monthlyRecords = array_filter($records, function ($record) use ($month, $dimension) {
-				return ($record[$dimension] == $month);
+			$monthlyRecords = array_filter($records, function ($record) use ($dimensionValue, $dimension) {
+				return ($record[$dimension] == $dimensionValue);
 			});
 			// total
 			if (in_array('total', $props)) {
@@ -378,7 +355,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$monthlyRecords
 				));
-				$monthlyStats[$month]['total'] = $total;
+				$dimensionStats[$dimensionValue]['total'] = $total;
 			}
 			// abstract views
 			if (in_array('abstractViews', $props)) {
@@ -391,7 +368,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$abstractViewsMonthlyRecords
 				));
-				$monthlyStats[$month]['abstractViews'] = $abstractViews;
+				$dimensionStats[$dimensionValue]['abstractViews'] = $abstractViews;
 			}
 			// galley downloads
 			if (in_array('totalGalleyViews', $props)) {
@@ -404,7 +381,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$galleyViewsMonthlyRecords
 				));
-				$monthlyStats[$month]['totalGalleyViews'] = $galleyViews;
+				$dimensionStats[$dimensionValue]['totalGalleyViews'] = $galleyViews;
 			}
 			// pdf downloads
 			if (in_array('pdf', $props)) {
@@ -418,7 +395,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$pdfMonthlyRecords
 				));
-				$monthlyStats[$month]['pdf'] = $pdfs;
+				$dimensionStats[$dimensionValue]['pdf'] = $pdfs;
 			}
 			// html downloads
 			if (in_array('html', $props)) {
@@ -432,7 +409,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$htmlMonthlyRecords
 				));
-				$monthlyStats[$month]['html'] = $htmls;
+				$dimensionStats[$dimensionValue]['html'] = $htmls;
 			}
 			// other file type downloads
 			if (in_array('other', $props)) {
@@ -446,18 +423,20 @@ class StatsService extends PKPBaseEntityPropertyService {
 					},
 					$otherMonthlyRecords
 				));
-				$monthlyStats[$month]['other'] = $others;
+				$dimensionStats[$dimensionValue]['other'] = $others;
 			}
+			// date label
 			if ($dimension == STATISTICS_DIMENSION_MONTH) {
-				$dateLabel = strftime('%B, %Y', strtotime($month.'01'));
+				$dateLabel = strftime('%B %Y', strtotime($dimensionValue.'01'));
 			} elseif ($dimension == STATISTICS_DIMENSION_DAY) {
-				$dateLabel = strftime(\Config::getVar('general', 'date_format_long'), strtotime($month));
+				$dateLabel = strftime(\Config::getVar('general', 'date_format_long'), strtotime($dimensionValue));
 			}
+			// time segments values to be returned
 			$timeSegments[] = array_merge(array(
-					'date' => $month,
+					'date' => $dimensionValue,
 					'dateLabel' => $dateLabel
 				),
-				$monthlyStats[$month]
+				$dimensionStats[$dimensionValue]
 			);
 		}
 
@@ -468,7 +447,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['total'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
 					break;
 				case 'abstractViews':
@@ -476,7 +455,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['abstractViews'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
 					break;
 				case 'totalGalleyViews':
@@ -484,7 +463,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['totalGalleyViews'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
 					break;
 				case 'pdf':
@@ -492,7 +471,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['pdf'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
 					break;
 				case 'html':
@@ -500,7 +479,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['html'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
 					break;
 				case 'other':
@@ -508,11 +487,8 @@ class StatsService extends PKPBaseEntityPropertyService {
 						function($record){
 							return $record['other'];
 						},
-						$monthlyStats
+						$dimensionStats
 					));
-					break;
-				case 'monthly':
-					$values[$prop] = $monthlyStats;
 					break;
 			}
 		}

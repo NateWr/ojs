@@ -23,7 +23,7 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 	/** @var int Context ID */
 	protected $contextId = null;
 
-	/** @var array metric type ojs::counter or omp::counter */
+	/** @var string metric type ojs::counter or omp::counter */
 	protected $metricType = null;
 
 	/** @var array columns (aggregation level) selection */
@@ -34,9 +34,6 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 
 	/** @var array order criteria */
 	protected $orderBy = array();
-
-	/** @var bool whether to return only a count of results */
-	protected $countOnly = null;
 
 
 	/**
@@ -61,26 +58,6 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 		// If the metric column was defined, remove it. We will automatically add it.
 		$metricKey = array_search(STATISTICS_METRIC, $columns);
 		if ($metricKey !== false) unset($columns[$metricKey]);
-		/* TO-DO: how to validate ?
-		$validColumns = array(
-			STATISTICS_DIMENSION_CONTEXT_ID,
-			STATISTICS_DIMENSION_PKP_SECTION_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_TYPE,
-			STATISTICS_DIMENSION_SUBMISSION_ID,
-			STATISTICS_DIMENSION_REPRESENTATION_ID,
-			STATISTICS_DIMENSION_FILE_TYPE,
-			STATISTICS_DIMENSION_ASSOC_TYPE,
-			STATISTICS_DIMENSION_ASSOC_ID,
-			STATISTICS_DIMENSION_COUNTRY,
-			STATISTICS_DIMENSION_REGION,
-			STATISTICS_DIMENSION_CITY,
-			STATISTICS_DIMENSION_MONTH,
-			STATISTICS_DIMENSION_DAY,
-			STATISTICS_DIMENSION_METRIC_TYPE
-		;
-		if (count(array_diff($columns, $validColumns)) > 0) return null;
-		*/
 		$this->columns = $columns;
 		return $this;
 	}
@@ -93,29 +70,6 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 	 * @return \OJS\Services\QueryBuilders\StatsListQueryBuilder
 	 */
 	public function filters($filters) {
-		/* TO-DO: how to validate ?
-		$validColumns = array(
-			STATISTICS_DIMENSION_CONTEXT_ID,
-			STATISTICS_DIMENSION_PKP_SECTION_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_TYPE,
-			STATISTICS_DIMENSION_SUBMISSION_ID,
-			STATISTICS_DIMENSION_REPRESENTATION_ID,
-			STATISTICS_DIMENSION_FILE_TYPE,
-			STATISTICS_DIMENSION_ASSOC_TYPE,
-			STATISTICS_DIMENSION_ASSOC_ID,
-			STATISTICS_DIMENSION_COUNTRY,
-			STATISTICS_DIMENSION_REGION,
-			STATISTICS_DIMENSION_CITY,
-			STATISTICS_DIMENSION_MONTH,
-			STATISTICS_DIMENSION_DAY,
-			STATISTICS_DIMENSION_METRIC_TYPE,
-			STATISTICS_METRIC
-		;
-		foreach ($filters as $filterColumn => $value) {
-			if (!in_array($filterColumn, $validColumns)) return null;
-		}
-		*/
 		// Add the metric type as filter.
 		$filters[STATISTICS_DIMENSION_METRIC_TYPE] = $this->metricType;
 		$this->filters = $filters;
@@ -130,31 +84,6 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 	 * @return \OJS\Services\QueryBuilders\StatsListQueryBuilder
 	 */
 	public function orderBy($orderBy) {
-		/* TO-DO: how to validate?
-		$validColumns = array(
-			STATISTICS_DIMENSION_CONTEXT_ID,
-			STATISTICS_DIMENSION_PKP_SECTION_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_ID,
-			STATISTICS_DIMENSION_ASSOC_OBJECT_TYPE,
-			STATISTICS_DIMENSION_SUBMISSION_ID,
-			STATISTICS_DIMENSION_REPRESENTATION_ID,
-			STATISTICS_DIMENSION_FILE_TYPE,
-			STATISTICS_DIMENSION_ASSOC_TYPE,
-			STATISTICS_DIMENSION_ASSOC_ID,
-			STATISTICS_DIMENSION_COUNTRY,
-			STATISTICS_DIMENSION_REGION,
-			STATISTICS_DIMENSION_CITY,
-			STATISTICS_DIMENSION_MONTH,
-			STATISTICS_DIMENSION_DAY,
-			STATISTICS_DIMENSION_METRIC_TYPE,
-			STATISTICS_METRIC
-		);
-		$validDirections = array(STATISTICS_ORDER_ASC, STATISTICS_ORDER_DESC);
-		foreach ($orderBy as $orderColumn => $direction) {
-			if (!in_array($orderColumn, $validColumns)) return null;
-			if (!in_array($direction, $validDirections)) return null;
-		}
-		*/
 		$this->orderBy = $orderBy;
 		return $this;
 	}
@@ -188,9 +117,6 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 
 			if (is_array($values) && isset($values['from'])) {
 				// Range filter: The value is a hashed array with from/to entries.
-				/* TO-DO: how to validate ?
-				if (!isset($values['to'])) return null;
-				*/
 				if ($whereClause) {
 					$q->whereBetween($column, array($values['from'], $values['to']));
 				} elseif ($havingClause) {
@@ -246,6 +172,7 @@ class StatsListQueryBuilder extends BaseQueryBuilder {
 
 	/**
 	 * Get the app specific metric type.
+	 * @return string
 	 */
 	protected function getMetricType() {
 		$application = \Application::getApplication();
