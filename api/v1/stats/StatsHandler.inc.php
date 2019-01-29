@@ -262,7 +262,9 @@ class StatsHandler extends APIHandler {
 			return $response->withStatus(400)->withJsonError('api.stats.400.wrongDateRange');
 		} else {
 			// check the timeSegmet = daily and if the dateStart is withing the last 90 days
-			$lastNinetyDaysTimestamp = strtotime('-90 days');
+			// 91 days + 1 extra day to account for the fact that the $fromTimestamp goes
+			// from the start of the day
+			$lastNinetyDaysTimestamp = strtotime('-92 days');
 			if ($params['dimension'] == STATISTICS_DIMENSION_DAY && $fromTimestamp < $lastNinetyDaysTimestamp) {
 				return $response->withStatus(400)->withJsonError('api.stats.400.wrongTimeSegmentDaily');
 			}

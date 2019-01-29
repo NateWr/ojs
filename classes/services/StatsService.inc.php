@@ -17,6 +17,8 @@ namespace OJS\Services;
 
 use \PKP\Services\EntityProperties\PKPBaseEntityPropertyService;
 use \DAORegistry;
+use \DBResultRange;
+use \DAOResultFactory;
 
 
 class StatsService extends PKPBaseEntityPropertyService {
@@ -52,7 +54,6 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$statsQO = $statsListQB->get();
 		/* default: SELECT submission_id, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' GROUP BY submission_id  ORDER BY metric DESC */
 		/* with all filters: SELECT submission_id, SUM(metric) AS metric FROM metrics WHERE context_id = ? AND assoc_type IN (1048585, 515) AND metric_type = 'ojs::counter' AND pkp_section_id = ? AND day BETWEEN ? AND ? AND submission_id = ? GROUP BY submission_id  ORDER BY metric DESC */
-
 		$dao = \DAORegistry::getDAO('MetricsDAO');
 		$result = $dao->retrieve($statsQO->toSql(), $statsQO->getBindings());
 		$records = $result->GetAll();
@@ -109,7 +110,6 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$entityService = null;
 		if (is_a($entity, 'Submission')) {
 			$entityService = \ServicesContainer::instance()->get('submission');
-			$entityProperty = 'submission';
 			$params = array(
 				'entityAssocType' => ASSOC_TYPE_SUBMISSION,
 				'galleyAssocType' => ASSOC_TYPE_SUBMISSION_FILE,
@@ -127,7 +127,7 @@ class StatsService extends PKPBaseEntityPropertyService {
 		$values = $this->_getValues($records, $params, $props, $args);
 
 		if ($entityService) {
-			$values[$entityProperty][] = $entityService->getSummaryProperties($entity, $args);
+			$values['object'][] = $entityService->getSummaryProperties($entity, $args);
 		}
 
 		\HookRegistry::call('Stats::getProperties::values', array(&$values, $entity, $props, $args));
