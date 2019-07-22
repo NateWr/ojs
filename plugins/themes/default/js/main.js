@@ -31,6 +31,13 @@
 		$('[data-toggle="dropdown"]').dropdown();
 	}
 
+	// Toggle nav menu on small screens
+	$('.pkp_site_nav_toggle').click(function(e) {
+  		$('.pkp_site_nav_menu').toggleClass('pkp_site_nav_menu--isOpen');
+  		$('.pkp_site_nav_toggle').toggleClass('pkp_site_nav_toggle--transform');
+	});
+
+
 	// Register click handlers for the search panel
 	var headerSearchPanelIsClosing = false,
 	    headerSearchForm = $('#headerNavigationContainer .pkp_search'),
