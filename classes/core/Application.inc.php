@@ -120,6 +120,7 @@ class Application extends PKPApplication {
 			'metadata',
 			'auth',
 			'blocks',
+			'checks',
 			'gateways',
 			'generic',
 			'importexport',
