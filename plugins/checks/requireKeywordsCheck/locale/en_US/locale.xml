@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale/en_US/locale.xml
+  *
+  * Copyright (c) 2014-2018 Simon Fraser University
+  * Copyright (c) 2003-2018 John Willinsky
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.check.requireKeywordsCheck.displayName">Require Keywords Check Plugin</message>
+	<message key="plugins.check.requireKeywordsCheck.description">Prevent the publication of submissions that do not have an keywords in all supported locales.</message>
+	<message key="plugins.check.requireKeywordsCheck.errorMessage">You must provide an keywords before this can be published.</message>
+	<message key="plugins.check.requireKeywordsCheck.errorMessageLocales">You must provide an keywords in all languages before this can be published.</message>
+</locale>
