@@ -65,6 +65,14 @@
 		{/fbvFormSection}
 	{/fbvFormArea}
 
+	{fbvFormSection title="submission.checks"}
+		{fbvFormSection list=true description="submission.checks.description"}
+			{foreach $checkOptions as $checkOption}
+				{fbvElement type="checkbox" name="checks[]" id="checks-{$checkOption['name']}" value=$checkOption['name'] checked=$checkOption['isEnabled'] label=$checkOption['description'] translate=false}
+			{/foreach}
+		{/fbvFormSection}
+	{/fbvFormSection}
+
 	{if $hasSubEditors}
 		{fbvFormSection}
 			{assign var="uuid" value=""|uniqid|escape}
