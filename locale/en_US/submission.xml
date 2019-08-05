@@ -81,6 +81,8 @@
 	<message key="section.any">Any Section</message>
 
 	<message key="submission.sectionOptions">Section Options</message>
+	<message key="submission.checks">Pre-publication Checks</message>
+	<message key="submission.checks.description">Enable or disable pre-publication checks for this section.</message>
 	<!-- categories -->
 	<message key="catalog.browseTitles">{$numTitles} Items</message>
 	<message key="catalog.category.heading">All Items</message>
