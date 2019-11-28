@@ -8,15 +8,17 @@ use Symfony\Component\Console\Output\OutputInterface;
 class TestCommand extends Command
 {
 	// the name of the command (the part after "bin/console")
-	protected static $defaultName = 'app:test-command';
+	protected static $defaultName = 'api';
 
 	protected function configure()
 	{
 		$this
-			->setDescription('This is my test command. Pass a URL path like {contextPath}/api/v1/contexts/1')
-			->setHelp('This command allows you to test the Symphony CLI app.');
+			->setDescription('Use this command to call any API endpoint.')
+			->setHelp("To call the /publicknowledge/api/v1/contexts API endpoint run:\n\n<comment>$</comment> php tools/cli.php api publicknowledge contexts\n");
 
-		$this->addArgument('path', InputArgument::REQUIRED, 'API path');
+		$this
+			->addArgument('contextPath', InputArgument::REQUIRED, 'The urlPath for the context you wish to interact with. Example: publicknowledge')
+			->addArgument('endpoint', InputArgument::REQUIRED, 'The endpoint for the API call you wish to make. Example: contexts');
 	}
 
 	protected function execute(InputInterface $input, OutputInterface $output)
@@ -24,11 +26,13 @@ class TestCommand extends Command
 
 		require(dirname(__FILE__) . '/bootstrap.inc.php');
 
+		$urlPath = '/' . $input->getArgument('contextPath') . '/api/v1/' . $input->getArgument('endpoint');
+
 		// OJS routing depends on PATH_INFO
-		$_SERVER['PATH_INFO'] = $input->getArgument('path');
+		$_SERVER['PATH_INFO'] = $urlPath;
 		// Slim depends on REQUEST_URI
 		// but this is handled by https://github.com/asmecher/pkp-lib/commit/6bbcb58e8af061e4e4eee838afacd9cf4b751dc8
-		// $_SERVER['REQUEST_URI'] = $input->getArgument('path');
+		// $_SERVER['REQUEST_URI'] = $urlPath;
 		$request = Application::get()->getRequest();
 
 		// Minimally need an interrelated router, dispatcher and request
@@ -46,8 +50,15 @@ class TestCommand extends Command
 
 		// Should get handler from command and route to
 		// api/v1/{slug}/index.php
-		import('api.v1.contexts.ContextHandler');
-		$handler = new ContextHandler();
+		$endpointParts = explode('/', $input->getArgument('endpoint'));
+		$sourceFile = sprintf('api/v1/%s/index.php', reset($endpointParts));
+		if (!file_exists($sourceFile)) {
+			$output->writeln('<error>The route you specified is not supported.</error>');
+			exit;
+		}
+		$handler = require ('./' . $sourceFile);
+		// import('api.v1.contexts.ContextHandler');
+		// $handler = new ContextHandler();
 
 		$userId = 1; // should be admin. todo: get the actual admin
 		// Set up the user
@@ -76,7 +87,7 @@ class TestCommand extends Command
 
 		// Fake the request object
 		$method = 'GET';
-		$uri = \Slim\Http\Uri::createFromString($input->getArgument('path'));
+		$uri = \Slim\Http\Uri::createFromString($urlPath);
 		$handler->getApp()->add(function($request, $response, $next) use ($method, $uri) {
 			$request = $request->withMethod($method);
 			$request = $request->withUri($uri);
@@ -92,9 +103,9 @@ class TestCommand extends Command
 		$handler->getApp()->run();
 		$result = ob_get_contents();
 		ob_end_clean();
-		$json = json_decode($result);
+		$contexts = json_decode($result);
 
-		$output->writeln(json_encode($json, JSON_PRETTY_PRINT));
-		$output->writeln('<info>Hey there. You passed the following URL path: ' . $input->getArgument('path') . '</info>');
+		$output->writeln(json_encode($contexts, JSON_PRETTY_PRINT));
+		$output->writeln('<info>Hey there. Your request was passed to the following URL path: ' . $urlPath . '</info>');
 	}
 }
