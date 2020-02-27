@@ -37,27 +37,5 @@ describe('Data suite tests', function() {
 		cy.get('li.ui-state-active a:contains("Production")');
 		cy.assignParticipant('Layout Editor', 'Stephen Hellier');
 		cy.assignParticipant('Proofreader', 'Sabine Kumar');
-
-		// Create a galley
-		cy.get('button#publication-button').click();
-		cy.get('button#galleys-button').click();
-		cy.get('a[id^="component-grid-articlegalleys-articlegalleygrid-addGalley-button-"]').click();
-		cy.wait(1000); // Wait for the form to settle
-		cy.get('input[id^=label-]').type('PDF', {delay: 0});
-		cy.get('form#articleGalleyForm button:contains("Save")').click();
-		cy.get('select[id=genreId]').select('Article Text');
-		cy.wait(250);
-		cy.fixture('dummy.pdf', 'base64').then(fileContent => {
-			cy.get('div[id^="fileUploadWizard"] input[type=file]').upload(
-				{fileContent, 'fileName': 'article.pdf', 'mimeType': 'application/pdf', 'encoding': 'base64'}
-			);
-		});
-		cy.get('button').contains('Continue').click();
-		cy.get('button').contains('Continue').click();
-		cy.get('button').contains('Complete').click();
-
-		// Publish in current issue
-		cy.publish('1', 'Vol. 1 No. 2 (2014)');
-		cy.isInIssue(title, 'Vol. 1 No. 2 (2014)');
 	});
 });
