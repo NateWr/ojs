@@ -39,6 +39,13 @@ class Publication extends PKPPublication {
 			$coverImage['uploadName'],
 		]);
 	}
+
+	/**
+	 * @copydoc PKPPublication::getRepresentations()
+	 */
+	public function getRepresentations() {
+		return (array) $this->getData('galleys');
+	}
 }
 
 

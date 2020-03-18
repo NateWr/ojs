@@ -71,14 +71,22 @@ class ArticleGalley extends Representation {
 	}
 
 	/**
-	 * Return the "best" article ID -- If a public article ID is set,
-	 * use it; otherwise use the internal article Id.
-	 * @return string
+	 * Return the "best" galley ID -- If a urlPath is set,
+	 * use it; otherwise use the internal galley Id.
+	 *
+	 * @return string|int
 	 */
-	function getBestGalleyId() {
+	public function getBestId() {
 		return $this->getData('urlPath')
 			? $this->getData('urlPath')
 			: $this->getId();
+	}
+
+	/**
+	 * @deprecated 3.2.0-1
+	 */
+	function getBestGalleyId() {
+		return $this->getBestId();
 	}
 
 	/**

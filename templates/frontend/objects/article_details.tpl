@@ -68,8 +68,15 @@
  *}
 <article class="obj_article_details">
 
+	{* Indicate if this is only a preview *}
+	{if $article->getData('status') !== $smarty.const.STATUS_PUBLISHED || $publication->getData('status') !== $smarty.const.STATUS_PUBLISHED}
+		<div class="cmp_notification notice">
+			{capture assign="submissionUrl"}{url page="workflow" op="access" path=$article->getId()}{/capture}
+			{translate key="submission.previewWarning" url=$submissionUrl}
+		</div>
+
 	{* Notification that this is an old version *}
-	{if $currentPublication->getId() !== $publication->getId()}
+	{elseif $currentPublication->getId() !== $publication->getId()}
 		<div class="cmp_notification notice">
 			{capture assign="latestVersionUrl"}{url page="article" op="view" path=$article->getBestId()}{/capture}
 			{translate key="submission.outdatedVersion"

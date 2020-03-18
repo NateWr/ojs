@@ -57,6 +57,9 @@ class ArticleHandler extends Handler {
 		import('classes.security.authorization.OjsJournalMustPublishPolicy');
 		$this->addPolicy(new OjsJournalMustPublishPolicy($request));
 
+		import('lib.pkp.classes.security.authorization.PublishedSubmissionPolicy');
+		$this->addPolicy(new PublishedSubmissionPolicy($request, $args));
+
 		return parent::authorize($request, $args, $roleAssignments);
 	}
 
@@ -65,80 +68,25 @@ class ArticleHandler extends Handler {
 	 * @param $args array Arguments list
 	 */
 	function initialize($request, $args = array()) {
-		$urlPath = empty($args) ? 0 : array_shift($args);
-
-		// Get the submission that matches the requested urlPath
-		$submission = Services::get('submission')->getByUrlPath($urlPath, $request->getContext()->getId());
-
-		if (!$submission && ctype_digit($urlPath)) {
-			$submission = Services::get('submission')->get($urlPath);
-		}
-
-		if (!$submission || $submission->getData('status') !== STATUS_PUBLISHED) {
-			$request->getDispatcher()->handle404();
+		$this->article = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
+		$this->publication = $this->getAuthorizedContextObject(ASSOC_TYPE_PUBLICATION);
+		$this->galley = $this->getAuthorizedContextObject(ASSOC_TYPE_REPRESENTATION);
+		if ($this->galley) {
+			$this->fileId = $this->galley->getFileId();
 		}
 
 		// If the urlPath does not match the urlPath of the current
 		// publication, redirect to the current URL
-		$currentUrlPath = $submission->getBestId();
-		if ($currentUrlPath && $currentUrlPath != $urlPath) {
+		$currentUrlPath = $this->article->getBestId();
+		if ($currentUrlPath && $currentUrlPath != $args[0]) {
 			$newArgs = $args;
 			$newArgs[0] = $currentUrlPath;
 			$request->redirect(null, $request->getRequestedPage(), $request->getRequestedOp(), $newArgs);
 		}
 
-		$this->article = $submission;
-
-		// Get the requested publication or if none requested get the current publication
-		$subPath = empty($args) ? 0 : array_shift($args);
-		if ($subPath === 'version') {
-			$publicationId = (int) array_shift($args);
-			$galleyId = empty($args) ? 0 : array_shift($args);
-			foreach ((array) $this->article->getData('publications') as $publication) {
-				if ($publication->getId() === $publicationId) {
-					$this->publication = $publication;
-				}
-			}
-			if (!$this->publication) {
-				$request->getDispatcher()->handle404();
-			}
-		} else {
-			$this->publication = $this->article->getCurrentPublication();
-			$galleyId = $subPath;
-		}
-
-		if ($galleyId && in_array($request->getRequestedOp(), ['view', 'download'])) {
-			$galleys = (array) $this->publication->getData('galleys');
-			foreach ($galleys as $galley) {
-				if ($galley->getBestGalleyId() == $galleyId) {
-					$this->galley = $galley;
-					break;
-				}
-			}
-			// Redirect to the most recent version of the submission if the request
-			// points to an outdated galley but doesn't use the specific versioned
-			// URL. This can happen when a galley's urlPath is changed between versions.
-			if (!$this->galley) {
-				$publications = $submission->getPublishedPublications();
-				foreach ($publications as $publication) {
-					foreach ((array) $publication->getData('galleys') as $galley) {
-						if ($galley->getBestGalleyId() == $galleyId) {
-							$request->redirect(null, $request->getRequestedPage(), $request->getRequestedOp(), [$submission->getBestId()]);
-						}
-					}
-				}
-				$request->getDispatcher()->handle404();
-			}
-
-			// Store the file id if it exists
-			if (!empty($args)) {
-				$this->fileId = array_shift($args);
-			}
-		}
-
 		if ($this->publication->getData('issueId')) {
 			$issueDao = DAORegistry::getDAO('IssueDAO'); /* @var $issueDao IssueDAO */
-			$this->issue = $issueDao->getById($this->publication->getData('issueId'), $submission->getData('contextId'), true);
+			$this->issue = $issueDao->getById($this->publication->getData('issueId'), $this->article->getData('contextId'), true);
 		}
 	}
 
