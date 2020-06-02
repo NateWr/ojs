@@ -37,7 +37,6 @@ class ArticleHandler extends Handler {
 	/** fileId associated with the request **/
 	var $fileId;
 
-
 	/**
 	 * @copydoc PKPHandler::authorize()
 	 */
@@ -57,6 +56,29 @@ class ArticleHandler extends Handler {
 		import('classes.security.authorization.OjsJournalMustPublishPolicy');
 		$this->addPolicy(new OjsJournalMustPublishPolicy($request));
 
+		if (!$request->getUserVar('preview') || !$request->getUserVar('submissionId')) {
+			$urlPath = empty($args) ? 0 : $args[0];
+			$publicationId = $args[1] === 'version' && isset($args[2]) ? $args[2] : null;
+			import('classes.security.authorization.OjsPublishedSubmissionRequiredPolicy');
+			$this->addPolicy(new OjsPublishedSubmissionRequiredPolicy($request, $urlPath, $request->getContext(), $publicationId));
+		} else {
+			// Create role assignments only for the preview
+			$ops = ['view', 'download'];
+			$previewRoleAssignments = [
+				ROLE_ID_SITE_ADMIN => $ops,
+				ROLE_ID_MANAGER => $ops,
+				ROLE_ID_SUB_EDITOR => $ops,
+				ROLE_ID_ASSISTANT => $ops,
+				ROLE_ID_AUTHOR => $ops,
+			];
+			import('lib.pkp.classes.security.authorization.internal.SubmissionRequiredPolicy');
+			$this->addPolicy(new SubmissionRequiredPolicy($request, $args, 'submissionId'));
+			import('lib.pkp.classes.security.authorization.internal.UserAccessibleWorkflowStageRequiredPolicy');
+			$this->addPolicy(new UserAccessibleWorkflowStageRequiredPolicy($request));
+			import('lib.pkp.classes.security.authorization.WorkflowStageAccessPolicy');
+			$this->addPolicy(new WorkflowStageAccessPolicy($request, $args, $previewRoleAssignments, 'submissionId', WORKFLOW_STAGE_ID_PRODUCTION));
+		}
+
 		return parent::authorize($request, $args, $roleAssignments);
 	}
 
@@ -65,21 +87,13 @@ class ArticleHandler extends Handler {
 	 * @param $args array Arguments list
 	 */
 	function initialize($request, $args = array()) {
-		$urlPath = empty($args) ? 0 : array_shift($args);
 
 		// Get the submission that matches the requested urlPath
-		$submission = Services::get('submission')->getByUrlPath($urlPath, $request->getContext()->getId());
-
-		if (!$submission && ctype_digit((string) $urlPath)) {
-			$submission = Services::get('submission')->get($urlPath);
-		}
-
-		if (!$submission || $submission->getData('status') !== STATUS_PUBLISHED) {
-			$request->getDispatcher()->handle404();
-		}
+		$submission = $this->getAuthorizedContextObject(ASSOC_TYPE_SUBMISSION);
 
 		// If the urlPath does not match the urlPath of the current
 		// publication, redirect to the current URL
+		$urlPath = empty($args) ? 0 : array_shift($args);
 		$currentUrlPath = $submission->getBestId();
 		if ($currentUrlPath && $currentUrlPath != $urlPath) {
 			$newArgs = $args;
@@ -105,10 +119,6 @@ class ArticleHandler extends Handler {
 		} else {
 			$this->publication = $this->article->getCurrentPublication();
 			$galleyId = $subPath;
-		}
-
-		if ($this->publication->getData('status') !== STATUS_PUBLISHED) {
-			$request->getDispatcher()->handle404();
 		}
 
 		if ($galleyId && in_array($request->getRequestedOp(), ['view', 'download'])) {
@@ -143,6 +153,43 @@ class ArticleHandler extends Handler {
 		if ($this->publication->getData('issueId')) {
 			$issueDao = DAORegistry::getDAO('IssueDAO'); /* @var $issueDao IssueDAO */
 			$this->issue = $issueDao->getById($this->publication->getData('issueId'), $submission->getData('contextId'), true);
+		}
+
+		// Preview unpublished article
+		if ($this->article->getData('status') !== STATUS_PUBLISHED || $this->publication->getData('status') !== STATUS_PUBLISHED) {
+			$userRoles = $this->getAuthorizedContextObject(ASSOC_TYPE_USER_ROLES);
+			$assignedWorkflowStages = $this->getAuthorizedContextObject(ASSOC_TYPE_ACCESSIBLE_WORKFLOW_STAGES);
+			$isAssignedEditorial = in_array(ROLE_ID_SITE_ADMIN, $userRoles);
+			foreach ($assignedWorkflowStages as $stageId => $roles) {
+				if (count(array_intersect($roles, [ROLE_ID_MANAGER, ROLE_ID_ASSISTANT, ROLE_ID_SUB_EDITOR]))) {
+					$isAssignedEditorial = true;
+					break;
+				}
+			}
+			if ($isAssignedEditorial) {
+				$workflowUrl = $request->getDispatcher()->url(
+					$request,
+					ROUTE_PAGE,
+					null,
+					'workflow',
+					'access',
+					$submission->getId()
+				);
+			} else {
+				$workflowUrl = $request->getDispatcher()->url(
+					$request,
+					ROUTE_PAGE,
+					null,
+					'authorDashboard',
+					'submission',
+					$submission->getId()
+				);
+			}
+			$templateMgr = TemplateManager::getManager($request);
+			$templateMgr->assign([
+				'isPreview' => true,
+				'workflowUrl' => $workflowUrl,
+			]);
 		}
 	}
 
