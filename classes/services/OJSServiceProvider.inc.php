@@ -22,6 +22,7 @@ use \APP\Services\StatsService;
 use \PKP\Services\PKPUserService;
 use \PKP\Services\PKPAuthorService;
 use \PKP\Services\PKPEmailTemplateService;
+use PKP\Services\PKPGateService;
 use \PKP\Services\PKPSchemaService;
 use \PKP\Services\PKPSiteService;
 
@@ -101,6 +102,11 @@ class OJSServiceProvider implements \Pimple\ServiceProviderInterface {
 		// Editorial statistics service
 		$pimple['editorialStats'] = function() {
 			return new StatsEditorialService();
+		};
+
+		// Gate service (authorization)
+		$pimple['gate'] = function() {
+			return new PKPGateService();
 		};
 	}
 }
