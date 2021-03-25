@@ -65,6 +65,7 @@ class WorkflowHandler extends PKPWorkflowHandler {
 		$latestPublicationApiUrl = $request->getDispatcher()->url($request, ROUTE_API, $submissionContext->getPath(), 'submissions/' . $submission->getId() . '/publications/' . $latestPublication->getId());
 		$temporaryFileApiUrl = $request->getDispatcher()->url($request, ROUTE_API, $submissionContext->getPath(), 'temporaryFiles');
 		$issueApiUrl = $request->getDispatcher()->url($request, ROUTE_API, $submissionContext->getData('urlPath'), 'issues/__issueId__');
+		$jatsApiUrl = $request->getDispatcher()->url($request, ROUTE_API, $submissionContext->getPath(), 'submissions/' . $submission->getId() . '/publications/__publicationId__/jats/__jatsId__');
 
 		import('classes.file.PublicFileManager');
 		$publicFileManager = new PublicFileManager();
@@ -133,11 +134,31 @@ class WorkflowHandler extends PKPWorkflowHandler {
 		$publicationFormIds = $templateMgr->getState('publicationFormIds');
 		$publicationFormIds[] = FORM_ISSUE_ENTRY;
 
+		// Set up Libero editor
+		$manuscriptUrl = str_replace('__publicationId__', $latestPublication->getId(), $jatsApiUrl);
+		$manuscriptUrl = str_replace('__jatsId__', $latestPublication->getLocalizedData('jatsFileId'), $manuscriptUrl);
+		$figuresUploadUrl = $manuscriptUrl . '/figure';
+		$changesUrl = $manuscriptUrl . '/changes';
+		$liberoConfig = [
+			'id' => $latestPublication->getLocalizedData('jatsFileId'),
+			'manuscriptUrl' => $manuscriptUrl,
+			'figureUploadUrl' => $figuresUploadUrl,
+			'changesUrl' => $changesUrl,
+			'csrfToken' => $request->getSession()->getCSRFToken(),
+		];
+		$templateMgr->addJavaScript('libero-render', 'const LIBERO_CONFIG = ' . json_encode($liberoConfig) . ';', ['contexts' => ['backend'], 'inline' => true]);
+		$templateMgr->addJavaScript('libero-chunk', '/lib/editor-client/build/static/js/2.97b60c35.chunk.js', ['contexts' => ['backend'], 'priority' => STYLE_SEQUENCE_LATE]);
+		$templateMgr->addJavaScript('libero-main', '/lib/editor-client/build/static/js/main.d0869513.chunk.js', ['contexts' => ['backend'], 'priority' => STYLE_SEQUENCE_LATE]);
+		$templateMgr->addJavaScript('libero-runtime', '/lib/editor-client/build/static/js/runtime-main.df7dff5f.js', ['contexts' => ['backend'], 'priority' => STYLE_SEQUENCE_LATE]);
+		$templateMgr->addStylesheet('libero-main', '/lib/editor-client/build/static/css/main.741592a7.chunk.css', ['contexts' => ['backend'], 'priority' => STYLE_SEQUENCE_LATE]);
+		$templateMgr->addStylesheet('libero-chunk', '/lib/editor-client/build/static/css/2.22769aeb.chunk.css', ['contexts' => ['backend'], 'priority' => STYLE_SEQUENCE_LATE]);
+
 		$templateMgr->setState([
 			'assignToIssueUrl' => $assignToIssueUrl,
 			'components' => $components,
 			'publicationFormIds' => $publicationFormIds,
 			'issueApiUrl' => $issueApiUrl,
+			'jatsApiUrl' => $jatsApiUrl,
 			'sectionWordLimits' => $sectionWordLimits,
 			'selectIssueLabel' => __('publication.selectIssue'),
 		]);

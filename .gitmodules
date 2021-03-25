@@ -50,3 +50,6 @@
 [submodule "plugins/generic/googleScholar"]
 	path = plugins/generic/googleScholar
 	url = https://github.com/pkp/googleScholar
+[submodule "lib/editor-client"]
+	path = lib/editor-client
+	url = git@github.com:libero/editor-client.git

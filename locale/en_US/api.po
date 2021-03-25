@@ -59,5 +59,8 @@ msgstr "The publication that you requested is not part of this journal."
 msgid "api.publications.403.submissionsDidNotMatch"
 msgstr "The publication that you requested is not part of this submission."
 
+msgid "api.publications.403.jatsFileNotFound"
+msgstr "The file you requested is not part of this publication."
+
 msgid "api.submissionFiles.400.badRepresentationAssocType"
 msgstr "You can not associated a file from this file stage with a galley."

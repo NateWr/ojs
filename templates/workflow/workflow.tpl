@@ -191,6 +191,9 @@
 								<spinner></spinner>
 							</div>
 						</tab>
+						<tab id="fullText" label="{translate key="search.fullText"}">
+							<libero :id="workingPublication.id" :url="xmlUrl"></libero>
+						</tab>
 						{if $metadataEnabled}
 							<tab id="metadata" label="{translate key="submission.informationCenter.metadata"}">
 								<pkp-form v-bind="components.{$smarty.const.FORM_METADATA}" @set="set" />
@@ -227,4 +230,5 @@
 		{/if}
 		{call_hook name="Template::Workflow"}
 	</tabs>
+
 {/block}
