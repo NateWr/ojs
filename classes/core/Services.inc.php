@@ -9,6 +9,7 @@
  *
  * @class Services
  * @ingroup core
+ *
  * @see Core
  *
  * @brief Pimple Dependency Injection Container.
@@ -16,13 +17,13 @@
 
 import('lib.pkp.classes.core.PKPServices');
 
-class Services extends PKPServices  {
-
-	/**
-	 * container initialization
-	 */
-	protected function init() {
-		$this->container->register(new APP\Services\OJSServiceProvider());
-	}
-
+class Services extends PKPServices
+{
+    /**
+     * container initialization
+     */
+    protected function init()
+    {
+        $this->container->register(new APP\Services\OJSServiceProvider());
+    }
 }
