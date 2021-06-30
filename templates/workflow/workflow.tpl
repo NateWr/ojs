@@ -99,6 +99,30 @@
 				{load_url_in_div id="submissionProgressBarDiv" url=$submissionProgressBarUrl}
 			</div>
 		</tab>
+		<tab id="discussions" label="Discussions">
+				<div>
+					<pkp-button ref="newDiscussionButton" @click="openNewDiscussion">
+						New Discussion
+					</pkp-button>
+				</div>
+				<modal
+					v-bind="MODAL_PROPS"
+					name="newDiscussion"
+					@closed="setFocusToRef('newDiscussionButton')"
+				>
+					<modal-content
+						close-label="Close"
+						modal-name="newDiscussion"
+						title="Start a Discussion"
+					>
+						<composer :variables="variables" :submit-url="addDiscussionApiUrl" :template-api-url="emailTemplateApiUrl">
+							<div class="composer__description">
+								Open a discussion in the <strong>Copyediting</strong> stage.
+							</div>
+						</composer>
+					</modal-content>
+				</modal>
+		</tab>
 		{if $canAccessPublication}
 			<tab id="publication" label="{translate key="submission.publication"}">
 				{help file="editorial-workflow/publication" class="pkp_help_tab"}
