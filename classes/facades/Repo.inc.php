@@ -14,6 +14,7 @@
 
 namespace APP\facades;
 
+use APP\decision\Repository as DecisionRepository;
 use APP\issue\Repository as IssueRepository;
 use APP\publication\Repository as PublicationRepository;
 use APP\submission\Repository as SubmissionRepository;
@@ -24,6 +25,11 @@ use PKP\facades\Repo as BaseRepo;
 
 class Repo extends BaseRepo
 {
+    public static function decision(): DecisionRepository
+    {
+        return app()->make(DecisionRepository::class);
+    }
+
     public static function issue(): IssueRepository
     {
         return app(IssueRepository::class);
@@ -39,13 +45,13 @@ class Repo extends BaseRepo
         return app(SubmissionRepository::class);
     }
 
-    public static function user(): UserRepository
-    {
-        return app(UserRepository::class);
-    }
-
     public static function submissionFile(): SubmissionFileRepository
     {
         return app(SubmissionFileRepository::class);
+    }
+
+    public static function user(): UserRepository
+    {
+        return app(UserRepository::class);
     }
 }

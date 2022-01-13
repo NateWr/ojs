@@ -13,10 +13,9 @@
 
 namespace APP\submission;
 
-use APP\core\Application;
 use APP\article\ArticleTombstoneManager;
+use APP\core\Application;
 use APP\core\Services;
-use APP\facades\Repo;
 use PKP\db\DAORegistry;
 
 class Repository extends \PKP\submission\Repository
@@ -58,11 +57,11 @@ class Repository extends \PKP\submission\Repository
     }
 
     /** @copydoc \PKP\submission\Repo::updateStatus() */
-    public function updateStatus(Submission $submission)
+    public function updateStatus(Submission $submission, ?int $newStatus = null)
     {
         $oldStatus = $submission->getData('status');
-        parent::updateStatus($submission);
-        $newStatus = Repo::submission()->get($submission->getId())->getData('status');
+        parent::updateStatus($submission, $newStatus);
+        $newStatus = $submission->getData('status');
 
         // Add or remove tombstones when submission is published or unpublished
         if ($newStatus === Submission::STATUS_PUBLISHED && $newStatus !== $oldStatus) {
