@@ -648,7 +648,7 @@ msgstr ""
 "of the submission. Any instructions in the message below are intended for the submitting "
 "author, {$submittingAuthorName}, and no action is required of you at this time.</p>\n"
 "\n"
-"{$messageToTheAuthor}"
+"{$messageToSubmittingAuthor}"
 
 msgid "emails.editorDecisionAccept.description"
 msgstr "This email notifies the author that their submission has been accepted for publication."
