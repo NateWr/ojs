@@ -242,9 +242,6 @@ msgstr "مزامنة الأدوار ستقوم بمنح الأفراد المو�
 msgid "manager.sections.abstractsNotRequired"
 msgstr "لا تشترط وجود الملخصات"
 
-msgid "manager.section.noSectionEditors"
-msgstr "ليس هناك محررو أقسام بعد. أولاً، إمنح هذا الدور لمستخدم واحد على الأقل عبر الذهاب إلى: الإدارة / الإعدادات / المستخدمون والأدوار."
-
 msgid "manager.sections.assigned"
 msgstr "محررو هذا القسم"
 
@@ -909,12 +906,6 @@ msgstr "أدرج أمثلة من الكلمات المفتاحية أو موضو
 
 msgid "manager.setup.submissionGuidelines"
 msgstr "إرشادات طلب النشر"
-
-msgid "manager.setup.submissionPreparationChecklist"
-msgstr "إجراءات تحضير طلب النشر"
-
-msgid "manager.setup.submissionPreparationChecklistDescription"
-msgstr "قبيل الشروع بتقديم طلب النشر إلى المجلة، يُطلب من المؤلفين أولاً التحقق من أن كل فقرة واردة في إجراءات تحضير طلب النشر مستوفاة لديهم. تظهر تلك الخطوات أيضاً في إرشادات المؤلفين، ضمن (عن المجلة). يمكن تعديل فقرات القائمة أدناه، غير أن جميع تلك الفقرات ستتطلب تأشير استيفائها قبل أن يتسنى للمؤلفين متابعة عملية التقديم."
 
 msgid "manager.setup.submissions"
 msgstr "طلبات النشر"
