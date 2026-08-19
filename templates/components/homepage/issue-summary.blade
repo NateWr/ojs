@@ -2,6 +2,7 @@
     <x-homepage.default slug="issue-summary">
         <x-issue-summary
             :issue="$issue"
+            heading="h2"
         >
             <x-slot:actions>
                 <a class="button button-highlight" href="{{ ViewHelper::url(['page' => 'issue', 'op' => 'current']) }}">
