@@ -35,20 +35,6 @@ class HomepageBlocksRegistry extends \PKP\view\HomepageBlocksRegistry
         );
         $this->register(
             new HomepageBlock(
-                component: 'homepage.issue-toc',
-                title: __('manager.homepageBlocks.issueToc'),
-                forSite: false,
-                loader: function () {
-                    $templateMgr = TemplateManager::getManager(Application::get()->getRequest());
-                    $templateMgr->assign([
-                        'showArticleGalleysInToc' => false,
-                        'showArticleCoversInToc' => false,
-                    ]);
-                }
-            )
-        );
-        $this->register(
-            new HomepageBlock(
                 component: 'homepage.latest-articles',
                 title: __('submissions.published.latest'),
                 loader: function (?Context $context) {
