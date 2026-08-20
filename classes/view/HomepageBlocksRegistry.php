@@ -18,6 +18,8 @@ use APP\core\Application;
 use APP\facades\Repo;
 use APP\template\TemplateManager;
 use PKP\context\Context;
+use PKP\db\DAORegistry;
+use PKP\submission\GenreDAO;
 use PKP\view\HomepageBlock;
 
 class HomepageBlocksRegistry extends \PKP\view\HomepageBlocksRegistry
@@ -48,6 +50,8 @@ class HomepageBlocksRegistry extends \PKP\view\HomepageBlocksRegistry
                         $collector->filterByContextIds([Application::SITE_CONTEXT_ID_ALL]);
                     }
                     $latestPublications = $collector->getMany();
+
+                    $genreDao = DAORegistry::getDAO('GenreDAO'); /** @var GenreDAO $genreDao */
                     $templateMgr = TemplateManager::getManager(Application::get()->getRequest());
                     $templateMgr->assign([
                         'latestPublications' => $latestPublications,
@@ -59,15 +63,22 @@ class HomepageBlocksRegistry extends \PKP\view\HomepageBlocksRegistry
                             : __('submissions.published.latest.description.site', [
                                 'url' => Application::get()->getRequest()->url(null, 'search'),
                             ]),
+                        'primaryFileGenreIds' => $genreDao->getIdsBy(
+                            contextIds: $context ? [$context->getId()] : null,
+                            supplementary: false,
+                            dependent: false,
+                        )->toArray(),
+                        'supplementaryFileGenreIds' => $genreDao->getIdsBy(
+                            contextIds: $context ? [$context->getId()] : null,
+                            supplementary: true,
+                        )->toArray(),
+                        'sections' => $context
+                            ? Repo::section()
+                                ->getCollector()
+                                ->filterByContextIds([$context->getId()])
+                                ->getMany()
+                            : [],
                     ]);
-
-                    if ($context) {
-                        $sections = Repo::section()
-                            ->getCollector()
-                            ->filterByContextIds([$context->getId()])
-                            ->getMany();
-                        $templateMgr->assign('sections', $sections);
-                    }
                 }
             )
         );

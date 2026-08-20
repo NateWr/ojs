@@ -28,9 +28,9 @@
                 <li class="homepage-block-latest-articles-list-item">
                     <x-eidostheme::article-summary
                         heading="h3"
-                        :context="$submissionContext"
+                        :contextPath="$submissionContext->getPath()"
                         :$submission
-                        :$sections
+                        :sections="$sections ?? []"
                     />
                 </li>
             @endforeach
