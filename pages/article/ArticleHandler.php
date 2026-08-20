@@ -298,26 +298,28 @@ class ArticleHandler extends Handler
 
         $primaryGalleys = [];
         $supplementaryGalleys = [];
+        $primaryFileGenreIds = [];
+        $supplementaryFileGenreIds = [];
         if ($galleys) {
             $genreDao = DAORegistry::getDAO('GenreDAO'); /** @var GenreDAO $genreDao */
-            $primaryGenres = $genreDao->getPrimaryByContextId($context->getId())->toArray();
-            $primaryGenreIds = array_map(function ($genre) {
-                return $genre->getId();
-            }, $primaryGenres);
-            $supplementaryGenres = $genreDao->getBySupplementaryAndContextId(true, $context->getId())->toArray();
-            $supplementaryGenreIds = array_map(function ($genre) {
-                return $genre->getId();
-            }, $supplementaryGenres);
-
+            $primaryFileGenreIds = $genreDao->getIdsBy(
+                contextIds: $context ? [$context->getId()] : null,
+                supplementary: false,
+                dependent: false,
+            )->toArray();
+            $supplementaryFileGenreIds = $genreDao->getIdsBy(
+                contextIds: $context ? [$context->getId()] : null,
+                supplementary: true,
+            )->toArray();
             foreach ($galleys as $galley) {
                 $remoteUrl = $galley->getData('urlRemote');
                 $file = Repo::submissionFile()->get((int) $galley->getData('submissionFileId'));
                 if (!$remoteUrl && !$file) {
                     continue;
                 }
-                if ($remoteUrl || in_array($file->getGenreId(), $primaryGenreIds)) {
+                if ($remoteUrl || in_array($file->getGenreId(), $primaryFileGenreIds)) {
                     $primaryGalleys[] = $galley;
-                } elseif (in_array($file->getGenreId(), $supplementaryGenreIds)) {
+                } elseif (in_array($file->getGenreId(), $supplementaryFileGenreIds)) {
                     $supplementaryGalleys[] = $galley;
                 }
             }
@@ -325,6 +327,8 @@ class ArticleHandler extends Handler
         $templateMgr->assign([
             'primaryGalleys' => $primaryGalleys,
             'supplementaryGalleys' => $supplementaryGalleys,
+            'primaryFileGenreIds' => $primaryFileGenreIds,
+            'supplementaryFileGenreIds' => $supplementaryFileGenreIds,
         ]);
 
         // Check if JATS is publicly available for this publication
