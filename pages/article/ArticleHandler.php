@@ -331,6 +331,17 @@ class ArticleHandler extends Handler
             'supplementaryFileGenreIds' => $supplementaryFileGenreIds,
         ]);
 
+        // Assign the publication mapped to the same shape the API uses,
+        // for themes that consume mapped data instead of data objects.
+        // This is assigned in addition to the data objects above, which
+        // are still used by other themes.
+        $genreDao = DAORegistry::getDAO('GenreDAO'); /** @var GenreDAO $genreDao */
+        $templateMgr->assign([
+            'publicationProps' => Repo::publication()
+                ->getSchemaMap($article, $genreDao->getByContextId($context->getId())->toAssociativeArray())
+                ->map($publication),
+        ]);
+
         // Check if JATS is publicly available for this publication
         $templateMgr->assign([
             'jatsDownloadUrl' => $publication->getData('jatsPublicVisibility')
