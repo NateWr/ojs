@@ -79,6 +79,34 @@ This is the layout used for most pages on the site.
     <x-footer />
 
     @loadScript(['context' => 'frontend'])
+
+    @php
+        $skipToConfig = [
+            'buttonLabel' => __('plugins.themes.eidos.skip.skipToContent'),
+            'smallButtonLabel' => __('plugins.themes.eidos.skip.skipTo'),
+            'altLabel' => __('plugins.themes.eidos.skip.alt'),
+            'optionLabel' => __('plugins.themes.eidos.skip.option'),
+            'shortcutLabel' => __('plugins.themes.eidos.skip.shortcut'),
+            'menuLabel' => __('plugins.themes.eidos.skip.menu'),
+            'landmarkGroupLabel' => __('plugins.themes.eidos.skip.landmarkGroup'),
+            'headingGroupLabel' => __('plugins.themes.eidos.skip.headingGroup'),
+            'headingMainGroupLabel' => __('plugins.themes.eidos.skip.headingMainGroup'),
+            'headingLevelLabel' => __('plugins.themes.eidos.skip.headingLevel'),
+            'mainLabel' => __('plugins.themes.eidos.skip.main'),
+            'searchLabel' => __('plugins.themes.eidos.skip.search'),
+            'navLabel' => __('plugins.themes.eidos.skip.nav'),
+            'asideLabel' => __('plugins.themes.eidos.skip.aside'),
+            'footerLabel' => __('plugins.themes.eidos.skip.footer'),
+            'headerLabel' => __('plugins.themes.eidos.skip.header'),
+            'formLabel' => __('plugins.themes.eidos.skip.form'),
+            'msgNoLandmarksFoundLabel' => __('plugins.themes.eidos.skip.msgNoLandmarksFound'),
+            'msgNoHeadingsFoundLabel' => __('plugins.themes.eidos.skip.msgNoHeadingsFound'),
+        ];
+    @endphp
+    <script>
+        var SkipToConfig = @json($skipToConfig);
+    </script>
+    <script src="{{ $eidosUrl }}/skipto.min.js"></script>
 </body>
 
 </html>

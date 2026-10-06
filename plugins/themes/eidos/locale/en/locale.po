@@ -151,6 +151,63 @@ msgstr "Skip to search form"
 msgid "plugins.themes.eidos.skip.searchResults"
 msgstr "Skip to search results"
 
+msgid "plugins.themes.eidos.skip.skipTo"
+msgstr "SkipTo"
+
+msgid "plugins.themes.eidos.skip.skipToContent"
+msgstr "Skip to Content"
+
+msgid "plugins.themes.eidos.skip.alt"
+msgstr "Alt"
+
+msgid "plugins.themes.eidos.skip.option"
+msgstr "Option"
+
+msgid "plugins.themes.eidos.skip.shortcut"
+msgstr "shortcut"
+
+msgid "plugins.themes.eidos.skip.menu"
+msgstr "Landmarks and Headings"
+
+msgid "plugins.themes.eidos.skip.landmarkGroup"
+msgstr "Landmark Regions"
+
+msgid "plugins.themes.eidos.skip.headingGroup"
+msgstr "Headings"
+
+msgid "plugins.themes.eidos.skip.headingMainGroup"
+msgstr "Headings in Main Region"
+
+msgid "plugins.themes.eidos.skip.headingLevel"
+msgstr "Heading level"
+
+msgid "plugins.themes.eidos.skip.main"
+msgstr "main"
+
+msgid "plugins.themes.eidos.skip.search"
+msgstr "search"
+
+msgid "plugins.themes.eidos.skip.nav"
+msgstr "navigation"
+
+msgid "plugins.themes.eidos.skip.aside"
+msgstr "aside"
+
+msgid "plugins.themes.eidos.skip.footer"
+msgstr "footer"
+
+msgid "plugins.themes.eidos.skip.header"
+msgstr "header"
+
+msgid "plugins.themes.eidos.skip.form"
+msgstr "form"
+
+msgid "plugins.themes.eidos.skip.msgNoLandmarksFound"
+msgstr "No landmarks to skip to"
+
+msgid "plugins.themes.eidos.skip.msgNoHeadingsFound"
+msgstr "No main headings to skip to"
+
 msgid "plugins.themes.eidos.option.header.label"
 msgstr "Header"
 
